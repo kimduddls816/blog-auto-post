@@ -22,7 +22,3 @@ jobs:
           WP_AUTH_CODE:      ${{ secrets.WP_AUTH_CODE }}
           WP_ACCESS_TOKEN:   ${{ secrets.WP_ACCESS_TOKEN }}
         run: python ${{ github.workspace }}/scripts/auto_post.py
-        run: |
-          pwd
-          find . -name "auto_post.py"
-          python $(find . -name "auto_post.py")
