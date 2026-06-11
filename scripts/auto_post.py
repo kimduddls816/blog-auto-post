@@ -62,11 +62,17 @@ def generate_post(category):
 반드시 아래 JSON만 응답 (다른 말 금지):
 {{"title": "제목", "content": "HTML본문", "tags": ["태그1","태그2","태그3"]}}"""
 
-    res = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}",
-        headers={"Content-Type": "application/json"},
-        json={"contents": [{"parts": [{"text": prompt}]}]}
-    )
+    import time
+    for attempt in range(4):
+        res = requests.post(
+            f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}",
+            headers={"Content-Type": "application/json"},
+            json={"contents": [{"parts": [{"text": prompt}]}]}
+        )
+        if res.status_code == 200:
+            break
+        print(f"     ⏳ 재시도 {attempt+1}/4 (상태 {res.status_code})")
+        time.sleep(10)
     res.raise_for_status()
     text = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
     if "```json" in text:
