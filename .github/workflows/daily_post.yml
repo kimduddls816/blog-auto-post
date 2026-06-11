@@ -21,4 +21,4 @@ jobs:
           WP_CLIENT_SECRET:  ${{ secrets.WP_CLIENT_SECRET }}
           WP_USERNAME:       ${{ secrets.WP_USERNAME }}
           WP_PASSWORD:       ${{ secrets.WP_PASSWORD }}
-        run: python $GITHUB_WORKSPACE/scripts/auto_post.py
+        run: cd blog-auto-post && python scripts/auto_post.py
