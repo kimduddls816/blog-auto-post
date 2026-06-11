@@ -9,8 +9,8 @@ jobs:
   auto-post:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: pip install requests
@@ -21,4 +21,7 @@ jobs:
           WP_CLIENT_SECRET:  ${{ secrets.WP_CLIENT_SECRET }}
           WP_USERNAME:       ${{ secrets.WP_USERNAME }}
           WP_PASSWORD:       ${{ secrets.WP_PASSWORD }}
-        run: cd blog-auto-post && python scripts/auto_post.py
+        run: |
+          ls -la
+          ls -la scripts/
+          python scripts/auto_post.py
