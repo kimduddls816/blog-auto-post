@@ -5,15 +5,23 @@ on:
     - cron: '0 23 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   auto-post:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - run: pip install requests
+
       - name: 자동 발행 실행
         env:
           GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
@@ -22,3 +30,11 @@ jobs:
           WP_AUTH_CODE:      ${{ secrets.WP_AUTH_CODE }}
           WP_ACCESS_TOKEN:   ${{ secrets.WP_ACCESS_TOKEN }}
         run: python ${{ github.workspace }}/scripts/auto_post.py
+
+      - name: 발행 이력 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posted_topics.json || true
+          git diff --staged --quiet || git commit -m "update posted topics"
+          git push || true
