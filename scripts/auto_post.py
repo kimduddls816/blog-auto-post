@@ -18,6 +18,9 @@ GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-flash-latest"]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
+MONTHS = {m: i+1 for i, m in enumerate(
+    ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])}
+
 # ── 카테고리 정의 ──────────────────────────────────────
 CATEGORIES = [
     {
@@ -86,7 +89,26 @@ def save_posted(data):
     with open(POSTED_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-# ── 트렌드 크롤링 (다중 소스 + 강화된 파싱) ───────────
+# ── 기사 발행일 파싱 ───────────────────────────────────
+def parse_pubdate(raw):
+    """RSS/Atom의 다양한 날짜 형식에서 'M월 D일' 형태로 변환. 실패 시 None"""
+    if not raw:
+        return None
+    raw = raw.strip()
+    # RFC822: Sat, 14 Jun 2026 09:30:00
+    m = re.search(r"(\d{1,2})\s+([A-Z][a-z]{2})\s+(\d{4})", raw)
+    if m:
+        day, mon, year = int(m.group(1)), MONTHS.get(m.group(2), 0), m.group(3)
+        if mon:
+            return f"{year}년 {mon}월 {day}일", f"{year}-{mon:02d}-{int(day):02d}"
+    # ISO: 2026-06-14T09:30:00
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", raw)
+    if m:
+        y, mo, d = m.group(1), int(m.group(2)), int(m.group(3))
+        return f"{y}년 {mo}월 {d}일", f"{y}-{mo:02d}-{d:02d}"
+    return None
+
+# ── 트렌드 크롤링 (제목 + URL + 날짜) ──────────────────
 def crawl_trends(feeds, feed_kw):
     headers = {"User-Agent": UA, "Accept": "application/rss+xml, application/xml, text/xml, */*"}
     collected = []
@@ -95,27 +117,38 @@ def crawl_trends(feeds, feed_kw):
             r = requests.get(url, headers=headers, timeout=10)
             if r.status_code != 200:
                 continue
-            # <item> 또는 <entry> 내부의 <title> 추출
             items = re.findall(r"<(?:item|entry)\b.*?</(?:item|entry)>", r.text, re.DOTALL | re.IGNORECASE)
             for item in items[:12]:
-                m = re.search(r"<title[^>]*>(.*?)</title>", item, re.DOTALL | re.IGNORECASE)
-                if not m:
+                tm = re.search(r"<title[^>]*>(.*?)</title>", item, re.DOTALL | re.IGNORECASE)
+                if not tm:
                     continue
-                title = re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", m.group(1), flags=re.DOTALL)
+                title = re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", tm.group(1), flags=re.DOTALL)
                 title = re.sub(r"<[^>]+>", "", title).strip()
-                if 8 < len(title) < 140:
-                    collected.append(title)
+                if not (8 < len(title) < 140):
+                    continue
+                # 링크 추출 (RSS <link>텍스트 / Atom <link href="">)
+                lm = re.search(r'<link[^>]*?href=["\'](.*?)["\']', item, re.IGNORECASE)
+                link = lm.group(1).strip() if lm else ""
+                if not link:
+                    lm2 = re.search(r"<link[^>]*>(.*?)</link>", item, re.DOTALL | re.IGNORECASE)
+                    link = lm2.group(1).strip() if lm2 else ""
+                # 날짜 추출
+                dm = re.search(r"<(?:pubDate|published|updated|dc:date)[^>]*>(.*?)</(?:pubDate|published|updated|dc:date)>",
+                               item, re.DOTALL | re.IGNORECASE)
+                date_info = parse_pubdate(dm.group(1)) if dm else None
+                date_kr = date_info[0] if date_info else None
+                collected.append({"title": title, "link": link, "date": date_kr})
         except Exception:
             continue
-    # 키워드 필터 (있으면 우선, 없으면 전체에서)
-    filtered = [t for t in collected if any(kw in t.lower() for kw in feed_kw)]
+    # 키워드 필터
+    filtered = [c for c in collected if any(kw in c["title"].lower() for kw in feed_kw)]
     result = filtered if filtered else collected
     # 중복 제거
     seen, uniq = set(), []
-    for t in result:
-        if t not in seen:
-            seen.add(t); uniq.append(t)
-    return uniq[:12]
+    for c in result:
+        if c["title"] not in seen:
+            seen.add(c["title"]); uniq.append(c)
+    return uniq[:10]
 
 # ── 액세스 토큰 확보 ───────────────────────────────────
 def get_access_token():
@@ -139,9 +172,8 @@ def get_access_token():
     print("=" * 60)
     return token
 
-# ── 발행 이력에서 다룬 소재 추출 (Gemini) ──────────────
+# ── 발행 이력에서 다룬 소재 추출 ───────────────────────
 def extract_covered_topics(category_name, posted_titles):
-    """이미 발행한 제목들에서 핵심 소재(인물/사상/지역/종목 등)를 뽑아 회피 목록 생성"""
     if not posted_titles:
         return []
     titles_text = "\n".join(f"- {t}" for t in posted_titles[-30:])
@@ -175,17 +207,30 @@ JSON 배열로만 응답 (다른 말 없이):
     return []
 
 # ── Gemini로 글 생성 ───────────────────────────────────
-def generate_post(category, posted_titles, covered_topics, trend_hints):
+def generate_post(category, posted_titles, covered_topics, trends):
     today = datetime.now().strftime("%Y년 %m월 %d일")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "없음"
     covered_text = ", ".join(covered_topics) if covered_topics else "없음"
-    trend_text   = "\n".join(f"- {t}" for t in trend_hints) if trend_hints else "없음"
+    # 트렌드를 날짜 포함해서 제시
+    if trends:
+        lines = []
+        for c in trends:
+            d = f" (발행일: {c['date']})" if c.get("date") else ""
+            lines.append(f"- {c['title']}{d}")
+        trend_text = "\n".join(lines)
+    else:
+        trend_text = "없음"
 
-    prompt = f"""오늘({today}) '{category['name']}' 블로그 글을 써라.
+    prompt = f"""오늘은 {today}입니다. '{category['name']}' 블로그 글을 작성해 주세요.
 방향: {category['direction']}
 
-[최신 트렌드 — 이 중 하나를 소재로 적극 활용하라]
+[최신 트렌드 — 이 중 하나를 소재로 적극 활용]
 {trend_text}
+
+[날짜 표현 규칙 — 중요]
+- 기사를 소재로 쓸 때, 위에 표시된 '발행일'을 정확히 반영하세요. (예: "6월 14일 발표된 보도에 따르면")
+- 오늘 날짜로 착각해서 쓰지 마세요. 기사가 며칠 전 것이면 그 날짜를 그대로 쓰세요.
+- 발행일 정보가 없는 소재는 무리하게 날짜를 지어내지 마세요.
 
 [이미 다룬 핵심 소재 — 절대 다시 쓰지 말 것]
 {covered_text}
@@ -193,26 +238,23 @@ def generate_post(category, posted_titles, covered_topics, trend_hints):
 [이미 발행한 제목 — 비슷한 각도 금지]
 {posted_text}
 
-[소재 선정 규칙 — 매우 중요]
-- 위 '이미 다룬 핵심 소재'에 나온 인물·사상·이론·지역·종목은 이번 글에서 절대 다루지 마라.
-- 예: 철학 카테고리에서 이미 '니체', '스토아'를 다뤘다면 이번엔 공자, 노자, 사르트르, 칸트, 아들러 등 완전히 다른 사상가/관점으로.
-- 예: 투자 카테고리에서 이미 'S&P500 ETF'를 다뤘다면 이번엔 배당성장주, 채권, 리츠 등 다른 주제로.
-- 매번 신선하고 구체적인 새 주제를 잡아라.
+[소재 선정 규칙]
+- 위 '이미 다룬 핵심 소재'의 인물·사상·이론·지역·종목은 이번 글에서 다루지 마세요.
+- 매번 신선하고 구체적인 새 주제를 잡으세요.
 
-[말투 — 반드시 지킬 것]
-- 전체적으로 정중한 존댓말(~합니다, ~입니다, ~요)로 일관되게
-- 반말("~다", "~거야") 절대 금지
-- 딱딱하지 않게, 독자에게 말 거는 것처럼 부드럽게
+[말투]
+- 정중한 존댓말(~합니다, ~입니다, ~요)로 일관되게. 반말 금지.
+- 딱딱하지 않게, 독자에게 말 거는 것처럼 부드럽게.
 
 [글 구조]
-- 두괄식: 제목에서 핵심 궁금증 던지고, 도입부 첫 문장에 바로 핵심 답 또는 요약
-- 소제목마다 하나의 요점만 명확하게
-- 마무리는 "결론적으로", "지금 바로 시작하세요" 같은 뻔한 표현 금지, 여운 있게
+- 두괄식: 도입부 첫 문장에 핵심 답/요약
+- 소제목마다 하나의 요점만
+- "결론적으로", "지금 바로 시작하세요" 같은 뻔한 마무리 금지
 
 [형식]
 - 길이: 800~1100자
 - HTML: 소제목 <h2>, 문단 <p>, 필요시 <ul><li>
-- 키워드는 글 내용에 자연스럽게 녹여 쓸 것. 절대 별도 항목으로 나열하지 말 것.
+- 키워드는 글에 자연스럽게 녹일 것. 별도 나열 금지.
 - 제목은 본문에 다시 쓰지 말 것
 
 반드시 아래 JSON만 응답 (다른 말 절대 금지):
@@ -247,14 +289,28 @@ def generate_post(category, posted_titles, covered_topics, trend_hints):
                 last_err = str(e); time.sleep(5)
     raise RuntimeError(f"모든 모델 실패: {last_err}")
 
+# ── 출처 링크 HTML 생성 ────────────────────────────────
+def build_sources_html(trends):
+    """참고한 기사 제목+링크를 글 맨 밑에 첨부"""
+    items = [c for c in trends if c.get("link")][:5]
+    if not items:
+        return ""
+    html = '\n<hr/>\n<p><strong>참고 자료</strong></p>\n<ul>\n'
+    for c in items:
+        date = f" ({c['date']})" if c.get("date") else ""
+        html += f'  <li><a href="{c["link"]}" target="_blank" rel="noopener">{c["title"]}</a>{date}</li>\n'
+    html += '</ul>\n'
+    return html
+
 # ── WordPress에 발행 ───────────────────────────────────
-def publish_post(token, category, post_data):
+def publish_post(token, category, post_data, sources_html):
+    content = post_data["content"] + sources_html
     res = requests.post(
         f"https://public-api.wordpress.com/rest/v1.1/sites/{WP_SITE}/posts/new",
         headers={"Authorization": f"Bearer {token}"},
         json={
             "title":      post_data["title"],
-            "content":    post_data["content"],
+            "content":    content,
             "status":     "publish",
             "categories": category["name"],
             "tags":       ",".join(post_data.get("tags", [])),
@@ -286,7 +342,8 @@ def main():
             print(f"  ✍️  [{name}] 글 생성 중...")
             post = generate_post(cat, posted_titles, covered, trends)
 
-            url = publish_post(token, cat, post)
+            sources_html = build_sources_html(trends)
+            url = publish_post(token, cat, post, sources_html)
             print(f"  ✅ 발행 완료: {post['title']}")
             print(f"     {url}")
 
