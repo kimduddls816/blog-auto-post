@@ -2,11 +2,9 @@ import os
 import re
 import json
 import time
+import random
 import requests
 from datetime import datetime
-from google.oauth2.credentials import Credentials
-from google.auth.transport.requests import Request
-from googleapiclient.discovery import build
 
 # ── 환경변수 ──────────────────────────────────────────
 GEMINI_API_KEY        = os.environ["GEMINI_API_KEY"]
@@ -23,18 +21,20 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 MONTHS = {m: i+1 for i, m in enumerate(
     ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])}
 
-# ── 카테고리 정의 (영어) ───────────────────────────────
+# ── 카테고리 정의 ──────────────────────────────────────
 CATEGORIES = [
     {
         "name": "Passive Income Investing",
         "label": "Passive Income Investing",
         "direction": "Beginner-friendly guides on FIRE movement, ETF investing, dividend stocks, and automated wealth building. Include real ticker names and ETF names.",
         "feeds": [
-            "https://www.investing.com/rss/news_25.rss",
             "https://feeds.content.dowjones.io/public/rss/mw_topstories",
-            "https://www.etf.com/rss.xml",
+            "https://feeds.feedburner.com/TheMoneyNinjas",
+            "https://www.dividendgrowthinvestor.com/feeds/posts/default",
+            "https://seekingalpha.com/feed.xml",
+            "https://rss.app/feeds/etf-news.xml",
         ],
-        "feed_kw": ["etf", "dividend", "invest", "stock", "retire", "fund", "portfolio"],
+        "feed_kw": ["etf", "dividend", "invest", "stock", "retire", "fund", "portfolio", "yield", "passive", "income"],
     },
     {
         "name": "World News Simplified",
@@ -43,9 +43,11 @@ CATEGORIES = [
         "feeds": [
             "https://feeds.bbci.co.uk/news/world/rss.xml",
             "https://feeds.bbci.co.uk/news/business/rss.xml",
-            "https://rss.cnn.com/rss/edition_world.rss",
+            "https://feeds.reuters.com/reuters/topNews",
+            "https://feeds.reuters.com/reuters/businessNews",
+            "https://www.aljazeera.com/xml/rss/all.xml",
         ],
-        "feed_kw": ["economy", "election", "rate", "market", "trade", "policy", "war", "ai"],
+        "feed_kw": ["economy", "election", "rate", "market", "trade", "policy", "war", "ai", "crisis", "global"],
     },
     {
         "name": "Wellness and Self-Care",
@@ -53,32 +55,48 @@ CATEGORIES = [
         "direction": "Latest wellness trends (sleep, routines, burnout, diet, mindfulness) explained simply with practical guides readers can apply immediately.",
         "feeds": [
             "https://www.healthline.com/rss/news",
-            "https://feeds.feedburner.com/MindBodyGreen",
             "https://www.medicalnewstoday.com/rss/medical-news-today.xml",
+            "https://www.psychologytoday.com/us/articles/feed",
+            "https://greatergood.berkeley.edu/feeds/news",
+            "https://www.verywellmind.com/feeds/all",
         ],
-        "feed_kw": ["sleep", "stress", "mental", "anxiety", "wellness", "habit", "diet", "burnout", "mindful"],
+        "feed_kw": ["sleep", "stress", "mental", "anxiety", "wellness", "habit", "diet", "burnout", "mindful", "therapy", "mood"],
     },
     {
         "name": "Travel & Hidden Gems",
         "label": "Travel & Hidden Gems",
         "direction": "Travel destinations, hidden gems, cafes and weekend getaways popular among millennials and Gen Z. Focus on trending and Instagram-worthy spots.",
         "feeds": [
-            "https://www.lonelyplanet.com/news/feed",
             "https://www.cntraveler.com/feed/rss",
             "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+            "https://www.travelandleisure.com/rss",
+            "https://feeds.fodors.com/fodors",
+            "https://matadornetwork.com/feed/",
         ],
-        "feed_kw": ["travel", "trip", "cafe", "city", "weekend", "destination", "hidden", "explore"],
+        "feed_kw": ["travel", "trip", "cafe", "city", "weekend", "destination", "hidden", "explore", "guide", "visit"],
     },
     {
         "name": "Philosophy for Modern Life",
         "label": "Philosophy for Modern Life",
-        "direction": "Ancient to modern philosophy (Nietzsche, Stoicism, Confucius, etc.) applied to everyday modern life in simple language anyone can understand.",
+        "direction": (
+            "Apply a specific philosopher's or school of thought's ideas to a concrete modern-life problem "
+            "(work stress, social media, relationships, money anxiety, identity, etc.). "
+            "Write for a general audience — no jargon, no academic tone. "
+            "Each post must focus on ONE specific thinker or school assigned in the prompt."
+        ),
         "feeds": [
             "https://aeon.co/feed.rss",
-            "https://dailystoic.com/feed/",
-            "https://www.brainpickings.org/feed/",
+            "https://philosophynow.org/rss",
+            "https://iep.utm.edu/feed/",
+            "https://blog.oup.com/category/philosophy/feed/",
+            "https://www.philosophytalk.org/blog/feed",
         ],
-        "feed_kw": ["philosophy", "stoic", "wisdom", "mind", "meaning", "habit", "self", "life", "growth"],
+        "feed_kw": [
+            "philosophy", "stoic", "wisdom", "ethics", "meaning", "virtue",
+            "buddhist", "existential", "consciousness", "identity", "freedom",
+            "happiness", "justice", "mind", "logic", "metaphysics", "moral",
+            "thinker", "theory", "idea", "argument", "reason",
+        ],
     },
 ]
 
@@ -169,8 +187,7 @@ def crawl_trends(feeds, feed_kw):
 
 # ── Blogger 액세스 토큰 확보 ──────────────────────────
 def get_blogger_service():
-    token_url = "https://oauth2.googleapis.com/token"
-    res = requests.post(token_url, data={
+    res = requests.post("https://oauth2.googleapis.com/token", data={
         "client_id":     BLOGGER_CLIENT_ID,
         "client_secret": BLOGGER_CLIENT_SECRET,
         "refresh_token": BLOGGER_REFRESH_TOKEN,
@@ -178,7 +195,7 @@ def get_blogger_service():
     })
     res.raise_for_status()
     access_token = res.json()["access_token"]
-    print("✅ Blogger 액세스 토큰 발급 완료")
+    print("✅ Blogger access token issued")
     return access_token
 
 # ── 발행 이력에서 다룬 소재 추출 ───────────────────────
@@ -215,6 +232,67 @@ Respond with JSON array only (no other text):
         print(f"     ⚠️ Topic extraction failed (ignored): {e}")
     return []
 
+# ── 철학 카테고리: Gemini가 사상가 선택 ───────────────
+def pick_philosopher(covered_topics, posted_titles):
+    """
+    Gemini에게 전세계 철학자/사상 DB에서 아직 안 쓴 것을 직접 골라달라고 요청.
+    하드코딩 풀 없이 동적으로 선택 — 인류 역사 전체 철학자 커버 가능.
+    """
+    covered_text = ", ".join(covered_topics) if covered_topics else "None so far"
+    posted_text  = "\n".join(f"- {t}" for t in posted_titles[-30:]) if posted_titles else "None so far"
+
+    prompt = f"""You are a philosophy expert with knowledge of ALL philosophers and schools of thought from every culture, era, and tradition worldwide — Western, Eastern, African, Islamic, Latin American, Indigenous, and more.
+
+Already covered topics to AVOID:
+{covered_text}
+
+Already published post titles to AVOID duplicating:
+{posted_text}
+
+Your task: Choose ONE philosopher or school of thought that has NOT been covered yet.
+- Must be someone genuinely different from what's already been written about
+- Can be from any era (ancient, medieval, modern, contemporary) and any culture
+- Prioritize lesser-known but intellectually rich thinkers when popular ones are already covered
+- The choice should be someone whose ideas can be applied to modern everyday life
+
+Respond with ONLY a JSON object (no other text):
+{{"name": "Philosopher or School Name", "era": "e.g. Ancient Greek / 20th Century / Song Dynasty", "known_for": "one-sentence summary of their key idea"}}"""
+
+    try:
+        res = requests.post(
+            f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}",
+            headers={"Content-Type": "application/json"},
+            json={"contents": [{"parts": [{"text": prompt}]}]},
+            timeout=40
+        )
+        if res.status_code == 200:
+            text = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+            if "```json" in text:
+                text = text.split("```json")[1].split("```")[0].strip()
+            elif "```" in text:
+                text = text.split("```")[1].split("```")[0].strip()
+            data = json.loads(text)
+            name     = data.get("name", "")
+            era      = data.get("era", "")
+            known_for= data.get("known_for", "")
+            if name:
+                print(f"     🎯 Assigned: {name} ({era}) — {known_for}")
+                return name, era, known_for
+    except Exception as e:
+        print(f"     ⚠️ Philosopher pick failed: {e}")
+
+    # 폴백: 완전 랜덤 지시
+    fallbacks = [
+        ("Wang Yangming", "Ming Dynasty China", "knowledge and action are one"),
+        ("Simone Weil", "20th Century France", "attention as a form of love"),
+        ("Ibn Khaldun", "14th Century Islamic", "social cohesion drives civilizations"),
+        ("Hypatia", "Late Antiquity Alexandria", "reason and intellectual freedom"),
+        ("Ubuntu Philosophy", "African tradition", "I am because we are"),
+    ]
+    chosen = random.choice(fallbacks)
+    print(f"     🎯 Fallback assigned: {chosen[0]} ({chosen[1]})")
+    return chosen
+
 # ── Gemini로 영어 글 생성 ──────────────────────────────
 def generate_post(category, posted_titles, covered_topics, trends):
     today = datetime.now().strftime("%B %d, %Y")
@@ -230,15 +308,34 @@ def generate_post(category, posted_titles, covered_topics, trends):
     else:
         trend_text = "None"
 
+    is_philosophy = category["name"] == "Philosophy for Modern Life"
+
+    philosophy_block = ""
+    if is_philosophy:
+        philosopher_info = pick_philosopher(covered_topics, posted_titles)
+        p_name, p_era, p_known = philosopher_info
+        philosophy_block = f"""
+[ASSIGNED THINKER — MANDATORY]
+You MUST write this post specifically about: **{p_name}** ({p_era})
+Their key idea: {p_known}
+
+Rules:
+- Focus on this thinker's actual ideas, quotes, or specific concepts
+- Apply their thinking to ONE concrete modern-life situation (e.g., burnout, social media, relationships, money anxiety, identity crisis)
+- Do NOT switch to any other philosopher unless directly comparing
+- Do NOT write a generic "philosophy of life" post — make it specific to {p_name}
+- If this thinker is lesser-known, briefly introduce who they are before diving into their ideas
+"""
+
     prompt = f"""Today is {today}. Write an English blog post for the '{category['name']}' category.
 Direction: {category['direction']}
-
-[Latest Trends — use one as the main topic]
+{philosophy_block}
+[Latest Trends — use one as context if relevant, or ignore if not applicable]
 {trend_text}
 
 [Date Rules — Important]
-- When referencing a news article, use the article's published date accurately. (e.g., "According to a report published on June 14,")
-- Do NOT assume it's today's date. If an article is a few days old, use that date.
+- When referencing a news article, use the article's published date accurately.
+- Do NOT assume it's today's date.
 - Do NOT fabricate dates when no date info is available.
 
 [Already Covered Topics — DO NOT repeat these]
@@ -248,8 +345,8 @@ Direction: {category['direction']}
 {posted_text}
 
 [Topic Selection Rules]
-- Do NOT cover the same people, theories, locations, or tickers listed in 'Already Covered Topics'.
-- Pick a fresh, specific new topic each time.
+- Do NOT cover the same people, theories, or concepts listed in 'Already Covered Topics'.
+- Pick a fresh, specific angle each time.
 
 [Writing Style]
 - Friendly, conversational tone — like talking to a friend
@@ -267,8 +364,8 @@ Direction: {category['direction']}
 - Naturally weave in keywords — do NOT list them separately
 - Do NOT repeat the title inside the body
 
-[Source Reference — Important]
-- In "source_index", put the index number ([0], [1], etc.) of the trend article you actually used as the main source.
+[Source Reference]
+- In "source_index", put the index number of the trend article you actually used as the main source.
 - If you didn't use any trend, set source_index to -1.
 
 Respond with ONLY this JSON (no other text whatsoever):
@@ -371,10 +468,8 @@ def main():
             post = generate_post(cat, posted_titles, covered, trends)
 
             src_idx = post.get("source_index", -1)
-            print(f"     Source index: {src_idx}")
-
             sources_html = build_sources_html(post, trends)
-            if sources_html:
+            if sources_html and 0 <= src_idx < len(trends):
                 print(f"     Source attached: {trends[src_idx]['title'][:50]}")
             else:
                 print(f"     No source attached")
