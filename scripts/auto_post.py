@@ -2,6 +2,7 @@ import os
 import re
 import json
 import time
+import random
 import requests
 from datetime import datetime
 
@@ -227,6 +228,60 @@ JSON 배열로만 응답 (다른 말 없이):
         print(f"     ⚠️ 소재 추출 실패(무시): {e}")
     return []
 
+# ── 철학 카테고리: Gemini가 사상가 선택 ───────────────
+def pick_philosopher(covered_topics, posted_titles):
+    covered_text = ", ".join(covered_topics) if covered_topics else "없음"
+    posted_text  = "\n".join(f"- {t}" for t in posted_titles[-30:]) if posted_titles else "없음"
+
+    prompt = f"""당신은 동서양을 막론한 전세계 모든 철학자와 사상 학파에 정통한 전문가입니다.
+고대~현대, 서양·동양·아프리카·이슬람·라틴아메리카·원주민 철학 모두 포함합니다.
+
+이미 다룬 소재 (제외):
+{covered_text}
+
+이미 발행한 제목 (중복 금지):
+{posted_text}
+
+위에 없는 철학자 또는 사상 학파 1개를 선택해 주세요.
+- 아직 다루지 않은 인물/학파
+- 현대 일상생활에 적용 가능한 사상
+- 유명한 것이 이미 다 쓰였다면 덜 알려졌지만 깊이 있는 사상가 우선
+
+JSON만 응답 (다른 말 없이):
+{{"name": "철학자 또는 학파 이름", "era": "예: 고대 그리스 / 20세기 / 송나라", "known_for": "핵심 사상 한 문장"}}"""
+
+    try:
+        res = requests.post(
+            f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}",
+            headers={"Content-Type": "application/json"},
+            json={"contents": [{"parts": [{"text": prompt}]}]},
+            timeout=40
+        )
+        if res.status_code == 200:
+            text = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+            if "```json" in text:
+                text = text.split("```json")[1].split("```")[0].strip()
+            elif "```" in text:
+                text = text.split("```")[1].split("```")[0].strip()
+            data = json.loads(text)
+            name, era, known_for = data.get("name",""), data.get("era",""), data.get("known_for","")
+            if name:
+                print(f"     🎯 배정된 사상가: {name} ({era}) — {known_for}")
+                return name, era, known_for
+    except Exception as e:
+        print(f"     ⚠️ 사상가 선택 실패(무시): {e}")
+
+    fallbacks = [
+        ("왕양명", "명나라", "지행합일 — 앎과 행동은 하나다"),
+        ("시몬 베유", "20세기 프랑스", "주의(注意)는 사랑의 한 형태다"),
+        ("이븐 할둔", "14세기 이슬람", "사회적 결속이 문명을 움직인다"),
+        ("나가르주나", "2세기 인도 불교", "공(空) — 모든 것은 고정된 실체가 없다"),
+        ("우분투 철학", "아프리카 전통", "나는 우리가 있기에 존재한다"),
+    ]
+    chosen = random.choice(fallbacks)
+    print(f"     🎯 폴백 사상가: {chosen[0]} ({chosen[1]})")
+    return chosen
+
 # ── Gemini로 글 생성 ───────────────────────────────────
 def generate_post(category, posted_titles, covered_topics, trends):
     today = datetime.now().strftime("%Y년 %m월 %d일")
@@ -243,9 +298,23 @@ def generate_post(category, posted_titles, covered_topics, trends):
     else:
         trend_text = "없음"
 
+    is_philosophy = category["name"] == "철학 기반 자기계발"
+    philosophy_block = ""
+    if is_philosophy:
+        p_name, p_era, p_known = pick_philosopher(covered_topics, posted_titles)
+        philosophy_block = f"""
+[배정된 사상가 — 필수]
+이번 글은 반드시 **{p_name}** ({p_era})에 대해 써야 합니다.
+핵심 사상: {p_known}
+- 이 사상가의 실제 개념·어록·이론을 중심으로
+- 현대 일상의 구체적인 문제 하나에 적용 (번아웃, SNS, 인간관계, 돈 걱정, 정체성 등)
+- 다른 철학자로 바꾸지 말 것
+- 덜 알려진 사상가라면 누구인지 간단히 소개 후 전개
+"""
+
     prompt = f"""오늘은 {today}입니다. '{category['name']}' 블로그 글을 작성해 주세요.
 방향: {category['direction']}
-
+{philosophy_block}
 [최신 트렌드 — 이 중 하나를 소재로 적극 활용]
 {trend_text}
 
