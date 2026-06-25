@@ -21,7 +21,6 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 MONTHS = {m: i+1 for i, m in enumerate(
     ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])}
 
-# ── 카테고리 정의 ──────────────────────────────────────
 CATEGORIES = [
     {
         "name": "Passive Income Investing",
@@ -100,7 +99,6 @@ CATEGORIES = [
     },
 ]
 
-# ── 발행 이력 관리 ─────────────────────────────────────
 def load_posted():
     if os.path.exists(POSTED_FILE):
         try:
@@ -114,7 +112,6 @@ def save_posted(data):
     with open(POSTED_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-# ── 기사 발행일 파싱 ───────────────────────────────────
 def parse_pubdate(raw):
     if not raw:
         return None
@@ -130,7 +127,6 @@ def parse_pubdate(raw):
         return f"{mo}/{d}/{y}", f"{y}-{mo:02d}-{d:02d}"
     return None
 
-# ── RSS 링크 추출 ──────────────────────────────────────
 def extract_link(item_text):
     m = re.search(r'<link[^>]+href=["\']([^"\'>\s]+)["\']', item_text, re.IGNORECASE)
     if m:
@@ -151,7 +147,6 @@ def extract_link(item_text):
             return raw
     return ""
 
-# ── 트렌드 크롤링 ─────────────────────────────────────
 def crawl_trends(feeds, feed_kw):
     headers = {"User-Agent": UA, "Accept": "application/rss+xml, application/xml, text/xml, */*"}
     collected = []
@@ -185,7 +180,6 @@ def crawl_trends(feeds, feed_kw):
             seen.add(c["title"]); uniq.append(c)
     return uniq[:10]
 
-# ── Blogger 액세스 토큰 확보 ──────────────────────────
 def get_blogger_service():
     res = requests.post("https://oauth2.googleapis.com/token", data={
         "client_id":     BLOGGER_CLIENT_ID,
@@ -198,7 +192,6 @@ def get_blogger_service():
     print("✅ Blogger access token issued")
     return access_token
 
-# ── 발행 이력에서 다룬 소재 추출 ───────────────────────
 def extract_covered_topics(category_name, posted_titles):
     if not posted_titles:
         return []
@@ -232,16 +225,11 @@ Respond with JSON array only (no other text):
         print(f"     ⚠️ Topic extraction failed (ignored): {e}")
     return []
 
-# ── 철학 카테고리: Gemini가 사상가 선택 ───────────────
 def pick_philosopher(covered_topics, posted_titles):
-    """
-    Gemini에게 전세계 철학자/사상 DB에서 아직 안 쓴 것을 직접 골라달라고 요청.
-    하드코딩 풀 없이 동적으로 선택 — 인류 역사 전체 철학자 커버 가능.
-    """
     covered_text = ", ".join(covered_topics) if covered_topics else "None so far"
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-30:]) if posted_titles else "None so far"
 
-    prompt = f"""You are a philosophy expert with knowledge of ALL philosophers and schools of thought from every culture, era, and tradition worldwide — Western, Eastern, African, Islamic, Latin American, Indigenous, and more.
+    prompt = f"""You are a philosophy expert with knowledge of ALL philosophers and schools of thought from every culture, era, and tradition worldwide.
 
 Already covered topics to AVOID:
 {covered_text}
@@ -249,51 +237,58 @@ Already covered topics to AVOID:
 Already published post titles to AVOID duplicating:
 {posted_text}
 
-Your task: Choose ONE philosopher or school of thought that has NOT been covered yet.
-- Must be someone genuinely different from what's already been written about
-- Can be from any era (ancient, medieval, modern, contemporary) and any culture
-- Prioritize lesser-known but intellectually rich thinkers when popular ones are already covered
-- The choice should be someone whose ideas can be applied to modern everyday life
+Choose ONE philosopher or school of thought not yet covered. Must be applicable to modern everyday life.
 
-Respond with ONLY a JSON object (no other text):
-{{"name": "Philosopher or School Name", "era": "e.g. Ancient Greek / 20th Century / Song Dynasty", "known_for": "one-sentence summary of their key idea"}}"""
+Respond with ONLY a raw JSON object — no markdown, no backticks, no explanation:
+{{"name": "Philosopher Name", "era": "Era / Culture", "known_for": "one-sentence key idea"}}"""
 
     try:
         res = requests.post(
             f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}",
             headers={"Content-Type": "application/json"},
-            json={"contents": [{"parts": [{"text": prompt}]}]},
+            json={"contents": [{"parts": [{"text": prompt}]}],
+                  "generationConfig": {"temperature": 0.9}},
             timeout=40
         )
+        print(f"     📡 pick_philosopher status: {res.status_code}")
         if res.status_code == 200:
-            text = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+            raw_text = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+            print(f"     📝 raw: {raw_text[:300]}")
+            # 마크다운 펜스 제거
+            text = raw_text
             if "```json" in text:
                 text = text.split("```json")[1].split("```")[0].strip()
             elif "```" in text:
                 text = text.split("```")[1].split("```")[0].strip()
-            data = json.loads(text)
-            name     = data.get("name", "")
-            era      = data.get("era", "")
-            known_for= data.get("known_for", "")
+            # JSON 부분만 추출 (혹시 앞뒤 텍스트 있을 경우)
+            brace_start = text.find("{")
+            brace_end   = text.rfind("}") + 1
+            if brace_start != -1 and brace_end > brace_start:
+                text = text[brace_start:brace_end]
+            data      = json.loads(text)
+            name      = data.get("name", "").strip()
+            era       = data.get("era", "").strip()
+            known_for = data.get("known_for", "").strip()
             if name:
                 print(f"     🎯 Assigned: {name} ({era}) — {known_for}")
                 return name, era, known_for
+            print("     ⚠️ name field empty")
+        else:
+            print(f"     ⚠️ API error: {res.text[:200]}")
     except Exception as e:
         print(f"     ⚠️ Philosopher pick failed: {e}")
 
-    # 폴백: 완전 랜덤 지시
     fallbacks = [
         ("Wang Yangming", "Ming Dynasty China", "knowledge and action are one"),
         ("Simone Weil", "20th Century France", "attention as a form of love"),
         ("Ibn Khaldun", "14th Century Islamic", "social cohesion drives civilizations"),
         ("Hypatia", "Late Antiquity Alexandria", "reason and intellectual freedom"),
-        ("Ubuntu Philosophy", "African tradition", "I am because we are"),
+        ("Zhuangzi", "Ancient China", "go with the flow of nature — wu wei"),
     ]
     chosen = random.choice(fallbacks)
     print(f"     🎯 Fallback assigned: {chosen[0]} ({chosen[1]})")
     return chosen
 
-# ── Gemini로 영어 글 생성 ──────────────────────────────
 def generate_post(category, posted_titles, covered_topics, trends):
     today = datetime.now().strftime("%B %d, %Y")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
@@ -309,11 +304,9 @@ def generate_post(category, posted_titles, covered_topics, trends):
         trend_text = "None"
 
     is_philosophy = category["name"] == "Philosophy for Modern Life"
-
     philosophy_block = ""
     if is_philosophy:
-        philosopher_info = pick_philosopher(covered_topics, posted_titles)
-        p_name, p_era, p_known = philosopher_info
+        p_name, p_era, p_known = pick_philosopher(covered_topics, posted_titles)
         philosophy_block = f"""
 [ASSIGNED THINKER — MANDATORY]
 You MUST write this post specifically about: **{p_name}** ({p_era})
@@ -333,42 +326,30 @@ Direction: {category['direction']}
 [Latest Trends — use one as context if relevant, or ignore if not applicable]
 {trend_text}
 
-[Date Rules — Important]
+[Date Rules]
 - When referencing a news article, use the article's published date accurately.
-- Do NOT assume it's today's date.
-- Do NOT fabricate dates when no date info is available.
+- Do NOT fabricate dates.
 
-[Already Covered Topics — DO NOT repeat these]
+[Already Covered Topics — DO NOT repeat]
 {covered_text}
 
 [Already Published Titles — avoid similar angles]
 {posted_text}
 
-[Topic Selection Rules]
-- Do NOT cover the same people, theories, or concepts listed in 'Already Covered Topics'.
-- Pick a fresh, specific angle each time.
-
 [Writing Style]
-- Friendly, conversational tone — like talking to a friend
-- Clear and engaging, not academic or stiff
+- Friendly, conversational — like talking to a friend
 - Second person ("you") encouraged
-
-[Structure]
-- Lead with the key point in the first sentence (inverted pyramid)
-- One main point per subheading
 - No cliché endings like "In conclusion" or "Start today!"
 
 [Format]
 - Length: 600~900 words
-- HTML: subheadings as <h2>, paragraphs as <p>, lists as <ul><li> where appropriate
-- Naturally weave in keywords — do NOT list them separately
+- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
 - Do NOT repeat the title inside the body
 
 [Source Reference]
-- In "source_index", put the index number of the trend article you actually used as the main source.
-- If you didn't use any trend, set source_index to -1.
+- source_index: index number of the trend article actually used. -1 if none used.
 
-Respond with ONLY this JSON (no other text whatsoever):
+Respond with ONLY this JSON (no other text):
 {{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": 0}}"""
 
     last_err = None
@@ -400,7 +381,6 @@ Respond with ONLY this JSON (no other text whatsoever):
                 last_err = str(e); time.sleep(5)
     raise RuntimeError(f"All models failed: {last_err}")
 
-# ── 출처 링크 HTML 생성 ───────────────────────────────
 def build_sources_html(post_data, trends):
     idx = post_data.get("source_index", -1)
     if idx == -1 or not isinstance(idx, int):
@@ -421,7 +401,6 @@ def build_sources_html(post_data, trends):
         '</ul>\n'
     )
 
-# ── Blogger에 발행 ────────────────────────────────────
 def publish_post(access_token, category, post_data, sources_html):
     content = post_data["content"] + sources_html
     url = f"https://www.googleapis.com/blogger/v3/blogs/{BLOGGER_BLOG_ID}/posts/"
@@ -440,7 +419,6 @@ def publish_post(access_token, category, post_data, sources_html):
     res.raise_for_status()
     return res.json().get("url", "")
 
-# ── 메인 ──────────────────────────────────────────────
 def main():
     print(f"🚀 Blogger auto-post started: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     access_token = get_blogger_service()
