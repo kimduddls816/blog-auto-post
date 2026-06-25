@@ -6,7 +6,6 @@ import random
 import requests
 from datetime import datetime
 
-# ── 환경변수 ──────────────────────────────────────────
 GEMINI_API_KEY        = os.environ["GEMINI_API_KEY"]
 BLOGGER_CLIENT_ID     = os.environ["BLOGGER_CLIENT_ID"]
 BLOGGER_CLIENT_SECRET = os.environ["BLOGGER_CLIENT_SECRET"]
@@ -31,7 +30,6 @@ CATEGORIES = [
             "https://feeds.feedburner.com/TheMoneyNinjas",
             "https://www.dividendgrowthinvestor.com/feeds/posts/default",
             "https://seekingalpha.com/feed.xml",
-            "https://rss.app/feeds/etf-news.xml",
         ],
         "feed_kw": ["etf", "dividend", "invest", "stock", "retire", "fund", "portfolio", "yield", "passive", "income"],
     },
@@ -43,7 +41,6 @@ CATEGORIES = [
             "https://feeds.bbci.co.uk/news/world/rss.xml",
             "https://feeds.bbci.co.uk/news/business/rss.xml",
             "https://feeds.reuters.com/reuters/topNews",
-            "https://feeds.reuters.com/reuters/businessNews",
             "https://www.aljazeera.com/xml/rss/all.xml",
         ],
         "feed_kw": ["economy", "election", "rate", "market", "trade", "policy", "war", "ai", "crisis", "global"],
@@ -57,7 +54,6 @@ CATEGORIES = [
             "https://www.medicalnewstoday.com/rss/medical-news-today.xml",
             "https://www.psychologytoday.com/us/articles/feed",
             "https://greatergood.berkeley.edu/feeds/news",
-            "https://www.verywellmind.com/feeds/all",
         ],
         "feed_kw": ["sleep", "stress", "mental", "anxiety", "wellness", "habit", "diet", "burnout", "mindful", "therapy", "mood"],
     },
@@ -69,7 +65,6 @@ CATEGORIES = [
             "https://www.cntraveler.com/feed/rss",
             "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
             "https://www.travelandleisure.com/rss",
-            "https://feeds.fodors.com/fodors",
             "https://matadornetwork.com/feed/",
         ],
         "feed_kw": ["travel", "trip", "cafe", "city", "weekend", "destination", "hidden", "explore", "guide", "visit"],
@@ -88,13 +83,11 @@ CATEGORIES = [
             "https://philosophynow.org/rss",
             "https://iep.utm.edu/feed/",
             "https://blog.oup.com/category/philosophy/feed/",
-            "https://www.philosophytalk.org/blog/feed",
         ],
         "feed_kw": [
             "philosophy", "stoic", "wisdom", "ethics", "meaning", "virtue",
             "buddhist", "existential", "consciousness", "identity", "freedom",
-            "happiness", "justice", "mind", "logic", "metaphysics", "moral",
-            "thinker", "theory", "idea", "argument", "reason",
+            "happiness", "justice", "mind", "moral", "thinker", "theory",
         ],
     },
 ]
@@ -188,9 +181,7 @@ def get_blogger_service():
         "grant_type":    "refresh_token",
     })
     res.raise_for_status()
-    access_token = res.json()["access_token"]
-    print("✅ Blogger access token issued")
-    return access_token
+    return res.json()["access_token"]
 
 def extract_covered_topics(category_name, posted_titles):
     if not posted_titles:
@@ -201,8 +192,6 @@ def extract_covered_topics(category_name, posted_titles):
 {titles_text}
 
 Extract the key topics covered (people, theories, locations, tickers, concepts, etc.).
-The goal is to avoid repeating them in future posts.
-
 Respond with JSON array only (no other text):
 ["topic1", "topic2", "topic3"]"""
     try:
@@ -225,70 +214,6 @@ Respond with JSON array only (no other text):
         print(f"     ⚠️ Topic extraction failed (ignored): {e}")
     return []
 
-def pick_philosopher(covered_topics, posted_titles):
-    covered_text = ", ".join(covered_topics) if covered_topics else "None so far"
-    posted_text  = "\n".join(f"- {t}" for t in posted_titles[-30:]) if posted_titles else "None so far"
-
-    prompt = f"""You are a philosophy expert with knowledge of ALL philosophers and schools of thought from every culture, era, and tradition worldwide.
-
-Already covered topics to AVOID:
-{covered_text}
-
-Already published post titles to AVOID duplicating:
-{posted_text}
-
-Choose ONE philosopher or school of thought not yet covered. Must be applicable to modern everyday life.
-
-Respond with ONLY a raw JSON object — no markdown, no backticks, no explanation:
-{{"name": "Philosopher Name", "era": "Era / Culture", "known_for": "one-sentence key idea"}}"""
-
-    try:
-        res = requests.post(
-            f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}",
-            headers={"Content-Type": "application/json"},
-            json={"contents": [{"parts": [{"text": prompt}]}],
-                  "generationConfig": {"temperature": 0.9}},
-            timeout=40
-        )
-        print(f"     📡 pick_philosopher status: {res.status_code}")
-        if res.status_code == 200:
-            raw_text = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
-            print(f"     📝 raw: {raw_text[:300]}")
-            # 마크다운 펜스 제거
-            text = raw_text
-            if "```json" in text:
-                text = text.split("```json")[1].split("```")[0].strip()
-            elif "```" in text:
-                text = text.split("```")[1].split("```")[0].strip()
-            # JSON 부분만 추출 (혹시 앞뒤 텍스트 있을 경우)
-            brace_start = text.find("{")
-            brace_end   = text.rfind("}") + 1
-            if brace_start != -1 and brace_end > brace_start:
-                text = text[brace_start:brace_end]
-            data      = json.loads(text)
-            name      = data.get("name", "").strip()
-            era       = data.get("era", "").strip()
-            known_for = data.get("known_for", "").strip()
-            if name:
-                print(f"     🎯 Assigned: {name} ({era}) — {known_for}")
-                return name, era, known_for
-            print("     ⚠️ name field empty")
-        else:
-            print(f"     ⚠️ API error: {res.text[:200]}")
-    except Exception as e:
-        print(f"     ⚠️ Philosopher pick failed: {e}")
-
-    fallbacks = [
-        ("Wang Yangming", "Ming Dynasty China", "knowledge and action are one"),
-        ("Simone Weil", "20th Century France", "attention as a form of love"),
-        ("Ibn Khaldun", "14th Century Islamic", "social cohesion drives civilizations"),
-        ("Hypatia", "Late Antiquity Alexandria", "reason and intellectual freedom"),
-        ("Zhuangzi", "Ancient China", "go with the flow of nature — wu wei"),
-    ]
-    chosen = random.choice(fallbacks)
-    print(f"     🎯 Fallback assigned: {chosen[0]} ({chosen[1]})")
-    return chosen
-
 def generate_post(category, posted_titles, covered_topics, trends):
     today = datetime.now().strftime("%B %d, %Y")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
@@ -304,20 +229,21 @@ def generate_post(category, posted_titles, covered_topics, trends):
         trend_text = "None"
 
     is_philosophy = category["name"] == "Philosophy for Modern Life"
+
+    # 철학 카테고리: 사상가 선택을 별도 API 호출 없이 글 생성 프롬프트에 통합
     philosophy_block = ""
     if is_philosophy:
-        p_name, p_era, p_known = pick_philosopher(covered_topics, posted_titles)
         philosophy_block = f"""
-[ASSIGNED THINKER — MANDATORY]
-You MUST write this post specifically about: **{p_name}** ({p_era})
-Their key idea: {p_known}
+[PHILOSOPHER SELECTION — MANDATORY FIRST STEP]
+Before writing, you must select ONE philosopher or school of thought to write about.
+- Choose from ALL of human history and ALL cultures (Western, Eastern, African, Islamic, Latin American, Indigenous, etc.)
+- DO NOT choose anyone already covered: {covered_text}
+- DO NOT repeat themes from these titles: {posted_text}
+- Prioritize lesser-known thinkers when well-known ones are already covered
+- Must be someone whose ideas apply to modern everyday life
 
-Rules:
-- Focus on this thinker's actual ideas, quotes, or specific concepts
-- Apply their thinking to ONE concrete modern-life situation (e.g., burnout, social media, relationships, money anxiety, identity crisis)
-- Do NOT switch to any other philosopher unless directly comparing
-- Do NOT write a generic "philosophy of life" post — make it specific to {p_name}
-- If this thinker is lesser-known, briefly introduce who they are before diving into their ideas
+Then write the entire post about THAT chosen thinker only.
+Include the chosen thinker's name in the "title" field naturally.
 """
 
     prompt = f"""Today is {today}. Write an English blog post for the '{category['name']}' category.
@@ -350,7 +276,7 @@ Direction: {category['direction']}
 - source_index: index number of the trend article actually used. -1 if none used.
 
 Respond with ONLY this JSON (no other text):
-{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": 0}}"""
+{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": -1}}"""
 
     last_err = None
     for model in GEMINI_MODELS:
@@ -383,9 +309,7 @@ Respond with ONLY this JSON (no other text):
 
 def build_sources_html(post_data, trends):
     idx = post_data.get("source_index", -1)
-    if idx == -1 or not isinstance(idx, int):
-        return ""
-    if idx < 0 or idx >= len(trends):
+    if not isinstance(idx, int) or idx < 0 or idx >= len(trends):
         return ""
     article = trends[idx]
     link  = article.get("link", "").strip()
@@ -406,10 +330,7 @@ def publish_post(access_token, category, post_data, sources_html):
     url = f"https://www.googleapis.com/blogger/v3/blogs/{BLOGGER_BLOG_ID}/posts/"
     res = requests.post(
         url,
-        headers={
-            "Authorization": f"Bearer {access_token}",
-            "Content-Type": "application/json",
-        },
+        headers={"Authorization": f"Bearer {access_token}", "Content-Type": "application/json"},
         json={
             "title":   post_data["title"],
             "content": content,
@@ -422,6 +343,7 @@ def publish_post(access_token, category, post_data, sources_html):
 def main():
     print(f"🚀 Blogger auto-post started: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     access_token = get_blogger_service()
+    print("✅ Blogger access token issued")
     posted = load_posted()
     success = 0
 
@@ -433,8 +355,7 @@ def main():
             print(f"     {len(trends)} trends collected")
             if trends:
                 for i, t in enumerate(trends[:5]):
-                    link_preview = t['link'][:60] if t['link'] else 'no link'
-                    print(f"       [{i}] {t['title'][:50]} | {link_preview}")
+                    print(f"       [{i}] {t['title'][:50]} | {t['link'][:60] if t['link'] else 'no link'}")
 
             posted_titles = posted.get(name, [])
             print(f"  🧠 [{name}] Analyzing covered topics...")
