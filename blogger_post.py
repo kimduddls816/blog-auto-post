@@ -27,11 +27,12 @@ CATEGORIES = [
         "direction": "Beginner-friendly guides on FIRE movement, ETF investing, dividend stocks, and automated wealth building. Include real ticker names and ETF names.",
         "feeds": [
             "https://feeds.content.dowjones.io/public/rss/mw_topstories",
-            "https://feeds.feedburner.com/TheMoneyNinjas",
             "https://www.dividendgrowthinvestor.com/feeds/posts/default",
+            "https://feeds.reuters.com/reuters/businessNews",
+            "https://www.fool.com/feeds/index.aspx",
             "https://seekingalpha.com/feed.xml",
         ],
-        "feed_kw": ["etf", "dividend", "invest", "stock", "retire", "fund", "portfolio", "yield", "passive", "income"],
+        "feed_kw": ["etf", "dividend", "invest", "stock", "retire", "fund", "portfolio", "yield", "passive", "income", "wealth", "market"],
     },
     {
         "name": "World News Simplified",
@@ -42,20 +43,25 @@ CATEGORIES = [
             "https://feeds.bbci.co.uk/news/business/rss.xml",
             "https://feeds.reuters.com/reuters/topNews",
             "https://www.aljazeera.com/xml/rss/all.xml",
+            "https://feeds.skynews.com/feeds/rss/world.xml",
         ],
-        "feed_kw": ["economy", "election", "rate", "market", "trade", "policy", "war", "ai", "crisis", "global"],
+        "feed_kw": ["economy", "election", "rate", "market", "trade", "policy", "war", "ai", "crisis", "global", "deal", "sanctions"],
     },
     {
         "name": "Wellness and Self-Care",
         "label": "Wellness and Self-Care",
-        "direction": "Latest wellness trends (sleep, routines, burnout, diet, mindfulness) explained simply with practical guides readers can apply immediately.",
+        "direction": "Latest wellness trends and research explained simply with practical guides readers can apply immediately. Covers the FULL range of wellness — physical health, mental health, sleep, nutrition, fitness, relationships, productivity, longevity, hormones, skin, gut health, stress, habits, and anything genuinely new and useful.",
         "feeds": [
             "https://www.healthline.com/rss/news",
             "https://www.medicalnewstoday.com/rss/medical-news-today.xml",
             "https://www.psychologytoday.com/us/articles/feed",
             "https://greatergood.berkeley.edu/feeds/news",
+            "https://www.health.com/rss",
+            "https://well.blogs.nytimes.com/feed/",
+            "https://www.self.com/feed/rss",
+            "https://www.womenshealthmag.com/rss/all.xml/",
         ],
-        "feed_kw": ["sleep", "stress", "mental", "anxiety", "wellness", "habit", "diet", "burnout", "mindful", "therapy", "mood"],
+        "feed_kw": ["health", "sleep", "stress", "mental", "anxiety", "wellness", "habit", "diet", "burnout", "mindful", "therapy", "mood", "exercise", "nutrition", "gut", "brain", "longevity", "weight", "immune", "fitness", "hormone", "skin", "supplement", "research", "study"],
     },
     {
         "name": "Travel & Hidden Gems",
@@ -63,11 +69,12 @@ CATEGORIES = [
         "direction": "Travel destinations, hidden gems, cafes and weekend getaways popular among millennials and Gen Z. Focus on trending and Instagram-worthy spots.",
         "feeds": [
             "https://www.cntraveler.com/feed/rss",
-            "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
             "https://www.travelandleisure.com/rss",
             "https://matadornetwork.com/feed/",
+            "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+            "https://www.lonelyplanet.com/news/feed",
         ],
-        "feed_kw": ["travel", "trip", "cafe", "city", "weekend", "destination", "hidden", "explore", "guide", "visit"],
+        "feed_kw": ["travel", "trip", "cafe", "city", "weekend", "destination", "hidden", "explore", "guide", "visit", "hotel", "beach", "mountain", "road trip", "airbnb"],
     },
     {
         "name": "Philosophy for Modern Life",
@@ -191,9 +198,12 @@ def extract_covered_topics(category_name, posted_titles):
 
 {titles_text}
 
-Extract the key topics covered (people, theories, locations, tickers, concepts, etc.).
+Extract the key specific topics/stories/angles covered — be as specific as possible.
+Not just "economy" but "mortgage rates affecting home sales", not just "ETF investing" but "broad market ETF + dividend aristocrats basics for beginners".
+The goal is to give a future writer a precise list of exactly what NOT to repeat.
+
 Respond with JSON array only (no other text):
-["topic1", "topic2", "topic3"]"""
+["specific topic 1", "specific topic 2", "specific topic 3"]"""
     try:
         res = requests.post(
             f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}",
@@ -214,6 +224,21 @@ Respond with JSON array only (no other text):
         print(f"     ⚠️ Topic extraction failed (ignored): {e}")
     return []
 
+def clean_markdown_artifacts(text):
+    """Gemini가 HTML 안에 마크다운 **bold** 같은걸 섞어 쓰는 경우 제거, em dash도 정리"""
+    if not text:
+        return text
+    # **word** -> word (HTML에서는 <strong>로 의도된 게 아니면 별표 제거)
+    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
+    # 단독 * 강조도 제거 (리스트 불릿용 *은 HTML 안에서 거의 안 쓰이므로 안전)
+    text = re.sub(r"(?<!\w)\*(?!\*)(.+?)(?<!\*)\*(?!\w)", r"\1", text)
+    # em dash / en dash 제거 -> 문장 흐름 유지하며 쉼표나 마침표로 대체
+    text = text.replace("—", ", ").replace("–", "-")
+    # 중복 쉼표/공백 정리
+    text = re.sub(r",\s*,", ",", text)
+    text = re.sub(r"\s{2,}", " ", text)
+    return text
+
 def generate_post(category, posted_titles, covered_topics, trends):
     today = datetime.now().strftime("%B %d, %Y")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
@@ -226,57 +251,147 @@ def generate_post(category, posted_titles, covered_topics, trends):
             lines.append(f"[{i}] {c['title']}{d}")
         trend_text = "\n".join(lines)
     else:
-        trend_text = "None"
+        trend_text = "None available today"
 
     is_philosophy = category["name"] == "Philosophy for Modern Life"
+    is_investing  = category["name"] == "Passive Income Investing"
 
-    # 철학 카테고리: 사상가 선택을 별도 API 호출 없이 글 생성 프롬프트에 통합
-    philosophy_block = ""
+    # ── 공통 규칙 (마크다운 금지, 날짜 언급 규칙) ──
+    common_rules = """
+[FORMATTING RULES — MANDATORY]
+- Write ONLY valid HTML. NEVER use markdown syntax like **bold** or *italic* or # headers.
+- For emphasis, use <strong>word</strong> or <em>word</em> instead of asterisks. Use this sparingly.
+- Do NOT wrap words in double asterisks under any circumstance.
+- NEVER use the em dash (—) or en dash (–) anywhere in the writing. Use a period, comma, or rewrite the sentence instead. This applies to every single sentence in the post.
+
+[DATE MENTION RULES — MANDATORY]
+- Do NOT state today's date as if announcing it (e.g., "It's June 30, 2026" or "Today is June 29, 2026, and..."). This sounds robotic and is often wrong if written ahead of schedule.
+- It's fine to cite an article's published date when referencing that specific article (e.g., "a report published on June 29 noted...").
+- Open the post naturally without a date-announcement framing.
+"""
+
     if is_philosophy:
-        philosophy_block = f"""
+        topic_block = f"""
 [PHILOSOPHER SELECTION — MANDATORY FIRST STEP]
-Before writing, you must select ONE philosopher or school of thought to write about.
+Before writing, select ONE philosopher or school of thought to write about.
 - Choose from ALL of human history and ALL cultures (Western, Eastern, African, Islamic, Latin American, Indigenous, etc.)
 - DO NOT choose anyone already covered: {covered_text}
 - DO NOT repeat themes from these titles: {posted_text}
 - Prioritize lesser-known thinkers when well-known ones are already covered
 - Must be someone whose ideas apply to modern everyday life
-
 Then write the entire post about THAT chosen thinker only.
-Include the chosen thinker's name in the "title" field naturally.
+Include the chosen thinker's name in the title naturally.
+"""
+        structure_block = """
+[STRUCTURE]
+- Length: 600~900 words
+- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
 """
 
-    prompt = f"""Today is {today}. Write an English blog post for the '{category['name']}' category.
+    elif is_investing:
+        topic_block = f"""
+[TOPIC SELECTION — MANDATORY]
+- Use the trend articles above to identify what's happening in the market right now.
+- DO NOT repeat the same structural angle as already covered: {covered_text}
+- DO NOT just repeat "open a brokerage account, start small, dollar-cost average" generic advice if it's already been covered.
+- Each post must teach ONE specific, fresh financial concept the reader can apply (e.g., a specific dividend metric, a specific ETF category, a specific tax-advantaged account type, a specific risk management concept) — rotate concepts across posts.
+- Check the already-covered topics and titles for ETF tickers mentioned recently, and prefer different tickers this time unless current market conditions specifically call for repeating one.
+"""
+        structure_block = """
+[MANDATORY STRUCTURE — FOLLOW THIS EXACT 4-PART STRUCTURE]
+
+PART 1 — Market Snapshot (short, 1 paragraph):
+Summarize what's happening in global stock markets right now based on the trend articles. Keep it brief and grounded in the actual trend data provided.
+
+PART 2 — Today's Financial Freedom Lesson (1 short, clearly-titled section, e.g. "Today's Money Lesson: ..."):
+Pick ONE specific passive-income/financial-freedom concept that has NOT been explained in a previous post (rotate through concepts like: dividend yield vs. dividend growth, expense ratios, tax-advantaged accounts like Roth IRA/401k, dollar-cost averaging, sector diversification, REITs, bond ladders, the rule of 72, sequence-of-returns risk, the FIRE 4% rule, compound interest mechanics, qualified vs. ordinary dividends, asset allocation by age, etc.). Explain it clearly for a beginner — this section should feel like the reader is learning one genuinely new, useful piece of financial knowledge today, distinct from anything covered before: {covered_text}
+
+PART 3 — Detailed Guide (connects to Part 2):
+Give a step-by-step practical guide for applying that concept to building passive income, in detail.
+
+PART 4 — Today's ETF Picks (3 to 5 specific tickers):
+Base these picks on the CURRENT market conditions and trend articles provided above, not on generic textbook recommendations. Consider what's actually happening right now (rate environment, sector rotation, inflation trends, etc. as reflected in the trend articles) when choosing which ETFs to highlight. Prioritize ETFs that are currently well-regarded by the investing community for quality and performance; avoid recommending funds that have recently underperformed, lost popularity, or faced fund closures/outflows if that's reflected in the trend data. Avoid repeating the exact same 3-5 tickers used in recent posts unless there's a strong current-market reason to repeat one. For EACH ticker, explain in 1-2 sentences WHY it's a good pick right now, tied to Part 1's market snapshot and Part 2's concept.
+
+Use <h2> for each of the 4 parts (can use a more natural/catchy heading wording, but the content must follow this structure). Length: 700~1000 words.
+"""
+
+    elif category["name"] == "World News Simplified":
+        topic_block = f"""
+[TOPIC SELECTION — MANDATORY]
+Cover 3-5 of today's most significant stories from the trend articles above, explained simply for a general reader.
+- Select stories that are genuinely DIFFERENT from what's already been covered: {covered_text}
+- Do NOT reuse the same individual stories/events as in already published titles, even if they're still in the news cycle: {posted_text}
+- If a story has appeared in a recent post, pick a different story from today's trends instead, even if it seems less major.
+"""
+        structure_block = """
+[MANDATORY STRUCTURE]
+1. Opening: Start directly with the numbered headline list — NO introductory sentence before it (do not write things like "Some days the news feels scattered, today a few threads run through it"). Just the title, then immediately the numbered list — one short punchy line per story (e.g. "1. South Korea bets $880 billion on the AI race" / "2. Trump's Iran strikes keep markets on edge" / "3. Japan's surprise rate hike"). This gives readers the at-a-glance overview before the deep dive.
+2. Main body: cover each of the 3-5 stories with its own <h2> subheading, in the same order as the headline list. For each story, explain what happened, why it matters, and how it connects to the bigger global picture — not just a headline summary.
+3. Closing section (<h2>, e.g. "The Big Picture"): in 2-4 SHORT, clear sentences, state plainly what connects today's stories — avoid abstract or flowery language. Write it the way you'd explain it to a smart friend in one breath, not like a philosophical essay. End with a clear, concrete takeaway, not a vague summary.
+
+- Length: 800~1100 words
+- HTML: <h2> subheadings, <p> paragraphs (each paragraph should be short — 2-4 sentences max — and properly broken up for readability), <ol><li> for the headline list, <ul><li> for other lists where appropriate
+"""
+
+    elif category["name"] == "Travel & Hidden Gems":
+        topic_block = f"""
+[TOPIC SELECTION — MANDATORY FIRST STEP]
+This post must cover 3 SEPARATE, DISTINCT destinations (different cities/towns/regions, not 3 spots within the same city). Pick 3 destinations from the trend articles above if possible (or fresh ones if trends don't apply).
+- Cover destinations from ANYWHERE in the world, and the 3 destinations should ideally be from different regions/continents to keep the post globally diverse (e.g., one in Asia, one in Europe, one in the Americas) rather than 3 cities in the same country.
+- DO NOT recommend destinations in active conflict zones, war zones, or places under official government travel advisories warning against travel. If a trending article is about such a place, skip it and pick a different one.
+- All 3 destinations and the overall angle must be genuinely different from everything already covered: {covered_text}
+"""
+        structure_block = """
+[MANDATORY STRUCTURE]
+- Opening: a brief intro framing the post (e.g., a shared theme connecting the 3 picks, like "hidden gems for slow travel" or "places trending right now").
+- Main content: cover each of the 3 destinations under its own <h2> subheading with the destination's name in the heading. For each destination, give real, specific detail: what makes it special, a specific neighborhood or landmark worth visiting (with a real address/location where possible), how to get there, and a practical tip.
+- For EACH of the 3 destinations, include its own "Know Before You Go" mini-section (can be a short paragraph or small list right within that destination's section, not necessarily a separate <h2>) covering: (a) general safety/security level for travelers there, and (b) approximate cost level with one or two concrete price reference points (e.g., average meal cost, hotel price range in local currency or USD).
+- Length: 900~1300 words (need enough room to cover 3 destinations properly)
+- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
+"""
+
+    else:
+        topic_block = f"""
+[TOPIC SELECTION — MANDATORY FIRST STEP]
+Look at the trend articles crawled today above. Pick ONE of them as the main subject of this post, and build the entire post around that specific article/topic — go deep on it rather than writing something generic.
+- If no trends were collected today, pick any fresh, specific, narrow wellness topic you know to be currently relevant or research-backed — wellness is a huge field (sleep, nutrition, fitness, mental health, longevity, hormones, gut health, skin, relationships, productivity, recovery, supplements, etc.) so feel free to explore any corner of it.
+- Do NOT write a broad overview covering multiple generic wellness pillars in one post (like "5 tips for sleep, diet, mindfulness, routines, and burnout") — pick ONE specific thing and go deep.
+- The topic must be genuinely different from everything already covered: {covered_text}
+"""
+        structure_block = """
+[STRUCTURE]
+- Length: 600~900 words
+- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
+"""
+
+    prompt = f"""Write an English blog post for the '{category['name']}' category.
 Direction: {category['direction']}
-{philosophy_block}
-[Latest Trends — use one as context if relevant, or ignore if not applicable]
+{common_rules}
+{topic_block}
+[Latest Trend Articles — crawled today]
 {trend_text}
 
-[Date Rules]
-- When referencing a news article, use the article's published date accurately.
-- Do NOT fabricate dates.
-
-[Already Covered Topics — DO NOT repeat]
+[Already Covered Topics — DO NOT repeat these angles]
 {covered_text}
 
-[Already Published Titles — avoid similar angles]
+[Already Published Titles — avoid similar angles/structure]
 {posted_text}
 
 [Writing Style]
 - Friendly, conversational — like talking to a friend
 - Second person ("you") encouraged
 - No cliché endings like "In conclusion" or "Start today!"
-
-[Format]
-- Length: 600~900 words
-- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
+- Specific, concrete, and actionable — not vague or generic
+- For Passive Income Investing specifically: keep the same friendly, adult conversational tone — do NOT write in a childish or oversimplified voice. Instead, make sure every financial concept is fully explained in plain terms before you use it, with zero assumed prior knowledge. Never use a financial term (yield, expense ratio, compounding, diversification, etc.) without immediately unpacking what it actually means in everyday language, ideally with a concrete example or comparison. The reader should never feel lost or need to look anything up — every idea should click on first read, while the writing still sounds like it's written for a thoughtful adult.
+{structure_block}
 - Do NOT repeat the title inside the body
 
 [Source Reference]
-- source_index: index number of the trend article actually used. -1 if none used.
+- For Philosophy and Wellness/Travel/Investing: source_index = index of the ONE trend article used as main source. -1 if none used.
+- For World News Simplified ONLY: source_indices = an ARRAY of index numbers for ALL trend articles you referenced in this post (one per story covered). Use source_indices instead of source_index for this category.
 
 Respond with ONLY this JSON (no other text):
-{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": -1}}"""
+{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": 0, "source_indices": []}}"""
 
     last_err = None
     for model in GEMINI_MODELS:
@@ -295,7 +410,11 @@ Respond with ONLY this JSON (no other text):
                         text = text.split("```json")[1].split("```")[0].strip()
                     elif "```" in text:
                         text = text.split("```")[1].split("```")[0].strip()
-                    return json.loads(text)
+                    data = json.loads(text)
+                    # 마크다운 잔재 제거
+                    data["title"]   = clean_markdown_artifacts(data.get("title", ""))
+                    data["content"] = clean_markdown_artifacts(data.get("content", ""))
+                    return data
                 if res.status_code in (429, 500, 502, 503):
                     last_err = f"{model} {res.status_code}"
                     print(f"     ⏳ {model} retry {attempt+1}/3")
@@ -308,6 +427,29 @@ Respond with ONLY this JSON (no other text):
     raise RuntimeError(f"All models failed: {last_err}")
 
 def build_sources_html(post_data, trends):
+    # World News: 여러 소스 지원
+    indices = post_data.get("source_indices")
+    if isinstance(indices, list) and indices:
+        items = []
+        seen = set()
+        for idx in indices:
+            if not isinstance(idx, int) or idx < 0 or idx >= len(trends):
+                continue
+            if idx in seen:
+                continue
+            seen.add(idx)
+            article = trends[idx]
+            link  = article.get("link", "").strip()
+            title = article.get("title", "").strip()
+            if not link or not link.startswith("http"):
+                continue
+            date = f" ({article['date']})" if article.get("date") else ""
+            items.append(f'  <li><a href="{link}" target="_blank" rel="noopener">{title}</a>{date}</li>\n')
+        if items:
+            return '\n<hr/>\n<p><strong>Sources</strong></p>\n<ul>\n' + "".join(items) + '</ul>\n'
+        return ""
+
+    # 단일 소스 (기존 방식)
     idx = post_data.get("source_index", -1)
     if not isinstance(idx, int) or idx < 0 or idx >= len(trends):
         return ""
@@ -355,7 +497,7 @@ def main():
             print(f"     {len(trends)} trends collected")
             if trends:
                 for i, t in enumerate(trends[:5]):
-                    print(f"       [{i}] {t['title'][:50]} | {t['link'][:60] if t['link'] else 'no link'}")
+                    print(f"       [{i}] {t['title'][:50]} | {t['link'][:55] if t['link'] else 'no link'}")
 
             posted_titles = posted.get(name, [])
             print(f"  🧠 [{name}] Analyzing covered topics...")
@@ -366,10 +508,9 @@ def main():
             print(f"  ✍️  [{name}] Generating post...")
             post = generate_post(cat, posted_titles, covered, trends)
 
-            src_idx = post.get("source_index", -1)
             sources_html = build_sources_html(post, trends)
-            if sources_html and 0 <= src_idx < len(trends):
-                print(f"     Source attached: {trends[src_idx]['title'][:50]}")
+            if sources_html:
+                print(f"     Source(s) attached")
             else:
                 print(f"     No source attached")
 
