@@ -20,6 +20,164 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 MONTHS = {m: i+1 for i, m in enumerate(
     ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])}
 
+# ─────────────────────────────────────────────
+# 투자 카테고리 전용: 고정 커리큘럼 + 확장 자산 리스트 + 안전 규칙
+# ─────────────────────────────────────────────
+INVESTING_CURRICULUM = [
+    "What is capitalism? How money makes more money",
+    "Saving vs investing: what's the real difference",
+    "What is a stock? Owning a piece of a company",
+    "How the stock market works (exchanges, going public)",
+    "Why do stock prices go up and down",
+    "What is an ETF? Buying many companies at once",
+    "What is an index fund",
+    "What are dividends? Why companies share profit",
+    "What is compound interest and why starting early matters",
+    "How to open a brokerage account",
+    "How to place your first stock order",
+    "What is diversification (don't put all eggs in one basket)",
+    "What is risk in investing",
+    "What is market cap (measuring company size)",
+    "Long-term vs short-term investing: what fits you",
+    "What are bonds (lending money to governments/companies)",
+    "Stocks vs bonds: which is safer",
+    "What are REITs (real estate without buying property)",
+    "What is P/E ratio (is a stock cheap or expensive)",
+    "What is P/B ratio",
+    "What is dividend yield",
+    "Dividend yield vs dividend growth: what to look at",
+    "What is a retirement account (401k/IRA basics)",
+    "Taxes and investing: the basics you need to know",
+    "What is a sector (tech, healthcare, energy explained)",
+    "Large-cap vs small-cap stocks",
+    "Growth stocks vs value stocks",
+    "What is a market cycle (boom and bust)",
+    "How inflation affects your investments",
+    "Why rising interest rates shake up stocks",
+    "How currency exchange rates affect foreign investing",
+    "What are commodities (gold, oil basics)",
+    "What are emerging markets",
+    "Emerging vs developed markets: the difference",
+    "What is asset allocation",
+    "What is a portfolio",
+    "What is rebalancing",
+    "How fees quietly eat your returns",
+    "How to spot investment scams",
+    "Building your own investing principles",
+    "What is macroeconomics",
+    "Interest rates and stocks: a deeper look",
+    "What does a central bank actually do",
+    "What is GDP and why it matters",
+    "Unemployment rate and the stock market",
+    "What are leading economic indicators",
+    "What is sector rotation (money moving between industries)",
+    "What is value investing (Warren Buffett basics)",
+    "What is growth investing",
+    "Dividend growth investing strategy",
+    "Index investing vs active investing",
+    "What is a smart beta ETF",
+    "What is bond duration",
+    "What are high-yield bonds",
+    "Government bonds vs corporate bonds",
+    "Monetary policy vs fiscal policy",
+    "How trade and tariffs affect markets",
+    "What is geopolitical risk",
+    "What is market volatility (the VIX explained)",
+    "What is a stop-loss order",
+    "How to set a realistic target return",
+    "Asset allocation by age",
+    "Basics of retirement withdrawal strategy",
+    "Direct real estate vs REITs",
+    "What is alternative investing",
+    "What is hedging",
+    "What is short selling (just the concept)",
+    "What are options (very basic concept)",
+    "What is leverage and why it's risky",
+    "How to avoid emotional investing decisions",
+    "What is ESG investing",
+    "Basics of investing in AI-related stocks",
+    "Semiconductor industry and investing",
+    "Renewable energy investing trends",
+    "Healthcare and biotech sector investing",
+    "Crypto vs traditional investing: the difference",
+    "Global supply chains and investing",
+    "What is a commodity supercycle",
+    "Startup investing (angel/VC) basic concepts",
+    "What is an IPO",
+    "How to read an earnings report",
+    "Reading financial statements: the income statement",
+    "Reading financial statements: the balance sheet",
+    "What is a cash flow statement",
+    "Why debt-to-equity ratio matters",
+    "What is a competitive moat",
+    "What is a dividend cut and why it's a warning sign",
+    "Demographic shifts and long-term investing",
+    "Aging populations as an investing opportunity",
+    "Investing strategy in a deglobalizing world",
+    "What is a CBDC (digital central bank currency)",
+    "What is private equity",
+    "What is infrastructure investing",
+    "What is the carbon credit market",
+    "Space industry investing trends",
+    "What are robo-advisors",
+    "Building your own retirement simulation",
+    "Investing psychology: avoiding herd mentality",
+    "10 common mistakes long-term investors make",
+    "Putting it all together: building your investing roadmap",
+]
+
+INVESTING_EXTENDED_ASSETS = [
+    "How to invest in gold: physical, ETFs, and futures",
+    "What is silver investing",
+    "How to invest in oil",
+    "What is agricultural commodity investing",
+    "What is art investing (art-tech)",
+    "What is wine investing",
+    "Luxury goods and watches as an investment trend",
+    "Collectibles investing (cards, figures, etc)",
+    "How to actually invest in government bonds (ETFs like TLT)",
+    "What are TIPS (inflation-protected bonds)",
+    "What are municipal bonds",
+    "What are convertible bonds",
+    "What are junk bonds (high risk, high yield)",
+    "Commercial REITs vs residential REITs",
+    "Investing in international real estate REITs",
+    "What is real estate crowdfunding",
+    "What are mortgage REITs",
+    "What is DRIP (dividend reinvestment)",
+    "What are covered call ETFs (monthly income style)",
+    "What are target maturity bond ETFs",
+    "Investing in high-dividend preferred stocks",
+    "Exploring monthly dividend ETFs",
+    "How to invest directly in US stocks",
+    "Investing in the Japanese stock market",
+    "Investing in the European stock market",
+    "Emerging market ETFs (India, Vietnam, etc)",
+    "Comparing global dividend ETFs",
+    "What is P2P lending investment",
+    "What is private credit investing",
+    "What is royalty investing (music/patent royalties)",
+    "How to invest in carbon credits",
+    "Startup equity investing platforms explained",
+    "Maximizing tax-advantaged accounts",
+    "Understanding foreign stock capital gains tax",
+    "Dividend income tax strategies",
+    "How to choose a tax-efficient ETF",
+    "Pension vs personal retirement accounts",
+    "What is an immediate annuity",
+    "Retirement withdrawal order strategy",
+    "What is the 4% rule",
+]
+
+INVESTING_SAFETY_RULES = """
+[MANDATORY SAFETY RULES]
+- Do NOT cover leveraged products (2x or higher), crypto derivatives, meme coins, or high-risk short-term trading tactics.
+- Only cover legitimate, well-established investment vehicles available worldwide (stocks, bonds, ETFs, REITs, commodities, savings accounts, etc).
+- Never guarantee returns or use phrases like "guaranteed profit" or "sure thing."
+- Always include a line near the end of the post noting that investing carries risk of loss of principal.
+- Explain everything in plain language a beginner can follow.
+"""
+
 CATEGORIES = [
     {
         "name": "Passive Income Investing",
@@ -239,7 +397,7 @@ def clean_markdown_artifacts(text):
     text = re.sub(r"\s{2,}", " ", text)
     return text
 
-def generate_post(category, posted_titles, covered_topics, trends):
+def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0):
     today = datetime.now().strftime("%B %d, %Y")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
     covered_text = ", ".join(covered_topics) if covered_topics else "None"
@@ -289,30 +447,45 @@ Include the chosen thinker's name in the title naturally.
 """
 
     elif is_investing:
-        topic_block = f"""
-[TOPIC SELECTION — MANDATORY]
-- Use the trend articles above to identify what's happening in the market right now.
-- DO NOT repeat the same structural angle as already covered: {covered_text}
-- DO NOT just repeat "open a brokerage account, start small, dollar-cost average" generic advice if it's already been covered.
-- Each post must teach ONE specific, fresh financial concept the reader can apply (e.g., a specific dividend metric, a specific ETF category, a specific tax-advantaged account type, a specific risk management concept) — rotate concepts across posts.
-- Check the already-covered topics and titles for ETF tickers mentioned recently, and prefer different tickers this time unless current market conditions specifically call for repeating one.
+        if investing_progress < len(INVESTING_CURRICULUM):
+            concept = INVESTING_CURRICULUM[investing_progress]
+            topic_block = f"""
+[TOPIC — MANDATORY, FIXED CURRICULUM]
+Today's assigned concept (day {investing_progress + 1} of the curriculum): "{concept}"
+Explain ONLY this concept today, building on nothing except basic prior knowledge from earlier curriculum days.
+Write as if explaining to a smart middle schooler who has never invested before, but keep the tone adult and conversational (not childish).
+You may briefly reference today's market trends above if relevant, but the core of the post must be this concept.
+{INVESTING_SAFETY_RULES}
 """
-        structure_block = """
-[MANDATORY STRUCTURE — FOLLOW THIS EXACT 4-PART STRUCTURE]
-
-PART 1 — Market Snapshot (short, 1 paragraph):
-Summarize what's happening in global stock markets right now based on the trend articles. Keep it brief and grounded in the actual trend data provided.
-
-PART 2 — Today's Financial Freedom Lesson (1 short, clearly-titled section, e.g. "Today's Money Lesson: ..."):
-Pick ONE specific passive-income/financial-freedom concept that has NOT been explained in a previous post (rotate through concepts like: dividend yield vs. dividend growth, expense ratios, tax-advantaged accounts like Roth IRA/401k, dollar-cost averaging, sector diversification, REITs, bond ladders, the rule of 72, sequence-of-returns risk, the FIRE 4% rule, compound interest mechanics, qualified vs. ordinary dividends, asset allocation by age, etc.). Explain it clearly for a beginner — this section should feel like the reader is learning one genuinely new, useful piece of financial knowledge today, distinct from anything covered before: {covered_text}
-
-PART 3 — Detailed Guide (connects to Part 2):
-Give a step-by-step practical guide for applying that concept to building passive income, in detail.
-
-PART 4 — Today's ETF Picks (3 to 5 specific tickers):
-Base these picks on the CURRENT market conditions and trend articles provided above, not on generic textbook recommendations. Consider what's actually happening right now (rate environment, sector rotation, inflation trends, etc. as reflected in the trend articles) when choosing which ETFs to highlight. Prioritize ETFs that are currently well-regarded by the investing community for quality and performance; avoid recommending funds that have recently underperformed, lost popularity, or faced fund closures/outflows if that's reflected in the trend data. Avoid repeating the exact same 3-5 tickers used in recent posts unless there's a strong current-market reason to repeat one. For EACH ticker, explain in 1-2 sentences WHY it's a good pick right now, tied to Part 1's market snapshot and Part 2's concept.
-
-Use <h2> for each of the 4 parts (can use a more natural/catchy heading wording, but the content must follow this structure). Length: 700~1000 words.
+            structure_block = """
+[STRUCTURE]
+- Length: 600~900 words
+- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
+- End with a short note that investing carries risk of loss.
+"""
+        else:
+            ext_index = investing_progress - len(INVESTING_CURRICULUM)
+            if ext_index < len(INVESTING_EXTENDED_ASSETS):
+                asset_topic = INVESTING_EXTENDED_ASSETS[ext_index]
+                asset_instruction = f'Today\'s assigned asset/topic: "{asset_topic}"'
+            else:
+                asset_instruction = (
+                    f"Pick ONE new investment asset, product, or strategy not already covered: {covered_text}. "
+                    "It must be a real, legitimate, globally available investment vehicle."
+                )
+            topic_block = f"""
+[TOPIC — MANDATORY TWO-PART STRUCTURE]
+Part A: Summarize today's real market news using the trend articles above.
+Part B: {asset_instruction}
+Explain Part B clearly for a beginner, connecting it back to Part A's market context where natural.
+{INVESTING_SAFETY_RULES}
+"""
+            structure_block = """
+[MANDATORY STRUCTURE]
+PART 1 — Today's Market Snapshot: summarize what's happening in markets right now based on the trend articles.
+PART 2 — New Investment Idea: explain the assigned asset/strategy from Part B above in full beginner-friendly detail, including how someone could actually get started with it.
+Use <h2> for each part. Length: 700~1000 words.
+End with a short note that investing carries risk of loss.
 """
 
     elif category["name"] == "World News Simplified":
@@ -489,6 +662,8 @@ def main():
     posted = load_posted()
     success = 0
 
+    investing_progress = posted.get("_meta", {}).get("investing_progress", 0)
+
     for cat in CATEGORIES:
         try:
             name = cat["name"]
@@ -506,7 +681,11 @@ def main():
                 print(f"     Topics to avoid: {', '.join(covered[:8])}")
 
             print(f"  ✍️  [{name}] Generating post...")
-            post = generate_post(cat, posted_titles, covered, trends)
+            if name == "Passive Income Investing":
+                print(f"     Investing curriculum progress: day {investing_progress + 1}")
+                post = generate_post(cat, posted_titles, covered, trends, investing_progress)
+            else:
+                post = generate_post(cat, posted_titles, covered, trends)
 
             sources_html = build_sources_html(post, trends)
             if sources_html:
@@ -520,6 +699,10 @@ def main():
 
             posted.setdefault(name, []).append(post["title"])
             posted[name] = posted[name][-50:]
+
+            if name == "Passive Income Investing":
+                posted.setdefault("_meta", {})
+                posted["_meta"]["investing_progress"] = investing_progress + 1
 
             success += 1
             time.sleep(3)
