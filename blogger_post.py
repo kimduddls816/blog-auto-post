@@ -21,7 +21,8 @@ MONTHS = {m: i+1 for i, m in enumerate(
     ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])}
 
 # ─────────────────────────────────────────────
-# 투자 카테고리 전용: 고정 커리큘럼 + 확장 자산 리스트 + 안전 규칙
+# 투자 카테고리 전용: 고정 커리큘럼(1~100일차) + 안전 규칙
+# 101일차부터는 AI가 스스로 개념/자산을 생성함 (별도 리스트 없음)
 # ─────────────────────────────────────────────
 INVESTING_CURRICULUM = [
     "What is capitalism? How money makes more money",
@@ -124,49 +125,6 @@ INVESTING_CURRICULUM = [
     "Investing psychology: avoiding herd mentality",
     "10 common mistakes long-term investors make",
     "Putting it all together: building your investing roadmap",
-]
-
-INVESTING_EXTENDED_ASSETS = [
-    "How to invest in gold: physical, ETFs, and futures",
-    "What is silver investing",
-    "How to invest in oil",
-    "What is agricultural commodity investing",
-    "What is art investing (art-tech)",
-    "What is wine investing",
-    "Luxury goods and watches as an investment trend",
-    "Collectibles investing (cards, figures, etc)",
-    "How to actually invest in government bonds (ETFs like TLT)",
-    "What are TIPS (inflation-protected bonds)",
-    "What are municipal bonds",
-    "What are convertible bonds",
-    "What are junk bonds (high risk, high yield)",
-    "Commercial REITs vs residential REITs",
-    "Investing in international real estate REITs",
-    "What is real estate crowdfunding",
-    "What are mortgage REITs",
-    "What is DRIP (dividend reinvestment)",
-    "What are covered call ETFs (monthly income style)",
-    "What are target maturity bond ETFs",
-    "Investing in high-dividend preferred stocks",
-    "Exploring monthly dividend ETFs",
-    "How to invest directly in US stocks",
-    "Investing in the Japanese stock market",
-    "Investing in the European stock market",
-    "Emerging market ETFs (India, Vietnam, etc)",
-    "Comparing global dividend ETFs",
-    "What is P2P lending investment",
-    "What is private credit investing",
-    "What is royalty investing (music/patent royalties)",
-    "How to invest in carbon credits",
-    "Startup equity investing platforms explained",
-    "Maximizing tax-advantaged accounts",
-    "Understanding foreign stock capital gains tax",
-    "Dividend income tax strategies",
-    "How to choose a tax-efficient ETF",
-    "Pension vs personal retirement accounts",
-    "What is an immediate annuity",
-    "Retirement withdrawal order strategy",
-    "What is the 4% rule",
 ]
 
 INVESTING_SAFETY_RULES = """
@@ -358,7 +316,7 @@ def extract_covered_topics(category_name, posted_titles):
 
 Extract the key specific topics/stories/angles covered — be as specific as possible.
 Not just "economy" but "mortgage rates affecting home sales", not just "ETF investing" but "broad market ETF + dividend aristocrats basics for beginners".
-The goal is to give a future writer a precise list of exactly what NOT to repeat.
+The goal is to give a future writer a precise list of exactly what NOT to repeat, including angles that LOOK different on the surface but cover the same underlying concept or lesson.
 
 Respond with JSON array only (no other text):
 ["specific topic 1", "specific topic 2", "specific topic 3"]"""
@@ -386,21 +344,19 @@ def clean_markdown_artifacts(text):
     """Gemini가 HTML 안에 마크다운 **bold** 같은걸 섞어 쓰는 경우 제거, em dash도 정리"""
     if not text:
         return text
-    # **word** -> word (HTML에서는 <strong>로 의도된 게 아니면 별표 제거)
     text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
-    # 단독 * 강조도 제거 (리스트 불릿용 *은 HTML 안에서 거의 안 쓰이므로 안전)
     text = re.sub(r"(?<!\w)\*(?!\*)(.+?)(?<!\*)\*(?!\w)", r"\1", text)
-    # em dash / en dash 제거 -> 문장 흐름 유지하며 쉼표나 마침표로 대체
     text = text.replace("—", ", ").replace("–", "-")
-    # 중복 쉼표/공백 정리
     text = re.sub(r",\s*,", ",", text)
     text = re.sub(r"\s{2,}", " ", text)
     return text
 
-def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0):
+def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0, recent_tickers=None):
     today = datetime.now().strftime("%B %d, %Y")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
     covered_text = ", ".join(covered_topics) if covered_topics else "None"
+    recent_tickers = recent_tickers or []
+    tickers_text = ", ".join(recent_tickers) if recent_tickers else "None"
 
     if trends:
         lines = []
@@ -414,7 +370,6 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
     is_philosophy = category["name"] == "Philosophy for Modern Life"
     is_investing  = category["name"] == "Passive Income Investing"
 
-    # ── 공통 규칙 (마크다운 금지, 날짜 언급 규칙) ──
     common_rules = """
 [FORMATTING RULES — MANDATORY]
 - Write ONLY valid HTML. NEVER use markdown syntax like **bold** or *italic* or # headers.
@@ -449,43 +404,27 @@ Include the chosen thinker's name in the title naturally.
     elif is_investing:
         if investing_progress < len(INVESTING_CURRICULUM):
             concept = INVESTING_CURRICULUM[investing_progress]
-            topic_block = f"""
-[TOPIC — MANDATORY, FIXED CURRICULUM]
-Today's assigned concept (day {investing_progress + 1} of the curriculum): "{concept}"
-Explain ONLY this concept today, building on nothing except basic prior knowledge from earlier curriculum days.
-Write as if explaining to a smart middle schooler who has never invested before, but keep the tone adult and conversational (not childish).
-You may briefly reference today's market trends above if relevant, but the core of the post must be this concept.
-{INVESTING_SAFETY_RULES}
-"""
-            structure_block = """
-[STRUCTURE]
-- Length: 600~900 words
-- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
-- End with a short note that investing carries risk of loss.
-"""
+            concept_block = f"""Today's assigned concept (day {investing_progress + 1} of the curriculum): "{concept}"
+Explain ONLY this concept, building on nothing except basic prior knowledge from earlier curriculum days."""
         else:
-            ext_index = investing_progress - len(INVESTING_CURRICULUM)
-            if ext_index < len(INVESTING_EXTENDED_ASSETS):
-                asset_topic = INVESTING_EXTENDED_ASSETS[ext_index]
-                asset_instruction = f'Today\'s assigned asset/topic: "{asset_topic}"'
-            else:
-                asset_instruction = (
-                    f"Pick ONE new investment asset, product, or strategy not already covered: {covered_text}. "
-                    "It must be a real, legitimate, globally available investment vehicle."
-                )
-            topic_block = f"""
-[TOPIC — MANDATORY TWO-PART STRUCTURE]
-Part A: Summarize today's real market news using the trend articles above.
-Part B: {asset_instruction}
-Explain Part B clearly for a beginner, connecting it back to Part A's market context where natural.
+            concept_block = f"""Pick ONE new, specific investing concept not covered before (angles already covered, avoid repeating even with a different title: {covered_text}).
+Go beyond basics now, intermediate to advanced concepts are welcome since the reader has completed the beginner curriculum."""
+
+        topic_block = f"""
+[MANDATORY 4-PART TOPIC STRUCTURE]
+PART 1 - Market News: Summarize what's happening in global markets today using the trend articles below.
+PART 2 - Investing Concept: {concept_block}
+PART 3 - New Asset/Method Spotlight: Introduce ONE legitimate investment asset, product, or method the reader likely hasn't seen explained here before (examples: gold, silver, oil, REIT subtypes, municipal bonds, TIPS, DRIP, covered call ETFs, P2P lending, international markets, tax-advantaged accounts, annuities, etc). Must be genuinely different from anything already covered: {covered_text}. Explain clearly what it is and how someone could realistically start.
+PART 4 - ETF Picks: Recommend exactly 3 ETF tickers based on TODAY's actual market conditions reflected in the trend articles. Do NOT repeat these recently recommended tickers unless there's a strong current-market reason to: {tickers_text}. For each ticker, explain in 1-2 sentences why it fits current conditions.
+
+IMPORTANT: Even if the title sounds different from previous posts, the actual lesson/content in Part 2 and Part 3 must not overlap in substance with anything in the covered topics list. A new angle on the same underlying concept still counts as a repeat.
 {INVESTING_SAFETY_RULES}
 """
-            structure_block = """
-[MANDATORY STRUCTURE]
-PART 1 — Today's Market Snapshot: summarize what's happening in markets right now based on the trend articles.
-PART 2 — New Investment Idea: explain the assigned asset/strategy from Part B above in full beginner-friendly detail, including how someone could actually get started with it.
-Use <h2> for each part. Length: 700~1000 words.
-End with a short note that investing carries risk of loss.
+        structure_block = """
+[STRUCTURE]
+Use a clear <h2> heading for each of the 4 parts (natural/catchy wording is fine, but must follow this order: Market News, Investing Concept, New Asset Spotlight, ETF Picks).
+Length: 900~1300 words (needs room for 4 parts).
+End with a short note that investing carries risk of loss of principal.
 """
 
     elif category["name"] == "World News Simplified":
@@ -544,7 +483,7 @@ Direction: {category['direction']}
 [Latest Trend Articles — crawled today]
 {trend_text}
 
-[Already Covered Topics — DO NOT repeat these angles]
+[Already Covered Topics — DO NOT repeat these angles, even with a different title or framing]
 {covered_text}
 
 [Already Published Titles — avoid similar angles/structure]
@@ -562,9 +501,10 @@ Direction: {category['direction']}
 [Source Reference]
 - For Philosophy and Wellness/Travel/Investing: source_index = index of the ONE trend article used as main source. -1 if none used.
 - For World News Simplified ONLY: source_indices = an ARRAY of index numbers for ALL trend articles you referenced in this post (one per story covered). Use source_indices instead of source_index for this category.
+- For Passive Income Investing ONLY: also include "tickers" = an ARRAY of the ETF ticker symbols you recommended in Part 4 (e.g. ["VOO", "SCHD", "BND"]).
 
 Respond with ONLY this JSON (no other text):
-{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": 0, "source_indices": []}}"""
+{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": 0, "source_indices": [], "tickers": []}}"""
 
     last_err = None
     for model in GEMINI_MODELS:
@@ -584,7 +524,6 @@ Respond with ONLY this JSON (no other text):
                     elif "```" in text:
                         text = text.split("```")[1].split("```")[0].strip()
                     data = json.loads(text)
-                    # 마크다운 잔재 제거
                     data["title"]   = clean_markdown_artifacts(data.get("title", ""))
                     data["content"] = clean_markdown_artifacts(data.get("content", ""))
                     return data
@@ -600,7 +539,6 @@ Respond with ONLY this JSON (no other text):
     raise RuntimeError(f"All models failed: {last_err}")
 
 def build_sources_html(post_data, trends):
-    # World News: 여러 소스 지원
     indices = post_data.get("source_indices")
     if isinstance(indices, list) and indices:
         items = []
@@ -622,7 +560,6 @@ def build_sources_html(post_data, trends):
             return '\n<hr/>\n<p><strong>Sources</strong></p>\n<ul>\n' + "".join(items) + '</ul>\n'
         return ""
 
-    # 단일 소스 (기존 방식)
     idx = post_data.get("source_index", -1)
     if not isinstance(idx, int) or idx < 0 or idx >= len(trends):
         return ""
@@ -662,7 +599,9 @@ def main():
     posted = load_posted()
     success = 0
 
-    investing_progress = posted.get("_meta", {}).get("investing_progress", 0)
+    meta = posted.get("_meta", {})
+    investing_progress = meta.get("investing_progress", 0)
+    recent_tickers = meta.get("recent_tickers", [])
 
     for cat in CATEGORIES:
         try:
@@ -683,7 +622,7 @@ def main():
             print(f"  ✍️  [{name}] Generating post...")
             if name == "Passive Income Investing":
                 print(f"     Investing curriculum progress: day {investing_progress + 1}")
-                post = generate_post(cat, posted_titles, covered, trends, investing_progress)
+                post = generate_post(cat, posted_titles, covered, trends, investing_progress, recent_tickers)
             else:
                 post = generate_post(cat, posted_titles, covered, trends)
 
@@ -703,6 +642,10 @@ def main():
             if name == "Passive Income Investing":
                 posted.setdefault("_meta", {})
                 posted["_meta"]["investing_progress"] = investing_progress + 1
+                new_tickers = post.get("tickers", [])
+                if isinstance(new_tickers, list):
+                    combined = recent_tickers + [t for t in new_tickers if isinstance(t, str)]
+                    posted["_meta"]["recent_tickers"] = combined[-15:]
 
             success += 1
             time.sleep(3)
