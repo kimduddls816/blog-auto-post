@@ -351,6 +351,11 @@ def clean_markdown_artifacts(text):
     text = re.sub(r"\s{2,}", " ", text)
     return text
 
+def build_intro_html(category_label):
+    """모든 포스트 맨 앞에 고정으로 붙는 헤더: [Category] | [Month Day, Year]"""
+    date_str = datetime.now().strftime("%B %d, %Y")
+    return f'<p><strong>{category_label} | {date_str}</strong></p>\n'
+
 def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0, recent_tickers=None):
     today = datetime.now().strftime("%B %d, %Y")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
@@ -377,10 +382,10 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
 - Do NOT wrap words in double asterisks under any circumstance.
 - NEVER use the em dash (—) or en dash (–) anywhere in the writing. Use a period, comma, or rewrite the sentence instead. This applies to every single sentence in the post.
 
-[DATE MENTION RULES — MANDATORY]
-- Do NOT state today's date as if announcing it (e.g., "It's June 30, 2026" or "Today is June 29, 2026, and..."). This sounds robotic and is often wrong if written ahead of schedule.
-- It's fine to cite an article's published date when referencing that specific article (e.g., "a report published on June 29 noted...").
-- Open the post naturally without a date-announcement framing.
+[INTRO RULES — MANDATORY]
+- A fixed header line showing the category name and today's date (formatted like "Category Name | Month Day, Year") will be automatically inserted above your content before publishing. You do NOT need to write this yourself, and you must NOT recreate a similar line (no "Welcome to today's..." intro, no restating the category name or date at the start, no rhetorical hook sentence trying to set the scene).
+- Start the actual body directly with the substantive content of the post (the real opening idea, story, or topic sentence), as if the reader already saw the category/date header right above it.
+- It's still fine to cite a specific article's published date later in the post when referencing that article (e.g., "a report published on June 29 noted...").
 """
 
     if is_philosophy:
@@ -437,7 +442,7 @@ Cover 3-5 of today's most significant stories from the trend articles above, exp
 """
         structure_block = """
 [MANDATORY STRUCTURE]
-1. Opening: Start directly with the numbered headline list — NO introductory sentence before it (do not write things like "Some days the news feels scattered, today a few threads run through it"). Just the title, then immediately the numbered list — one short punchy line per story (e.g. "1. South Korea bets $880 billion on the AI race" / "2. Trump's Iran strikes keep markets on edge" / "3. Japan's surprise rate hike"). This gives readers the at-a-glance overview before the deep dive.
+1. Opening: Start directly with the numbered headline list — NO introductory sentence before it (do not write things like "Some days the news feels scattered, today a few threads run through it"). Just the numbered list — one short punchy line per story (e.g. "1. South Korea bets $880 billion on the AI race" / "2. Trump's Iran strikes keep markets on edge" / "3. Japan's surprise rate hike"). This gives readers the at-a-glance overview before the deep dive.
 2. Main body: cover each of the 3-5 stories with its own <h2> subheading, in the same order as the headline list. For each story, explain what happened, why it matters, and how it connects to the bigger global picture — not just a headline summary.
 3. Closing section (<h2>, e.g. "The Big Picture"): in 2-4 SHORT, clear sentences, state plainly what connects today's stories — avoid abstract or flowery language. Write it the way you'd explain it to a smart friend in one breath, not like a philosophical essay. End with a clear, concrete takeaway, not a vague summary.
 
@@ -455,7 +460,7 @@ This post must cover 3 SEPARATE, DISTINCT destinations (different cities/towns/r
 """
         structure_block = """
 [MANDATORY STRUCTURE]
-- Opening: a brief intro framing the post (e.g., a shared theme connecting the 3 picks, like "hidden gems for slow travel" or "places trending right now").
+- Opening: go straight into the destinations (the fixed header already frames the post, so no extra scene-setting intro needed beyond one short connecting idea if useful, e.g. what theme ties the 3 picks together).
 - Main content: cover each of the 3 destinations under its own <h2> subheading with the destination's name in the heading. For each destination, give real, specific detail: what makes it special, a specific neighborhood or landmark worth visiting (with a real address/location where possible), how to get there, and a practical tip.
 - For EACH of the 3 destinations, include its own "Know Before You Go" mini-section (can be a short paragraph or small list right within that destination's section, not necessarily a separate <h2>) covering: (a) general safety/security level for travelers there, and (b) approximate cost level with one or two concrete price reference points (e.g., average meal cost, hotel price range in local currency or USD).
 - Length: 900~1300 words (need enough room to cover 3 destinations properly)
@@ -625,6 +630,9 @@ def main():
                 post = generate_post(cat, posted_titles, covered, trends, investing_progress, recent_tickers)
             else:
                 post = generate_post(cat, posted_titles, covered, trends)
+
+            # 모든 포스트 맨 앞에 고정 헤더 삽입: [Category] | [Month Day, Year]
+            post["content"] = build_intro_html(cat["label"]) + post.get("content", "")
 
             sources_html = build_sources_html(post, trends)
             if sources_html:
