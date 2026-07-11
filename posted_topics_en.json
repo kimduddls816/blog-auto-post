@@ -8,7 +8,8 @@
     "Navigating Market Turbulence: Why Diversification Fuels Your Passive Income Journey",
     "Beyond Dividends: How to Supercharge Your Passive Income Machine (Even in Retirement)",
     "Navigating Market Swings: Your Guide to Passive Income and Long-Term Wealth",
-    "Build Passive Wealth: Understanding Capitalism and Smart ETF Picks"
+    "Build Passive Wealth: Understanding Capitalism and Smart ETF Picks",
+    "Beyond Savings: Activating Your Money with Smart Investing and DRIPs"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -18,7 +19,8 @@
     "Crimea's Fuel Freeze: How Ukraine's Strikes are Shaking Up Daily Life",
     "Global Oil Shock? Why the Strait of Hormuz Closure Matters to You",
     "The True Cost of Breaking Up: What Brexit Teaches Us About Global Economies",
-    "World Watch: Elections, Tech Investments, Rate Hikes, and Media Mergers"
+    "World Watch: Elections, Tech Investments, Rate Hikes, and Media Mergers",
+    "Tech Tensions, Digital Votes, and Enduring Conflict"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -29,7 +31,8 @@
     "Why the Mediterranean Diet Still Reigns Supreme in Wellness - And How You Can Embrace It",
     "Unlock Whole-Body Wellness: Why Your Gut Is Your Secret Weapon for Mood, Energy, and Sleep",
     "Your 2026 Wellness Reset: Simple Shifts for a Happier You",
-    "The Real Story: Omega-3s and Your Brain Health"
+    "The Real Story: Omega-3s and Your Brain Health",
+    "Navigating GLP-1s: Protecting Your Bone Health During Weight Loss"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -40,7 +43,8 @@
     "Beyond the Adobe: Why Santa Fe's Instagrammable Airbnbs Are Your Next Obsession",
     "Escape the Ordinary: Why Santa Fe is Your Next Instagram-Worthy Adventure",
     "Escape the Ordinary: Why Santa Fe's 'City Different' Vibe and Insta-Worthy Airbnbs Are Calling...",
-    "Uncovering Your Next Insta-Worthy Escape: Global Gems for Millennials & Gen Z"
+    "Uncovering Your Next Insta-Worthy Escape: Global Gems for Millennials & Gen Z",
+    "Trendsetting Travel: Uncovering Global Gems for Millennials and Gen Z"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -48,14 +52,18 @@
     "Why Undivided Attention Is the Greatest Love Language of the Digital Age",
     "Stop Preparing and Start Doing: The 16th-Century Cure for Your Analysis Paralysis",
     "The Philosophy of Home: More Than Walls, It's Your World",
-    "Kierkegaard's Cure for Your Identity Crisis: Choosing Yourself in a Noisy World"
+    "Kierkegaard's Cure for Your Identity Crisis: Choosing Yourself in a Noisy World",
+    "Beyond the Grind: Martha Nussbaum on What Truly Makes a Life Good"
   ],
   "_meta": {
-    "investing_progress": 1,
+    "investing_progress": 2,
     "recent_tickers": [
       "VTV",
       "SCHD",
-      "QUAL"
+      "QUAL",
+      "VOO",
+      "QQQ",
+      "VYM"
     ]
   }
 }
