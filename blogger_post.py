@@ -136,6 +136,9 @@ INVESTING_SAFETY_RULES = """
 - Explain everything in plain language a beginner can follow.
 """
 
+# 여행 카테고리: 최근 다룬 목적지 개수 상한 (도시/지역 단위 기억)
+RECENT_DESTINATIONS_LIMIT = 60
+
 CATEGORIES = [
     {
         "name": "Passive Income Investing",
@@ -356,12 +359,14 @@ def build_intro_html(category_label):
     date_str = datetime.now().strftime("%B %d, %Y")
     return f'<p><strong>{category_label} | {date_str}</strong></p>\n'
 
-def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0, recent_tickers=None):
+def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0, recent_tickers=None, recent_destinations=None):
     today = datetime.now().strftime("%B %d, %Y")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
     covered_text = ", ".join(covered_topics) if covered_topics else "None"
     recent_tickers = recent_tickers or []
     tickers_text = ", ".join(recent_tickers) if recent_tickers else "None"
+    recent_destinations = recent_destinations or []
+    destinations_text = ", ".join(recent_destinations) if recent_destinations else "None"
 
     if trends:
         lines = []
@@ -374,6 +379,7 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
 
     is_philosophy = category["name"] == "Philosophy for Modern Life"
     is_investing  = category["name"] == "Passive Income Investing"
+    is_travel     = category["name"] == "Travel & Hidden Gems"
 
     common_rules = """
 [FORMATTING RULES — MANDATORY]
@@ -450,13 +456,23 @@ Cover 3-5 of today's most significant stories from the trend articles above, exp
 - HTML: <h2> subheadings, <p> paragraphs (each paragraph should be short — 2-4 sentences max — and properly broken up for readability), <ol><li> for the headline list, <ul><li> for other lists where appropriate
 """
 
-    elif category["name"] == "Travel & Hidden Gems":
+    elif is_travel:
         topic_block = f"""
 [TOPIC SELECTION — MANDATORY FIRST STEP]
 This post must cover 3 SEPARATE, DISTINCT destinations (different cities/towns/regions, not 3 spots within the same city). Pick 3 destinations from the trend articles above if possible (or fresh ones if trends don't apply).
 - Cover destinations from ANYWHERE in the world, and the 3 destinations should ideally be from different regions/continents to keep the post globally diverse (e.g., one in Asia, one in Europe, one in the Americas) rather than 3 cities in the same country.
 - DO NOT recommend destinations in active conflict zones, war zones, or places under official government travel advisories warning against travel. If a trending article is about such a place, skip it and pick a different one.
 - All 3 destinations and the overall angle must be genuinely different from everything already covered: {covered_text}
+
+[DESTINATION BAN LIST — MANDATORY, CHECK ALL 3 PICKS AGAINST THIS]
+These specific destinations have already been featured in past posts and are STRICTLY OFF LIMITS, no matter how the post is framed or titled: {destinations_text}
+- Check every one of your 3 candidate picks against this list before finalizing. If a candidate matches or is clearly the same place (even a different neighborhood of an already-covered city, or the same region under a slightly different name), discard it and pick a genuinely new one instead.
+- The world has thousands of interesting destinations. If your first instinct is a place already on the ban list, push yourself to go more niche or less obvious rather than reusing it.
+
+[TITLE RULES — MANDATORY]
+- The title must be built from the actual character/theme of THIS post's 3 destinations, not a generic recycled phrase. Do NOT default to stock phrases like "Insta-Worthy", "Instagram-worthy", "Hidden Gems", "Off-the-Radar", "Millennials & Gen Z", "Your Next Escape", or similar wording that has likely been used before.
+- Check the already published titles below and make sure your title does not reuse the same structure or stock phrasing: {posted_text}
+- Vary the title FORMAT each time too (e.g. sometimes a question, sometimes a bold single-line hook, sometimes built around one standout destination with the other two as a hook, sometimes a shared theme across all 3). Do not settle into a repeating template.
 """
         structure_block = """
 [MANDATORY STRUCTURE]
@@ -481,6 +497,14 @@ Look at the trend articles crawled today above. Pick ONE of them as the main sub
 - HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
 """
 
+    source_ref_block = """
+[Source Reference]
+- For Philosophy and Wellness/Travel/Investing: source_index = index of the ONE trend article used as main source. -1 if none used.
+- For World News Simplified ONLY: source_indices = an ARRAY of index numbers for ALL trend articles you referenced in this post (one per story covered). Use source_indices instead of source_index for this category.
+- For Passive Income Investing ONLY: also include "tickers" = an ARRAY of the ETF ticker symbols you recommended in Part 4 (e.g. ["VOO", "SCHD", "BND"]).
+- For Travel & Hidden Gems ONLY: also include "destinations" = an ARRAY of exactly the 3 destination names covered in this post, formatted simply as "City/Region, Country" (e.g. ["Northwest Arkansas, USA", "Matera, Italy", "Hoi An, Vietnam"]). This must match the 3 destinations actually covered in the body.
+"""
+
     prompt = f"""Write an English blog post for the '{category['name']}' category.
 Direction: {category['direction']}
 {common_rules}
@@ -502,14 +526,9 @@ Direction: {category['direction']}
 - For Passive Income Investing specifically: keep the same friendly, adult conversational tone — do NOT write in a childish or oversimplified voice. Instead, make sure every financial concept is fully explained in plain terms before you use it, with zero assumed prior knowledge. Never use a financial term (yield, expense ratio, compounding, diversification, etc.) without immediately unpacking what it actually means in everyday language, ideally with a concrete example or comparison. The reader should never feel lost or need to look anything up — every idea should click on first read, while the writing still sounds like it's written for a thoughtful adult.
 {structure_block}
 - Do NOT repeat the title inside the body
-
-[Source Reference]
-- For Philosophy and Wellness/Travel/Investing: source_index = index of the ONE trend article used as main source. -1 if none used.
-- For World News Simplified ONLY: source_indices = an ARRAY of index numbers for ALL trend articles you referenced in this post (one per story covered). Use source_indices instead of source_index for this category.
-- For Passive Income Investing ONLY: also include "tickers" = an ARRAY of the ETF ticker symbols you recommended in Part 4 (e.g. ["VOO", "SCHD", "BND"]).
-
+{source_ref_block}
 Respond with ONLY this JSON (no other text):
-{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": 0, "source_indices": [], "tickers": []}}"""
+{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": 0, "source_indices": [], "tickers": [], "destinations": []}}"""
 
     last_err = None
     for model in GEMINI_MODELS:
@@ -607,6 +626,7 @@ def main():
     meta = posted.get("_meta", {})
     investing_progress = meta.get("investing_progress", 0)
     recent_tickers = meta.get("recent_tickers", [])
+    recent_destinations = meta.get("recent_destinations", [])
 
     for cat in CATEGORIES:
         try:
@@ -628,6 +648,9 @@ def main():
             if name == "Passive Income Investing":
                 print(f"     Investing curriculum progress: day {investing_progress + 1}")
                 post = generate_post(cat, posted_titles, covered, trends, investing_progress, recent_tickers)
+            elif name == "Travel & Hidden Gems":
+                print(f"     Destinations to avoid: {len(recent_destinations)} on record")
+                post = generate_post(cat, posted_titles, covered, trends, recent_destinations=recent_destinations)
             else:
                 post = generate_post(cat, posted_titles, covered, trends)
 
@@ -654,6 +677,14 @@ def main():
                 if isinstance(new_tickers, list):
                     combined = recent_tickers + [t for t in new_tickers if isinstance(t, str)]
                     posted["_meta"]["recent_tickers"] = combined[-15:]
+
+            if name == "Travel & Hidden Gems":
+                posted.setdefault("_meta", {})
+                new_destinations = post.get("destinations", [])
+                if isinstance(new_destinations, list):
+                    combined = recent_destinations + [d.strip() for d in new_destinations if isinstance(d, str) and d.strip()]
+                    recent_destinations = combined[-RECENT_DESTINATIONS_LIMIT:]
+                    posted["_meta"]["recent_destinations"] = recent_destinations
 
             success += 1
             time.sleep(3)
