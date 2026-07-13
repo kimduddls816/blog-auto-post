@@ -10,7 +10,8 @@
     "Navigating Market Swings: Your Guide to Passive Income and Long-Term Wealth",
     "Build Passive Wealth: Understanding Capitalism and Smart ETF Picks",
     "Beyond Savings: Activating Your Money with Smart Investing and DRIPs",
-    "Understanding Stocks and Expanding Your Passive Income Horizons"
+    "Understanding Stocks and Expanding Your Passive Income Horizons",
+    "Decoding the Stock Market: Your Guide to Exchanges, IPOs, and Inflation Protection"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -22,7 +23,8 @@
     "The True Cost of Breaking Up: What Brexit Teaches Us About Global Economies",
     "World Watch: Elections, Tech Investments, Rate Hikes, and Media Mergers",
     "Tech Tensions, Digital Votes, and Enduring Conflict",
-    "Global Connections: Tech Investments, Consumer Shifts, and Political Tensions"
+    "Global Connections: Tech Investments, Consumer Shifts, and Political Tensions",
+    "Global Shifts: From Borders to Mental Health, What's Making Headlines"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -35,7 +37,8 @@
     "Your 2026 Wellness Reset: Simple Shifts for a Happier You",
     "The Real Story: Omega-3s and Your Brain Health",
     "Navigating GLP-1s: Protecting Your Bone Health During Weight Loss",
-    "Beyond Your 60s: Why Strength Training is Your Ultimate Longevity Partner"
+    "Beyond Your 60s: Why Strength Training is Your Ultimate Longevity Partner",
+    "Unlock Your Health: Transform Your Phone into a Wellness Command Center"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -48,7 +51,8 @@
     "Escape the Ordinary: Why Santa Fe's 'City Different' Vibe and Insta-Worthy Airbnbs Are Calling...",
     "Uncovering Your Next Insta-Worthy Escape: Global Gems for Millennials & Gen Z",
     "Trendsetting Travel: Uncovering Global Gems for Millennials and Gen Z",
-    "Wanderlust Wonders: Trending Global Gems for Your Millennial & Gen Z Bucket List"
+    "Wanderlust Wonders: Trending Global Gems for Your Millennial & Gen Z Bucket List",
+    "Global Vibes, Local Secrets: Your Next Aesthetic Escapes"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -58,10 +62,11 @@
     "The Philosophy of Home: More Than Walls, It's Your World",
     "Kierkegaard's Cure for Your Identity Crisis: Choosing Yourself in a Noisy World",
     "Beyond the Grind: Martha Nussbaum on What Truly Makes a Life Good",
-    "Zhuangzi and the Art of Effortless Action: Beating Work Stress with Wu Wei"
+    "Zhuangzi and the Art of Effortless Action: Beating Work Stress with Wu Wei",
+    "Pyrrho's Prescription: Finding Calm in a World of Endless Opinions"
   ],
   "_meta": {
-    "investing_progress": 3,
+    "investing_progress": 4,
     "recent_tickers": [
       "VTV",
       "SCHD",
@@ -72,6 +77,11 @@
       "FTEC",
       "IJJ",
       "ESGV"
+    ],
+    "recent_destinations": [
+      "Hoi An, Vietnam",
+      "Matera, Italy",
+      "San Miguel de Allende, Mexico"
     ]
   }
 }
