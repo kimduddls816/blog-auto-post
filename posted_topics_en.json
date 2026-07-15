@@ -12,7 +12,8 @@
     "Beyond Savings: Activating Your Money with Smart Investing and DRIPs",
     "Understanding Stocks and Expanding Your Passive Income Horizons",
     "Decoding the Stock Market: Your Guide to Exchanges, IPOs, and Inflation Protection",
-    "Decoding Market Moves: Understanding Stock Swings and Building Resilient Passive Income"
+    "Decoding Market Moves: Understanding Stock Swings and Building Resilient Passive Income",
+    "Unlocking Diversification: Your Beginner's Guide to ETFs and Building Resilient Passive Income"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -26,7 +27,8 @@
     "Tech Tensions, Digital Votes, and Enduring Conflict",
     "Global Connections: Tech Investments, Consumer Shifts, and Political Tensions",
     "Global Shifts: From Borders to Mental Health, What's Making Headlines",
-    "World Watch: Geopolitical Tensions, Economic Pressures, and Human Rights"
+    "World Watch: Geopolitical Tensions, Economic Pressures, and Human Rights",
+    "Global Currents: Trade Shifts, Political Stability, and Philanthropic Turns"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -41,7 +43,8 @@
     "Navigating GLP-1s: Protecting Your Bone Health During Weight Loss",
     "Beyond Your 60s: Why Strength Training is Your Ultimate Longevity Partner",
     "Unlock Your Health: Transform Your Phone into a Wellness Command Center",
-    "Unplug Your Run: How Ditching Your Fitness Tracker Can Boost Your Well-being"
+    "Unplug Your Run: How Ditching Your Fitness Tracker Can Boost Your Well-being",
+    "Beyond the Bottle: Do SPF Supplements Really Work?"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -56,7 +59,8 @@
     "Trendsetting Travel: Uncovering Global Gems for Millennials and Gen Z",
     "Wanderlust Wonders: Trending Global Gems for Your Millennial & Gen Z Bucket List",
     "Global Vibes, Local Secrets: Your Next Aesthetic Escapes",
-    "From Ozark Trails to French Bistros and Malaysian Murals: Your Next Aesthetic Journeys"
+    "From Ozark Trails to French Bistros and Malaysian Murals: Your Next Aesthetic Journeys",
+    "Coastal Calm, Jungle Zen, & Vibrant Hues: Gozo, Ubud, and Cartagena for Your Next Global Escape"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -68,10 +72,11 @@
     "Beyond the Grind: Martha Nussbaum on What Truly Makes a Life Good",
     "Zhuangzi and the Art of Effortless Action: Beating Work Stress with Wu Wei",
     "Pyrrho's Prescription: Finding Calm in a World of Endless Opinions",
-    "Why Less is More: Epicurus on Beating Modern Money Stress"
+    "Why Less is More: Epicurus on Beating Modern Money Stress",
+    "Viktor Frankl's Prescription for Purpose: Finding Meaning in Modern Anxiety"
   ],
   "_meta": {
-    "investing_progress": 5,
+    "investing_progress": 6,
     "recent_tickers": [
       "VTV",
       "SCHD",
@@ -84,7 +89,10 @@
       "ESGV",
       "XLF",
       "SPYD",
-      "AGG"
+      "AGG",
+      "SMH",
+      "XLI",
+      "VT"
     ],
     "recent_destinations": [
       "Hoi An, Vietnam",
@@ -92,7 +100,10 @@
       "San Miguel de Allende, Mexico",
       "Northwest Arkansas, USA",
       "Lyon, France",
-      "Penang, Malaysia"
+      "Penang, Malaysia",
+      "Gozo, Malta",
+      "Ubud, Indonesia",
+      "Cartagena, Colombia"
     ]
   }
 }
