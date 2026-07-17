@@ -14,7 +14,8 @@
     "Decoding the Stock Market: Your Guide to Exchanges, IPOs, and Inflation Protection",
     "Decoding Market Moves: Understanding Stock Swings and Building Resilient Passive Income",
     "Unlocking Diversification: Your Beginner's Guide to ETFs and Building Resilient Passive Income",
-    "Navigating Market Swings: Your Guide to Index Funds, Munis, and Resilient ETF Choices"
+    "Navigating Market Swings: Your Guide to Index Funds, Munis, and Resilient ETF Choices",
+    "Navigating Market Shifts: Unlocking Passive Income with Dividends and Inflation Protection"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -30,7 +31,8 @@
     "Global Shifts: From Borders to Mental Health, What's Making Headlines",
     "World Watch: Geopolitical Tensions, Economic Pressures, and Human Rights",
     "Global Currents: Trade Shifts, Political Stability, and Philanthropic Turns",
-    "World Watch: Protests, Wildfires, Economic Shifts, and Tech Safety"
+    "World Watch: Protests, Wildfires, Economic Shifts, and Tech Safety",
+    "Global Currents: Air Quality, Royal Debates, and Green Innovations"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -47,7 +49,8 @@
     "Unlock Your Health: Transform Your Phone into a Wellness Command Center",
     "Unplug Your Run: How Ditching Your Fitness Tracker Can Boost Your Well-being",
     "Beyond the Bottle: Do SPF Supplements Really Work?",
-    "Ginger: Your Kitchen's Secret Weapon for Gut Health, Immunity, and Beyond"
+    "Ginger: Your Kitchen's Secret Weapon for Gut Health, Immunity, and Beyond",
+    "Unlock Healthy Eating: Your Guide to Nourishing Meals with Pantry Staples"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -64,7 +67,8 @@
     "Global Vibes, Local Secrets: Your Next Aesthetic Escapes",
     "From Ozark Trails to French Bistros and Malaysian Murals: Your Next Aesthetic Journeys",
     "Coastal Calm, Jungle Zen, & Vibrant Hues: Gozo, Ubud, and Cartagena for Your Next Global Escape",
-    "Beyond the Usual: Oxford's Scholarly Retreats, Busan's Creative Coast, and Asheville's Artisan Hills"
+    "Beyond the Usual: Oxford's Scholarly Retreats, Busan's Creative Coast, and Asheville's Artisan Hills",
+    "From Atlantic Hues to Pacific Zen: Your Next Global Aesthetic Adventure"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -78,14 +82,12 @@
     "Pyrrho's Prescription: Finding Calm in a World of Endless Opinions",
     "Why Less is More: Epicurus on Beating Modern Money Stress",
     "Viktor Frankl's Prescription for Purpose: Finding Meaning in Modern Anxiety",
-    "Wang Yangming's Wisdom: Why True Knowledge Demands Action"
+    "Wang Yangming's Wisdom: Why True Knowledge Demands Action",
+    "Leibniz and the Art of Being You: Why You're Not Meant to Compare"
   ],
   "_meta": {
-    "investing_progress": 7,
+    "investing_progress": 8,
     "recent_tickers": [
-      "VOO",
-      "QQQ",
-      "VYM",
       "FTEC",
       "IJJ",
       "ESGV",
@@ -97,7 +99,10 @@
       "VT",
       "VTI",
       "XLU",
-      "BND"
+      "BND",
+      "SPHD",
+      "XLE",
+      "XLK"
     ],
     "recent_destinations": [
       "Hoi An, Vietnam",
@@ -111,7 +116,10 @@
       "Cartagena, Colombia",
       "Oxford, England",
       "Busan, South Korea",
-      "Asheville, North Carolina, USA"
+      "Asheville, North Carolina, USA",
+      "Lisbon, Portugal",
+      "Kyoto, Japan",
+      "Mexico City, Mexico"
     ]
   }
 }
