@@ -17,7 +17,8 @@
     "Navigating Market Swings: Your Guide to Index Funds, Munis, and Resilient ETF Choices",
     "Navigating Market Shifts: Unlocking Passive Income with Dividends and Inflation Protection",
     "Beyond Market Swings: Cultivating Passive Income with Compound Interest and Roth IRAs",
-    "Building Your Passive Income Foundation: Opening a Brokerage Account and Exploring MLPs"
+    "Building Your Passive Income Foundation: Opening a Brokerage Account and Exploring MLPs",
+    "Smart Steps to Passive Income: Your First Stock Order and Inflation Protection"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -36,7 +37,8 @@
     "World Watch: Protests, Wildfires, Economic Shifts, and Tech Safety",
     "Global Currents: Air Quality, Royal Debates, and Green Innovations",
     "Global Crossroads: Tariffs, Dissent, and the AI Race",
-    "Global Ripples: War, Travel, and Climate's Political Fallout"
+    "Global Ripples: War, Travel, and Climate's Political Fallout",
+    "Global Headaches: War, Travel, and Urgent Crises"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -56,7 +58,8 @@
     "Ginger: Your Kitchen's Secret Weapon for Gut Health, Immunity, and Beyond",
     "Unlock Healthy Eating: Your Guide to Nourishing Meals with Pantry Staples",
     "Beyond Breakfast: Decoding the Fasted Workout Trend for Your Best Results",
-    "Stride Towards Stronger: Why Power Walking is Your New Go-To Workout"
+    "Stride Towards Stronger: Why Power Walking is Your New Go-To Workout",
+    "Beyond Glow: The Truth About Lymphatic Drainage and Your Skin"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -76,7 +79,8 @@
     "Beyond the Usual: Oxford's Scholarly Retreats, Busan's Creative Coast, and Asheville's Artisan Hills",
     "From Atlantic Hues to Pacific Zen: Your Next Global Aesthetic Adventure",
     "Floral Dreams, Riverside Charms, and Mountain City Visions: Your Next Aesthetic Global Journey",
-    "Uncommon Passports: Taipei's Urban Beats, Budapest's Historic Hues, Oaxaca's Artisanal Soul"
+    "Uncommon Passports: Taipei's Urban Beats, Budapest's Historic Hues, Oaxaca's Artisanal Soul",
+    "Dragon Bridges, Emerald Hills, and Street Art Dreams: Global Escapes for the Visual Explorer"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -93,14 +97,12 @@
     "Wang Yangming's Wisdom: Why True Knowledge Demands Action",
     "Leibniz and the Art of Being You: Why You're Not Meant to Compare",
     "Embracing the Absurd: Albert Camus on Living Fully in a Meaningless World",
-    "Boethius and the Modern Rollercoaster: Finding Stability Beyond Fortune's Whims"
+    "Boethius and the Modern Rollercoaster: Finding Stability Beyond Fortune's Whims",
+    "Confucius and the Art of Cultivating Connection: Building Stronger Bonds in a Fragmented World"
   ],
   "_meta": {
-    "investing_progress": 10,
+    "investing_progress": 11,
     "recent_tickers": [
-      "SMH",
-      "XLI",
-      "VT",
       "VTI",
       "XLU",
       "BND",
@@ -112,7 +114,10 @@
       "IWM",
       "VIG",
       "AMLP",
-      "FSTA"
+      "FSTA",
+      "XLV",
+      "VYM",
+      "TIP"
     ],
     "recent_destinations": [
       "Hoi An, Vietnam",
@@ -135,7 +140,10 @@
       "Medellin, Colombia",
       "Taipei, Taiwan",
       "Budapest, Hungary",
-      "Oaxaca, Mexico"
+      "Oaxaca, Mexico",
+      "Ljubljana, Slovenia",
+      "Ella, Sri Lanka",
+      "Valparaíso, Chile"
     ]
   }
 }
