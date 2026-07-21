@@ -18,7 +18,8 @@
     "Navigating Market Shifts: Unlocking Passive Income with Dividends and Inflation Protection",
     "Beyond Market Swings: Cultivating Passive Income with Compound Interest and Roth IRAs",
     "Building Your Passive Income Foundation: Opening a Brokerage Account and Exploring MLPs",
-    "Smart Steps to Passive Income: Your First Stock Order and Inflation Protection"
+    "Smart Steps to Passive Income: Your First Stock Order and Inflation Protection",
+    "Building a Resilient Portfolio: Diversification, BDCs, and Smart ETF Choices"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -38,7 +39,8 @@
     "Global Currents: Air Quality, Royal Debates, and Green Innovations",
     "Global Crossroads: Tariffs, Dissent, and the AI Race",
     "Global Ripples: War, Travel, and Climate's Political Fallout",
-    "Global Headaches: War, Travel, and Urgent Crises"
+    "Global Headaches: War, Travel, and Urgent Crises",
+    "Global Shakes: Tariffs, Tensions, and Tackling Corruption"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -80,7 +82,8 @@
     "From Atlantic Hues to Pacific Zen: Your Next Global Aesthetic Adventure",
     "Floral Dreams, Riverside Charms, and Mountain City Visions: Your Next Aesthetic Global Journey",
     "Uncommon Passports: Taipei's Urban Beats, Budapest's Historic Hues, Oaxaca's Artisanal Soul",
-    "Dragon Bridges, Emerald Hills, and Street Art Dreams: Global Escapes for the Visual Explorer"
+    "Dragon Bridges, Emerald Hills, and Street Art Dreams: Global Escapes for the Visual Explorer",
+    "Picture-Perfect Panoramas: Explore Hallstatt's Lakeside Charm, Luang Prabang's Spiritual Beauty, and Banff's Majestic Peaks"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -98,14 +101,12 @@
     "Leibniz and the Art of Being You: Why You're Not Meant to Compare",
     "Embracing the Absurd: Albert Camus on Living Fully in a Meaningless World",
     "Boethius and the Modern Rollercoaster: Finding Stability Beyond Fortune's Whims",
-    "Confucius and the Art of Cultivating Connection: Building Stronger Bonds in a Fragmented World"
+    "Confucius and the Art of Cultivating Connection: Building Stronger Bonds in a Fragmented World",
+    "Spinoza's Antidote to Modern Anxiety: Finding Peace in What You Can't Control"
   ],
   "_meta": {
-    "investing_progress": 11,
+    "investing_progress": 12,
     "recent_tickers": [
-      "VTI",
-      "XLU",
-      "BND",
       "SPHD",
       "XLE",
       "XLK",
@@ -117,7 +118,10 @@
       "FSTA",
       "XLV",
       "VYM",
-      "TIP"
+      "TIP",
+      "FENY",
+      "XLP",
+      "VXUS"
     ],
     "recent_destinations": [
       "Hoi An, Vietnam",
@@ -143,7 +147,10 @@
       "Oaxaca, Mexico",
       "Ljubljana, Slovenia",
       "Ella, Sri Lanka",
-      "Valparaíso, Chile"
+      "Valparaíso, Chile",
+      "Hallstatt, Austria",
+      "Luang Prabang, Laos",
+      "Banff, Canada"
     ]
   }
 }
