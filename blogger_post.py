@@ -15,6 +15,12 @@ BLOGGER_BLOG_ID       = os.environ["BLOGGER_BLOG_ID"]
 POSTED_FILE   = "posted_topics_en.json"
 GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-flash-latest"]
 
+# ── 재시도 튜닝값 (여기 숫자만 바꾸면 백오프 동작 조절 가능) ──
+RETRY_MAX_ATTEMPTS   = 3      # 모델당 재시도 횟수
+RETRY_BASE_SECONDS   = 10     # 1차 대기 기준값
+RETRY_MULTIPLIER     = 3      # 시도마다 곱해지는 배수 (10 -> 30 -> 90)
+RETRY_JITTER_SECONDS = 5      # 0~5초 랜덤 추가
+
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 MONTHS = {m: i+1 for i, m in enumerate(
@@ -532,7 +538,7 @@ Respond with ONLY this JSON (no other text):
 
     last_err = None
     for model in GEMINI_MODELS:
-        for attempt in range(3):
+        for attempt in range(RETRY_MAX_ATTEMPTS):
             try:
                 res = requests.post(
                     f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}",
@@ -553,13 +559,21 @@ Respond with ONLY this JSON (no other text):
                     return data
                 if res.status_code in (429, 500, 502, 503):
                     last_err = f"{model} {res.status_code}"
-                    print(f"     ⏳ {model} retry {attempt+1}/3")
-                    time.sleep(8); continue
+                    if attempt < RETRY_MAX_ATTEMPTS - 1:
+                        # 지수 백오프: 10s -> 30s -> 90s (+ 0~5s 랜덤 지터)
+                        wait = (RETRY_BASE_SECONDS * (RETRY_MULTIPLIER ** attempt)) + random.uniform(0, RETRY_JITTER_SECONDS)
+                        print(f"     ⏳ {model} {res.status_code}, {wait:.1f}s 대기 후 재시도 ({attempt+1}/{RETRY_MAX_ATTEMPTS})")
+                        time.sleep(wait)
+                    continue
                 last_err = f"{model} {res.status_code}"
                 print(f"     ↪ {model} unavailable, trying next")
                 break
             except Exception as e:
-                last_err = str(e); time.sleep(5)
+                last_err = str(e)
+                if attempt < RETRY_MAX_ATTEMPTS - 1:
+                    wait = (RETRY_BASE_SECONDS * (RETRY_MULTIPLIER ** attempt)) + random.uniform(0, RETRY_JITTER_SECONDS)
+                    print(f"     ⏳ {model} exception, {wait:.1f}s 대기 후 재시도 ({attempt+1}/{RETRY_MAX_ATTEMPTS})")
+                    time.sleep(wait)
     raise RuntimeError(f"All models failed: {last_err}")
 
 def build_sources_html(post_data, trends):
