@@ -20,7 +20,8 @@
     "Building Your Passive Income Foundation: Opening a Brokerage Account and Exploring MLPs",
     "Smart Steps to Passive Income: Your First Stock Order and Inflation Protection",
     "Building a Resilient Portfolio: Diversification, BDCs, and Smart ETF Choices",
-    "Smart Moves in Shifting Markets: Decoding Risk and Exploring Preferred Stock Dividends"
+    "Smart Moves in Shifting Markets: Decoding Risk and Exploring Preferred Stock Dividends",
+    "Decoding Company Size, Inflation Protection, and Smart ETF Choices for Passive Income"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -42,7 +43,8 @@
     "Global Ripples: War, Travel, and Climate's Political Fallout",
     "Global Headaches: War, Travel, and Urgent Crises",
     "Global Shakes: Tariffs, Tensions, and Tackling Corruption",
-    "World Brief: Shifts, Spending, Seizures, and Shorts"
+    "World Brief: Shifts, Spending, Seizures, and Shorts",
+    "Global Currents: Nuclear Ambitions, Trade Battles, and AI's Price Tag"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -64,7 +66,8 @@
     "Beyond Breakfast: Decoding the Fasted Workout Trend for Your Best Results",
     "Stride Towards Stronger: Why Power Walking is Your New Go-To Workout",
     "Beyond Glow: The Truth About Lymphatic Drainage and Your Skin",
-    "Unmasking the Silent Threat: How a Common Sleep Issue Elevates Heart Risk in Women Over 45"
+    "Unmasking the Silent Threat: How a Common Sleep Issue Elevates Heart Risk in Women Over 45",
+    "Navigating AI Health Advice: Your Smart Guide to Wellness in the Digital Age"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -87,7 +90,8 @@
     "Uncommon Passports: Taipei's Urban Beats, Budapest's Historic Hues, Oaxaca's Artisanal Soul",
     "Dragon Bridges, Emerald Hills, and Street Art Dreams: Global Escapes for the Visual Explorer",
     "Picture-Perfect Panoramas: Explore Hallstatt's Lakeside Charm, Luang Prabang's Spiritual Beauty, and Banff's Majestic Peaks",
-    "Ready for the Unseen? Siargao's Waves, Tbilisi's Echoes, and Antigua's Colors Await Your Lens."
+    "Ready for the Unseen? Siargao's Waves, Tbilisi's Echoes, and Antigua's Colors Await Your Lens.",
+    "Beyond the Hashtag: Discovering Charleston's Elegance, Kotor's Drama, and Jeju's Serenity"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -107,14 +111,12 @@
     "Boethius and the Modern Rollercoaster: Finding Stability Beyond Fortune's Whims",
     "Confucius and the Art of Cultivating Connection: Building Stronger Bonds in a Fragmented World",
     "Spinoza's Antidote to Modern Anxiety: Finding Peace in What You Can't Control",
-    "The Buddha's Insight into Change: How 'Anicca' Can Ease Your Modern Worries"
+    "The Buddha's Insight into Change: How 'Anicca' Can Ease Your Modern Worries",
+    "Epictetus's Simple Rule for a Calmer Life: What's Yours and What Isn't"
   ],
   "_meta": {
-    "investing_progress": 13,
+    "investing_progress": 14,
     "recent_tickers": [
-      "VOO",
-      "SCHD",
-      "IWM",
       "VIG",
       "AMLP",
       "FSTA",
@@ -126,7 +128,10 @@
       "VXUS",
       "VDE",
       "XLF",
-      "PFF"
+      "PFF",
+      "ITA",
+      "SPLV",
+      "IYH"
     ],
     "recent_destinations": [
       "Hoi An, Vietnam",
@@ -158,7 +163,10 @@
       "Banff, Canada",
       "Siargao, Philippines",
       "Tbilisi, Georgia",
-      "Antigua, Guatemala"
+      "Antigua, Guatemala",
+      "Charleston, USA",
+      "Kotor, Montenegro",
+      "Jeju Island, South Korea"
     ]
   }
 }
