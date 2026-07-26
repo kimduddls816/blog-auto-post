@@ -23,7 +23,8 @@
     "Smart Moves in Shifting Markets: Decoding Risk and Exploring Preferred Stock Dividends",
     "Decoding Company Size, Inflation Protection, and Smart ETF Choices for Passive Income",
     "Charting Your Course: Long-Term vs. Short-Term Investing and the Allure of Gold",
-    "Navigating Uncertainty: Understanding Bonds, Covered Calls, and Smart ETF Choices for Passive Income"
+    "Navigating Uncertainty: Understanding Bonds, Covered Calls, and Smart ETF Choices for Passive Income",
+    "Navigating Your Portfolio: Stocks, Bonds, and Smart ETF Choices for Passive Income"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -48,7 +49,8 @@
     "World Brief: Shifts, Spending, Seizures, and Shorts",
     "Global Currents: Nuclear Ambitions, Trade Battles, and AI's Price Tag",
     "Global Currents: Mideast Strikes, AI Safeguards, and Diplomatic Hurdles",
-    "Global Currents: Mideast Missiles, Ukraine Shifts, and Culture Clashes"
+    "Global Currents: Mideast Missiles, Ukraine Shifts, and Culture Clashes",
+    "Global Snapshot: Ukraine's Leadership, Airport Chaos, Retail's New Play, and OpenAI's Challenge"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -73,7 +75,8 @@
     "Unmasking the Silent Threat: How a Common Sleep Issue Elevates Heart Risk in Women Over 45",
     "Navigating AI Health Advice: Your Smart Guide to Wellness in the Digital Age",
     "Your Liver's Best Friend: Simple Habits for a Thriving You",
-    "Unlock Better Sleep: The Foods That Help You Drift Off Faster"
+    "Unlock Better Sleep: The Foods That Help You Drift Off Faster",
+    "Move, Nourish, Connect: A Holistic Path to Lasting Well-being"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -99,7 +102,8 @@
     "Ready for the Unseen? Siargao's Waves, Tbilisi's Echoes, and Antigua's Colors Await Your Lens.",
     "Beyond the Hashtag: Discovering Charleston's Elegance, Kotor's Drama, and Jeju's Serenity",
     "From Cycladic Chic to Waterfront Wonders and Javanese Rhythms: Aesthetic Escapes for the Modern Explorer",
-    "<strong>Uncommon Views: Milos' Moonscapes, Guayaquil's Iguanas, Ipoh's Artful Sips</strong>"
+    "<strong>Uncommon Views: Milos' Moonscapes, Guayaquil's Iguanas, Ipoh's Artful Sips</strong>",
+    "Global Aesthetics: From Thai Temples to French Villages and Arizona's Desert Glow"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -122,14 +126,12 @@
     "The Buddha's Insight into Change: How 'Anicca' Can Ease Your Modern Worries",
     "Epictetus's Simple Rule for a Calmer Life: What's Yours and What Isn't",
     "Simone de Beauvoir and the Freedom to Be You: Escaping the Trap of 'Shoulds'",
-    "William James and the Power of Habit: How to Master Your Modern Routine"
+    "William James and the Power of Habit: How to Master Your Modern Routine",
+    "Aristotle and the Art of \"Just Enough\": Navigating Extremes in Modern Life"
   ],
   "_meta": {
-    "investing_progress": 16,
+    "investing_progress": 17,
     "recent_tickers": [
-      "FENY",
-      "XLP",
-      "VXUS",
       "VDE",
       "XLF",
       "PFF",
@@ -141,7 +143,10 @@
       "KBE",
       "QQQM",
       "SCHD",
-      "VNQ"
+      "VNQ",
+      "VOO",
+      "VYM",
+      "AGG"
     ],
     "recent_destinations": [
       "Hoi An, Vietnam",
@@ -182,7 +187,10 @@
       "Yogyakarta, Indonesia",
       "Milos, Greece",
       "Guayaquil, Ecuador",
-      "Ipoh, Malaysia"
+      "Ipoh, Malaysia",
+      "Chiang Mai, Thailand",
+      "Provence, France",
+      "Sedona, USA"
     ]
   }
 }
