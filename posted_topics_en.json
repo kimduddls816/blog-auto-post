@@ -26,7 +26,8 @@
     "Navigating Uncertainty: Understanding Bonds, Covered Calls, and Smart ETF Choices for Passive Income",
     "Navigating Your Portfolio: Stocks, Bonds, and Smart ETF Choices for Passive Income",
     "Unlocking Passive Income: Your Beginner's Guide to REITs and Corporate Bonds",
-    "Unlocking Passive Income: Understanding P/E Ratios and Exploring TIPS"
+    "Unlocking Passive Income: Understanding P/E Ratios and Exploring TIPS",
+    "Your Guide to Today's Markets: P/B Ratios, Silver, and Strategic ETF Picks for Passive Income"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -54,7 +55,8 @@
     "Global Currents: Mideast Missiles, Ukraine Shifts, and Culture Clashes",
     "Global Snapshot: Ukraine's Leadership, Airport Chaos, Retail's New Play, and OpenAI's Challenge",
     "Global Currents: Social Tensions, Tech Surges, and Climate's Reach",
-    "Global Currents: Aid Diplomacy, Crime Routes, AI's Market Mood, and Privacy Breaches"
+    "Global Currents: Aid Diplomacy, Crime Routes, AI's Market Mood, and Privacy Breaches",
+    "World Unpacked: Japan's Quake, Ghana's Blackout, and AI's New Test"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -82,7 +84,8 @@
     "Unlock Better Sleep: The Foods That Help You Drift Off Faster",
     "Move, Nourish, Connect: A Holistic Path to Lasting Well-being",
     "Beyond Traditional Recovery: How Movement, Meals, and Community Power Your Holistic Wellness",
-    "Heavy Steps or Fast Wheels? Unpacking Weighted Vest Walking Versus Cycling"
+    "Heavy Steps or Fast Wheels? Unpacking Weighted Vest Walking Versus Cycling",
+    "Midlife Reset: The Habits Experts Say Will Add Years to Your Life"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -111,7 +114,8 @@
     "<strong>Uncommon Views: Milos' Moonscapes, Guayaquil's Iguanas, Ipoh's Artful Sips</strong>",
     "Global Aesthetics: From Thai Temples to French Villages and Arizona's Desert Glow",
     "From Ancient Echoes to Coastal Thrills and Cultural Canvas: Your Next Visual Journeys",
-    "Dreaming of New Views? Uncover Tokyo's Vibrant Corners, Todos Santos' Artistic Spirit, and Piedmont's Culinary Delights"
+    "Dreaming of New Views? Uncover Tokyo's Vibrant Corners, Todos Santos' Artistic Spirit, and Piedmont's Culinary Delights",
+    "Metropolitan Hues, Canal Dreams, and Desert Canvas: Your Next Aesthetic Global Journey"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -137,14 +141,12 @@
     "William James and the Power of Habit: How to Master Your Modern Routine",
     "Aristotle and the Art of \"Just Enough\": Navigating Extremes in Modern Life",
     "I Am Because We Are: Ubuntu's Wisdom for a Connected Life",
-    "Montaigne's Mirror: Embracing Your Imperfect Self in a Filtered World"
+    "Montaigne's Mirror: Embracing Your Imperfect Self in a Filtered World",
+    "Simone Weil and the Art of True Attention: Finding Focus in a Fragmented World"
   ],
   "_meta": {
-    "investing_progress": 19,
+    "investing_progress": 20,
     "recent_tickers": [
-      "NOBL",
-      "XLI",
-      "KBE",
       "QQQM",
       "SCHD",
       "VNQ",
@@ -156,7 +158,10 @@
       "IYR",
       "VHT",
       "VTIP",
-      "PFF"
+      "PFF",
+      "VXUS",
+      "RSP",
+      "VIG"
     ],
     "recent_destinations": [
       "Hoi An, Vietnam",
@@ -203,7 +208,10 @@
       "Sedona, USA",
       "Athens, Greece",
       "Malacca City, Malaysia",
-      "Daytona Beach, USA"
+      "Daytona Beach, USA",
+      "Tokyo, Japan",
+      "Amsterdam, Netherlands",
+      "Todos Santos, Mexico"
     ]
   }
 }
