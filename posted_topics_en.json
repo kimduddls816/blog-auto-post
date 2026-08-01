@@ -29,7 +29,8 @@
     "Unlocking Passive Income: Understanding P/E Ratios and Exploring TIPS",
     "Your Guide to Today's Markets: P/B Ratios, Silver, and Strategic ETF Picks for Passive Income",
     "Building Resilience: Dividend Yield, CDs, and Smart ETF Choices for Today's Market",
-    "Beyond Yield: Growing Your Passive Income with Dividend Growth and Smart HSA Investing"
+    "Beyond Yield: Growing Your Passive Income with Dividend Growth and Smart HSA Investing",
+    "Unlocking Your Financial Future: Retirement Accounts, DRIPs, and Smart ETF Choices"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -60,7 +61,8 @@
     "Global Currents: Aid Diplomacy, Crime Routes, AI's Market Mood, and Privacy Breaches",
     "World Unpacked: Japan's Quake, Ghana's Blackout, and AI's New Test",
     "Global Jitters: Tech Crackdowns, War Profits, and Economic Balancing Acts",
-    "Global Currents: Legal Twists, Retail Shifts, and Tech's Next Moves"
+    "Global Currents: Legal Twists, Retail Shifts, and Tech's Next Moves",
+    "Global Unrest: Conflict, Migration, AI Challenges, and Justice Shifts"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -91,7 +93,8 @@
     "Heavy Steps or Fast Wheels? Unpacking Weighted Vest Walking Versus Cycling",
     "Midlife Reset: The Habits Experts Say Will Add Years to Your Life",
     "Creatine Uncovered: Your Guide to a Powerhouse Supplement for Brain, Body, and Beyond",
-    "Unpacking Cortisol Supplements: Do You Really Need Them for Better Recovery?"
+    "Unpacking Cortisol Supplements: Do You Really Need Them for Better Recovery?",
+    "Unlocking Your Core: Why Pilates is More Than Just a Trend"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -123,7 +126,8 @@
     "Dreaming of New Views? Uncover Tokyo's Vibrant Corners, Todos Santos' Artistic Spirit, and Piedmont's Culinary Delights",
     "Metropolitan Hues, Canal Dreams, and Desert Canvas: Your Next Aesthetic Global Journey",
     "Aesthetic Feasts, Urban Peaks, and Golden Sands: Uncover Global Charms",
-    "Copenhagen's Cool, Salento's Colors, and Chefchaouen's Blues: Global Escapes for Your Feed"
+    "Copenhagen's Cool, Salento's Colors, and Chefchaouen's Blues: Global Escapes for Your Feed",
+    "<strong>Pulse of the City: Detroit's Resurgence, London's Layers, Bogotá's Artful Soul</strong>"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -152,14 +156,12 @@
     "Montaigne's Mirror: Embracing Your Imperfect Self in a Filtered World",
     "Simone Weil and the Art of True Attention: Finding Focus in a Fragmented World",
     "Arthur Schopenhauer's Wisdom: Quieting the Endless Urge for More",
-    "The Weight of Choice: Søren Kierkegaard on Finding Your Path in a World of Options"
+    "The Weight of Choice: Søren Kierkegaard on Finding Your Path in a World of Options",
+    "Beyond the Herd: How Friedrich Nietzsche Helps You Become Who You Are"
   ],
   "_meta": {
-    "investing_progress": 22,
+    "investing_progress": 23,
     "recent_tickers": [
-      "DGRO",
-      "SHY",
-      "IYR",
       "VHT",
       "VTIP",
       "PFF",
@@ -171,7 +173,10 @@
       "XLE",
       "SCHG",
       "SCHD",
-      "VBR"
+      "VBR",
+      "IWM",
+      "DBA",
+      "SPHD"
     ],
     "recent_destinations": [
       "Hoi An, Vietnam",
@@ -228,7 +233,10 @@
       "Da Nang, Vietnam",
       "Copenhagen, Denmark",
       "Salento, Colombia",
-      "Chefchaouen, Morocco"
+      "Chefchaouen, Morocco",
+      "Detroit, USA",
+      "London, England",
+      "Bogotá, Colombia"
     ]
   }
 }
