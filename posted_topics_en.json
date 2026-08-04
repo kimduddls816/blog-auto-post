@@ -32,7 +32,8 @@
     "Beyond Yield: Growing Your Passive Income with Dividend Growth and Smart HSA Investing",
     "Unlocking Your Financial Future: Retirement Accounts, DRIPs, and Smart ETF Choices",
     "Unlocking Your Passive Income Potential: Taxes, Fractional Shares, and Today's Market",
-    "Decoding Sectors and Unearthing Income: Your Guide to Royalty Trusts and Market Shifts"
+    "Decoding Sectors and Unearthing Income: Your Guide to Royalty Trusts and Market Shifts",
+    "Navigating Today's Markets: Understanding Company Size and Exploring New Income Streams"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -66,7 +67,8 @@
     "Global Currents: Legal Twists, Retail Shifts, and Tech's Next Moves",
     "Global Unrest: Conflict, Migration, AI Challenges, and Justice Shifts",
     "Global Currents: Diplomacy, Digital Divides, and Disease Defense",
-    "Global Brief: Fuel Theft, AI Content, and Big Screen Wins"
+    "Global Brief: Fuel Theft, AI Content, and Big Screen Wins",
+    "Global Pulse: From Digital Divides to Natural Disasters"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -100,7 +102,8 @@
     "Unpacking Cortisol Supplements: Do You Really Need Them for Better Recovery?",
     "Unlocking Your Core: Why Pilates is More Than Just a Trend",
     "Unlock Your Pantry: Making Healthy Eating Easy with Canned, Frozen, and Packaged Foods",
-    "Blueberries for Your Brain: Unpacking the Latest Research on This Super Snack"
+    "Blueberries for Your Brain: Unpacking the Latest Research on This Super Snack",
+    "Protecting Two Hearts: Navigating Rising Blood Pressure During Pregnancy"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -135,7 +138,8 @@
     "Copenhagen's Cool, Salento's Colors, and Chefchaouen's Blues: Global Escapes for Your Feed",
     "<strong>Pulse of the City: Detroit's Resurgence, London's Layers, Bogotá's Artful Soul</strong>",
     "Culture, Cuisine, and Unexpected Charms: Exploring Ghent, Bishkek, and Valle de Guadalupe",
-    "Culinary Currents & Cultural Canvas: San Sebastián, San Antonio, and Fukuoka Await Your Lens"
+    "Culinary Currents & Cultural Canvas: San Sebastián, San Antonio, and Fukuoka Await Your Lens",
+    "Coastal Legends, Emerald Karsts, and Colonial Canvas: Unmissable Global Views for Your Feed"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -167,14 +171,12 @@
     "The Weight of Choice: Søren Kierkegaard on Finding Your Path in a World of Options",
     "Beyond the Herd: How Friedrich Nietzsche Helps You Become Who You Are",
     "Jean-Paul Sartre and the Authentic You: Escaping Bad Faith in the Digital Age",
-    "Immanuel Kant and Your Inner Compass: Navigating Workplace Ethics"
+    "Immanuel Kant and Your Inner Compass: Navigating Workplace Ethics",
+    "Michel Foucault's Panopticon: Understanding Why We Self-Monitor Online"
   ],
   "_meta": {
-    "investing_progress": 25,
+    "investing_progress": 26,
     "recent_tickers": [
-      "VEA",
-      "HDV",
-      "XLE",
       "SCHG",
       "SCHD",
       "VBR",
@@ -186,12 +188,12 @@
       "VOO",
       "IVV",
       "VDE",
-      "XLU"
+      "XLU",
+      "VTI",
+      "SPYV",
+      "AGG"
     ],
     "recent_destinations": [
-      "Lyon, France",
-      "Penang, Malaysia",
-      "Gozo, Malta",
       "Ubud, Indonesia",
       "Cartagena, Colombia",
       "Oxford, England",
@@ -248,7 +250,10 @@
       "Valle de Guadalupe, Mexico",
       "San Sebastián, Spain",
       "San Antonio, USA",
-      "Fukuoka, Japan"
+      "Fukuoka, Japan",
+      "Ulysses Riviera, Italy",
+      "Ninh Binh, Vietnam",
+      "San Miguel de Allende, Mexico"
     ]
   }
 }
