@@ -33,7 +33,8 @@
     "Unlocking Your Financial Future: Retirement Accounts, DRIPs, and Smart ETF Choices",
     "Unlocking Your Passive Income Potential: Taxes, Fractional Shares, and Today's Market",
     "Decoding Sectors and Unearthing Income: Your Guide to Royalty Trusts and Market Shifts",
-    "Navigating Today's Markets: Understanding Company Size and Exploring New Income Streams"
+    "Navigating Today's Markets: Understanding Company Size and Exploring New Income Streams",
+    "Navigating High Markets: Growth vs. Value, Annuities, and Smart ETF Choices for Income"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -68,7 +69,8 @@
     "Global Unrest: Conflict, Migration, AI Challenges, and Justice Shifts",
     "Global Currents: Diplomacy, Digital Divides, and Disease Defense",
     "Global Brief: Fuel Theft, AI Content, and Big Screen Wins",
-    "Global Pulse: From Digital Divides to Natural Disasters"
+    "Global Pulse: From Digital Divides to Natural Disasters",
+    "Global Currents: Corporate Scandals, Farm Heat, and AI Risks"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -103,7 +105,8 @@
     "Unlocking Your Core: Why Pilates is More Than Just a Trend",
     "Unlock Your Pantry: Making Healthy Eating Easy with Canned, Frozen, and Packaged Foods",
     "Blueberries for Your Brain: Unpacking the Latest Research on This Super Snack",
-    "Protecting Two Hearts: Navigating Rising Blood Pressure During Pregnancy"
+    "Protecting Two Hearts: Navigating Rising Blood Pressure During Pregnancy",
+    "Is Your Relationship Drowning in 'Mental Load'? How to Lighten the Weight Together"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -139,7 +142,8 @@
     "<strong>Pulse of the City: Detroit's Resurgence, London's Layers, Bogotá's Artful Soul</strong>",
     "Culture, Cuisine, and Unexpected Charms: Exploring Ghent, Bishkek, and Valle de Guadalupe",
     "Culinary Currents & Cultural Canvas: San Sebastián, San Antonio, and Fukuoka Await Your Lens",
-    "Coastal Legends, Emerald Karsts, and Colonial Canvas: Unmissable Global Views for Your Feed"
+    "Coastal Legends, Emerald Karsts, and Colonial Canvas: Unmissable Global Views for Your Feed",
+    "Lens-Ready Landscapes: Maasai Mara's Safari Grandeur, Telluride's Mountain Magic, and Lugano's Mediterranean Flair"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -172,14 +176,12 @@
     "Beyond the Herd: How Friedrich Nietzsche Helps You Become Who You Are",
     "Jean-Paul Sartre and the Authentic You: Escaping Bad Faith in the Digital Age",
     "Immanuel Kant and Your Inner Compass: Navigating Workplace Ethics",
-    "Michel Foucault's Panopticon: Understanding Why We Self-Monitor Online"
+    "Michel Foucault's Panopticon: Understanding Why We Self-Monitor Online",
+    "Zhuangzi and the Freedom of Flow: Why Less Forcing Means More Living"
   ],
   "_meta": {
-    "investing_progress": 26,
+    "investing_progress": 27,
     "recent_tickers": [
-      "SCHG",
-      "SCHD",
-      "VBR",
       "IWM",
       "DBA",
       "SPHD",
@@ -191,7 +193,10 @@
       "XLU",
       "VTI",
       "SPYV",
-      "AGG"
+      "AGG",
+      "SPLG",
+      "XLV",
+      "BND"
     ],
     "recent_destinations": [
       "Ubud, Indonesia",
