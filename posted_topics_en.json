@@ -35,7 +35,8 @@
     "Decoding Sectors and Unearthing Income: Your Guide to Royalty Trusts and Market Shifts",
     "Navigating Today's Markets: Understanding Company Size and Exploring New Income Streams",
     "Navigating High Markets: Growth vs. Value, Annuities, and Smart ETF Choices for Income",
-    "Navigating Market Cycles: Understanding Boom and Bust, Municipal Bonds, and Strategic ETF Picks"
+    "Navigating Market Cycles: Understanding Boom and Bust, Municipal Bonds, and Strategic ETF Picks",
+    "Inflation and Your Portfolio: Understanding Its Bite and Exploring P2P Lending"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -72,7 +73,8 @@
     "Global Brief: Fuel Theft, AI Content, and Big Screen Wins",
     "Global Pulse: From Digital Divides to Natural Disasters",
     "Global Currents: Corporate Scandals, Farm Heat, and AI Risks",
-    "Global Currents: Diplomacy, Tragedies, and Tech's Real Impact"
+    "Global Currents: Diplomacy, Tragedies, and Tech's Real Impact",
+    "Global Currents: Tech Fines, Policy Shifts, and Strategic Alliances"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -109,7 +111,8 @@
     "Blueberries for Your Brain: Unpacking the Latest Research on This Super Snack",
     "Protecting Two Hearts: Navigating Rising Blood Pressure During Pregnancy",
     "Is Your Relationship Drowning in 'Mental Load'? How to Lighten the Weight Together",
-    "GLP-1s and Your Bones: Understanding the Link to Long-Term Health"
+    "GLP-1s and Your Bones: Understanding the Link to Long-Term Health",
+    "Beyond the Scale: When Your Wellness Journey Becomes a Secret"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -147,7 +150,8 @@
     "Culinary Currents & Cultural Canvas: San Sebastián, San Antonio, and Fukuoka Await Your Lens",
     "Coastal Legends, Emerald Karsts, and Colonial Canvas: Unmissable Global Views for Your Feed",
     "Lens-Ready Landscapes: Maasai Mara's Safari Grandeur, Telluride's Mountain Magic, and Lugano's Mediterranean Flair",
-    "Beyond the Usual: Puglia's Sun, Kigali's Pulse, El Chaltén's Peaks"
+    "Beyond the Usual: Puglia's Sun, Kigali's Pulse, El Chaltén's Peaks",
+    "<strong>From Bubbly Bliss to Historic Hues: Three Picture-Perfect Global Getaways</strong>"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -182,10 +186,11 @@
     "Immanuel Kant and Your Inner Compass: Navigating Workplace Ethics",
     "Michel Foucault's Panopticon: Understanding Why We Self-Monitor Online",
     "Zhuangzi and the Freedom of Flow: Why Less Forcing Means More Living",
-    "Sextus Empiricus and the Peace of Not Knowing: Navigating Today's Information Tsunami"
+    "Sextus Empiricus and the Peace of Not Knowing: Navigating Today's Information Tsunami",
+    "Karl Marx and the Modern Grind: Reclaiming Meaning in Your Work"
   ],
   "_meta": {
-    "investing_progress": 28,
+    "investing_progress": 29,
     "recent_tickers": [
       "XLF",
       "DGRO",
@@ -204,9 +209,6 @@
       "MUB"
     ],
     "recent_destinations": [
-      "Busan, South Korea",
-      "Asheville, North Carolina, USA",
-      "Lisbon, Portugal",
       "Kyoto, Japan",
       "Mexico City, Mexico",
       "Da Lat, Vietnam",
@@ -263,7 +265,10 @@
       "San Miguel de Allende, Mexico",
       "Puglia, Italy",
       "Kigali, Rwanda",
-      "El Chaltén, Argentina"
+      "El Chaltén, Argentina",
+      "Champagne, France",
+      "Cape May, New Jersey, USA",
+      "Colonia del Sacramento, Uruguay"
     ]
   }
 }
