@@ -38,7 +38,8 @@
     "Navigating Market Cycles: Understanding Boom and Bust, Municipal Bonds, and Strategic ETF Picks",
     "Inflation and Your Portfolio: Understanding Its Bite and Exploring P2P Lending",
     "Passive Income Power Plays: Unpacking Interest Rates, Farmland, and Today's Top ETFs",
-    "Passive Income Pathways: Understanding Currency Effects and Exploring MLPs"
+    "Passive Income Pathways: Understanding Currency Effects and Exploring MLPs",
+    "Your Guide to Commodities, Job Market Shifts, and Smart ETF Picks"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -78,7 +79,8 @@
     "Global Currents: Diplomacy, Tragedies, and Tech's Real Impact",
     "Global Currents: Tech Fines, Policy Shifts, and Strategic Alliances",
     "Global Threads: Safety, Regulation, and Nature's Fury",
-    "Global Diplomacy, Digital Safety, and Daily Journeys"
+    "Global Diplomacy, Digital Safety, and Daily Journeys",
+    "Global Currents: Accountability, AI's Reality, and Digital Safety"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -118,7 +120,8 @@
     "GLP-1s and Your Bones: Understanding the Link to Long-Term Health",
     "Beyond the Scale: When Your Wellness Journey Becomes a Secret",
     "Unpacking Maternal Mental Health: Beyond Postpartum Depression",
-    "Unlock Your Balance, Boost Your Strength: The Power of Single-Leg Workouts"
+    "Unlock Your Balance, Boost Your Strength: The Power of Single-Leg Workouts",
+    "Bask in the Glow: Unpacking the Wellness Benefits of Red Light Therapy"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -159,7 +162,8 @@
     "Beyond the Usual: Puglia's Sun, Kigali's Pulse, El Chaltén's Peaks",
     "<strong>From Bubbly Bliss to Historic Hues: Three Picture-Perfect Global Getaways</strong>",
     "Harbor City Histories, Street Art Stories, and Lakeside Lifestyles: Explore Beyond the Usual",
-    "Curated Vistas: Asheville's Blue Ridge Art, Matera's Sassi Stories, Hoi An's Luminous Nights"
+    "Curated Vistas: Asheville's Blue Ridge Art, Matera's Sassi Stories, Hoi An's Luminous Nights",
+    "<strong>Curated Postcards: Hudson Valley's Rustic Allure, Quebec City's European Soul, and Diani's Ocean Serenity</strong>"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -197,14 +201,12 @@
     "Sextus Empiricus and the Peace of Not Knowing: Navigating Today's Information Tsunami",
     "Karl Marx and the Modern Grind: Reclaiming Meaning in Your Work",
     "Socrates and the Art of Self-Examination: Finding Your True North in a Busy World",
-    "Epicurus and the Art of Quiet Joy: Finding Contentment in a World Obsessed with More"
+    "Epicurus and the Art of Quiet Joy: Finding Contentment in a World Obsessed with More",
+    "Diogenes's Radical Simplicity: Finding Freedom from Modern Consumerism"
   ],
   "_meta": {
-    "investing_progress": 31,
+    "investing_progress": 32,
     "recent_tickers": [
-      "VTI",
-      "SPYV",
-      "AGG",
       "SPLG",
       "XLV",
       "BND",
@@ -216,12 +218,12 @@
       "VIG",
       "VOO",
       "VYM",
-      "IEMG"
+      "IEMG",
+      "IVV",
+      "XLC",
+      "XLB"
     ],
     "recent_destinations": [
-      "Budapest, Hungary",
-      "Oaxaca, Mexico",
-      "Ljubljana, Slovenia",
       "Ella, Sri Lanka",
       "Valparaíso, Chile",
       "Hallstatt, Austria",
@@ -278,7 +280,10 @@
       "George Town, Malaysia",
       "Asheville, North Carolina, USA",
       "Matera, Italy",
-      "Hoi An, Vietnam"
+      "Hoi An, Vietnam",
+      "Hudson Valley, USA",
+      "Quebec City, Canada",
+      "Diani Beach, Kenya"
     ]
   }
 }
