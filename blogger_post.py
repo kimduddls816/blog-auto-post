@@ -145,6 +145,36 @@ INVESTING_SAFETY_RULES = """
 # 여행 카테고리: 최근 다룬 목적지 개수 상한 (도시/지역 단위 기억)
 RECENT_DESTINATIONS_LIMIT = 60
 
+# ─────────────────────────────────────────────
+# 문장/구조 다양성 강제 장치
+# 목적: 프롬프트가 고정돼 있으면 AI가 문장 패턴을 좁은 확률분포 안에서
+# 반복하게 되고, 이게 구글의 "적절한 표준 태그가 포함된 대체 페이지"
+# (콘텐츠 유사성 감지) 판정으로 이어짐. 매 포스트마다 오프닝 방식과
+# 문장 리듬을 강제로 바꿔서 표면적 다양성이 아니라 실제 통계적 다양성을 만든다.
+# ─────────────────────────────────────────────
+OPENING_STYLES = [
+    "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+    "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
+    "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
+    "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
+    "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
+    "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
+]
+
+SENTENCE_RHYTHMS = [
+    "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
+    "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+    "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+]
+
+BANNED_STOCK_PHRASES = [
+    "In today's fast-paced world", "Let's dive in", "Here's the thing",
+    "We hear you", "Are you tired of", "Forget the old",
+    "In this post, we'll", "Without further ado", "At the end of the day",
+    "The bottom line is", "Here's what you need to know", "Buckle up",
+    "It's no secret that", "In a world where", "Let's face it",
+]
+
 CATEGORIES = [
     {
         "name": "Passive Income Investing",
@@ -365,7 +395,18 @@ def build_intro_html(category_label):
     date_str = datetime.now().strftime("%B %d, %Y")
     return f'<p><strong>{category_label} | {date_str}</strong></p>\n'
 
-def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0, recent_tickers=None, recent_destinations=None):
+def extract_opening_text(content_html, max_chars=220):
+    """본문 HTML에서 첫 문단의 순수 텍스트만 추출. 다음 포스트 생성 시
+    '이렇게 시작하지 마라' 비교용으로 저장하기 위함."""
+    if not content_html:
+        return ""
+    text = re.sub(r"<[^>]+>", " ", content_html)
+    text = re.sub(r"\s{2,}", " ", text).strip()
+    return text[:max_chars]
+
+def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0,
+                   recent_tickers=None, recent_destinations=None, recent_openings=None,
+                   opening_style=None, sentence_rhythm=None):
     today = datetime.now().strftime("%B %d, %Y")
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
     covered_text = ", ".join(covered_topics) if covered_topics else "None"
@@ -373,6 +414,11 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
     tickers_text = ", ".join(recent_tickers) if recent_tickers else "None"
     recent_destinations = recent_destinations or []
     destinations_text = ", ".join(recent_destinations) if recent_destinations else "None"
+    recent_openings = recent_openings or []
+    openings_text = "\n".join(f"- \"{o}...\"" for o in recent_openings) if recent_openings else "None"
+    opening_style = opening_style or OPENING_STYLES[0]
+    sentence_rhythm = sentence_rhythm or SENTENCE_RHYTHMS[0]
+    banned_phrases_text = ", ".join(f'"{p}"' for p in BANNED_STOCK_PHRASES)
 
     if trends:
         lines = []
@@ -387,7 +433,21 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
     is_investing  = category["name"] == "Passive Income Investing"
     is_travel     = category["name"] == "Travel & Hidden Gems"
 
-    common_rules = """
+    if is_investing:
+        # 투자 카테고리는 커리큘럼 순서를 따라가는 정보형 콘텐츠라 후킹 압박을 주지 않음.
+        # 기존처럼 명확하고 직설적인 제목이 이 카테고리엔 더 맞음.
+        title_hook_block = ""
+    else:
+        title_hook_block = """
+[TITLE CRAFT — WRITE THIS AFTER DRAFTING THE BODY, MANDATORY]
+Once you've written the post, look back at it and pull the single most interesting, surprising, or concrete detail from the body, then build the title around THAT, not a generic label for the topic.
+- Concrete specificity: include one real, specific detail in the title itself (a number, a place, a named thing, a specific situation) rather than a vague category description. "A Bali Café With No Wi-Fi and a Two-Hour Wait" beats "A Hidden Gem in Bali."
+- Curiosity gap: the title can raise a question or tension the post resolves, but the post must actually deliver on it. Never promise something the body doesn't pay off.
+- Stakes or relevance: give the reader a reason this matters right now or to them specifically, without resorting to fear-based or anxiety-based framing as the default move.
+- Avoid vague, generic phrasing that could be swapped onto a different post in this category with only the topic word changed. If you could replace one noun and the title would still make sense for a completely different post, it's too generic, make it more specific to this exact post.
+"""
+
+    common_rules = f"""
 [FORMATTING RULES — MANDATORY]
 - Write ONLY valid HTML. NEVER use markdown syntax like **bold** or *italic* or # headers.
 - For emphasis, use <strong>word</strong> or <em>word</em> instead of asterisks. Use this sparingly.
@@ -398,6 +458,21 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
 - A fixed header line showing the category name and today's date (formatted like "Category Name | Month Day, Year") will be automatically inserted above your content before publishing. You do NOT need to write this yourself, and you must NOT recreate a similar line (no "Welcome to today's..." intro, no restating the category name or date at the start, no rhetorical hook sentence trying to set the scene).
 - Start the actual body directly with the substantive content of the post (the real opening idea, story, or topic sentence), as if the reader already saw the category/date header right above it.
 - It's still fine to cite a specific article's published date later in the post when referencing that article (e.g., "a report published on June 29 noted...").
+
+[TITLE RULES — MANDATORY, ALL CATEGORIES]
+- Do not default to any single recurring emotional frame (e.g. don't make every title about anxiety, burnout, or existential dread — that becomes its own repeating pattern). Let the actual content of THIS post determine what makes it worth reading, and build the title from that.
+- Look at the recently published titles below and make sure this title does not share the same sentence structure, opening word pattern, or tone as recent ones. If recent titles were mostly questions, don't make another question. If recent titles leaned emotional, try something more concrete or vice versa.
+- Titles must be specific to the actual content of this post, not a generic template that could apply to many different posts in this category.
+{title_hook_block}
+[OPENING RULES — MANDATORY]
+- For this post, use this opening approach: {opening_style}
+- Do NOT start this post in a way that resembles any of these recent openings from this category (different topic, different wording, different structure required): {openings_text}
+
+[SENTENCE RHYTHM — MANDATORY]
+- {sentence_rhythm}
+
+[BANNED PHRASES — MANDATORY]
+- Never use any of these stock phrases or close variants anywhere in the post: {banned_phrases_text}
 """
 
     if is_philosophy:
@@ -641,6 +716,9 @@ def main():
     investing_progress = meta.get("investing_progress", 0)
     recent_tickers = meta.get("recent_tickers", [])
     recent_destinations = meta.get("recent_destinations", [])
+    recent_openings_by_cat = meta.get("recent_openings", {})   # {category_name: [opening_text, ...]}
+    last_style_by_cat = meta.get("last_opening_style", {})     # {category_name: style_string}
+    last_rhythm_by_cat = meta.get("last_sentence_rhythm", {})  # {category_name: rhythm_string}
 
     for cat in CATEGORIES:
         try:
@@ -658,15 +736,32 @@ def main():
             if covered:
                 print(f"     Topics to avoid: {', '.join(covered[:8])}")
 
+            # 직전에 쓴 오프닝 스타일/문장 리듬과 다른 것으로 랜덤 배정 (반복 방지)
+            prev_style = last_style_by_cat.get(name)
+            style_choices = [s for s in OPENING_STYLES if s != prev_style] or OPENING_STYLES
+            chosen_style = random.choice(style_choices)
+
+            prev_rhythm = last_rhythm_by_cat.get(name)
+            rhythm_choices = [r for r in SENTENCE_RHYTHMS if r != prev_rhythm] or SENTENCE_RHYTHMS
+            chosen_rhythm = random.choice(rhythm_choices)
+
+            cat_openings = recent_openings_by_cat.get(name, [])
+
             print(f"  ✍️  [{name}] Generating post...")
             if name == "Passive Income Investing":
                 print(f"     Investing curriculum progress: day {investing_progress + 1}")
-                post = generate_post(cat, posted_titles, covered, trends, investing_progress, recent_tickers)
+                post = generate_post(cat, posted_titles, covered, trends, investing_progress, recent_tickers,
+                                      recent_openings=cat_openings, opening_style=chosen_style, sentence_rhythm=chosen_rhythm)
             elif name == "Travel & Hidden Gems":
                 print(f"     Destinations to avoid: {len(recent_destinations)} on record")
-                post = generate_post(cat, posted_titles, covered, trends, recent_destinations=recent_destinations)
+                post = generate_post(cat, posted_titles, covered, trends, recent_destinations=recent_destinations,
+                                      recent_openings=cat_openings, opening_style=chosen_style, sentence_rhythm=chosen_rhythm)
             else:
-                post = generate_post(cat, posted_titles, covered, trends)
+                post = generate_post(cat, posted_titles, covered, trends,
+                                      recent_openings=cat_openings, opening_style=chosen_style, sentence_rhythm=chosen_rhythm)
+
+            # 헤더 삽입 전 실제 본문 오프닝을 먼저 캡처 (헤더 텍스트가 아니라 진짜 오프닝을 기록하기 위함)
+            actual_opening_text = extract_opening_text(post.get("content", ""))
 
             # 모든 포스트 맨 앞에 고정 헤더 삽입: [Category] | [Month Day, Year]
             post["content"] = build_intro_html(cat["label"]) + post.get("content", "")
@@ -683,6 +778,17 @@ def main():
 
             posted.setdefault(name, []).append(post["title"])
             posted[name] = posted[name][-50:]
+
+            # 이번 포스트의 오프닝/스타일/리듬 기록 (다음 발행 시 반복 회피용)
+            posted.setdefault("_meta", {})
+            if actual_opening_text:
+                cat_openings = (recent_openings_by_cat.get(name, []) + [actual_opening_text])[-6:]
+                recent_openings_by_cat[name] = cat_openings
+                posted["_meta"]["recent_openings"] = recent_openings_by_cat
+            last_style_by_cat[name] = chosen_style
+            posted["_meta"]["last_opening_style"] = last_style_by_cat
+            last_rhythm_by_cat[name] = chosen_rhythm
+            posted["_meta"]["last_sentence_rhythm"] = last_rhythm_by_cat
 
             if name == "Passive Income Investing":
                 posted.setdefault("_meta", {})
