@@ -39,7 +39,8 @@
     "Inflation and Your Portfolio: Understanding Its Bite and Exploring P2P Lending",
     "Passive Income Power Plays: Unpacking Interest Rates, Farmland, and Today's Top ETFs",
     "Passive Income Pathways: Understanding Currency Effects and Exploring MLPs",
-    "Your Guide to Commodities, Job Market Shifts, and Smart ETF Picks"
+    "Your Guide to Commodities, Job Market Shifts, and Smart ETF Picks",
+    "Building Lasting Wealth: Infrastructure, Emerging Markets, and Smart Dividend Strategies"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -80,7 +81,8 @@
     "Global Currents: Tech Fines, Policy Shifts, and Strategic Alliances",
     "Global Threads: Safety, Regulation, and Nature's Fury",
     "Global Diplomacy, Digital Safety, and Daily Journeys",
-    "Global Currents: Accountability, AI's Reality, and Digital Safety"
+    "Global Currents: Accountability, AI's Reality, and Digital Safety",
+    "Finland and Sweden Bridge a Decades-Long Divide With a New Night Train"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -121,7 +123,8 @@
     "Beyond the Scale: When Your Wellness Journey Becomes a Secret",
     "Unpacking Maternal Mental Health: Beyond Postpartum Depression",
     "Unlock Your Balance, Boost Your Strength: The Power of Single-Leg Workouts",
-    "Bask in the Glow: Unpacking the Wellness Benefits of Red Light Therapy"
+    "Bask in the Glow: Unpacking the Wellness Benefits of Red Light Therapy",
+    "Kicking in Your Sleep? Neurologists Link This Behavior to Years-Early Dementia Risk"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -163,7 +166,8 @@
     "<strong>From Bubbly Bliss to Historic Hues: Three Picture-Perfect Global Getaways</strong>",
     "Harbor City Histories, Street Art Stories, and Lakeside Lifestyles: Explore Beyond the Usual",
     "Curated Vistas: Asheville's Blue Ridge Art, Matera's Sassi Stories, Hoi An's Luminous Nights",
-    "<strong>Curated Postcards: Hudson Valley's Rustic Allure, Quebec City's European Soul, and Diani's Ocean Serenity</strong>"
+    "<strong>Curated Postcards: Hudson Valley's Rustic Allure, Quebec City's European Soul, and Diani's Ocean Serenity</strong>",
+    "Chasing Golden Hour: Cartagena's Sunset Walls, Ubud's Morning Mist, and Porto's Riverside Glow"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -202,14 +206,12 @@
     "Karl Marx and the Modern Grind: Reclaiming Meaning in Your Work",
     "Socrates and the Art of Self-Examination: Finding Your True North in a Busy World",
     "Epicurus and the Art of Quiet Joy: Finding Contentment in a World Obsessed with More",
-    "Diogenes's Radical Simplicity: Finding Freedom from Modern Consumerism"
+    "Diogenes's Radical Simplicity: Finding Freedom from Modern Consumerism",
+    "Hannah Arendt's Radical Insight: The Unseen Life is Your Most Free"
   ],
   "_meta": {
-    "investing_progress": 32,
+    "investing_progress": 33,
     "recent_tickers": [
-      "SPLG",
-      "XLV",
-      "BND",
       "SCHD",
       "VXUS",
       "MUB",
@@ -221,12 +223,12 @@
       "IEMG",
       "IVV",
       "XLC",
-      "XLB"
+      "XLB",
+      "PAVE",
+      "VWO",
+      "REGL"
     ],
     "recent_destinations": [
-      "Ella, Sri Lanka",
-      "Valparaíso, Chile",
-      "Hallstatt, Austria",
       "Luang Prabang, Laos",
       "Banff, Canada",
       "Siargao, Philippines",
@@ -283,7 +285,41 @@
       "Hoi An, Vietnam",
       "Hudson Valley, USA",
       "Quebec City, Canada",
-      "Diani Beach, Kenya"
-    ]
+      "Diani Beach, Kenya",
+      "Ubud, Indonesia",
+      "Porto, Portugal",
+      "Cartagena, Colombia"
+    ],
+    "recent_openings": {
+      "Passive Income Investing": [
+        "Sarah, a busy marketing manager in her early thirties, scrolled through her investment app during her morning commute. She was not checking daily fluctuations, but rather the slow, steady growth of her diversified portfo"
+      ],
+      "World News Simplified": [
+        "Finland and Sweden Reconnect with a New Night Train. UK Fast-Tracks Ban on Tricky Subscription Traps. Lebanon Peacekeeping Force Faces Uncertain Future. Global South Pushes Back on Tech Giant Dominance. Finland and Swede"
+      ],
+      "Wellness and Self-Care": [
+        "Picture this. You wake up in the morning, a bit disoriented. Your partner mentions you were kicking and shouting in your sleep again. Or perhaps you have found yourself on the floor next to your bed, unsure how you got t"
+      ],
+      "Travel & Hidden Gems": [
+        "Finding those truly unique spots, the ones that fill your camera roll with vibrant stories and leave you feeling utterly refreshed, means looking a little beyond the usual suspects. This isn't about ticking off famous la"
+      ],
+      "Philosophy for Modern Life": [
+        "Think about the difference between writing a heartfelt letter to a close friend and crafting a witty, highly polished caption for an Instagram post. One is a private act, shared with intention and intimacy. The other oft"
+      ]
+    },
+    "last_opening_style": {
+      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+      "Wellness and Self-Care": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
+      "Travel & Hidden Gems": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
+      "Philosophy for Modern Life": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic."
+    },
+    "last_sentence_rhythm": {
+      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Wellness and Self-Care": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "Philosophy for Modern Life": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm."
+    }
   }
 }
