@@ -41,7 +41,8 @@
     "Passive Income Pathways: Understanding Currency Effects and Exploring MLPs",
     "Your Guide to Commodities, Job Market Shifts, and Smart ETF Picks",
     "Building Lasting Wealth: Infrastructure, Emerging Markets, and Smart Dividend Strategies",
-    "Beyond Borders: Investing in Global Markets, Preferred Stocks, and Today's Dynamic Economy"
+    "Beyond Borders: Investing in Global Markets, Preferred Stocks, and Today's Dynamic Economy",
+    "Strategic Balancing: Unpacking Asset Allocation and International Dividends for Passive Wealth"
   ],
   "World News Simplified": [
     "Europe's Extreme Heat: What You Need to Know About the Scorching Summer",
@@ -84,7 +85,8 @@
     "Global Diplomacy, Digital Safety, and Daily Journeys",
     "Global Currents: Accountability, AI's Reality, and Digital Safety",
     "Finland and Sweden Bridge a Decades-Long Divide With a New Night Train",
-    "Spotify Will Bury AI Music in Its Recommendation Engine"
+    "Spotify Will Bury AI Music in Its Recommendation Engine",
+    "Amazon Feeds Twitch Feeds to AI While Eurovision Bars Host Nations at War"
   ],
   "Wellness and Self-Care": [
     "Your 2026 Guide to Real Wellness: Simple Shifts for a Thriving Life",
@@ -127,7 +129,8 @@
     "Unlock Your Balance, Boost Your Strength: The Power of Single-Leg Workouts",
     "Bask in the Glow: Unpacking the Wellness Benefits of Red Light Therapy",
     "Kicking in Your Sleep? Neurologists Link This Behavior to Years-Early Dementia Risk",
-    "Beyond Bananas and Rice: The New Nutrient-Rich Plan for a Faster Gut Recovery"
+    "Beyond Bananas and Rice: The New Nutrient-Rich Plan for a Faster Gut Recovery",
+    "Two to Three Weekly Sessions: The Resistance Training Habit Experts Call Key to Longevity"
   ],
   "Travel & Hidden Gems": [
     "Your Prime Day Passport: Unlocking 2026's Hottest Instagram-Worthy Travel Gems!",
@@ -171,7 +174,8 @@
     "Curated Vistas: Asheville's Blue Ridge Art, Matera's Sassi Stories, Hoi An's Luminous Nights",
     "<strong>Curated Postcards: Hudson Valley's Rustic Allure, Quebec City's European Soul, and Diani's Ocean Serenity</strong>",
     "Chasing Golden Hour: Cartagena's Sunset Walls, Ubud's Morning Mist, and Porto's Riverside Glow",
-    "Medellín's Comuna 13 Murals and Two Other Global Cities Redefining Urban Cool"
+    "Medellín's Comuna 13 Murals and Two Other Global Cities Redefining Urban Cool",
+    "Costa Mesa's Avant-Garde Shops, Kyoto's Bamboo Whispers, and Budapest's Ruin Bar Rhythms: Aesthetic Journeys Beyond the Map"
   ],
   "Philosophy for Modern Life": [
     "Ubuntu: Finding Your True Self in the Fabric of 'We'",
@@ -212,14 +216,12 @@
     "Epicurus and the Art of Quiet Joy: Finding Contentment in a World Obsessed with More",
     "Diogenes's Radical Simplicity: Finding Freedom from Modern Consumerism",
     "Hannah Arendt's Radical Insight: The Unseen Life is Your Most Free",
-    "The Unread Self-Help Book and Wang Yangming's Answer to Doing More"
+    "The Unread Self-Help Book and Wang Yangming's Answer to Doing More",
+    "Seneca's Radical Question: What if Your Biggest Money Fear is Already Manageable?"
   ],
   "_meta": {
-    "investing_progress": 34,
+    "investing_progress": 35,
     "recent_tickers": [
-      "QQQ",
-      "IAU",
-      "VIG",
       "VOO",
       "VYM",
       "IEMG",
@@ -231,12 +233,12 @@
       "REGL",
       "SMH",
       "EFA",
-      "XLU"
+      "XLU",
+      "VXUS",
+      "SCHD",
+      "DGRO"
     ],
     "recent_destinations": [
-      "Tbilisi, Georgia",
-      "Antigua, Guatemala",
-      "Charleston, USA",
       "Kotor, Montenegro",
       "Jeju Island, South Korea",
       "Paros, Greece",
@@ -293,43 +295,51 @@
       "Cartagena, Colombia",
       "Medellín, Colombia",
       "Lisbon, Portugal",
-      "Taipei, Taiwan"
+      "Taipei, Taiwan",
+      "Costa Mesa, USA",
+      "Kyoto, Japan",
+      "Budapest, Hungary"
     ],
     "recent_openings": {
       "Passive Income Investing": [
         "Sarah, a busy marketing manager in her early thirties, scrolled through her investment app during her morning commute. She was not checking daily fluctuations, but rather the slow, steady growth of her diversified portfo",
-        "The hum of the espresso machine fills your kitchen. You glance at your phone, checking the news headlines before your day truly begins. The market updates often catch your eye, especially when phrases like &#x2018;the ma"
+        "The hum of the espresso machine fills your kitchen. You glance at your phone, checking the news headlines before your day truly begins. The market updates often catch your eye, especially when phrases like &#x2018;the ma",
+        "The average American household headed by someone aged 55 to 64 has a median of $120,000 in retirement savings, often far less than what is needed for true financial independence. This statistic highlights a common challe"
       ],
       "World News Simplified": [
         "Finland and Sweden Reconnect with a New Night Train. UK Fast-Tracks Ban on Tricky Subscription Traps. Lebanon Peacekeeping Force Faces Uncertain Future. Global South Pushes Back on Tech Giant Dominance. Finland and Swede",
-        "Singapore and South Korea issue warnings on a popular seasoning. The chairman of a massive Indian conglomerate announces his departure. Spotify takes a stance on music created by artificial intelligence. France moves to "
+        "Singapore and South Korea issue warnings on a popular seasoning. The chairman of a massive Indian conglomerate announces his departure. Spotify takes a stance on music created by artificial intelligence. France moves to ",
+        "Amazon quietly starts using Twitch broadcasts to train its artificial intelligence models. Japanese corporations hesitate to embrace generative AI tools in daily office work. Eurovision officially bars countries at war f"
       ],
       "Wellness and Self-Care": [
         "Picture this. You wake up in the morning, a bit disoriented. Your partner mentions you were kicking and shouting in your sleep again. Or perhaps you have found yourself on the floor next to your bed, unsure how you got t",
-        "The BRAT diet, a long-standing recommendation for upset stomachs, is no longer advised by most health experts for managing diarrhea and nausea, according to a report published on August 11, 2026. This might come as a sur"
+        "The BRAT diet, a long-standing recommendation for upset stomachs, is no longer advised by most health experts for managing diarrhea and nausea, according to a report published on August 11, 2026. This might come as a sur",
+        "This post will show you how one specific exercise type can significantly improve your health and potentially extend your lifespan. We will look at what it is and how to start right away. You will find practical steps to "
       ],
       "Travel & Hidden Gems": [
         "Finding those truly unique spots, the ones that fill your camera roll with vibrant stories and leave you feeling utterly refreshed, means looking a little beyond the usual suspects. This isn't about ticking off famous la",
-        "Instead of revisiting the same few European capitals that everyone already knows, consider stepping into a city that pulses with new energy. Picture a cafe where digital detox is the norm. Imagine street art that tells s"
+        "Instead of revisiting the same few European capitals that everyone already knows, consider stepping into a city that pulses with new energy. Picture a cafe where digital detox is the norm. Imagine street art that tells s",
+        "When you find yourself scrolling through endless travel feeds, sometimes the most captivating images aren't from the world's most famous landmarks, but from those slightly off-kilter, incredibly atmospheric spots that fe"
       ],
       "Philosophy for Modern Life": [
         "Think about the difference between writing a heartfelt letter to a close friend and crafting a witty, highly polished caption for an Instagram post. One is a private act, shared with intention and intimacy. The other oft",
-        "The reader will understand how to bridge the gap between their good intentions and actual consistent actions. We all have those moments, perhaps daily, where we distinctly know what we &quot;should&quot; do, yet find our"
+        "The reader will understand how to bridge the gap between their good intentions and actual consistent actions. We all have those moments, perhaps daily, where we distinctly know what we &quot;should&quot; do, yet find our",
+        "That nagging whisper about money. It's not just about paying the bills or saving for retirement. It's the constant 'what if' scenarios that spin through your mind. What if the market crashes? What if you lose your job to"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
-      "World News Simplified": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
-      "Wellness and Self-Care": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
-      "Travel & Hidden Gems": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
-      "Philosophy for Modern Life": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance."
+      "Passive Income Investing": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
+      "World News Simplified": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
+      "Wellness and Self-Care": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
+      "Travel & Hidden Gems": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
+      "Philosophy for Modern Life": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read."
+      "Passive Income Investing": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
+      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "Philosophy for Modern Life": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm."
     }
   }
 }
