@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Stop Preparing and Start Doing: The 16th-Century Cure for Your Analysis Paralysis",
     "Kickstarting Your Passive Income Journey: Dividends, ETFs, and Financial Freedom",
     "Navigating Market Turbulence: Why Diversification Fuels Your Passive Income Journey",
     "Beyond Dividends: How to Supercharge Your Passive Income Machine (Even in Retirement)",
@@ -49,10 +48,10 @@
     "Unveiling the Interest Rate Puzzle: How Bond Yields Influence Your Stock Investments",
     "Mastering the Central Bank's Influence for Your Passive Income Portfolio",
     "Economic Barometers and Your Portfolio: Decoding GDP and Finding New Income Streams",
-    "Building Consistent Wealth: Understanding Economic Signals and Mastering Dividend Reinvestment"
+    "Building Consistent Wealth: Understanding Economic Signals and Mastering Dividend Reinvestment",
+    "Proactive Investing: Using Leading Indicators for Passive Income Stability"
   ],
   "World News Simplified": [
-    "Global Trade Gets a Breather: Understanding the US-Iran Deal's Impact",
     "Oil & Agendas: How Geopolitics is Shaping Your Daily Drive",
     "Global Jitters: Why Everything Feels Pricier and Governments Are Sweating",
     "Crimea's Fuel Freeze: How Ukraine's Strikes are Shaking Up Daily Life",
@@ -101,10 +100,10 @@
     "UK Families Face Rising Bills While Kyiv Lacks Air Defense",
     "From a Bali Jail Cell to America's Economic Crunch: Global Challenges Unfold",
     "Canada's 'Dollar-for-Dollar' Tariff Threat Amid Rising US Borrowing Costs",
-    "Gaza's 'Stone Age' Toilets Point to Broader Global Crises"
+    "Gaza's 'Stone Age' Toilets Point to Broader Global Crises",
+    "$27 Billion Shein IPO: Fast Fashion's Ethical Reckoning Hits Markets"
   ],
   "Wellness and Self-Care": [
-    "Your 2026 Guide: Simple Steps to Sustainable Wellness & Self-Care",
     "The Power of the Micro-Reset: How 10 Minutes of NSDR Can Beat Daily Burnout",
     "Want a Sharper Mind? This Diet Choice Could Make All The Difference",
     "Why the Mediterranean Diet Still Reigns Supreme in Wellness - And How You Can Embrace It",
@@ -153,10 +152,10 @@
     "From 2.5 Microns to Your Mind: How to Shield Yourself from Distant Wildfire Smoke",
     "The 'Exercise Pill' is Years Away, But Here's Your Action Plan Today",
     "From Resignation to Resilience: Why Starting Strength Training at 50+ is Your Longevity Game Changer",
-    "Flash-Frozen Berries and Rinsed Beans: Building a Truly Healthy Diet From Your Pantry and Freezer"
+    "Flash-Frozen Berries and Rinsed Beans: Building a Truly Healthy Diet From Your Pantry and Freezer",
+    "Four Weeks to Foundational Fitness: A Strength and Cardio Blueprint for Women Starting Out"
   ],
   "Travel & Hidden Gems": [
-    "Beyond the Eras: Discovering Taylor Swift's New York City Hidden Gems (and Snapping the P...",
     "The Ultimate NYC Aesthetic Guide: Hidden Cafes and Vinyl Bars to Visit Right Now",
     "Uncover the Magic: Santa Fe's Adobe Dreams & Hidden Gems for the Modern Explorer",
     "Beyond the Adobe: Why Santa Fe's Instagrammable Airbnbs Are Your Next Obsession",
@@ -205,10 +204,10 @@
     "Cobalt Gardens of Marrakech, New York's 19 Waterfalls, and Hanoi's Legendary Pho for $5",
     "Capture Kalinga's Ancient Ink, Kotor's Fjord Walls, and Guatapé's Zócalo Stories",
     "Capture Split's Roman Glow, Seoul's Industrial Chic, and Santa Fe's Surreal Art",
-    "Volcanic Cathedrals, Tequila's Soul, and Pier-Side Art: Unearthing Three Unexpected Global Haunts"
+    "Volcanic Cathedrals, Tequila's Soul, and Pier-Side Art: Unearthing Three Unexpected Global Haunts",
+    "Walk Through a Glowing Gorge, Then Explore Mexico's Car-Free Island and a Philippine Volcano View"
   ],
   "Philosophy for Modern Life": [
-    "Ubuntu: Finding Your True Self in the Fabric of 'We'",
     "The Ubuntu Cure for Burnout: Why 'I Am Because We Are' Changes Everything About Work Str...",
     "Why Undivided Attention Is the Greatest Love Language of the Digital Age",
     "Stop Preparing and Start Doing: The 16th-Century Cure for Your Analysis Paralysis",
@@ -257,14 +256,12 @@
     "The Warm Mug and Maurice Merleau-Ponty: Why Your Body is Not Just a Container",
     "The 'Side Hustle' Trap and Erich Fromm's Path to Authentic Freedom",
     "bell hooks and the Curated Relationship: Love as Action, Not an Image",
-    "The Pre-Made Life Plan and Simone de Beauvoir's Push to Rewrite It"
+    "The Pre-Made Life Plan and Simone de Beauvoir's Push to Rewrite It",
+    "Your Morning Coffee, Not Your Follower Count: George Berkeley on What Makes Life Real"
   ],
   "_meta": {
-    "investing_progress": 45,
+    "investing_progress": 46,
     "recent_tickers": [
-      "SCHP",
-      "SPY",
-      "EFA",
       "SCHD",
       "SOXX",
       "IEMG",
@@ -276,12 +273,12 @@
       "IVV",
       "VIG",
       "QQQ",
-      "VOO"
+      "VOO",
+      "VGSH",
+      "SDY",
+      "SPLV"
     ],
     "recent_destinations": [
-      "Detroit, USA",
-      "London, England",
-      "Bogotá, Colombia",
       "Ghent, Belgium",
       "Bishkek, Kyrgyzstan",
       "Valle de Guadalupe, Mexico",
@@ -338,63 +335,66 @@
       "Santa Fe, New Mexico, USA",
       "Catania, Italy",
       "Guadalajara, Mexico",
-      "Kaohsiung, Taiwan"
+      "Kaohsiung, Taiwan",
+      "Garmisch-Partenkirchen, Germany",
+      "Tagaytay, Philippines",
+      "Isla Holbox, Mexico"
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "This post will help you understand current market movements, especially around bond yields, guide you in defining your personal investing principles, introduce you to a specific asset designed to protect against inflatio",
         "The gentle hum of the refrigerator in your kitchen often goes unnoticed. Yet, that steady appliance is running on electricity. The cost of that electricity, like the price of groceries or your monthly rent, is influenced",
         "Sarah opened her investment app, a slight frown creasing her brow. She was comparing her portfolio&#39;s returns against a news headline about Treasury bond yields. A three-month Treasury bill was offering an attractive ",
         "Central banks globally manage over $38 trillion in assets, a colossal figure that profoundly impacts global financial markets. The Current Market Landscape The market's attention is currently fixed on earnings reports, p",
         "You are about to learn how a major economic number, Gross Domestic Product, directly influences your passive income strategy, along with insights into current market movements and specific investment opportunities. Navig",
-        "A study by Ned Davis Research found that since 1948, the S&P 500 has performed best when the unemployment rate is falling, particularly from high levels. This insight underscores the profound connection between the broad"
+        "A study by Ned Davis Research found that since 1948, the S&P 500 has performed best when the unemployment rate is falling, particularly from high levels. This insight underscores the profound connection between the broad",
+        "...the market always seems to be whispering something. Sometimes it is a confident shout, other times a quiet murmur. Learning to decipher these signals, especially those that hint at future economic activity, can be a p"
       ],
       "World News Simplified": [
-        "Indonesia's earthquake survivors face hunger amid critical aid delays. Four priceless Renaissance paintings vanish from an Italian art collection. A British supermarket pulls AI cameras after a shopper's embarrassing eje",
         "Russia warns the UK over supplying drones to Ukraine. Germany intensifies its crackdown on cross-border human smuggling. Former President Trump threatens US ally Oman over an Iran deal. A crucial trade deadline approache",
         "Kyiv suffers deadly air attacks amid air defense shortages. Australia expresses outrage over Israel's decision not to investigate aid worker killing. Former Zambian minister killed in security raid targeting opposition. ",
         "Eight killed in a remote Alaskan military plane crash. Former Pakistani Prime Minister Imran Khan returns to jail after medical checks. Swiss tourist jailed in Bali for disrespecting a sacred Day of Silence. Alarm bells ",
         "Canada and US lock horns over new tariffs. A missile strike devastates a Ukrainian shopping mall. US borrowing costs climb, sparking economic concern. Iran pushes back on fresh US sanctions. Pakistan's PTI party seeks le",
-        "Here is a look at recent global events, from unexpected explosions to ongoing humanitarian struggles and natural disasters. Co-ordinated arson attacks target southern Thailand. An explosion injures over a dozen people in"
+        "Here is a look at recent global events, from unexpected explosions to ongoing humanitarian struggles and natural disasters. Co-ordinated arson attacks target southern Thailand. An explosion injures over a dozen people in",
+        "Ukraine's strikes hit Russian online shopping, impacting daily life. Zambia's courts face pressure as an election petition deadline nears. Fashion giant Shein aims for a huge $27 billion stock market debut. Ukraine's mil"
       ],
       "Wellness and Self-Care": [
-        "Your future self will thank you for the small investments you make in your body today. This guide reveals six foundational exercises, championed by physical therapists, designed to build resilience and maintain your phys",
         "You might think of fiber as strictly for gut health, maybe to keep things moving smoothly. But a new study suggests its role extends far beyond that, reaching directly into your brain and mood. This isn't just about feel",
         "Sarah opened her window that morning, expecting a crisp autumn breeze. Instead, a faint, acrid smell drifted in. The air outside looked hazy, even though there wasn't a cloud in sight. She felt a tickle in her throat alr",
         "Many of us picture fitness as sweat on a treadmill, or the burn of a heavy lift. We imagine weight management as careful meal planning, perhaps with the help of medications like GLP-1s. But what if a single pill could of",
         "Mark, a busy project manager in his mid-fifties, used to think of fitness as something reserved for younger athletes. He'd watch gym-goers with a mix of admiration and resignation, believing his window for building real ",
-        "It's easy to picture a 'healthy' diet as an overflowing basket of farmers' market produce, vibrant and fresh, perhaps even a bit aspirational. This image often comes with a hefty price tag. The idea of daily preparation "
+        "It's easy to picture a 'healthy' diet as an overflowing basket of farmers' market produce, vibrant and fresh, perhaps even a bit aspirational. This image often comes with a hefty price tag. The idea of daily preparation ",
+        "This guide outlines a structured approach to building foundational strength and cardiovascular fitness over four weeks, specifically designed for women who are just beginning their journey to a more active lifestyle. Emb"
       ],
       "Travel & Hidden Gems": [
-        "Instead of simply scanning your feed for another picture of the Eiffel Tower or Big Ben, imagine a place where ancient samurai districts blend seamlessly with avant-garde art museums. Young travelers today are seeking mo",
         "Scrolling through endless feeds of the same old landmarks can get repetitive. You are seeking that spark, a place that feels both fresh and deeply authentic. You want stunning visuals, unique experiences, and stories to ",
         "Maya adjusted her camera lens, the vibrant blues and greens of the mosaic tiles at Jardin Majorelle creating a stunning kaleidoscope around her. She wasn't just collecting photos, she was capturing a feeling, a moment th",
         "A quick scroll through social media shows a clear shift. Instead of endless selfies in front of the Eiffel Tower, you are seeing vibrant murals, ancient craft traditions, and colorful streetscapes that tell a deeper stor",
         "Maya tapped her phone, the golden afternoon light catching her freshly brewed coffee as she scrolled through a travel blog. She wasn't looking for another picture of the Roman Colosseum. She wanted vibrant street art in ",
-        "You are about to discover three vibrant destinations across the globe, each offering a distinct blend of culture, cuisine, and captivating scenes perfect for your next adventure and social media feed. Catania, Sicily, It"
+        "You are about to discover three vibrant destinations across the globe, each offering a distinct blend of culture, cuisine, and captivating scenes perfect for your next adventure and social media feed. Catania, Sicily, It",
+        "A morning spent scrolling through vibrant feeds often unveils more than just fleeting trends. It reveals a collective longing for genuine discovery, for places that offer not just a pretty backdrop but a story, an experi"
       ],
       "Philosophy for Modern Life": [
-        "A recent Gallup report from 2023 found that only 30% of employees worldwide feel engaged at work. That is a lot of people going through the motions. You might be one of them. You might sit through a meeting or compile a ",
         "A brightly lit screen filled with faces you know, or used to know. A quiet ache inside your chest. These two things often happen at the same time in modern life. You might scroll through endless updates, seeing snippets ",
         "You will learn how to reconnect with your physical experience in a world often pulling you onto screens. Many of us spend our days in front of screens. Our eyes are fixed on pixels. Our fingers tap on keyboards or swipe ",
         "That feeling of needing to chase another certification, another income stream, another badge of &quot;productivity&quot; on your LinkedIn profile. It's almost addictive, isn't it? We keep pushing, driven by the belief th",
         "The reader will gain a new perspective on what it means to truly love and connect with others in a way that fosters genuine growth, drawing on the insights of bell hooks. It often feels as though modern life has made us ",
-        "You are at a family gathering, maybe a holiday dinner, and someone asks, &quot;So, what are you doing with your life now?&quot; Or perhaps you are scrolling through social media, seeing carefully curated posts about &quo"
+        "You are at a family gathering, maybe a holiday dinner, and someone asks, &quot;So, what are you doing with your life now?&quot; Or perhaps you are scrolling through social media, seeing carefully curated posts about &quo",
+        "You will learn how to reclaim your own reality, shifting focus from external approval to your internal world. This is a powerful step towards genuine self-acceptance. What George Berkeley Believed About Reality Imagine a"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
-      "World News Simplified": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
-      "Wellness and Self-Care": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
-      "Travel & Hidden Gems": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
-      "Philosophy for Modern Life": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible."
+      "Passive Income Investing": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
+      "World News Simplified": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
+      "Wellness and Self-Care": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
+      "Travel & Hidden Gems": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
+      "Philosophy for Modern Life": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
-      "Wellness and Self-Care": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
-      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Philosophy for Modern Life": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm."
+      "Passive Income Investing": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
+      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "Travel & Hidden Gems": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences."
     }
   }
 }
