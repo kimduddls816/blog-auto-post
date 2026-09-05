@@ -52,7 +52,6 @@
     "Policy Power: Understanding Monetary and Fiscal Decisions for Passive Income Growth"
   ],
   "World News Simplified": [
-    "World Watch: Protests, Wildfires, Economic Shifts, and Tech Safety",
     "Global Currents: Air Quality, Royal Debates, and Green Innovations",
     "Global Crossroads: Tariffs, Dissent, and the AI Race",
     "Global Ripples: War, Travel, and Climate's Political Fallout",
@@ -101,10 +100,10 @@
     "Kyiv Rail Workers Targeted as SCO Summit Challenges Western Iran Policy",
     "As US Sailors Dock After 250 Days, World Leaders Fear a Bond Market Wildfire",
     "B&Q, Five Guys Caught Underpaying as Graduates Buy Businesses for Instant CEO Roles",
-    "Europe Investigates Suspected Sabotage as Yemen's Push for a Key Strait Rocks Global Trade"
+    "Europe Investigates Suspected Sabotage as Yemen's Push for a Key Strait Rocks Global Trade",
+    "US Envoys Meet in Moscow as Russian Bombs Hit Ukraine Security HQ"
   ],
   "Wellness and Self-Care": [
-    "Beyond the Bottle: Do SPF Supplements Really Work?",
     "Ginger: Your Kitchen's Secret Weapon for Gut Health, Immunity, and Beyond",
     "Unlock Healthy Eating: Your Guide to Nourishing Meals with Pantry Staples",
     "Beyond Breakfast: Decoding the Fasted Workout Trend for Your Best Results",
@@ -153,7 +152,8 @@
     "Food Poisoning's Hidden Cost: Why a Single Meal Could Trigger Years of Gut Issues",
     "Beyond Championship Point: How Coco Gauff's Five Mental Habits Reset Your Daily Pressures",
     "The September 3, 2026 Sleep Report: Is Magnesium for Calm or Melatonin for Timing Your Rest?",
-    "The Unseen Side: How GLP-1 Medications Connect to a Rare Retinopathy, According to a New September 2026 Report"
+    "The Unseen Side: How GLP-1 Medications Connect to a Rare Retinopathy, According to a New September 2026 Report",
+    "How Eating 30 Different Plants a Week Could Reshape Your Gut and Mood"
   ],
   "Travel & Hidden Gems": [
     "Beyond the Usual: Oxford's Scholarly Retreats, Busan's Creative Coast, and Asheville's Artisan Hills",
@@ -208,7 +208,6 @@
     "Uncover Lofoten's Dramatic Coast, Ubud's Serene Swings, and Cartagena's Vibrant Walls"
   ],
   "Philosophy for Modern Life": [
-    "Leibniz and the Art of Being You: Why You're Not Meant to Compare",
     "Embracing the Absurd: Albert Camus on Living Fully in a Meaningless World",
     "Boethius and the Modern Rollercoaster: Finding Stability Beyond Fortune's Whims",
     "Confucius and the Art of Cultivating Connection: Building Stronger Bonds in a Fragmented World",
@@ -257,7 +256,8 @@
     "The Spreadsheet and the Stone: Hannah Arendt on Why Your Digital Work Feels Empty",
     "Arthur Schopenhauer and the Fleeting Three-Week Spark of Your New Purchase",
     "John Dewey and the Unedited Photo: Why Your Messy Reality Builds True Identity",
-    "A Full Calendar Is Not a Full Life: Seneca on Reclaiming Your Time"
+    "A Full Calendar Is Not a Full Life: Seneca on Reclaiming Your Time",
+    "Sextus Empiricus's Simple Hack for Online Overload: The Quiet Power of Suspending Judgment"
   ],
   "_meta": {
     "investing_progress": 56,
@@ -350,20 +350,20 @@
         "Market Trends and Investor Caution Imagine your personal budget versus a national economy. You might decide to save more this month for a big purchase, carefully allocating funds from your paycheck. A national government"
       ],
       "World News Simplified": [
-        "Iceland confirms it will not restart EU membership talks. Egypt's Banque Misr faces US sanctions, raising regional concerns. A lawsuit emerges after severe airline turbulence causes a death. A judge rules the Trump admin",
         "US and Iran trade strikes after weeks of calm. Bank of England warns AI could cause a global economic downturn. US-Canada trade war impacts businesses and consumers. US Federal Reserve still has \"work to do\" on inflation",
         "Israel seizes senior Hamas member, deadly strikes continue in Gaza. Russia launches new deadly strikes on Kyiv rail workers. Questions emerge about Trump's renewed efforts to woo Russia. SCO summit leaders condemn attack",
         "Russia signals deeper confrontation with the West, hinting at direct threats to the UK. US Navy personnel return to Thailand after an arduous 250-day deployment at sea. Ukraine's President Zelenskyy urges global airlines",
         "A \"supersized\" El Niño threatens global weather, sparking urgent preparations. New warnings suggest another gas price spike, putting fresh pressure on household bills. Major firms like B&Q and Five Guys admit to underpay",
-        "Europe faces a mysterious sabotage wave. Strong US job growth fuels interest rate concerns. Global food prices hit new highs due to conflicts and climate. Yemen's civil war intensifies with over 100 dead. Europe's Myster"
+        "Europe faces a mysterious sabotage wave. Strong US job growth fuels interest rate concerns. Global food prices hit new highs due to conflicts and climate. Yemen's civil war intensifies with over 100 dead. Europe's Myster",
+        "US Envoys in Moscow as Russia Targets Ukraine's Security Headquarters. Europe Faces a \"Spiralling Campaign\" of Suspected Sabotage. Donald Trump Calls for Interest Rate Cuts After Jobs Report. Argentina Threatens Oil Firm"
       ],
       "Wellness and Self-Care": [
-        "You might be walking your dog, strolling through the park, or simply heading to the corner store. Your steps are consistent. Maybe you pick up the pace a little when you are late. Then you slow down again. This everyday ",
         "When you lose weight through traditional methods like diet and exercise, it is often a gradual process. Your body adapts slowly. But with newer medications, such as GLP-1 agonists, weight loss can happen much more rapidl",
         "One in six Americans experiences a foodborne illness each year. This statistic is often associated with immediate, unpleasant symptoms. However, new research suggests the impact of these illnesses can linger much longer ",
         "that feeling of being completely overwhelmed, when your mind races and clarity vanishes. It is a common experience, whether you are facing a looming deadline at work, navigating a complex family dynamic, or simply trying",
         "You are about to learn how magnesium and melatonin compare for improving your sleep, along with practical steps for deciding which might be right for you. Many people struggle with sleep. They reach for quick fixes. Unde",
-        "David had been noticing subtle changes in his vision lately, dismissing them as just 'getting older' or perhaps too much screen time. He was on a GLP-1 medication, prescribed for weight management, and it was working won"
+        "David had been noticing subtle changes in his vision lately, dismissing them as just 'getting older' or perhaps too much screen time. He was on a GLP-1 medication, prescribed for weight management, and it was working won",
+        "This post will explain science-backed strategies for improving your gut health, offering practical steps you can implement today. Understanding your gut is key to unlocking better overall wellness. It is more than just d"
       ],
       "Travel & Hidden Gems": [
         "Maya was scrolling through her feed, a flicker of wanderlust igniting with every perfectly framed shot of a vibrant café latte or a serene mountain vista. She was not just looking for pretty pictures, but for places that",
@@ -374,27 +374,27 @@
         "Recent studies reveal that over 70% of Gen Z travelers prioritize a destination's 'Instagrammability' when planning their trips. The hunt for unique backdrops and genuine experiences is real. You are not just looking for"
       ],
       "Philosophy for Modern Life": [
-        "The feeling of never quite arriving, of always needing to chase the next big thing, often settles in quietly, an almost invisible hum beneath the surface of our busy lives. You might be working tirelessly for a promotion",
         "A recent study indicated that people who spend more than two hours daily on social media platforms are 2.5 times more likely to report feelings of social isolation, even while being constantly connected. This number high",
         "You might spend an entire workday answering emails and moving digital files, ending the day with little tangible to show for your effort. Contrast that with the feeling of a carpenter who has spent hours crafting a sturd",
         "That little jolt of excitement after you finally click 'buy' on something you've been eyeing for weeks. You know the feeling. The anticipation of it arriving, the unboxing, that first moment of using it. Pure bliss. For ",
         "The satisfaction of pulling a warm, homemade loaf of bread from the oven is a distinct sensation, utterly different from scrolling through a social media feed filled with perfectly art-directed sourdough pictures. One in",
-        "Sarah stared at her calendar app, a dense grid of back-to-back meetings, project deadlines, and social obligations. A familiar knot tightened in her stomach. It was only Monday morning, and the week already felt like an "
+        "Sarah stared at her calendar app, a dense grid of back-to-back meetings, project deadlines, and social obligations. A familiar knot tightened in her stomach. It was only Monday morning, and the week already felt like an ",
+        "Imagine trying to build a perfectly balanced tower of tiny, mismatched pebbles on a shaky table. Now imagine just stepping back from the table entirely, watching the pebbles, but not feeling any pressure to make them sta"
       ]
     },
     "last_opening_style": {
       "Passive Income Investing": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
-      "World News Simplified": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
-      "Wellness and Self-Care": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+      "World News Simplified": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
+      "Wellness and Self-Care": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
       "Travel & Hidden Gems": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
-      "Philosophy for Modern Life": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment."
+      "Philosophy for Modern Life": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
-      "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Wellness and Self-Care": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
       "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "Philosophy for Modern Life": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm."
+      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences."
     }
   }
 }
