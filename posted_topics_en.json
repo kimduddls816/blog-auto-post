@@ -52,7 +52,6 @@
     "Strengthening Your Passive Income: Understanding Global Trade, Preserving Value with TIPS, and Targeted ETF Choices"
   ],
   "World News Simplified": [
-    "Global Crossroads: Tariffs, Dissent, and the AI Race",
     "Global Ripples: War, Travel, and Climate's Political Fallout",
     "Global Headaches: War, Travel, and Urgent Crises",
     "Global Shakes: Tariffs, Tensions, and Tackling Corruption",
@@ -101,7 +100,8 @@
     "B&Q, Five Guys Caught Underpaying as Graduates Buy Businesses for Instant CEO Roles",
     "Europe Investigates Suspected Sabotage as Yemen's Push for a Key Strait Rocks Global Trade",
     "US Envoys Meet in Moscow as Russian Bombs Hit Ukraine Security HQ",
-    "UK Petrol Highest Since Iran War Began, as Tanker Standoff Escalates"
+    "UK Petrol Highest Since Iran War Began, as Tanker Standoff Escalates",
+    "China's $54 Billion Boost Meets Germany's AfD 'Democracy Demands'"
   ],
   "Wellness and Self-Care": [
     "Unlock Healthy Eating: Your Guide to Nourishing Meals with Pantry Staples",
@@ -208,7 +208,6 @@
     "Colmar's Fairytale Canals and Two Other Global Gems for Your Authentic Scroll"
   ],
   "Philosophy for Modern Life": [
-    "Boethius and the Modern Rollercoaster: Finding Stability Beyond Fortune's Whims",
     "Confucius and the Art of Cultivating Connection: Building Stronger Bonds in a Fragmented World",
     "Spinoza's Antidote to Modern Anxiety: Finding Peace in What You Can't Control",
     "The Buddha's Insight into Change: How 'Anicca' Can Ease Your Modern Worries",
@@ -257,7 +256,8 @@
     "John Dewey and the Unedited Photo: Why Your Messy Reality Builds True Identity",
     "A Full Calendar Is Not a Full Life: Seneca on Reclaiming Your Time",
     "Sextus Empiricus's Simple Hack for Online Overload: The Quiet Power of Suspending Judgment",
-    "Iris Murdoch and the Silent Joy of a Sunset You Don't Instagram"
+    "Iris Murdoch and the Silent Joy of a Sunset You Don't Instagram",
+    "The 300 Choices on Netflix That All Feel the Same: Theodor Adorno and the Culture Industry"
   ],
   "_meta": {
     "investing_progress": 57,
@@ -350,12 +350,12 @@
         "Every month, when the utility bill arrives, you might glance at the total and then the due date, ensuring you have enough funds to cover it without a second thought. This mundane yet vital routine of managing your everyd"
       ],
       "World News Simplified": [
-        "Israel seizes senior Hamas member, deadly strikes continue in Gaza. Russia launches new deadly strikes on Kyiv rail workers. Questions emerge about Trump's renewed efforts to woo Russia. SCO summit leaders condemn attack",
         "Russia signals deeper confrontation with the West, hinting at direct threats to the UK. US Navy personnel return to Thailand after an arduous 250-day deployment at sea. Ukraine's President Zelenskyy urges global airlines",
         "A \"supersized\" El Niño threatens global weather, sparking urgent preparations. New warnings suggest another gas price spike, putting fresh pressure on household bills. Major firms like B&Q and Five Guys admit to underpay",
         "Europe faces a mysterious sabotage wave. Strong US job growth fuels interest rate concerns. Global food prices hit new highs due to conflicts and climate. Yemen's civil war intensifies with over 100 dead. Europe's Myster",
         "US Envoys in Moscow as Russia Targets Ukraine's Security Headquarters. Europe Faces a \"Spiralling Campaign\" of Suspected Sabotage. Donald Trump Calls for Interest Rate Cuts After Jobs Report. Argentina Threatens Oil Firm",
-        "US and Iran trade blows on the seas, raising fears of a wider conflict. Gaza faces a dire food crisis as hundreds of bodies are recovered from rubble. FIFA President Gianni Infantino seeks re-election, continuing his ten"
+        "US and Iran trade blows on the seas, raising fears of a wider conflict. Gaza faces a dire food crisis as hundreds of bodies are recovered from rubble. FIFA President Gianni Infantino seeks re-election, continuing his ten",
+        "Germany's far-right AfD party gains power in state elections, sparking political shifts. An Indonesian volcano eruption strands hundreds of thousands, halting air travel. China injects $54 billion into its financial syst"
       ],
       "Wellness and Self-Care": [
         "One in six Americans experiences a foodborne illness each year. This statistic is often associated with immediate, unpleasant symptoms. However, new research suggests the impact of these illnesses can linger much longer ",
@@ -374,27 +374,27 @@
         "Liam paused, finger hovering over his phone screen. Another friend had just posted a stunning, sun-drenched photo from Positano, all cliffside villas and azure water. Beautiful, yes, but Liam felt a familiar pang: everyo"
       ],
       "Philosophy for Modern Life": [
-        "You might spend an entire workday answering emails and moving digital files, ending the day with little tangible to show for your effort. Contrast that with the feeling of a carpenter who has spent hours crafting a sturd",
         "That little jolt of excitement after you finally click 'buy' on something you've been eyeing for weeks. You know the feeling. The anticipation of it arriving, the unboxing, that first moment of using it. Pure bliss. For ",
         "The satisfaction of pulling a warm, homemade loaf of bread from the oven is a distinct sensation, utterly different from scrolling through a social media feed filled with perfectly art-directed sourdough pictures. One in",
         "Sarah stared at her calendar app, a dense grid of back-to-back meetings, project deadlines, and social obligations. A familiar knot tightened in her stomach. It was only Monday morning, and the week already felt like an ",
         "Imagine trying to build a perfectly balanced tower of tiny, mismatched pebbles on a shaky table. Now imagine just stepping back from the table entirely, watching the pebbles, but not feeling any pressure to make them sta",
-        "You are about to discover how letting go of the pressure to capture and curate every moment can lead to a deeper, more authentic experience of life, guided by the insights of a brilliant philosopher. It often feels like "
+        "You are about to discover how letting go of the pressure to capture and curate every moment can lead to a deeper, more authentic experience of life, guided by the insights of a brilliant philosopher. It often feels like ",
+        "Sarah scrolled through her streaming service, a familiar sense of dread creeping in. There were hundreds of movies and shows, each with a slick thumbnail and a vague, enticing description. Yet, as she clicked through cat"
       ]
     },
     "last_opening_style": {
       "Passive Income Investing": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
-      "World News Simplified": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
+      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
       "Wellness and Self-Care": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
       "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
-      "Philosophy for Modern Life": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance."
+      "Philosophy for Modern Life": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
       "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
       "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read."
+      "Philosophy for Modern Life": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm."
     }
   }
 }
