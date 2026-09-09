@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Beyond Market Swings: Cultivating Passive Income with Compound Interest and Roth IRAs",
     "Building Your Passive Income Foundation: Opening a Brokerage Account and Exploring MLPs",
     "Smart Steps to Passive Income: Your First Stock Order and Inflation Protection",
     "Building a Resilient Portfolio: Diversification, BDCs, and Smart ETF Choices",
@@ -49,10 +48,10 @@
     "Building Durable Wealth: Demystifying Government and Corporate Bonds, Discovering New Income Streams, and Strategic ETF Picks",
     "Policy Power: Understanding Monetary and Fiscal Decisions for Passive Income Growth",
     "Strengthening Your Passive Income: Understanding Global Trade, Preserving Value with TIPS, and Targeted ETF Choices",
-    "Understanding Geopolitical Risk: How Global Events Shape Your Passive Income Journey"
+    "Understanding Geopolitical Risk: How Global Events Shape Your Passive Income Journey",
+    "Unlocking Income Potential: Understanding Volatility, AI Trends, and Covered Call ETFs"
   ],
   "World News Simplified": [
-    "Global Headaches: War, Travel, and Urgent Crises",
     "Global Shakes: Tariffs, Tensions, and Tackling Corruption",
     "World Brief: Shifts, Spending, Seizures, and Shorts",
     "Global Currents: Nuclear Ambitions, Trade Battles, and AI's Price Tag",
@@ -101,7 +100,8 @@
     "US Envoys Meet in Moscow as Russian Bombs Hit Ukraine Security HQ",
     "UK Petrol Highest Since Iran War Began, as Tanker Standoff Escalates",
     "China's $54 Billion Boost Meets Germany's AfD 'Democracy Demands'",
-    "Argentina's Oil Standoff and One Leader's $1 Million Raise"
+    "Argentina's Oil Standoff and One Leader's $1 Million Raise",
+    "The 10 Percent Extinction Risk and AI's 90-Year Math Solution"
   ],
   "Wellness and Self-Care": [
     "Beyond Breakfast: Decoding the Fasted Workout Trend for Your Best Results",
@@ -156,7 +156,6 @@
     "Beyond the Daily Pill: Your Gut's Microbes Thrive on This Specific Diversity, Not Just One Fix"
   ],
   "Travel & Hidden Gems": [
-    "From Atlantic Hues to Pacific Zen: Your Next Global Aesthetic Adventure",
     "Floral Dreams, Riverside Charms, and Mountain City Visions: Your Next Aesthetic Global Journey",
     "Uncommon Passports: Taipei's Urban Beats, Budapest's Historic Hues, Oaxaca's Artisanal Soul",
     "Dragon Bridges, Emerald Hills, and Street Art Dreams: Global Escapes for the Visual Explorer",
@@ -205,10 +204,10 @@
     "Matera's Cave Hotels and Two Other Global Aesthetic Journeys You Haven't Booked Yet",
     "Ho Chi Minh City's Nine-Story Cafe Building and Two Other Cities Where Ancient Charm Meets Modern Vibrancy",
     "Uncover Lofoten's Dramatic Coast, Ubud's Serene Swings, and Cartagena's Vibrant Walls",
-    "Colmar's Fairytale Canals and Two Other Global Gems for Your Authentic Scroll"
+    "Colmar's Fairytale Canals and Two Other Global Gems for Your Authentic Scroll",
+    "The Surreal 'Crazy House' of Da Lat and Two More Global Getaways for Your Next Scroll"
   ],
   "Philosophy for Modern Life": [
-    "Spinoza's Antidote to Modern Anxiety: Finding Peace in What You Can't Control",
     "The Buddha's Insight into Change: How 'Anicca' Can Ease Your Modern Worries",
     "Epictetus's Simple Rule for a Calmer Life: What's Yours and What Isn't",
     "Simone de Beauvoir and the Freedom to Be You: Escaping the Trap of 'Shoulds'",
@@ -257,14 +256,12 @@
     "Sextus Empiricus's Simple Hack for Online Overload: The Quiet Power of Suspending Judgment",
     "Iris Murdoch and the Silent Joy of a Sunset You Don't Instagram",
     "The 300 Choices on Netflix That All Feel the Same: Theodor Adorno and the Culture Industry",
-    "The 23% Disengaged Workforce: Albert Camus and the Radical Idea of Sisyphus's Workplace Joy"
+    "The 23% Disengaged Workforce: Albert Camus and the Radical Idea of Sisyphus's Workplace Joy",
+    "Confucius's Simple Act: Why a Thoughtful Online Comment Outweighs Ten 'Likes'"
   ],
   "_meta": {
-    "investing_progress": 58,
+    "investing_progress": 59,
     "recent_tickers": [
-      "VGT",
-      "SCHD",
-      "VTI",
       "IVV",
       "SDY",
       "AGG",
@@ -276,12 +273,12 @@
       "TIP",
       "XLK",
       "SPHQ",
-      "PGF"
+      "PGF",
+      "SMH",
+      "VGK",
+      "DGRO"
     ],
     "recent_destinations": [
-      "Tarragona, Spain",
-      "Salvador, Brazil",
-      "Springdale, USA",
       "Kanazawa, Japan",
       "Lyon, France",
       "Oaxaca, Mexico",
@@ -338,24 +335,27 @@
       "Cartagena, Colombia",
       "Siem Reap, Cambodia",
       "Colmar, France",
-      "Asheville, North Carolina, USA"
+      "Asheville, North Carolina, USA",
+      "Aveiro, Portugal",
+      "Da Lat, Vietnam",
+      "Fredericksburg, USA"
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Historically, investors who consistently reinvest their dividends can accumulate significantly more wealth than those who take them as cash, sometimes doubling their total returns over long periods. This powerful effect ",
         "Imagine borrowing money from a friend versus borrowing from a bank. The friend might offer flexible terms, but the bank has strict rules and collateral. This contrast illustrates the broad spectrum of lending and borrowi",
         "The average millionaire holds over 20% of their wealth in cash or equivalents, often for opportunistic investing, a strategy that underscores the importance of understanding different asset classes beyond just stocks. Cu",
         "Market Trends and Investor Caution Imagine your personal budget versus a national economy. You might decide to save more this month for a big purchase, carefully allocating funds from your paycheck. A national government",
         "Every month, when the utility bill arrives, you might glance at the total and then the due date, ensuring you have enough funds to cover it without a second thought. This mundane yet vital routine of managing your everyd",
-        "Research indicates that investor sentiment can swing by over 15% following significant geopolitical news events, directly influencing market volatility. Market Currents and Opportunities The global investment landscape p"
+        "Research indicates that investor sentiment can swing by over 15% following significant geopolitical news events, directly influencing market volatility. Market Currents and Opportunities The global investment landscape p",
+        "Imagine relying solely on a fixed monthly salary for all your financial needs versus having several additional, automated income streams flowing into your accounts. The former provides predictability but limits growth, w"
       ],
       "World News Simplified": [
-        "A \"supersized\" El Niño threatens global weather, sparking urgent preparations. New warnings suggest another gas price spike, putting fresh pressure on household bills. Major firms like B&Q and Five Guys admit to underpay",
         "Europe faces a mysterious sabotage wave. Strong US job growth fuels interest rate concerns. Global food prices hit new highs due to conflicts and climate. Yemen's civil war intensifies with over 100 dead. Europe's Myster",
         "US Envoys in Moscow as Russia Targets Ukraine's Security Headquarters. Europe Faces a \"Spiralling Campaign\" of Suspected Sabotage. Donald Trump Calls for Interest Rate Cuts After Jobs Report. Argentina Threatens Oil Firm",
         "US and Iran trade blows on the seas, raising fears of a wider conflict. Gaza faces a dire food crisis as hundreds of bodies are recovered from rubble. FIFA President Gianni Infantino seeks re-election, continuing his ten",
         "Germany's far-right AfD party gains power in state elections, sparking political shifts. An Indonesian volcano eruption strands hundreds of thousands, halting air travel. China injects $54 billion into its financial syst",
-        "Argentina reignites Falklands oil dispute, planning criminal charges against an energy firm. Kenya moves to register Burundian traders amid rising tensions over jobs and resources. Major UK airports face widespread air t"
+        "Argentina reignites Falklands oil dispute, planning criminal charges against an energy firm. Kenya moves to register Burundian traders amid rising tensions over jobs and resources. Major UK airports face widespread air t",
+        "AI researchers warn of an existential threat to humanity. A major AI firm solves a 90-year-old math problem in just days. Air traffic control glitches continue to ground flights worldwide. Hurricane Lowell leaves tens of"
       ],
       "Wellness and Self-Care": [
         "that feeling of being completely overwhelmed, when your mind races and clarity vanishes. It is a common experience, whether you are facing a looming deadline at work, navigating a complex family dynamic, or simply trying",
@@ -366,35 +366,35 @@
         "Many people approach gut health like a simple maintenance task. They might take a probiotic capsule each morning. They hope this single step creates a balanced digestive system. However, building a truly resilient and di"
       ],
       "Travel & Hidden Gems": [
-        "You are about to discover three vibrant destinations perfect for your next getaway, each offering unique experiences and plenty of photo opportunities. These spots combine cultural richness, stunning natural beauty, and ",
         "Li was scrolling through her phone, a mosaic of vibrant street art from Toronto's Kensington Market filling her screen. She paused on a shot of a perfectly plated pasta dish from a Bologna trattoria, then a whimsical cat",
         "Recent data indicates that nearly half of all travel bookings made by individuals under 30 are influenced by social media recommendations, with visual appeal being a primary decision factor. This desire for unique backdr",
         "The allure of a quiet, cobblestone street in Europe often calls to the soul, promising a serene escape, but a new wave of travelers seeks the electrifying pulse of cities that blend ancient traditions with cutting-edge c",
         "Recent studies reveal that over 70% of Gen Z travelers prioritize a destination's 'Instagrammability' when planning their trips. The hunt for unique backdrops and genuine experiences is real. You are not just looking for",
-        "Liam paused, finger hovering over his phone screen. Another friend had just posted a stunning, sun-drenched photo from Positano, all cliffside villas and azure water. Beautiful, yes, but Liam felt a familiar pang: everyo"
+        "Liam paused, finger hovering over his phone screen. Another friend had just posted a stunning, sun-drenched photo from Positano, all cliffside villas and azure water. Beautiful, yes, but Liam felt a familiar pang: everyo",
+        "Over 85% of Gen Z travelers report that seeing a visually appealing destination on social media directly influences their travel decisions, often prioritizing unique aesthetic experiences over traditional tourist sites. "
       ],
       "Philosophy for Modern Life": [
-        "The satisfaction of pulling a warm, homemade loaf of bread from the oven is a distinct sensation, utterly different from scrolling through a social media feed filled with perfectly art-directed sourdough pictures. One in",
         "Sarah stared at her calendar app, a dense grid of back-to-back meetings, project deadlines, and social obligations. A familiar knot tightened in her stomach. It was only Monday morning, and the week already felt like an ",
         "Imagine trying to build a perfectly balanced tower of tiny, mismatched pebbles on a shaky table. Now imagine just stepping back from the table entirely, watching the pebbles, but not feeling any pressure to make them sta",
         "You are about to discover how letting go of the pressure to capture and curate every moment can lead to a deeper, more authentic experience of life, guided by the insights of a brilliant philosopher. It often feels like ",
         "Sarah scrolled through her streaming service, a familiar sense of dread creeping in. There were hundreds of movies and shows, each with a slick thumbnail and a vague, enticing description. Yet, as she clicked through cat",
-        "Gallup's 2023 'State of the Global Workplace' report found that only 23% of employees are engaged at work. This means a vast majority feel detached. They go through the motions. They chase promotions, hit targets, and cl"
+        "Gallup's 2023 'State of the Global Workplace' report found that only 23% of employees are engaged at work. This means a vast majority feel detached. They go through the motions. They chase promotions, hit targets, and cl",
+        "Elena tapped 'like' on her former coworker's engagement announcement, a dazzling photo of a diamond ring against a scenic mountain backdrop. She scrolled on, past a friend's meticulously styled meal, then a distant cousi"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
-      "World News Simplified": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
+      "Passive Income Investing": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
+      "World News Simplified": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
       "Wellness and Self-Care": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
-      "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
-      "Philosophy for Modern Life": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence."
+      "Travel & Hidden Gems": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
+      "Philosophy for Modern Life": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
       "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences."
+      "Travel & Hidden Gems": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Philosophy for Modern Life": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm."
     }
   }
 }
