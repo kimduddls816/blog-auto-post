@@ -156,7 +156,6 @@
     "The US Supplement Surge: 80% of Americans Take Them, But Only a Handful Deliver Widespread Gains"
   ],
   "Travel & Hidden Gems": [
-    "Dragon Bridges, Emerald Hills, and Street Art Dreams: Global Escapes for the Visual Explorer",
     "Picture-Perfect Panoramas: Explore Hallstatt's Lakeside Charm, Luang Prabang's Spiritual Beauty, and Banff's Majestic Peaks",
     "Ready for the Unseen? Siargao's Waves, Tbilisi's Echoes, and Antigua's Colors Await Your Lens.",
     "Beyond the Hashtag: Discovering Charleston's Elegance, Kotor's Drama, and Jeju's Serenity",
@@ -205,10 +204,10 @@
     "Colmar's Fairytale Canals and Two Other Global Gems for Your Authentic Scroll",
     "The Surreal 'Crazy House' of Da Lat and Two More Global Getaways for Your Next Scroll",
     "Explore Galle Fort's Ancient Walls, Valletta's Baroque Balconies, and Merida's Pastel Streets",
-    "Uncovering Tirane's Pastel Towers, Bishkek's Soviet Chic, and Baja's Architectural Wineries"
+    "Uncovering Tirane's Pastel Towers, Bishkek's Soviet Chic, and Baja's Architectural Wineries",
+    "Biking Island Bridges and Sipping Gesha Beneath Volcanoes: Three Understated Global Escapes"
   ],
   "Philosophy for Modern Life": [
-    "William James and the Power of Habit: How to Master Your Modern Routine",
     "Aristotle and the Art of \"Just Enough\": Navigating Extremes in Modern Life",
     "I Am Because We Are: Ubuntu's Wisdom for a Connected Life",
     "Montaigne's Mirror: Embracing Your Imperfect Self in a Filtered World",
@@ -257,7 +256,8 @@
     "Confucius's Simple Act: Why a Thoughtful Online Comment Outweighs Ten 'Likes'",
     "Simone Weil's Radical Attention: Why Your Phone Demands More Than Just a Glance",
     "The Polished LinkedIn Profile and Martha Nussbaum's Wider Path to a Full Life",
-    "Bertrand Russell's Case for the Unproductive Saturday Morning"
+    "Bertrand Russell's Case for the Unproductive Saturday Morning",
+    "The 78% Rule: Simone de Beauvoir on Writing Your Own Life Script, Not Society's"
   ],
   "_meta": {
     "investing_progress": 62,
@@ -279,9 +279,6 @@
       "VNQ"
     ],
     "recent_destinations": [
-      "Marrakech, Morocco",
-      "Finger Lakes, USA",
-      "Hanoi, Vietnam",
       "Kalinga, Philippines",
       "Kotor, Montenegro",
       "Guatapé, Colombia",
@@ -338,7 +335,10 @@
       "Merida, Mexico",
       "Tirane, Albania",
       "Bishkek, Kyrgyzstan",
-      "Valle de Guadalupe, Mexico"
+      "Valle de Guadalupe, Mexico",
+      "Onomichi, Japan",
+      "Nafplio, Greece",
+      "Antigua, Guatemala"
     ],
     "recent_openings": {
       "Passive Income Investing": [
@@ -366,35 +366,35 @@
         "A morning coffee routine often goes hand in hand with a supplement pill. Many people view a daily vitamin or mineral as an essential component of their wellness efforts. This idea has become deeply ingrained in modern he"
       ],
       "Travel & Hidden Gems": [
-        "The allure of a quiet, cobblestone street in Europe often calls to the soul, promising a serene escape, but a new wave of travelers seeks the electrifying pulse of cities that blend ancient traditions with cutting-edge c",
         "Recent studies reveal that over 70% of Gen Z travelers prioritize a destination's 'Instagrammability' when planning their trips. The hunt for unique backdrops and genuine experiences is real. You are not just looking for",
         "Liam paused, finger hovering over his phone screen. Another friend had just posted a stunning, sun-drenched photo from Positano, all cliffside villas and azure water. Beautiful, yes, but Liam felt a familiar pang: everyo",
         "Over 85% of Gen Z travelers report that seeing a visually appealing destination on social media directly influences their travel decisions, often prioritizing unique aesthetic experiences over traditional tourist sites. ",
         "Maya swiped through her feed, another perfect sunset from Santorini. Beautiful, yes, but she craved something fresh. A place not every other post showcased, yet still bursting with character and photogenic charm. She wan",
-        "You are looking for travel spots that offer a fresh perspective, genuinely unique photo opportunities, and a vibrant local scene without the overwhelming crowds. These three destinations deliver on that promise, blending"
+        "You are looking for travel spots that offer a fresh perspective, genuinely unique photo opportunities, and a vibrant local scene without the overwhelming crowds. These three destinations deliver on that promise, blending",
+        "Elena balances an iced citrus espresso on the handlebars of her rental bicycle. A small wooden passenger ferry cuts across the narrow channel, rippling the calm water of Japan's Seto Inland Sea. The morning sun hits the "
       ],
       "Philosophy for Modern Life": [
-        "Sarah scrolled through her streaming service, a familiar sense of dread creeping in. There were hundreds of movies and shows, each with a slick thumbnail and a vague, enticing description. Yet, as she clicked through cat",
         "Gallup's 2023 'State of the Global Workplace' report found that only 23% of employees are engaged at work. This means a vast majority feel detached. They go through the motions. They chase promotions, hit targets, and cl",
         "Elena tapped 'like' on her former coworker's engagement announcement, a dazzling photo of a diamond ring against a scenic mountain backdrop. She scrolled on, past a friend's meticulously styled meal, then a distant cousi",
         "We often feel pulled in a dozen directions by our screens. This piece will show you how to find a quiet strength against that pull. Think about your phone for a moment. It constantly demands your attention. Notifications",
         "A young professional, let's call her Priya, often found herself staring at the gleaming career profiles of her peers on LinkedIn. Each one told a story of relentless upward movement: prestigious awards, rapid promotions,",
-        "Sarah watched the rain streak down her window, a mug of lukewarm coffee in her hand. Her Saturday was already filling up. Laundry, groceries, an online course she needed to finish, five emails to answer. A familiar knot "
+        "Sarah watched the rain streak down her window, a mug of lukewarm coffee in her hand. Her Saturday was already filling up. Laundry, groceries, an online course she needed to finish, five emails to answer. A familiar knot ",
+        "An international survey revealed that 78% of young adults frequently compare their life choices to others, particularly regarding career paths and personal milestones, often resulting in feelings of inadequacy. This cons"
       ]
     },
     "last_opening_style": {
       "Passive Income Investing": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
       "World News Simplified": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
       "Wellness and Self-Care": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
-      "Travel & Hidden Gems": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
-      "Philosophy for Modern Life": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment."
+      "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+      "Philosophy for Modern Life": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
       "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
       "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "Travel & Hidden Gems": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
-      "Philosophy for Modern Life": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm."
+      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
+      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read."
     }
   }
 }
