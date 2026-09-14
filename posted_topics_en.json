@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Smart Moves in Shifting Markets: Decoding Risk and Exploring Preferred Stock Dividends",
     "Decoding Company Size, Inflation Protection, and Smart ETF Choices for Passive Income",
     "Charting Your Course: Long-Term vs. Short-Term Investing and the Allure of Gold",
     "Navigating Uncertainty: Understanding Bonds, Covered Calls, and Smart ETF Choices for Passive Income",
@@ -49,10 +48,10 @@
     "Unlocking Income Potential: Understanding Volatility, AI Trends, and Covered Call ETFs",
     "Smart Money Moves: Safeguarding Passive Income Amid Rising Rates",
     "Chart Your Path to Financial Independence: Setting Realistic Returns and Automating Your Income",
-    "Adapting Your Investment Strategy Through the Ages: From Growth to Stability"
+    "Adapting Your Investment Strategy Through the Ages: From Growth to Stability",
+    "From Accumulation to Distribution: Crafting Your Passive Income Withdrawal Plan Amidst Market Shifts"
   ],
   "World News Simplified": [
-    "Global Currents: Mideast Strikes, AI Safeguards, and Diplomatic Hurdles",
     "Global Currents: Mideast Missiles, Ukraine Shifts, and Culture Clashes",
     "Global Snapshot: Ukraine's Leadership, Airport Chaos, Retail's New Play, and OpenAI's Challenge",
     "Global Currents: Social Tensions, Tech Surges, and Climate's Reach",
@@ -101,10 +100,10 @@
     "The 10 Percent Extinction Risk and AI's 90-Year Math Solution",
     "An 'Avoidable' UK Air Traffic Shutdown and Trump's $5,000 Election Pledge",
     "AI Company Intercepts Attempt to Design Biological Weapons",
-    "From Nairobi's Markets to Kyiv's Freezing Homes, The Global Cost of Living Squeeze"
+    "From Nairobi's Markets to Kyiv's Freezing Homes, The Global Cost of Living Squeeze",
+    "Russia Strikes Ukraine After European Officials Depart, As Sweden Faces a Hairline Vote"
   ],
   "Wellness and Self-Care": [
-    "Unmasking the Silent Threat: How a Common Sleep Issue Elevates Heart Risk in Women Over 45",
     "Navigating AI Health Advice: Your Smart Guide to Wellness in the Digital Age",
     "Your Liver's Best Friend: Simple Habits for a Thriving You",
     "Unlock Better Sleep: The Foods That Help You Drift Off Faster",
@@ -153,10 +152,10 @@
     "Beyond the Daily Pill: Your Gut's Microbes Thrive on This Specific Diversity, Not Just One Fix",
     "The Simple Nightly Brain Dump That Cuts Sleep Onset Time for Anxious Thinkers",
     "The April 19, 2026 Report: How to Protect Your Bone Health While on GLP-1s for Weight Loss",
-    "The US Supplement Surge: 80% of Americans Take Them, But Only a Handful Deliver Widespread Gains"
+    "The US Supplement Surge: 80% of Americans Take Them, But Only a Handful Deliver Widespread Gains",
+    "The Humble Sardine: How One Can Delivers 100% Daily B12 and Unexpected Longevity Benefits"
   ],
   "Travel & Hidden Gems": [
-    "Picture-Perfect Panoramas: Explore Hallstatt's Lakeside Charm, Luang Prabang's Spiritual Beauty, and Banff's Majestic Peaks",
     "Ready for the Unseen? Siargao's Waves, Tbilisi's Echoes, and Antigua's Colors Await Your Lens.",
     "Beyond the Hashtag: Discovering Charleston's Elegance, Kotor's Drama, and Jeju's Serenity",
     "From Cycladic Chic to Waterfront Wonders and Javanese Rhythms: Aesthetic Escapes for the Modern Explorer",
@@ -205,7 +204,8 @@
     "The Surreal 'Crazy House' of Da Lat and Two More Global Getaways for Your Next Scroll",
     "Explore Galle Fort's Ancient Walls, Valletta's Baroque Balconies, and Merida's Pastel Streets",
     "Uncovering Tirane's Pastel Towers, Bishkek's Soviet Chic, and Baja's Architectural Wineries",
-    "Biking Island Bridges and Sipping Gesha Beneath Volcanoes: Three Understated Global Escapes"
+    "Biking Island Bridges and Sipping Gesha Beneath Volcanoes: Three Understated Global Escapes",
+    "Wander Porto's Tiled Lanes, Taipei's Neon Markets, and Mexico City's Artful Alleys"
   ],
   "Philosophy for Modern Life": [
     "Aristotle and the Art of \"Just Enough\": Navigating Extremes in Modern Life",
@@ -260,11 +260,8 @@
     "The 78% Rule: Simone de Beauvoir on Writing Your Own Life Script, Not Society's"
   ],
   "_meta": {
-    "investing_progress": 62,
+    "investing_progress": 63,
     "recent_tickers": [
-      "XLK",
-      "SPHQ",
-      "PGF",
       "SMH",
       "VGK",
       "DGRO",
@@ -276,12 +273,12 @@
       "SCHD",
       "VCSH",
       "VIG",
-      "VNQ"
+      "VNQ",
+      "XLE",
+      "XLU",
+      "SGOV"
     ],
     "recent_destinations": [
-      "Kalinga, Philippines",
-      "Kotor, Montenegro",
-      "Guatapé, Colombia",
       "Split, Croatia",
       "Seoul, South Korea",
       "Santa Fe, New Mexico, USA",
@@ -338,40 +335,43 @@
       "Valle de Guadalupe, Mexico",
       "Onomichi, Japan",
       "Nafplio, Greece",
-      "Antigua, Guatemala"
+      "Antigua, Guatemala",
+      "Porto, Portugal",
+      "Taipei, Taiwan",
+      "Mexico City, Mexico"
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Every month, when the utility bill arrives, you might glance at the total and then the due date, ensuring you have enough funds to cover it without a second thought. This mundane yet vital routine of managing your everyd",
         "Research indicates that investor sentiment can swing by over 15% following significant geopolitical news events, directly influencing market volatility. Market Currents and Opportunities The global investment landscape p",
         "Imagine relying solely on a fixed monthly salary for all your financial needs versus having several additional, automated income streams flowing into your accounts. The former provides predictability but limits growth, w",
         "Current estimates suggest that global inflation could erode the purchasing power of uninvested cash by over 5% annually in many developed economies. This fact highlights why keeping your money working for you is so impor",
         "With some analysts now predicting a significant market upswing, often described as a &#8216;face-ripper rally,&#8217; it is an interesting time to consider how these movements could impact your long-term financial goals,",
-        "You might be sitting at your kitchen table, reviewing your annual financial statements, perhaps after a significant life event like a career change or a new family member. It is a moment of reflection. You consider how y"
+        "You might be sitting at your kitchen table, reviewing your annual financial statements, perhaps after a significant life event like a career change or a new family member. It is a moment of reflection. You consider how y",
+        "Beyond the initial excitement of building a passive income stream, a crucial next step often emerges as your financial goals evolve: ensuring those streams can sustain you effectively when you actually need to draw upon "
       ],
       "World News Simplified": [
-        "Germany's far-right AfD party gains power in state elections, sparking political shifts. An Indonesian volcano eruption strands hundreds of thousands, halting air travel. China injects $54 billion into its financial syst",
         "Argentina reignites Falklands oil dispute, planning criminal charges against an energy firm. Kenya moves to register Burundian traders amid rising tensions over jobs and resources. Major UK airports face widespread air t",
         "AI researchers warn of an existential threat to humanity. A major AI firm solves a 90-year-old math problem in just days. Air traffic control glitches continue to ground flights worldwide. Hurricane Lowell leaves tens of",
         "Donald Trump connects the Iran conflict to US elections and faces questions on a $5,000 voter pledge. UK air traffic control chaos strands thousands and highlights system vulnerabilities. Experts warn of increasing dange",
         "A researcher named Anya sat hunched over her keyboard late one night. She was refining an AI model at Anthropic, a leading artificial intelligence company. Her task was not just about making the AI smarter. It was about ",
-        "Ukraine prepares for a humanitarian crisis as winter approaches amidst ongoing conflict. Kenya increases its crackdown on foreign traders, sparking fear and economic tension. Global central banks signal potential new int"
+        "Ukraine prepares for a humanitarian crisis as winter approaches amidst ongoing conflict. Kenya increases its crackdown on foreign traders, sparking fear and economic tension. Global central banks signal potential new int",
+        "China pushes back on 'malicious competition' in the global AI race. Russia targets a Ukrainian train station after European officials depart. Sweden faces election uncertainty as results are too close to call. Zambian au"
       ],
       "Wellness and Self-Care": [
-        "This post will explain science-backed strategies for improving your gut health, offering practical steps you can implement today. Understanding your gut is key to unlocking better overall wellness. It is more than just d",
         "It happens almost imperceptibly. One morning, you reach for the coffee cup on a high shelf, or turn to grab something from the back seat of your car, and feel a twinge. That little stiffness was not there before, and sud",
         "Many people approach gut health like a simple maintenance task. They might take a probiotic capsule each morning. They hope this single step creates a balanced digestive system. However, building a truly resilient and di",
         "The ceiling often becomes a canvas for your racing thoughts when you lie down for the night. Your mind starts replaying the day's events. It scrolls through tomorrow's to-do list. Sometimes it just fixates on a vague sen",
         "Sarah, a vibrant 58-year-old, felt a surge of quiet confidence as she buttoned her favorite pair of jeans. The GLP-1 medication she had been taking for the past year had helped her shed thirty pounds, a weight she had no",
-        "A morning coffee routine often goes hand in hand with a supplement pill. Many people view a daily vitamin or mineral as an essential component of their wellness efforts. This idea has become deeply ingrained in modern he"
+        "A morning coffee routine often goes hand in hand with a supplement pill. Many people view a daily vitamin or mineral as an essential component of their wellness efforts. This idea has become deeply ingrained in modern he",
+        "A single can of sardines can deliver more than 100% of your daily recommended intake for Vitamin B12. This small, often overlooked fish is a powerhouse of essential nutrients, punching far above its weight in the wellnes"
       ],
       "Travel & Hidden Gems": [
-        "Recent studies reveal that over 70% of Gen Z travelers prioritize a destination's 'Instagrammability' when planning their trips. The hunt for unique backdrops and genuine experiences is real. You are not just looking for",
         "Liam paused, finger hovering over his phone screen. Another friend had just posted a stunning, sun-drenched photo from Positano, all cliffside villas and azure water. Beautiful, yes, but Liam felt a familiar pang: everyo",
         "Over 85% of Gen Z travelers report that seeing a visually appealing destination on social media directly influences their travel decisions, often prioritizing unique aesthetic experiences over traditional tourist sites. ",
         "Maya swiped through her feed, another perfect sunset from Santorini. Beautiful, yes, but she craved something fresh. A place not every other post showcased, yet still bursting with character and photogenic charm. She wan",
         "You are looking for travel spots that offer a fresh perspective, genuinely unique photo opportunities, and a vibrant local scene without the overwhelming crowds. These three destinations deliver on that promise, blending",
-        "Elena balances an iced citrus espresso on the handlebars of her rental bicycle. A small wooden passenger ferry cuts across the narrow channel, rippling the calm water of Japan's Seto Inland Sea. The morning sun hits the "
+        "Elena balances an iced citrus espresso on the handlebars of her rental bicycle. A small wooden passenger ferry cuts across the narrow channel, rippling the calm water of Japan's Seto Inland Sea. The morning sun hits the ",
+        "Craving a travel experience that feels both genuinely authentic and perfectly post-worthy for your feed, a journey beyond the usual suspects. You are looking for places where history whispers from colorful facades, where"
       ],
       "Philosophy for Modern Life": [
         "Gallup's 2023 'State of the Global Workplace' report found that only 23% of employees are engaged at work. This means a vast majority feel detached. They go through the motions. They chase promotions, hit targets, and cl",
@@ -383,17 +383,17 @@
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
-      "World News Simplified": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
-      "Wellness and Self-Care": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
-      "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+      "Passive Income Investing": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
+      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+      "Wellness and Self-Care": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
+      "Travel & Hidden Gems": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
       "Philosophy for Modern Life": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
+      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Wellness and Self-Care": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
       "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read."
     }
   }
