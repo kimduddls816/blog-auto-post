@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Navigating Uncertainty: Understanding Bonds, Covered Calls, and Smart ETF Choices for Passive Income",
     "Navigating Your Portfolio: Stocks, Bonds, and Smart ETF Choices for Passive Income",
     "Unlocking Passive Income: Your Beginner's Guide to REITs and Corporate Bonds",
     "Unlocking Passive Income: Understanding P/E Ratios and Exploring TIPS",
@@ -49,10 +48,10 @@
     "Adapting Your Investment Strategy Through the Ages: From Growth to Stability",
     "From Accumulation to Distribution: Crafting Your Passive Income Withdrawal Plan Amidst Market Shifts",
     "Navigating High Mortgage Rates: Direct Real Estate, REITs, and Stable Income Strategies",
-    "Expanding Your Income Horizon: Understanding Alternative Investments and Energy Partnerships"
+    "Expanding Your Income Horizon: Understanding Alternative Investments and Energy Partnerships",
+    "Beyond Growth: Protecting Your Passive Income with Hedging and Strategic Assets"
   ],
   "World News Simplified": [
-    "Global Currents: Social Tensions, Tech Surges, and Climate's Reach",
     "Global Currents: Aid Diplomacy, Crime Routes, AI's Market Mood, and Privacy Breaches",
     "World Unpacked: Japan's Quake, Ghana's Blackout, and AI's New Test",
     "Global Jitters: Tech Crackdowns, War Profits, and Economic Balancing Acts",
@@ -101,10 +100,10 @@
     "From Nairobi's Markets to Kyiv's Freezing Homes, The Global Cost of Living Squeeze",
     "Russia Strikes Ukraine After European Officials Depart, As Sweden Faces a Hairline Vote",
     "Donald Trump Calls AI Safety a 'Hoax' as Russian Flares Light Up the Baltic",
-    "AI's Massive Data Centers Spark Global Pushback Over Energy and Water"
+    "AI's Massive Data Centers Spark Global Pushback Over Energy and Water",
+    "Microsoft's 'Silicon Species' Warning Lands as US Rates End a Three-Year Pause"
   ],
   "Wellness and Self-Care": [
-    "Unlock Better Sleep: The Foods That Help You Drift Off Faster",
     "Move, Nourish, Connect: A Holistic Path to Lasting Well-being",
     "Beyond Traditional Recovery: How Movement, Meals, and Community Power Your Holistic Wellness",
     "Heavy Steps or Fast Wheels? Unpacking Weighted Vest Walking Versus Cycling",
@@ -153,7 +152,8 @@
     "The US Supplement Surge: 80% of Americans Take Them, But Only a Handful Deliver Widespread Gains",
     "The Humble Sardine: How One Can Delivers 100% Daily B12 and Unexpected Longevity Benefits",
     "Acetyl Hexapeptide-8: The Topical Peptide That Offers a Gentle 'Botox-Like' Skin Smoothing Effect",
-    "The 4-Week Method to Slash Blood Pressure with Specific Movement"
+    "The 4-Week Method to Slash Blood Pressure with Specific Movement",
+    "The Simple 2-Day-a-Week Habit That Fights Age-Related Muscle Loss and Boosts Longevity"
   ],
   "Travel & Hidden Gems": [
     "From Cycladic Chic to Waterfront Wonders and Javanese Rhythms: Aesthetic Escapes for the Modern Explorer",
@@ -208,7 +208,6 @@
     "Walk Lyon's Secret Passages, Swing Across Willemstad's Harbor, and Discover Japan's Floating Art Galleries"
   ],
   "Philosophy for Modern Life": [
-    "Montaigne's Mirror: Embracing Your Imperfect Self in a Filtered World",
     "Simone Weil and the Art of True Attention: Finding Focus in a Fragmented World",
     "Arthur Schopenhauer's Wisdom: Quieting the Endless Urge for More",
     "The Weight of Choice: Søren Kierkegaard on Finding Your Path in a World of Options",
@@ -257,14 +256,12 @@
     "Bertrand Russell's Case for the Unproductive Saturday Morning",
     "The 78% Rule: Simone de Beauvoir on Writing Your Own Life Script, Not Society's",
     "Laozi and the Unforced Door: Why Your Next Big Task Needs Less Pushing, More Flow",
-    "William James and the First Slip: Why Your Brain Makes New Habits Hard to Keep"
+    "William James and the First Slip: Why Your Brain Makes New Habits Hard to Keep",
+    "Zhuangzi's Twisted Tree: Finding Strength in Not Fitting In"
   ],
   "_meta": {
-    "investing_progress": 65,
+    "investing_progress": 66,
     "recent_tickers": [
-      "VOO",
-      "FTEC",
-      "SCHD",
       "VCSH",
       "VIG",
       "VNQ",
@@ -276,7 +273,10 @@
       "FLOT",
       "FTSM",
       "NOBL",
-      "AMLP"
+      "AMLP",
+      "SMH",
+      "JEPI",
+      "PFF"
     ],
     "recent_destinations": [
       "Garmisch-Partenkirchen, Germany",
@@ -342,28 +342,28 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Current estimates suggest that global inflation could erode the purchasing power of uninvested cash by over 5% annually in many developed economies. This fact highlights why keeping your money working for you is so impor",
         "With some analysts now predicting a significant market upswing, often described as a &#8216;face-ripper rally,&#8217; it is an interesting time to consider how these movements could impact your long-term financial goals,",
         "You might be sitting at your kitchen table, reviewing your annual financial statements, perhaps after a significant life event like a career change or a new family member. It is a moment of reflection. You consider how y",
         "Beyond the initial excitement of building a passive income stream, a crucial next step often emerges as your financial goals evolve: ensuring those streams can sustain you effectively when you actually need to draw upon ",
         "When the 30-year fixed mortgage rate jumps to 7.17%, as it recently did, it sends ripples through many households. This is a nearly two-year high, and it makes buying a home or investment property a much more expensive v",
-        "When the Federal Reserve signals potential rate adjustments, as recent reports indicate, the landscape for traditional investments like savings accounts and certain fixed-income securities can shift noticeably for indivi"
+        "When the Federal Reserve signals potential rate adjustments, as recent reports indicate, the landscape for traditional investments like savings accounts and certain fixed-income securities can shift noticeably for indivi",
+        "Simply letting your money sit in a savings account is like leaving your bicycle unlocked in a busy park. It might be safe, but it also collects dust and loses value over time due to inflation. Strategically investing tha"
       ],
       "World News Simplified": [
-        "Donald Trump connects the Iran conflict to US elections and faces questions on a $5,000 voter pledge. UK air traffic control chaos strands thousands and highlights system vulnerabilities. Experts warn of increasing dange",
         "A researcher named Anya sat hunched over her keyboard late one night. She was refining an AI model at Anthropic, a leading artificial intelligence company. Her task was not just about making the AI smarter. It was about ",
         "Ukraine prepares for a humanitarian crisis as winter approaches amidst ongoing conflict. Kenya increases its crackdown on foreign traders, sparking fear and economic tension. Global central banks signal potential new int",
         "China pushes back on 'malicious competition' in the global AI race. Russia targets a Ukrainian train station after European officials depart. Sweden faces election uncertainty as results are too close to call. Zambian au",
         "Donald Trump calls AI safety concerns a \"hoax,\" sparking debate. A Russian warship fires flares near a Danish military helicopter in the Baltic. Canada is described as a global \"safe harbour\" for finance amidst uncertain",
-        "Gaza faces another humanitarian tragedy as a war-damaged building collapses, claiming 21 lives including eight children. The United States alleges Russia is attempting to assassinate Ukrainian allies on foreign soil, sig"
+        "Gaza faces another humanitarian tragedy as a war-damaged building collapses, claiming 21 lives including eight children. The United States alleges Russia is attempting to assassinate Ukrainian allies on foreign soil, sig",
+        "The US Federal Reserve raises interest rates for the first time in three years. Sweden's Prime Minister Kristersson announces his resignation following an election defeat. German football coach Jürgen Klopp weighs in on "
       ],
       "Wellness and Self-Care": [
-        "The ceiling often becomes a canvas for your racing thoughts when you lie down for the night. Your mind starts replaying the day's events. It scrolls through tomorrow's to-do list. Sometimes it just fixates on a vague sen",
         "Sarah, a vibrant 58-year-old, felt a surge of quiet confidence as she buttoned her favorite pair of jeans. The GLP-1 medication she had been taking for the past year had helped her shed thirty pounds, a weight she had no",
         "A morning coffee routine often goes hand in hand with a supplement pill. Many people view a daily vitamin or mineral as an essential component of their wellness efforts. This idea has become deeply ingrained in modern he",
         "A single can of sardines can deliver more than 100% of your daily recommended intake for Vitamin B12. This small, often overlooked fish is a powerhouse of essential nutrients, punching far above its weight in the wellnes",
         "Isabella stood close to the bathroom mirror. She smoothed her finger between her eyebrows. A faint line creased there. It seemed to deepen a little each year. She thought about her friend who recently got Botox. The resu",
-        "Recent research indicates that specific exercise interventions can significantly lower blood pressure within just a few weeks. One study highlighted participants achieving an average reduction of 8 mmHg in systolic blood"
+        "Recent research indicates that specific exercise interventions can significantly lower blood pressure within just a few weeks. One study highlighted participants achieving an average reduction of 8 mmHg in systolic blood",
+        "Walking through the park on a crisp autumn morning, you might notice how much easier it used to be to keep pace with your children or carry a heavy bag of groceries up the stairs. That slight decline in everyday strength"
       ],
       "Travel & Hidden Gems": [
         "Maya swiped through her feed, another perfect sunset from Santorini. Beautiful, yes, but she craved something fresh. A place not every other post showcased, yet still bursting with character and photogenic charm. She wan",
@@ -374,27 +374,27 @@
         "The late afternoon sun catches the pastel facades of Handelskade in Willemstad, painting the historic waterfront in a warm, inviting glow that almost begs for a photo. While popular travel destinations often hog the spot"
       ],
       "Philosophy for Modern Life": [
-        "We often feel pulled in a dozen directions by our screens. This piece will show you how to find a quiet strength against that pull. Think about your phone for a moment. It constantly demands your attention. Notifications",
         "A young professional, let's call her Priya, often found herself staring at the gleaming career profiles of her peers on LinkedIn. Each one told a story of relentless upward movement: prestigious awards, rapid promotions,",
         "Sarah watched the rain streak down her window, a mug of lukewarm coffee in her hand. Her Saturday was already filling up. Laundry, groceries, an online course she needed to finish, five emails to answer. A familiar knot ",
         "An international survey revealed that 78% of young adults frequently compare their life choices to others, particularly regarding career paths and personal milestones, often resulting in feelings of inadequacy. This cons",
         "You are about to learn how an ancient philosophy can help you navigate the constant pressure to &#x201C;do more&#x201D; in your busy life. Do you ever feel like you are always pushing, always striving? The modern world o",
-        "Imagine the intricate dance of a concert pianist's fingers across the keys, each movement a blur of precision honed over countless hours of practice. Contrast that with the almost involuntary twitch of your thumb scrolli"
+        "Imagine the intricate dance of a concert pianist's fingers across the keys, each movement a blur of precision honed over countless hours of practice. Contrast that with the almost involuntary twitch of your thumb scrolli",
+        "A recent survey revealed that 58% of young adults frequently experience imposter syndrome. They often feel like frauds despite their genuine achievements. This constant internal battle can be exhausting. This feeling of "
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
-      "World News Simplified": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
-      "Wellness and Self-Care": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
+      "Passive Income Investing": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
+      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+      "Wellness and Self-Care": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
       "Travel & Hidden Gems": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
-      "Philosophy for Modern Life": "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic."
+      "Philosophy for Modern Life": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Wellness and Self-Care": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
+      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
       "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read."
+      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences."
     }
   }
 }
