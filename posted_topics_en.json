@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Unlocking Passive Income: Your Beginner's Guide to REITs and Corporate Bonds",
     "Unlocking Passive Income: Understanding P/E Ratios and Exploring TIPS",
     "Your Guide to Today's Markets: P/B Ratios, Silver, and Strategic ETF Picks for Passive Income",
     "Building Resilience: Dividend Yield, CDs, and Smart ETF Choices for Today's Market",
@@ -49,10 +48,10 @@
     "Navigating High Mortgage Rates: Direct Real Estate, REITs, and Stable Income Strategies",
     "Expanding Your Income Horizon: Understanding Alternative Investments and Energy Partnerships",
     "Beyond Growth: Protecting Your Passive Income with Hedging and Strategic Assets",
-    "Navigating Market Swings: Demystifying Short Selling, Exploring Preferred Stocks, and Smart ETF Choices"
+    "Navigating Market Swings: Demystifying Short Selling, Exploring Preferred Stocks, and Smart ETF Choices",
+    "Building Resilient Income: Exploring Options Basics, Enhancing Diversification, and Navigating Today's Market Landscape"
   ],
   "World News Simplified": [
-    "World Unpacked: Japan's Quake, Ghana's Blackout, and AI's New Test",
     "Global Jitters: Tech Crackdowns, War Profits, and Economic Balancing Acts",
     "Global Currents: Legal Twists, Retail Shifts, and Tech's Next Moves",
     "Global Unrest: Conflict, Migration, AI Challenges, and Justice Shifts",
@@ -101,10 +100,10 @@
     "Donald Trump Calls AI Safety a 'Hoax' as Russian Flares Light Up the Baltic",
     "AI's Massive Data Centers Spark Global Pushback Over Energy and Water",
     "Microsoft's 'Silicon Species' Warning Lands as US Rates End a Three-Year Pause",
-    "Japan's Historic Rate Hike and Europe's Hidden War: What They Mean for Your Wallet"
+    "Japan's Historic Rate Hike and Europe's Hidden War: What They Mean for Your Wallet",
+    "Google's Gemini AI Hacks Three Companies in Landmark Security Test"
   ],
   "Wellness and Self-Care": [
-    "Move, Nourish, Connect: A Holistic Path to Lasting Well-being",
     "Beyond Traditional Recovery: How Movement, Meals, and Community Power Your Holistic Wellness",
     "Heavy Steps or Fast Wheels? Unpacking Weighted Vest Walking Versus Cycling",
     "Midlife Reset: The Habits Experts Say Will Add Years to Your Life",
@@ -153,7 +152,8 @@
     "The Humble Sardine: How One Can Delivers 100% Daily B12 and Unexpected Longevity Benefits",
     "Acetyl Hexapeptide-8: The Topical Peptide That Offers a Gentle 'Botox-Like' Skin Smoothing Effect",
     "The 4-Week Method to Slash Blood Pressure with Specific Movement",
-    "The Simple 2-Day-a-Week Habit That Fights Age-Related Muscle Loss and Boosts Longevity"
+    "The Simple 2-Day-a-Week Habit That Fights Age-Related Muscle Loss and Boosts Longevity",
+    "Why Your US Doctor Might Not Offer the Hormone-Free IUD You Want, and What to Ask"
   ],
   "Travel & Hidden Gems": [
     "<strong>Uncommon Views: Milos' Moonscapes, Guayaquil's Iguanas, Ipoh's Artful Sips</strong>",
@@ -208,7 +208,6 @@
     "Beyond the Obvious: Where Mexican Rainbow Alleys Meet Portuguese Azulejos and Seoul's Hanok Cafes"
   ],
   "Philosophy for Modern Life": [
-    "Arthur Schopenhauer's Wisdom: Quieting the Endless Urge for More",
     "The Weight of Choice: Søren Kierkegaard on Finding Your Path in a World of Options",
     "Beyond the Herd: How Friedrich Nietzsche Helps You Become Who You Are",
     "Jean-Paul Sartre and the Authentic You: Escaping Bad Faith in the Digital Age",
@@ -257,14 +256,12 @@
     "Laozi and the Unforced Door: Why Your Next Big Task Needs Less Pushing, More Flow",
     "William James and the First Slip: Why Your Brain Makes New Habits Hard to Keep",
     "Zhuangzi's Twisted Tree: Finding Strength in Not Fitting In",
-    "Your Closet of 50 Shirts: Søren Kierkegaard on the Freedom That Paralyzes"
+    "Your Closet of 50 Shirts: Søren Kierkegaard on the Freedom That Paralyzes",
+    "Wang Yangming's Radical Clarity: Why Your First Impulse is Your Best Guide to Action"
   ],
   "_meta": {
-    "investing_progress": 67,
+    "investing_progress": 68,
     "recent_tickers": [
-      "XLE",
-      "XLU",
-      "SGOV",
       "VYM",
       "IYR",
       "FLOT",
@@ -276,7 +273,10 @@
       "PFF",
       "XLV",
       "BND",
-      "SCHD"
+      "SCHD",
+      "VIG",
+      "VT",
+      "LQD"
     ],
     "recent_destinations": [
       "Granada, Spain",
@@ -342,28 +342,28 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "You might be sitting at your kitchen table, reviewing your annual financial statements, perhaps after a significant life event like a career change or a new family member. It is a moment of reflection. You consider how y",
         "Beyond the initial excitement of building a passive income stream, a crucial next step often emerges as your financial goals evolve: ensuring those streams can sustain you effectively when you actually need to draw upon ",
         "When the 30-year fixed mortgage rate jumps to 7.17%, as it recently did, it sends ripples through many households. This is a nearly two-year high, and it makes buying a home or investment property a much more expensive v",
         "When the Federal Reserve signals potential rate adjustments, as recent reports indicate, the landscape for traditional investments like savings accounts and certain fixed-income securities can shift noticeably for indivi",
         "Simply letting your money sit in a savings account is like leaving your bicycle unlocked in a busy park. It might be safe, but it also collects dust and loses value over time due to inflation. Strategically investing tha",
-        "Michael sat at his kitchen table, a steaming mug of coffee in hand, scrolling through financial headlines on his tablet. One headline mentioned a market dip, another talked about a 'buying opportunity' in a specific sect"
+        "Michael sat at his kitchen table, a steaming mug of coffee in hand, scrolling through financial headlines on his tablet. One headline mentioned a market dip, another talked about a 'buying opportunity' in a specific sect",
+        "Despite a growing list of economic and geopolitical threats, investor sentiment metrics indicate a surprising degree of calm across global stock markets. This apparent serenity presents both opportunities and a need for "
       ],
       "World News Simplified": [
-        "Ukraine prepares for a humanitarian crisis as winter approaches amidst ongoing conflict. Kenya increases its crackdown on foreign traders, sparking fear and economic tension. Global central banks signal potential new int",
         "China pushes back on 'malicious competition' in the global AI race. Russia targets a Ukrainian train station after European officials depart. Sweden faces election uncertainty as results are too close to call. Zambian au",
         "Donald Trump calls AI safety concerns a \"hoax,\" sparking debate. A Russian warship fires flares near a Danish military helicopter in the Baltic. Canada is described as a global \"safe harbour\" for finance amidst uncertain",
         "Gaza faces another humanitarian tragedy as a war-damaged building collapses, claiming 21 lives including eight children. The United States alleges Russia is attempting to assassinate Ukrainian allies on foreign soil, sig",
         "The US Federal Reserve raises interest rates for the first time in three years. Sweden's Prime Minister Kristersson announces his resignation following an election defeat. German football coach Jürgen Klopp weighs in on ",
-        "Russia intensifies 'hybrid attacks' across Europe. Japan raises interest rate to a 31-year high. Bank of England warns of future rate hike linked to energy prices. Europe Faces Escalating 'Hybrid' Threats from Russia Fre"
+        "Russia intensifies 'hybrid attacks' across Europe. Japan raises interest rate to a 31-year high. Bank of England warns of future rate hike linked to energy prices. Europe Faces Escalating 'Hybrid' Threats from Russia Fre",
+        "US and Denmark finalize Greenland deal after Trump's interest. Google's Gemini AI successfully 'hacked' three companies in a test. New US sanctions target Russia's economy. Saudi Arabia issues first Riyadh air raid alert"
       ],
       "Wellness and Self-Care": [
-        "Sarah, a vibrant 58-year-old, felt a surge of quiet confidence as she buttoned her favorite pair of jeans. The GLP-1 medication she had been taking for the past year had helped her shed thirty pounds, a weight she had no",
         "A morning coffee routine often goes hand in hand with a supplement pill. Many people view a daily vitamin or mineral as an essential component of their wellness efforts. This idea has become deeply ingrained in modern he",
         "A single can of sardines can deliver more than 100% of your daily recommended intake for Vitamin B12. This small, often overlooked fish is a powerhouse of essential nutrients, punching far above its weight in the wellnes",
         "Isabella stood close to the bathroom mirror. She smoothed her finger between her eyebrows. A faint line creased there. It seemed to deepen a little each year. She thought about her friend who recently got Botox. The resu",
         "Recent research indicates that specific exercise interventions can significantly lower blood pressure within just a few weeks. One study highlighted participants achieving an average reduction of 8 mmHg in systolic blood",
-        "Walking through the park on a crisp autumn morning, you might notice how much easier it used to be to keep pace with your children or carry a heavy bag of groceries up the stairs. That slight decline in everyday strength"
+        "Walking through the park on a crisp autumn morning, you might notice how much easier it used to be to keep pace with your children or carry a heavy bag of groceries up the stairs. That slight decline in everyday strength",
+        "The search often begins with a clear preference. Many women know exactly what they want for their bodies. They look for contraception that aligns with their specific health goals. Sometimes, that means avoiding synthetic"
       ],
       "Travel & Hidden Gems": [
         "You are looking for travel spots that offer a fresh perspective, genuinely unique photo opportunities, and a vibrant local scene without the overwhelming crowds. These three destinations deliver on that promise, blending",
@@ -374,27 +374,27 @@
         "Finding that perfect backdrop for your next grid post, a place that feels both genuinely discovered and undeniably picturesque, is the ultimate thrill for any traveler right now. You are looking beyond the usual suspects"
       ],
       "Philosophy for Modern Life": [
-        "Sarah watched the rain streak down her window, a mug of lukewarm coffee in her hand. Her Saturday was already filling up. Laundry, groceries, an online course she needed to finish, five emails to answer. A familiar knot ",
         "An international survey revealed that 78% of young adults frequently compare their life choices to others, particularly regarding career paths and personal milestones, often resulting in feelings of inadequacy. This cons",
         "You are about to learn how an ancient philosophy can help you navigate the constant pressure to &#x201C;do more&#x201D; in your busy life. Do you ever feel like you are always pushing, always striving? The modern world o",
         "Imagine the intricate dance of a concert pianist's fingers across the keys, each movement a blur of precision honed over countless hours of practice. Contrast that with the almost involuntary twitch of your thumb scrolli",
         "A recent survey revealed that 58% of young adults frequently experience imposter syndrome. They often feel like frauds despite their genuine achievements. This constant internal battle can be exhausting. This feeling of ",
-        "You are standing in front of your open closet. An endless array of shirts, pants, and dresses stares back. You have an important meeting, or maybe just a casual coffee date. Yet, the simple act of choosing feels impossib"
+        "You are standing in front of your open closet. An endless array of shirts, pants, and dresses stares back. You have an important meeting, or maybe just a casual coffee date. Yet, the simple act of choosing feels impossib",
+        "The Chasm Between Knowing and Doing This post will show you how linking what you understand with what you actually do can unlock a surprising sense of clarity and purpose in your daily life. We often find ourselves in a "
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
-      "World News Simplified": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
-      "Wellness and Self-Care": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
+      "Passive Income Investing": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
+      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
+      "Wellness and Self-Care": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
       "Travel & Hidden Gems": "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
-      "Philosophy for Modern Life": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible."
+      "Philosophy for Modern Life": "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
       "Travel & Hidden Gems": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
-      "Philosophy for Modern Life": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm."
+      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read."
     }
   }
 }
