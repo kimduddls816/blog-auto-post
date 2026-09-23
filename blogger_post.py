@@ -3,6 +3,7 @@ import re
 import json
 import time
 import random
+import html as htmllib
 import requests
 from datetime import datetime
 
@@ -15,11 +16,15 @@ BLOGGER_BLOG_ID       = os.environ["BLOGGER_BLOG_ID"]
 POSTED_FILE   = "posted_topics_en.json"
 GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-flash-latest"]
 
-# ── 재시도 튜닝값 (여기 숫자만 바꾸면 백오프 동작 조절 가능) ──
-RETRY_MAX_ATTEMPTS   = 3      # 모델당 재시도 횟수
-RETRY_BASE_SECONDS   = 10     # 1차 대기 기준값
-RETRY_MULTIPLIER     = 3      # 시도마다 곱해지는 배수 (10 -> 30 -> 90)
-RETRY_JITTER_SECONDS = 5      # 0~5초 랜덤 추가
+# ── 발행량: 한 번 실행에 몇 개 카테고리를 쓸지 (가장 오래 안 쓴 카테고리부터 순환)
+#    신생 blogspot은 적게, 깊게 쓰는 게 색인률에 유리. GitHub Secrets/env로 POSTS_PER_RUN=5 주면 기존처럼 전부 발행.
+POSTS_PER_RUN = int(os.environ.get("POSTS_PER_RUN", "3"))
+
+# ── 재시도 튜닝값
+RETRY_MAX_ATTEMPTS   = 3
+RETRY_BASE_SECONDS   = 10
+RETRY_MULTIPLIER     = 3
+RETRY_JITTER_SECONDS = 5
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
@@ -28,7 +33,6 @@ MONTHS = {m: i+1 for i, m in enumerate(
 
 # ─────────────────────────────────────────────
 # 투자 카테고리 전용: 고정 커리큘럼(1~100일차) + 안전 규칙
-# 101일차부터는 AI가 스스로 개념/자산을 생성함 (별도 리스트 없음)
 # ─────────────────────────────────────────────
 INVESTING_CURRICULUM = [
     "What is capitalism? How money makes more money",
@@ -138,33 +142,29 @@ INVESTING_SAFETY_RULES = """
 - Do NOT cover leveraged products (2x or higher), crypto derivatives, meme coins, or high-risk short-term trading tactics.
 - Only cover legitimate, well-established investment vehicles available worldwide (stocks, bonds, ETFs, REITs, commodities, savings accounts, etc).
 - Never guarantee returns or use phrases like "guaranteed profit" or "sure thing."
-- Always include a line near the end of the post noting that investing carries risk of loss of principal.
+- Include one natural sentence near the end noting that investing carries risk of loss of principal (write it fresh, not as a boilerplate disclaimer).
 - Explain everything in plain language a beginner can follow.
 """
 
-# 여행 카테고리: 최근 다룬 목적지 개수 상한 (도시/지역 단위 기억)
 RECENT_DESTINATIONS_LIMIT = 60
 
 # ─────────────────────────────────────────────
-# 문장/구조 다양성 강제 장치
-# 목적: 프롬프트가 고정돼 있으면 AI가 문장 패턴을 좁은 확률분포 안에서
-# 반복하게 되고, 이게 구글의 "적절한 표준 태그가 포함된 대체 페이지"
-# (콘텐츠 유사성 감지) 판정으로 이어짐. 매 포스트마다 오프닝 방식과
-# 문장 리듬을 강제로 바꿔서 표면적 다양성이 아니라 실제 통계적 다양성을 만든다.
+# 문장 다양성 장치
 # ─────────────────────────────────────────────
 OPENING_STYLES = [
-    "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
-    "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
-    "Open mid-thought, as if continuing a train of thought already in progress, dropping the reader straight into the core idea with no throat-clearing.",
-    "Open with a direct, concrete comparison or contrast between two specific things (not abstract concepts) that sets up the topic.",
-    "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
-    "Open with a short, plain statement of what the reader is about to get out of this post, phrased in a completely different way than usual intros, then move straight into substance.",
+    "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+    "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
+    "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
+    "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+    "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
+    "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
+    "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
 ]
 
 SENTENCE_RHYTHMS = [
-    "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-    "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-    "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
+    "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+    "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+    "Deliberately alternate between very short sentences and longer explanatory ones.",
 ]
 
 BANNED_STOCK_PHRASES = [
@@ -173,13 +173,89 @@ BANNED_STOCK_PHRASES = [
     "In this post, we'll", "Without further ado", "At the end of the day",
     "The bottom line is", "Here's what you need to know", "Buckle up",
     "It's no secret that", "In a world where", "Let's face it",
+    "game-changer", "unlock the secrets", "delve into", "navigate the complexities",
+    "a testament to", "in the realm of", "embark on a journey", "hidden gem",
 ]
+
+BANNED_SECTION_HEADINGS = [
+    "The Big Picture", "Final Thoughts", "Key Takeaways", "Conclusion",
+    "In Summary", "Wrapping Up", "Know Before You Go", "The Bottom Line",
+]
+
+# ─────────────────────────────────────────────
+# 구조 로테이션: 카테고리별 레이아웃을 여러 개 두고 직전과 다른 걸 배정
+# (모든 글이 같은 HTML 뼈대면 구글이 템플릿 페이지로 묶어버림)
+# ─────────────────────────────────────────────
+STRUCTURE_VARIANTS = {
+    "World News Simplified": [
+        """Layout: headline list first.
+1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.
+2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).
+3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.""",
+        """Layout: one lead story, then briefs.
+1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.
+2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.
+3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.""",
+        """Layout: theme-first.
+1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.
+2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. "Why are rice prices jumping in Japan?"), answered directly in the first sentence under it.
+3. Close with a <ul> of 2-3 concrete "what this could mean next" points. No separate closing heading needed.""",
+    ],
+    "Travel & Hidden Gems": [
+        """Layout: three equal destinations.
+- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).
+- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.""",
+        """Layout: one featured destination plus two alternatives.
+- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).
+- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.
+- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season.""",
+        """Layout: theme-led comparison.
+- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.
+- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.
+- End with an <h2> that helps the reader choose between them ("pick X if..., pick Y if..."), including safety and approximate costs for each.""",
+    ],
+    "Passive Income Investing": [
+        """Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).""",
+        """Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.""",
+        """Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.""",
+    ],
+    "Wellness and Self-Care": [
+        """Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>.""",
+        """Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently.""",
+        """Layout: a small practical experiment. Frame the post around trying one specific change for 7 days: why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps.""",
+        """Layout: reader questions. Organize the post as 4-6 <h2> headings, each a real question people search about this topic, each answered directly in its first sentence and then explained.""",
+    ],
+    "Philosophy for Modern Life": [
+        """Layout: thinker first. Briefly who the thinker was and the one idea that matters here, then apply it to a concrete modern problem, then one small practice the reader can try this week. Use <h2> sections.""",
+        """Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.""",
+        """Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.""",
+    ],
+}
+
+LENGTH_BY_CATEGORY = {
+    "Passive Income Investing":   "900~1300 words",
+    "World News Simplified":      "800~1100 words",
+    "Wellness and Self-Care":     "800~1200 words",
+    "Travel & Hidden Gems":       "900~1300 words",
+    "Philosophy for Modern Life": "800~1200 words",
+}
+
+# 이보다 짧으면 1회 재생성 (얇은 콘텐츠 = 색인 거절 1순위)
+MIN_WORDS = {
+    "Passive Income Investing":   800,
+    "World News Simplified":      700,
+    "Wellness and Self-Care":     700,
+    "Travel & Hidden Gems":       800,
+    "Philosophy for Modern Life": 700,
+}
+
+RELATED_HEADINGS = ["Keep reading", "You might also like", "Related reads", "Worth reading next", "More from the blog"]
 
 CATEGORIES = [
     {
         "name": "Passive Income Investing",
         "label": "Passive Income Investing",
-        "direction": "Beginner-friendly guides on FIRE movement, ETF investing, dividend stocks, and automated wealth building. Include real ticker names and ETF names.",
+        "direction": "Beginner-friendly guides on long-term investing, ETFs, dividend stocks, and building wealth steadily. Include real ticker names and ETF names.",
         "feeds": [
             "https://feeds.content.dowjones.io/public/rss/mw_topstories",
             "https://www.dividendgrowthinvestor.com/feeds/posts/default",
@@ -192,7 +268,7 @@ CATEGORIES = [
     {
         "name": "World News Simplified",
         "label": "World News Simplified",
-        "direction": "Global economic, political and social issues explained in plain English that anyone can understand in 3 minutes. Reflect recent news trends.",
+        "direction": "Global economic, political and social issues explained in plain English that anyone can understand in a few minutes, with context the headlines leave out.",
         "feeds": [
             "https://feeds.bbci.co.uk/news/world/rss.xml",
             "https://feeds.bbci.co.uk/news/business/rss.xml",
@@ -205,7 +281,7 @@ CATEGORIES = [
     {
         "name": "Wellness and Self-Care",
         "label": "Wellness and Self-Care",
-        "direction": "Latest wellness trends and research explained simply with practical guides readers can apply immediately. Covers the FULL range of wellness — physical health, mental health, sleep, nutrition, fitness, relationships, productivity, longevity, hormones, skin, gut health, stress, habits, and anything genuinely new and useful.",
+        "direction": "Wellness research and trends explained simply, with practical steps readers can apply. Covers the full range: physical and mental health, sleep, nutrition, fitness, relationships, productivity, longevity, hormones, skin, gut health, stress, and habits. Relevant to readers of any age or gender.",
         "feeds": [
             "https://www.healthline.com/rss/news",
             "https://www.medicalnewstoday.com/rss/medical-news-today.xml",
@@ -221,7 +297,7 @@ CATEGORIES = [
     {
         "name": "Travel & Hidden Gems",
         "label": "Travel & Hidden Gems",
-        "direction": "Travel destinations, hidden gems, cafes and weekend getaways popular among millennials and Gen Z. Focus on trending and Instagram-worthy spots.",
+        "direction": "Destinations and specific experiences worth planning a trip around, from lesser-known towns to fresh angles on known regions. Practical, specific, and honest about costs and trade-offs.",
         "feeds": [
             "https://www.cntraveler.com/feed/rss",
             "https://www.travelandleisure.com/rss",
@@ -236,9 +312,9 @@ CATEGORIES = [
         "label": "Philosophy for Modern Life",
         "direction": (
             "Apply a specific philosopher's or school of thought's ideas to a concrete modern-life problem "
-            "(work stress, social media, relationships, money anxiety, identity, etc.). "
-            "Write for a general audience — no jargon, no academic tone. "
-            "Each post must focus on ONE specific thinker or school assigned in the prompt."
+            "(work stress, social media, relationships, money worries, identity, etc.). "
+            "Write for a general audience, no jargon, no academic tone. "
+            "Each post must focus on ONE specific thinker or school."
         ),
         "feeds": [
             "https://aeon.co/feed.rss",
@@ -254,6 +330,9 @@ CATEGORIES = [
     },
 ]
 
+# ─────────────────────────────────────────────
+# 저장/파싱 유틸
+# ─────────────────────────────────────────────
 def load_posted():
     if os.path.exists(POSTED_FILE):
         try:
@@ -302,6 +381,21 @@ def extract_link(item_text):
             return raw
     return ""
 
+def extract_summary(item_text, max_chars=500):
+    """RSS 항목의 요약/본문 일부를 추출. AI가 제목 한 줄이 아니라 실제 사실을 바탕으로 쓰게 하기 위함."""
+    m = re.search(r"<(description|summary|content:encoded|content)\b[^>]*>(.*?)</\1>",
+                  item_text, re.DOTALL | re.IGNORECASE)
+    if not m:
+        return ""
+    raw = m.group(2)
+    raw = re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", raw, flags=re.DOTALL)
+    raw = htmllib.unescape(htmllib.unescape(raw))
+    raw = re.sub(r"<[^>]+>", " ", raw)
+    raw = re.sub(r"\s{2,}", " ", raw).strip()
+    if len(raw) > max_chars:
+        raw = raw[:max_chars].rsplit(" ", 1)[0] + "..."
+    return raw
+
 def crawl_trends(feeds, feed_kw):
     headers = {"User-Agent": UA, "Accept": "application/rss+xml, application/xml, text/xml, */*"}
     collected = []
@@ -316,7 +410,7 @@ def crawl_trends(feeds, feed_kw):
                 if not tm:
                     continue
                 title = re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", tm.group(1), flags=re.DOTALL)
-                title = re.sub(r"<[^>]+>", "", title).strip()
+                title = htmllib.unescape(re.sub(r"<[^>]+>", "", title)).strip()
                 if not (8 < len(title) < 140):
                     continue
                 link = extract_link(item)
@@ -324,11 +418,14 @@ def crawl_trends(feeds, feed_kw):
                                item, re.DOTALL | re.IGNORECASE)
                 date_info = parse_pubdate(dm.group(1)) if dm else None
                 date_en = date_info[0] if date_info else None
-                collected.append({"title": title, "link": link, "date": date_en})
+                summary = extract_summary(item)
+                collected.append({"title": title, "link": link, "date": date_en, "summary": summary})
         except Exception:
             continue
     filtered = [c for c in collected if any(kw in c["title"].lower() for kw in feed_kw)]
     result = filtered if filtered else collected
+    # 요약 있는 기사를 앞으로 (AI가 쓸 재료가 있는 기사 우선)
+    result.sort(key=lambda c: 0 if c.get("summary") else 1)
     seen, uniq = set(), []
     for c in result:
         if c["title"] not in seen:
@@ -345,6 +442,48 @@ def get_blogger_service():
     res.raise_for_status()
     return res.json()["access_token"]
 
+def fetch_recent_posts(access_token, max_results=100):
+    """내부 링크용: 블로그에 이미 발행된 글 목록(제목/URL/라벨)을 가져옴."""
+    url = f"https://www.googleapis.com/blogger/v3/blogs/{BLOGGER_BLOG_ID}/posts"
+    posts, page_token = [], None
+    try:
+        while len(posts) < max_results:
+            params = {"maxResults": 50, "fetchBodies": "false", "status": "live"}
+            if page_token:
+                params["pageToken"] = page_token
+            r = requests.get(url, headers={"Authorization": f"Bearer {access_token}"}, params=params, timeout=20)
+            if r.status_code != 200:
+                print(f"     ⚠️ Recent posts fetch failed ({r.status_code}), related links skipped")
+                break
+            j = r.json()
+            for p in j.get("items", []):
+                if p.get("url") and p.get("title"):
+                    posts.append({"title": p["title"], "url": p["url"], "labels": p.get("labels", []) or []})
+            page_token = j.get("nextPageToken")
+            if not page_token:
+                break
+    except Exception as e:
+        print(f"     ⚠️ Recent posts fetch error (ignored): {e}")
+    return posts[:max_results]
+
+def build_related_html(category_label, recent_posts, exclude_title=""):
+    """같은 카테고리 이전 글 3개 + 다른 카테고리 1개를 내부 링크로 연결."""
+    if not recent_posts:
+        return ""
+    same = [p for p in recent_posts[:40] if category_label in p["labels"] and p["title"] != exclude_title]
+    other = [p for p in recent_posts[:40] if category_label not in p["labels"]]
+    picks = random.sample(same, min(3, len(same)))
+    if other:
+        picks.append(random.choice(other))
+    if not picks:
+        return ""
+    items = "".join(
+        f'  <li><a href="{htmllib.escape(p["url"], quote=True)}">{htmllib.escape(p["title"])}</a></li>\n'
+        for p in picks
+    )
+    heading = random.choice(RELATED_HEADINGS)
+    return f'\n<p><strong>{heading}</strong></p>\n<ul>\n{items}</ul>\n'
+
 def extract_covered_topics(category_name, posted_titles):
     if not posted_titles:
         return []
@@ -353,9 +492,9 @@ def extract_covered_topics(category_name, posted_titles):
 
 {titles_text}
 
-Extract the key specific topics/stories/angles covered — be as specific as possible.
+Extract the key specific topics/stories/angles covered, as specifically as possible.
 Not just "economy" but "mortgage rates affecting home sales", not just "ETF investing" but "broad market ETF + dividend aristocrats basics for beginners".
-The goal is to give a future writer a precise list of exactly what NOT to repeat, including angles that LOOK different on the surface but cover the same underlying concept or lesson.
+The goal is a precise list of what NOT to repeat, including angles that LOOK different but cover the same underlying concept.
 
 Respond with JSON array only (no other text):
 ["specific topic 1", "specific topic 2", "specific topic 3"]"""
@@ -380,7 +519,6 @@ Respond with JSON array only (no other text):
     return []
 
 def clean_markdown_artifacts(text):
-    """Gemini가 HTML 안에 마크다운 **bold** 같은걸 섞어 쓰는 경우 제거, em dash도 정리"""
     if not text:
         return text
     text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
@@ -390,226 +528,214 @@ def clean_markdown_artifacts(text):
     text = re.sub(r"\s{2,}", " ", text)
     return text
 
-def build_intro_html(category_label):
-    """모든 포스트 맨 앞에 고정으로 붙는 헤더: [Category] | [Month Day, Year]"""
-    date_str = datetime.now().strftime("%B %d, %Y")
-    return f'<p><strong>{category_label} | {date_str}</strong></p>\n'
+def html_to_text(content_html):
+    text = re.sub(r"<[^>]+>", " ", content_html or "")
+    return re.sub(r"\s{2,}", " ", htmllib.unescape(text)).strip()
+
+def word_count(content_html):
+    return len(html_to_text(content_html).split())
 
 def extract_opening_text(content_html, max_chars=220):
-    """본문 HTML에서 첫 문단의 순수 텍스트만 추출. 다음 포스트 생성 시
-    '이렇게 시작하지 마라' 비교용으로 저장하기 위함."""
-    if not content_html:
-        return ""
-    text = re.sub(r"<[^>]+>", " ", content_html)
-    text = re.sub(r"\s{2,}", " ", text).strip()
-    return text[:max_chars]
+    return html_to_text(content_html)[:max_chars]
 
+def pick_different(options, previous):
+    choices = [o for o in options if o != previous] or options
+    return random.choice(choices)
+
+def pick_categories(meta):
+    """가장 오래 발행 안 된 카테고리부터 POSTS_PER_RUN개 선택."""
+    last = meta.get("last_posted_at", {})
+    cats = CATEGORIES[:]
+    random.shuffle(cats)
+    cats.sort(key=lambda c: last.get(c["name"], "0000"))
+    n = max(1, min(POSTS_PER_RUN, len(cats)))
+    return cats[:n]
+
+# ─────────────────────────────────────────────
+# 글 생성
+# ─────────────────────────────────────────────
 def generate_post(category, posted_titles, covered_topics, trends, investing_progress=0,
-                   recent_tickers=None, recent_destinations=None, recent_openings=None,
-                   opening_style=None, sentence_rhythm=None):
-    today = datetime.now().strftime("%B %d, %Y")
+                  recent_tickers=None, recent_destinations=None, recent_openings=None,
+                  opening_style=None, sentence_rhythm=None, structure_variant=None):
     posted_text  = "\n".join(f"- {t}" for t in posted_titles[-20:]) if posted_titles else "None"
     covered_text = ", ".join(covered_topics) if covered_topics else "None"
-    recent_tickers = recent_tickers or []
-    tickers_text = ", ".join(recent_tickers) if recent_tickers else "None"
-    recent_destinations = recent_destinations or []
-    destinations_text = ", ".join(recent_destinations) if recent_destinations else "None"
-    recent_openings = recent_openings or []
-    openings_text = "\n".join(f"- \"{o}...\"" for o in recent_openings) if recent_openings else "None"
+    tickers_text = ", ".join(recent_tickers or []) or "None"
+    destinations_text = ", ".join(recent_destinations or []) or "None"
+    openings_text = "\n".join(f"- \"{o}...\"" for o in (recent_openings or [])) or "None"
     opening_style = opening_style or OPENING_STYLES[0]
     sentence_rhythm = sentence_rhythm or SENTENCE_RHYTHMS[0]
     banned_phrases_text = ", ".join(f'"{p}"' for p in BANNED_STOCK_PHRASES)
+    banned_headings_text = ", ".join(f'"{h}"' for h in BANNED_SECTION_HEADINGS)
+    name = category["name"]
+    structure_variant = structure_variant or STRUCTURE_VARIANTS[name][0]
+    length_text = LENGTH_BY_CATEGORY.get(name, "800~1200 words")
 
     if trends:
         lines = []
         for i, c in enumerate(trends):
             d = f" (published: {c['date']})" if c.get("date") else ""
-            lines.append(f"[{i}] {c['title']}{d}")
+            s = f"\n    Summary: {c['summary']}" if c.get("summary") else "\n    Summary: (not available)"
+            lines.append(f"[{i}] {c['title']}{d}{s}")
         trend_text = "\n".join(lines)
     else:
         trend_text = "None available today"
 
-    is_philosophy = category["name"] == "Philosophy for Modern Life"
-    is_investing  = category["name"] == "Passive Income Investing"
-    is_travel     = category["name"] == "Travel & Hidden Gems"
+    is_philosophy = name == "Philosophy for Modern Life"
+    is_investing  = name == "Passive Income Investing"
+    is_travel     = name == "Travel & Hidden Gems"
+    is_news       = name == "World News Simplified"
 
     if is_investing:
-        # 투자 카테고리는 커리큘럼 순서를 따라가는 정보형 콘텐츠라 후킹 압박을 주지 않음.
-        # 기존처럼 명확하고 직설적인 제목이 이 카테고리엔 더 맞음.
         title_hook_block = ""
     else:
         title_hook_block = """
-[TITLE CRAFT — WRITE THIS AFTER DRAFTING THE BODY, MANDATORY]
-Once you've written the post, look back at it and pull the single most interesting, surprising, or concrete detail from the body, then build the title around THAT, not a generic label for the topic.
-- Concrete specificity: include one real, specific detail in the title itself (a number, a place, a named thing, a specific situation) rather than a vague category description. "A Bali Café With No Wi-Fi and a Two-Hour Wait" beats "A Hidden Gem in Bali."
-- Curiosity gap: the title can raise a question or tension the post resolves, but the post must actually deliver on it. Never promise something the body doesn't pay off.
-- Stakes or relevance: give the reader a reason this matters right now or to them specifically, without resorting to fear-based or anxiety-based framing as the default move.
-- Avoid vague, generic phrasing that could be swapped onto a different post in this category with only the topic word changed. If you could replace one noun and the title would still make sense for a completely different post, it's too generic, make it more specific to this exact post.
+[TITLE CRAFT — WRITE THIS AFTER DRAFTING THE BODY]
+- Pull the single most interesting, concrete detail from the body and build the title around it, not around a generic label for the topic.
+- Include one real, specific detail (a number from the sources, a place, a named thing, a specific situation).
+- A curiosity gap is fine only if the body actually pays it off. No clickbait, no exaggeration.
+- Do not default to fear- or anxiety-based framing.
+- If you could swap one noun and the title would fit a different post, it is too generic.
 """
 
     common_rules = f"""
 [FORMATTING RULES — MANDATORY]
-- Write ONLY valid HTML. NEVER use markdown syntax like **bold** or *italic* or # headers.
-- For emphasis, use <strong>word</strong> or <em>word</em> instead of asterisks. Use this sparingly.
-- Do NOT wrap words in double asterisks under any circumstance.
-- NEVER use the em dash (—) or en dash (–) anywhere in the writing. Use a period, comma, or rewrite the sentence instead. This applies to every single sentence in the post.
+- Write ONLY valid HTML. NEVER use markdown (**bold**, *italic*, # headers).
+- For emphasis use <strong> or <em>, sparingly.
+- NEVER use the em dash (—) or en dash (–). Use a period, comma, or rewrite the sentence.
+- Keep paragraphs short (2-4 sentences).
+
+[ACCURACY RULES — MANDATORY, THIS DECIDES WHETHER GOOGLE TRUSTS THE PAGE]
+- Only use specific numbers, statistics, study findings, quotes, and dates that appear in the trend article summaries provided below. If you need a figure that isn't there, describe it qualitatively instead of inventing one.
+- Never invent studies, researchers, experts, quotes, businesses, restaurants, hotels, or street addresses. Only name places and things you are confident actually exist.
+- Costs and prices must be given as approximate ranges and clearly described as approximate.
+- If a summary is thin, stay honest about what is known. Do not pad with made-up detail.
+
+[ORIGINAL VALUE — MANDATORY]
+- The post must add something the source articles don't: a practical implication for the reader, a common misconception corrected, a useful comparison, a trade-off, or a concrete "how to actually do this" step. A rewrite of the source is not enough.
+- Every section should contain at least one specific, concrete detail. No filler paragraphs that could appear in any post on this topic.
 
 [INTRO RULES — MANDATORY]
-- A fixed header line showing the category name and today's date (formatted like "Category Name | Month Day, Year") will be automatically inserted above your content before publishing. You do NOT need to write this yourself, and you must NOT recreate a similar line (no "Welcome to today's..." intro, no restating the category name or date at the start, no rhetorical hook sentence trying to set the scene).
-- Start the actual body directly with the substantive content of the post (the real opening idea, story, or topic sentence), as if the reader already saw the category/date header right above it.
-- It's still fine to cite a specific article's published date later in the post when referencing that article (e.g., "a report published on June 29 noted...").
+- Start the body directly with substantive content. Do not open with the category name, today's date, a welcome line, or a scene-setting sentence about "today's post".
 
-[TITLE RULES — MANDATORY, ALL CATEGORIES]
-- Do not default to any single recurring emotional frame (e.g. don't make every title about anxiety, burnout, or existential dread — that becomes its own repeating pattern). Let the actual content of THIS post determine what makes it worth reading, and build the title from that.
-- Look at the recently published titles below and make sure this title does not share the same sentence structure, opening word pattern, or tone as recent ones. If recent titles were mostly questions, don't make another question. If recent titles leaned emotional, try something more concrete or vice versa.
-- Titles must be specific to the actual content of this post, not a generic template that could apply to many different posts in this category.
+[TITLE RULES — MANDATORY]
+- 45 to 70 characters. Natural, readable, matching what a real person might search for.
+- Do not default to one recurring emotional frame across posts.
+- Do not share the sentence structure, opening word pattern, or tone of the recent titles below. If recent titles were mostly questions, don't write a question.
 {title_hook_block}
 [OPENING RULES — MANDATORY]
-- For this post, use this opening approach: {opening_style}
-- Do NOT start this post in a way that resembles any of these recent openings from this category (different topic, different wording, different structure required): {openings_text}
+- Use this opening approach: {opening_style}
+- Do NOT resemble any of these recent openings from this category: {openings_text}
 
 [SENTENCE RHYTHM — MANDATORY]
 - {sentence_rhythm}
 
 [BANNED PHRASES — MANDATORY]
-- Never use any of these stock phrases or close variants anywhere in the post: {banned_phrases_text}
+- Never use these or close variants: {banned_phrases_text}
+- Never use these as section headings: {banned_headings_text}. Write every <h2>/<h3> fresh and specific to this post.
 """
 
     if is_philosophy:
         topic_block = f"""
 [PHILOSOPHER SELECTION — MANDATORY FIRST STEP]
-Before writing, select ONE philosopher or school of thought to write about.
+Select ONE philosopher or school of thought.
 - Choose from ALL of human history and ALL cultures (Western, Eastern, African, Islamic, Latin American, Indigenous, etc.)
 - DO NOT choose anyone already covered: {covered_text}
 - DO NOT repeat themes from these titles: {posted_text}
-- Prioritize lesser-known thinkers when well-known ones are already covered
-- Must be someone whose ideas apply to modern everyday life
-Then write the entire post about THAT chosen thinker only.
-Include the chosen thinker's name in the title naturally.
+- Prefer lesser-known thinkers when well-known ones are already covered.
+- Only attribute ideas and quotes the thinker is genuinely known for. If unsure of an exact quote, paraphrase and say it is a paraphrase.
+Include the thinker's name in the title naturally.
 """
-        structure_block = """
-[STRUCTURE]
-- Length: 600~900 words
-- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
-"""
-
     elif is_investing:
         if investing_progress < len(INVESTING_CURRICULUM):
             concept = INVESTING_CURRICULUM[investing_progress]
             concept_block = f"""Today's assigned concept (day {investing_progress + 1} of the curriculum): "{concept}"
-Explain ONLY this concept, building on nothing except basic prior knowledge from earlier curriculum days."""
+Explain ONLY this concept, assuming only basic knowledge from earlier curriculum days."""
         else:
-            concept_block = f"""Pick ONE new, specific investing concept not covered before (angles already covered, avoid repeating even with a different title: {covered_text}).
-Go beyond basics now, intermediate to advanced concepts are welcome since the reader has completed the beginner curriculum."""
+            concept_block = f"""Pick ONE new, specific investing concept not covered before (avoid these even with a different title: {covered_text}).
+Intermediate to advanced concepts are welcome now."""
 
         topic_block = f"""
-[MANDATORY 4-PART TOPIC STRUCTURE]
-PART 1 - Market News: Summarize what's happening in global markets today using the trend articles below.
-PART 2 - Investing Concept: {concept_block}
-PART 3 - New Asset/Method Spotlight: Introduce ONE legitimate investment asset, product, or method the reader likely hasn't seen explained here before (examples: gold, silver, oil, REIT subtypes, municipal bonds, TIPS, DRIP, covered call ETFs, P2P lending, international markets, tax-advantaged accounts, annuities, etc). Must be genuinely different from anything already covered: {covered_text}. Explain clearly what it is and how someone could realistically start.
-PART 4 - ETF Picks: Recommend exactly 3 ETF tickers based on TODAY's actual market conditions reflected in the trend articles. Do NOT repeat these recently recommended tickers unless there's a strong current-market reason to: {tickers_text}. For each ticker, explain in 1-2 sentences why it fits current conditions.
-
-IMPORTANT: Even if the title sounds different from previous posts, the actual lesson/content in Part 2 and Part 3 must not overlap in substance with anything in the covered topics list. A new angle on the same underlying concept still counts as a repeat.
+[MANDATORY 4-PART CONTENT]
+- Market News: what's happening in markets today, based ONLY on the trend article summaries below.
+- Investing Concept: {concept_block}
+- New Asset/Method Spotlight: ONE legitimate asset, product, or method not covered before (e.g. gold, TIPS, municipal bonds, DRIP, covered call ETFs, international markets, tax-advantaged accounts). Must differ from: {covered_text}. Explain what it is and how someone could realistically start.
+- ETF Picks: exactly 3 ETF tickers that fit today's conditions from the summaries. Avoid these recent tickers unless there's a strong reason: {tickers_text}. 1-2 sentences each on why.
+A new angle on an already-covered concept still counts as a repeat.
 {INVESTING_SAFETY_RULES}
 """
-        structure_block = """
-[STRUCTURE]
-Use a clear <h2> heading for each of the 4 parts (natural/catchy wording is fine, but must follow this order: Market News, Investing Concept, New Asset Spotlight, ETF Picks).
-Length: 900~1300 words (needs room for 4 parts).
-End with a short note that investing carries risk of loss of principal.
-"""
-
-    elif category["name"] == "World News Simplified":
+    elif is_news:
         topic_block = f"""
 [TOPIC SELECTION — MANDATORY]
-Cover 3-5 of today's most significant stories from the trend articles above, explained simply for a general reader.
-- Select stories that are genuinely DIFFERENT from what's already been covered: {covered_text}
-- Do NOT reuse the same individual stories/events as in already published titles, even if they're still in the news cycle: {posted_text}
-- If a story has appeared in a recent post, pick a different story from today's trends instead, even if it seems less major.
+Cover the most significant stories from the trend articles below (the layout says how many), explained for a general reader.
+- Prefer stories that HAVE a summary, since you may only state facts that appear there.
+- Stories must be genuinely different from what's already covered: {covered_text}
+- Do NOT reuse stories from already published titles, even if still in the news: {posted_text}
+- Add context the headline leaves out (background, why now, who is affected), without inventing facts.
 """
-        structure_block = """
-[MANDATORY STRUCTURE]
-1. Opening: Start directly with the numbered headline list — NO introductory sentence before it (do not write things like "Some days the news feels scattered, today a few threads run through it"). Just the numbered list — one short punchy line per story (e.g. "1. South Korea bets $880 billion on the AI race" / "2. Trump's Iran strikes keep markets on edge" / "3. Japan's surprise rate hike"). This gives readers the at-a-glance overview before the deep dive.
-2. Main body: cover each of the 3-5 stories with its own <h2> subheading, in the same order as the headline list. For each story, explain what happened, why it matters, and how it connects to the bigger global picture — not just a headline summary.
-3. Closing section (<h2>, e.g. "The Big Picture"): in 2-4 SHORT, clear sentences, state plainly what connects today's stories — avoid abstract or flowery language. Write it the way you'd explain it to a smart friend in one breath, not like a philosophical essay. End with a clear, concrete takeaway, not a vague summary.
-
-- Length: 800~1100 words
-- HTML: <h2> subheadings, <p> paragraphs (each paragraph should be short — 2-4 sentences max — and properly broken up for readability), <ol><li> for the headline list, <ul><li> for other lists where appropriate
-"""
-
     elif is_travel:
         topic_block = f"""
 [TOPIC SELECTION — MANDATORY FIRST STEP]
-This post must cover 3 SEPARATE, DISTINCT destinations (different cities/towns/regions, not 3 spots within the same city). Pick 3 destinations from the trend articles above if possible (or fresh ones if trends don't apply).
-- Cover destinations from ANYWHERE in the world, and the 3 destinations should ideally be from different regions/continents to keep the post globally diverse (e.g., one in Asia, one in Europe, one in the Americas) rather than 3 cities in the same country.
-- DO NOT recommend destinations in active conflict zones, war zones, or places under official government travel advisories warning against travel. If a trending article is about such a place, skip it and pick a different one.
-- All 3 destinations and the overall angle must be genuinely different from everything already covered: {covered_text}
+Cover 3 SEPARATE destinations (different cities/towns/regions, not 3 spots in one city), ideally from different continents.
+- Use trend articles if they fit, otherwise choose fresh ones.
+- NO active conflict zones or places under official advisories against travel.
+- Must differ from everything already covered: {covered_text}
 
-[DESTINATION BAN LIST — MANDATORY, CHECK ALL 3 PICKS AGAINST THIS]
-These specific destinations have already been featured in past posts and are STRICTLY OFF LIMITS, no matter how the post is framed or titled: {destinations_text}
-- Check every one of your 3 candidate picks against this list before finalizing. If a candidate matches or is clearly the same place (even a different neighborhood of an already-covered city, or the same region under a slightly different name), discard it and pick a genuinely new one instead.
-- The world has thousands of interesting destinations. If your first instinct is a place already on the ban list, push yourself to go more niche or less obvious rather than reusing it.
+[DESTINATION BAN LIST — CHECK ALL 3 PICKS]
+Already featured and STRICTLY OFF LIMITS (including other neighborhoods of the same city or the same region under another name): {destinations_text}
+If your first instinct is on this list, go more niche.
 
-[TITLE RULES — MANDATORY]
-- The title must be built from the actual character/theme of THIS post's 3 destinations, not a generic recycled phrase. Do NOT default to stock phrases like "Insta-Worthy", "Instagram-worthy", "Hidden Gems", "Off-the-Radar", "Millennials & Gen Z", "Your Next Escape", or similar wording that has likely been used before.
-- Check the already published titles below and make sure your title does not reuse the same structure or stock phrasing: {posted_text}
-- Vary the title FORMAT each time too (e.g. sometimes a question, sometimes a bold single-line hook, sometimes built around one standout destination with the other two as a hook, sometimes a shared theme across all 3). Do not settle into a repeating template.
+[TRAVEL TITLE RULES]
+- Build the title from the actual character of these 3 destinations. No stock phrases like "Insta-Worthy", "Hidden Gems", "Off-the-Radar", "Millennials & Gen Z", "Your Next Escape".
+- Vary the title format each time and avoid the structure of: {posted_text}
 """
-        structure_block = """
-[MANDATORY STRUCTURE]
-- Opening: go straight into the destinations (the fixed header already frames the post, so no extra scene-setting intro needed beyond one short connecting idea if useful, e.g. what theme ties the 3 picks together).
-- Main content: cover each of the 3 destinations under its own <h2> subheading with the destination's name in the heading. For each destination, give real, specific detail: what makes it special, a specific neighborhood or landmark worth visiting (with a real address/location where possible), how to get there, and a practical tip.
-- For EACH of the 3 destinations, include its own "Know Before You Go" mini-section (can be a short paragraph or small list right within that destination's section, not necessarily a separate <h2>) covering: (a) general safety/security level for travelers there, and (b) approximate cost level with one or two concrete price reference points (e.g., average meal cost, hotel price range in local currency or USD).
-- Length: 900~1300 words (need enough room to cover 3 destinations properly)
-- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
-"""
-
     else:
         topic_block = f"""
 [TOPIC SELECTION — MANDATORY FIRST STEP]
-Look at the trend articles crawled today above. Pick ONE of them as the main subject of this post, and build the entire post around that specific article/topic — go deep on it rather than writing something generic.
-- If no trends were collected today, pick any fresh, specific, narrow wellness topic you know to be currently relevant or research-backed — wellness is a huge field (sleep, nutrition, fitness, mental health, longevity, hormones, gut health, skin, relationships, productivity, recovery, supplements, etc.) so feel free to explore any corner of it.
-- Do NOT write a broad overview covering multiple generic wellness pillars in one post (like "5 tips for sleep, diet, mindfulness, routines, and burnout") — pick ONE specific thing and go deep.
-- The topic must be genuinely different from everything already covered: {covered_text}
+Pick ONE trend article below (prefer one with a summary) and build the whole post around that specific topic, going deep rather than broad.
+- If no trends are usable, pick one narrow, well-established wellness topic and explain it accurately without citing specific studies you can't see.
+- Never write a broad "5 tips for sleep, diet, and stress" overview.
+- Must differ from everything already covered: {covered_text}
+- This is general information, not medical advice. Where it genuinely matters (supplements, medications, symptoms, big diet changes), say once, naturally, that a doctor or qualified professional should be consulted. Never claim anything cures or treats a disease.
 """
-        structure_block = """
-[STRUCTURE]
-- Length: 600~900 words
-- HTML: <h2> subheadings, <p> paragraphs, <ul><li> lists where appropriate
+
+    structure_block = f"""
+[STRUCTURE — THIS POST'S LAYOUT, MANDATORY]
+{structure_variant}
+- Length: {length_text}. Reach the length with substance, never with filler.
+- HTML: <h2>/<h3> subheadings, <p> paragraphs, <ul>/<ol> lists only where they genuinely help.
+- Do NOT repeat the title inside the body.
 """
 
     source_ref_block = """
 [Source Reference]
-- For Philosophy and Wellness/Travel/Investing: source_index = index of the ONE trend article used as main source. -1 if none used.
-- For World News Simplified ONLY: source_indices = an ARRAY of index numbers for ALL trend articles you referenced in this post (one per story covered). Use source_indices instead of source_index for this category.
-- For Passive Income Investing ONLY: also include "tickers" = an ARRAY of the ETF ticker symbols you recommended in Part 4 (e.g. ["VOO", "SCHD", "BND"]).
-- For Travel & Hidden Gems ONLY: also include "destinations" = an ARRAY of exactly the 3 destination names covered in this post, formatted simply as "City/Region, Country" (e.g. ["Northwest Arkansas, USA", "Matera, Italy", "Hoi An, Vietnam"]). This must match the 3 destinations actually covered in the body.
+- For Philosophy, Wellness, Travel, Investing: source_index = index of the ONE trend article used as main source, or -1 if none.
+- For World News Simplified ONLY: source_indices = ARRAY of indices of ALL trend articles referenced (one per story).
+- For Passive Income Investing ONLY: "tickers" = ARRAY of the 3 ETF tickers recommended.
+- For Travel & Hidden Gems ONLY: "destinations" = ARRAY of exactly the 3 destinations covered, as "City/Region, Country".
 """
 
-    prompt = f"""Write an English blog post for the '{category['name']}' category.
+    prompt = f"""Write an English blog post for the '{name}' category of a general-interest lifestyle blog.
 Direction: {category['direction']}
 {common_rules}
 {topic_block}
-[Latest Trend Articles — crawled today]
+[Latest Trend Articles — crawled today, with summaries]
 {trend_text}
 
-[Already Covered Topics — DO NOT repeat these angles, even with a different title or framing]
+[Already Covered Topics — DO NOT repeat these angles, even with a different title]
 {covered_text}
 
-[Already Published Titles — avoid similar angles/structure]
+[Already Published Titles — avoid similar angles and structure]
 {posted_text}
 
 [Writing Style]
-- Friendly, conversational — like talking to a friend
-- Second person ("you") encouraged
+- Friendly and conversational, like a knowledgeable friend. "You" is encouraged.
 - No cliché endings like "In conclusion" or "Start today!"
-- Specific, concrete, and actionable — not vague or generic
-- For Passive Income Investing specifically: keep the same friendly, adult conversational tone — do NOT write in a childish or oversimplified voice. Instead, make sure every financial concept is fully explained in plain terms before you use it, with zero assumed prior knowledge. Never use a financial term (yield, expense ratio, compounding, diversification, etc.) without immediately unpacking what it actually means in everyday language, ideally with a concrete example or comparison. The reader should never feel lost or need to look anything up — every idea should click on first read, while the writing still sounds like it's written for a thoughtful adult.
+- Specific, concrete, actionable.
+- For Passive Income Investing: adult, conversational tone, never childish. Explain every financial term in plain language with a concrete example the first time it appears.
 {structure_block}
-- Do NOT repeat the title inside the body
 {source_ref_block}
 Respond with ONLY this JSON (no other text):
-{{"title": "Title", "content": "HTML body", "tags": ["tag1","tag2","tag3"], "source_index": 0, "source_indices": [], "tickers": [], "destinations": []}}"""
+{{"title": "Title", "content": "HTML body", "source_index": 0, "source_indices": [], "tickers": [], "destinations": []}}"""
 
     last_err = None
     for model in GEMINI_MODELS:
@@ -620,7 +746,7 @@ Respond with ONLY this JSON (no other text):
                     headers={"Content-Type": "application/json"},
                     json={"contents": [{"parts": [{"text": prompt}]}],
                           "generationConfig": {"temperature": 1.0}},
-                    timeout=60
+                    timeout=90
                 )
                 if res.status_code == 200:
                     text = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
@@ -629,13 +755,12 @@ Respond with ONLY this JSON (no other text):
                     elif "```" in text:
                         text = text.split("```")[1].split("```")[0].strip()
                     data = json.loads(text)
-                    data["title"]   = clean_markdown_artifacts(data.get("title", ""))
+                    data["title"]   = clean_markdown_artifacts(data.get("title", "")).strip()
                     data["content"] = clean_markdown_artifacts(data.get("content", ""))
                     return data
                 if res.status_code in (429, 500, 502, 503):
                     last_err = f"{model} {res.status_code}"
                     if attempt < RETRY_MAX_ATTEMPTS - 1:
-                        # 지수 백오프: 10s -> 30s -> 90s (+ 0~5s 랜덤 지터)
                         wait = (RETRY_BASE_SECONDS * (RETRY_MULTIPLIER ** attempt)) + random.uniform(0, RETRY_JITTER_SECONDS)
                         print(f"     ⏳ {model} {res.status_code}, {wait:.1f}s 대기 후 재시도 ({attempt+1}/{RETRY_MAX_ATTEMPTS})")
                         time.sleep(wait)
@@ -654,21 +779,18 @@ Respond with ONLY this JSON (no other text):
 def build_sources_html(post_data, trends):
     indices = post_data.get("source_indices")
     if isinstance(indices, list) and indices:
-        items = []
-        seen = set()
+        items, seen = [], set()
         for idx in indices:
-            if not isinstance(idx, int) or idx < 0 or idx >= len(trends):
-                continue
-            if idx in seen:
+            if not isinstance(idx, int) or idx < 0 or idx >= len(trends) or idx in seen:
                 continue
             seen.add(idx)
             article = trends[idx]
             link  = article.get("link", "").strip()
             title = article.get("title", "").strip()
-            if not link or not link.startswith("http"):
+            if not link.startswith("http"):
                 continue
             date = f" ({article['date']})" if article.get("date") else ""
-            items.append(f'  <li><a href="{link}" target="_blank" rel="noopener">{title}</a>{date}</li>\n')
+            items.append(f'  <li><a href="{htmllib.escape(link, quote=True)}" target="_blank" rel="noopener nofollow">{htmllib.escape(title)}</a>{date}</li>\n')
         if items:
             return '\n<hr/>\n<p><strong>Sources</strong></p>\n<ul>\n' + "".join(items) + '</ul>\n'
         return ""
@@ -679,19 +801,17 @@ def build_sources_html(post_data, trends):
     article = trends[idx]
     link  = article.get("link", "").strip()
     title = article.get("title", "").strip()
-    if not link or not link.startswith("http"):
+    if not link.startswith("http"):
         return ""
     date = f" ({article['date']})" if article.get("date") else ""
     return (
-        '\n<hr/>\n'
-        '<p><strong>Source</strong></p>\n'
-        '<ul>\n'
-        f'  <li><a href="{link}" target="_blank" rel="noopener">{title}</a>{date}</li>\n'
+        '\n<hr/>\n<p><strong>Source</strong></p>\n<ul>\n'
+        f'  <li><a href="{htmllib.escape(link, quote=True)}" target="_blank" rel="noopener nofollow">{htmllib.escape(title)}</a>{date}</li>\n'
         '</ul>\n'
     )
 
-def publish_post(access_token, category, post_data, sources_html):
-    content = post_data["content"] + sources_html
+def publish_post(access_token, category, post_data, extra_html):
+    content = post_data["content"] + extra_html
     url = f"https://www.googleapis.com/blogger/v3/blogs/{BLOGGER_BLOG_ID}/posts/"
     res = requests.post(
         url,
@@ -699,121 +819,134 @@ def publish_post(access_token, category, post_data, sources_html):
         json={
             "title":   post_data["title"],
             "content": content,
-            "labels":  post_data.get("tags", []) + [category["label"]],
+            # 라벨은 카테고리 하나만: AI 태그가 얇은 라벨 페이지를 양산해 크롤링 예산을 잡아먹던 문제 차단
+            "labels":  [category["label"]],
         }
     )
     res.raise_for_status()
     return res.json().get("url", "")
 
+# ─────────────────────────────────────────────
+# 메인
+# ─────────────────────────────────────────────
 def main():
     print(f"🚀 Blogger auto-post started: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     access_token = get_blogger_service()
     print("✅ Blogger access token issued")
     posted = load_posted()
+    posted.setdefault("_meta", {})
+    meta = posted["_meta"]
     success = 0
 
-    meta = posted.get("_meta", {})
-    investing_progress = meta.get("investing_progress", 0)
-    recent_tickers = meta.get("recent_tickers", [])
-    recent_destinations = meta.get("recent_destinations", [])
-    recent_openings_by_cat = meta.get("recent_openings", {})   # {category_name: [opening_text, ...]}
-    last_style_by_cat = meta.get("last_opening_style", {})     # {category_name: style_string}
-    last_rhythm_by_cat = meta.get("last_sentence_rhythm", {})  # {category_name: rhythm_string}
+    investing_progress     = meta.get("investing_progress", 0)
+    recent_tickers         = meta.get("recent_tickers", [])
+    recent_destinations    = meta.get("recent_destinations", [])
+    recent_openings_by_cat = meta.get("recent_openings", {})
+    last_style_by_cat      = meta.get("last_opening_style", {})
+    last_rhythm_by_cat     = meta.get("last_sentence_rhythm", {})
+    last_structure_by_cat  = meta.get("last_structure", {})
+    last_posted_at         = meta.get("last_posted_at", {})
 
-    for cat in CATEGORIES:
+    recent_posts = fetch_recent_posts(access_token)
+    print(f"🔗 {len(recent_posts)} existing posts loaded for internal links")
+
+    selected = pick_categories(meta)
+    print(f"📋 This run: {', '.join(c['name'] for c in selected)} ({len(selected)}/{len(CATEGORIES)})")
+
+    for cat in selected:
         try:
             name = cat["name"]
             print(f"\n  🔍 [{name}] Collecting trends...")
             trends = crawl_trends(cat["feeds"], cat["feed_kw"])
-            print(f"     {len(trends)} trends collected")
-            if trends:
-                for i, t in enumerate(trends[:5]):
-                    print(f"       [{i}] {t['title'][:50]} | {t['link'][:55] if t['link'] else 'no link'}")
+            with_summary = sum(1 for t in trends if t.get("summary"))
+            print(f"     {len(trends)} trends collected ({with_summary} with summary)")
 
             posted_titles = posted.get(name, [])
-            print(f"  🧠 [{name}] Analyzing covered topics...")
             covered = extract_covered_topics(name, posted_titles)
             if covered:
                 print(f"     Topics to avoid: {', '.join(covered[:8])}")
 
-            # 직전에 쓴 오프닝 스타일/문장 리듬과 다른 것으로 랜덤 배정 (반복 방지)
-            prev_style = last_style_by_cat.get(name)
-            style_choices = [s for s in OPENING_STYLES if s != prev_style] or OPENING_STYLES
-            chosen_style = random.choice(style_choices)
+            chosen_style     = pick_different(OPENING_STYLES, last_style_by_cat.get(name))
+            chosen_rhythm    = pick_different(SENTENCE_RHYTHMS, last_rhythm_by_cat.get(name))
+            chosen_structure = pick_different(STRUCTURE_VARIANTS[name], last_structure_by_cat.get(name))
+            cat_openings     = recent_openings_by_cat.get(name, [])
 
-            prev_rhythm = last_rhythm_by_cat.get(name)
-            rhythm_choices = [r for r in SENTENCE_RHYTHMS if r != prev_rhythm] or SENTENCE_RHYTHMS
-            chosen_rhythm = random.choice(rhythm_choices)
-
-            cat_openings = recent_openings_by_cat.get(name, [])
-
-            print(f"  ✍️  [{name}] Generating post...")
+            kwargs = dict(recent_openings=cat_openings, opening_style=chosen_style,
+                          sentence_rhythm=chosen_rhythm, structure_variant=chosen_structure)
             if name == "Passive Income Investing":
                 print(f"     Investing curriculum progress: day {investing_progress + 1}")
-                post = generate_post(cat, posted_titles, covered, trends, investing_progress, recent_tickers,
-                                      recent_openings=cat_openings, opening_style=chosen_style, sentence_rhythm=chosen_rhythm)
+                kwargs.update(investing_progress=investing_progress, recent_tickers=recent_tickers)
             elif name == "Travel & Hidden Gems":
-                print(f"     Destinations to avoid: {len(recent_destinations)} on record")
-                post = generate_post(cat, posted_titles, covered, trends, recent_destinations=recent_destinations,
-                                      recent_openings=cat_openings, opening_style=chosen_style, sentence_rhythm=chosen_rhythm)
-            else:
-                post = generate_post(cat, posted_titles, covered, trends,
-                                      recent_openings=cat_openings, opening_style=chosen_style, sentence_rhythm=chosen_rhythm)
+                kwargs.update(recent_destinations=recent_destinations)
 
-            # 헤더 삽입 전 실제 본문 오프닝을 먼저 캡처 (헤더 텍스트가 아니라 진짜 오프닝을 기록하기 위함)
+            print(f"  ✍️  [{name}] Generating post...")
+            post = generate_post(cat, posted_titles, covered, trends, **kwargs)
+
+            # 품질 게이트: 너무 짧으면 1회 재생성, 더 긴 쪽 사용
+            wc = word_count(post.get("content", ""))
+            if wc < MIN_WORDS[name]:
+                print(f"     ⚠️ Too short ({wc} words), regenerating once...")
+                retry = generate_post(cat, posted_titles, covered, trends, **kwargs)
+                if word_count(retry.get("content", "")) > wc:
+                    post = retry
+                wc = word_count(post.get("content", ""))
+            print(f"     {wc} words")
+
+            if not post.get("title") or not post.get("content"):
+                raise RuntimeError("Empty title or content")
+
             actual_opening_text = extract_opening_text(post.get("content", ""))
-
-            # 모든 포스트 맨 앞에 고정 헤더 삽입: [Category] | [Month Day, Year]
-            post["content"] = build_intro_html(cat["label"]) + post.get("content", "")
-
             sources_html = build_sources_html(post, trends)
-            if sources_html:
-                print(f"     Source(s) attached")
-            else:
-                print(f"     No source attached")
+            related_html = build_related_html(cat["label"], recent_posts, post["title"])
 
-            post_url = publish_post(access_token, cat, post, sources_html)
+            post_url = publish_post(access_token, cat, post, sources_html + related_html)
             print(f"  ✅ Published: {post['title']}")
             print(f"     {post_url}")
+
+            # 같은 실행 내 다음 글이 이 글을 내부 링크할 수 있게 목록 맨 앞에 추가
+            if post_url:
+                recent_posts.insert(0, {"title": post["title"], "url": post_url, "labels": [cat["label"]]})
 
             posted.setdefault(name, []).append(post["title"])
             posted[name] = posted[name][-50:]
 
-            # 이번 포스트의 오프닝/스타일/리듬 기록 (다음 발행 시 반복 회피용)
-            posted.setdefault("_meta", {})
             if actual_opening_text:
-                cat_openings = (recent_openings_by_cat.get(name, []) + [actual_opening_text])[-6:]
-                recent_openings_by_cat[name] = cat_openings
-                posted["_meta"]["recent_openings"] = recent_openings_by_cat
-            last_style_by_cat[name] = chosen_style
-            posted["_meta"]["last_opening_style"] = last_style_by_cat
-            last_rhythm_by_cat[name] = chosen_rhythm
-            posted["_meta"]["last_sentence_rhythm"] = last_rhythm_by_cat
+                recent_openings_by_cat[name] = (cat_openings + [actual_opening_text])[-6:]
+            last_style_by_cat[name]     = chosen_style
+            last_rhythm_by_cat[name]    = chosen_rhythm
+            last_structure_by_cat[name] = chosen_structure
+            last_posted_at[name]        = datetime.now().isoformat(timespec="seconds")
+
+            meta["recent_openings"]      = recent_openings_by_cat
+            meta["last_opening_style"]   = last_style_by_cat
+            meta["last_sentence_rhythm"] = last_rhythm_by_cat
+            meta["last_structure"]       = last_structure_by_cat
+            meta["last_posted_at"]       = last_posted_at
 
             if name == "Passive Income Investing":
-                posted.setdefault("_meta", {})
-                posted["_meta"]["investing_progress"] = investing_progress + 1
+                investing_progress += 1
+                meta["investing_progress"] = investing_progress
                 new_tickers = post.get("tickers", [])
                 if isinstance(new_tickers, list):
-                    combined = recent_tickers + [t for t in new_tickers if isinstance(t, str)]
-                    posted["_meta"]["recent_tickers"] = combined[-15:]
+                    recent_tickers = (recent_tickers + [t for t in new_tickers if isinstance(t, str)])[-15:]
+                    meta["recent_tickers"] = recent_tickers
 
             if name == "Travel & Hidden Gems":
-                posted.setdefault("_meta", {})
                 new_destinations = post.get("destinations", [])
                 if isinstance(new_destinations, list):
                     combined = recent_destinations + [d.strip() for d in new_destinations if isinstance(d, str) and d.strip()]
                     recent_destinations = combined[-RECENT_DESTINATIONS_LIMIT:]
-                    posted["_meta"]["recent_destinations"] = recent_destinations
+                    meta["recent_destinations"] = recent_destinations
 
             success += 1
+            save_posted(posted)   # 글마다 저장: 중간에 실패해도 진행상황 유지
             time.sleep(3)
 
         except Exception as e:
             print(f"  ❌ [{cat['name']}] Error: {e}")
 
     save_posted(posted)
-    print(f"\n🎉 Done! {success}/{len(CATEGORIES)} posts published")
+    print(f"\n🎉 Done! {success}/{len(selected)} posts published")
 
 if __name__ == "__main__":
     main()
