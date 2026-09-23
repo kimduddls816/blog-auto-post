@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Building Resilience: Dividend Yield, CDs, and Smart ETF Choices for Today's Market",
     "Beyond Yield: Growing Your Passive Income with Dividend Growth and Smart HSA Investing",
     "Unlocking Your Financial Future: Retirement Accounts, DRIPs, and Smart ETF Choices",
     "Unlocking Your Passive Income Potential: Taxes, Fractional Shares, and Today's Market",
@@ -49,7 +48,8 @@
     "Navigating Market Swings: Demystifying Short Selling, Exploring Preferred Stocks, and Smart ETF Choices",
     "Building Resilient Income: Exploring Options Basics, Enhancing Diversification, and Navigating Today's Market Landscape",
     "Building Passive Income: Navigating AI's Rise, Embracing Tax-Free Growth, and Smart ETF Choices",
-    "Beyond the Hype: Crafting a Rational Passive Income Plan in a Shifting Market"
+    "Beyond the Hype: Crafting a Rational Passive Income Plan in a Shifting Market",
+    "Investing with Impact: ESG, Aristocrats, and Emerging Opportunities"
   ],
   "World News Simplified": [
     "Global Unrest: Conflict, Migration, AI Challenges, and Justice Shifts",
@@ -156,7 +156,6 @@
     "The September 21 Report: Why Your 'Anxiety' Might Be Perimenopause, Not a Mood Disorder"
   ],
   "Travel & Hidden Gems": [
-    "Dreaming of New Views? Uncover Tokyo's Vibrant Corners, Todos Santos' Artistic Spirit, and Piedmont's Culinary Delights",
     "Metropolitan Hues, Canal Dreams, and Desert Canvas: Your Next Aesthetic Global Journey",
     "Aesthetic Feasts, Urban Peaks, and Golden Sands: Uncover Global Charms",
     "Copenhagen's Cool, Salento's Colors, and Chefchaouen's Blues: Global Escapes for Your Feed",
@@ -205,10 +204,10 @@
     "Beyond the Obvious: Where Mexican Rainbow Alleys Meet Portuguese Azulejos and Seoul's Hanok Cafes",
     "Wander Saugatuck's Dune Paths, Explore Plovdiv's Roman Stages, and Capture Hoi An's Lantern Glow",
     "Sip Ipoh's Iconic White Coffee, Then Discover Gdańsk's Amber Boutiques and Oaxaca's Mezcal",
-    "The Surreal Art of Chiang Rai's Black House and Two Other Cities Redefining Visual Travel"
+    "The Surreal Art of Chiang Rai's Black House and Two Other Cities Redefining Visual Travel",
+    "Halifax's Historic Homes, Mostar's Bridge, and Popayán's White City Charms"
   ],
   "Philosophy for Modern Life": [
-    "Immanuel Kant and Your Inner Compass: Navigating Workplace Ethics",
     "Michel Foucault's Panopticon: Understanding Why We Self-Monitor Online",
     "Zhuangzi and the Freedom of Flow: Why Less Forcing Means More Living",
     "Sextus Empiricus and the Peace of Not Knowing: Navigating Today's Information Tsunami",
@@ -257,14 +256,12 @@
     "Wang Yangming's Radical Clarity: Why Your First Impulse is Your Best Guide to Action",
     "Judith Butler and the Art of Performing Your Authentic Self",
     "The Daily Tug-of-War: How Baruch Spinoza Helps You Stop Being Pulled by Every External Demand",
-    "Epictetus and the 120 Minutes: Reclaiming Your Day from Uncontrollable Worries"
+    "Epictetus and the 120 Minutes: Reclaiming Your Day from Uncontrollable Worries",
+    "Gottfried Leibniz: How Benevolent Wisdom Tackles Workplace Conflicts"
   ],
   "_meta": {
-    "investing_progress": 70,
+    "investing_progress": 71,
     "recent_tickers": [
-      "SMH",
-      "JEPI",
-      "PFF",
       "XLV",
       "BND",
       "SCHD",
@@ -276,12 +273,12 @@
       "XLC",
       "QQQM",
       "VGSH",
-      "VYM"
+      "VYM",
+      "SOXX",
+      "URA",
+      "NOBL"
     ],
     "recent_destinations": [
-      "Valencia, Spain",
-      "Fukuoka, Japan",
-      "Boise, USA",
       "Ghent, Belgium",
       "Rotorua, New Zealand",
       "San Miguel de Allende, Mexico",
@@ -338,16 +335,19 @@
       "Oaxaca City, Mexico",
       "Chattanooga, USA",
       "Tbilisi, Georgia",
-      "Chiang Rai, Thailand"
+      "Chiang Rai, Thailand",
+      "Halifax, Nova Scotia, Canada",
+      "Mostar, Bosnia and Herzegovina",
+      "Popayán, Colombia"
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "When the Federal Reserve signals potential rate adjustments, as recent reports indicate, the landscape for traditional investments like savings accounts and certain fixed-income securities can shift noticeably for indivi",
         "Simply letting your money sit in a savings account is like leaving your bicycle unlocked in a busy park. It might be safe, but it also collects dust and loses value over time due to inflation. Strategically investing tha",
         "Michael sat at his kitchen table, a steaming mug of coffee in hand, scrolling through financial headlines on his tablet. One headline mentioned a market dip, another talked about a 'buying opportunity' in a specific sect",
         "Despite a growing list of economic and geopolitical threats, investor sentiment metrics indicate a surprising degree of calm across global stock markets. This apparent serenity presents both opportunities and a need for ",
         "Sarah stared at her phone screen, a notification blinking brightly from her investment app. It showed a modest dividend payment from one of her holdings, a tiny stream of cash generated without her lifting a finger. This",
-        "The scent of freshly brewed coffee lingered in the air as you settled into your morning routine, perhaps flipping through news on your tablet or listening to a podcast. Suddenly, a headline catches your eye: &#x201C;Wall"
+        "The scent of freshly brewed coffee lingered in the air as you settled into your morning routine, perhaps flipping through news on your tablet or listening to a podcast. Suddenly, a headline catches your eye: &#x201C;Wall",
+        "Many people believe that the primary goal of investing is simply to generate the highest possible financial returns. While profit is certainly a key motivator, this perspective sometimes overlooks the broader impact your"
       ],
       "World News Simplified": [
         "Gaza faces another humanitarian tragedy as a war-damaged building collapses, claiming 21 lives including eight children. The United States alleges Russia is attempting to assassinate Ukrainian allies on foreign soil, sig",
@@ -366,35 +366,45 @@
         "The kitchen table usually felt like a quiet refuge. But lately, when Sarah sat down with her morning coffee, her mind would race. Her heart fluttered. She'd find herself replaying conversations. She worried about tasks d"
       ],
       "Travel & Hidden Gems": [
-        "A recent survey indicated that 78% of Gen Z and millennial travelers would rather spend money on an experience than a material possession. This shift prioritizes unique, shareable moments over traditional souvenirs. You ",
         "The late afternoon sun catches the pastel facades of Handelskade in Willemstad, painting the historic waterfront in a warm, inviting glow that almost begs for a photo. While popular travel destinations often hog the spot",
         "Finding that perfect backdrop for your next grid post, a place that feels both genuinely discovered and undeniably picturesque, is the ultimate thrill for any traveler right now. You are looking beyond the usual suspects",
         "You are about to discover three extraordinary travel destinations that combine unique cultural experiences with stunning visuals perfect for your next shareable moment, taking you from charming lakeside towns to ancient ",
         "Booking a flight to an obvious European capital often means navigating throngs of tourists. Discovering a colorful alleyway café in Southeast Asia offers a completely different, more intimate kind of thrill. If your trav",
-        "A recent survey revealed that 65% of Gen Z and millennial travelers are actively seeking destinations that offer both genuine cultural immersion and visually stunning backdrops, moving beyond generic tourist traps to fin"
+        "A recent survey revealed that 65% of Gen Z and millennial travelers are actively seeking destinations that offer both genuine cultural immersion and visually stunning backdrops, moving beyond generic tourist traps to fin",
+        "Navigating the grand, sprawling museums of a bustling European capital offers a certain kind of cultural immersion, but discovering the intimate, lived-in history of Halifax, Nova Scotia, provides an entirely different, "
       ],
       "Philosophy for Modern Life": [
-        "A recent survey revealed that 58% of young adults frequently experience imposter syndrome. They often feel like frauds despite their genuine achievements. This constant internal battle can be exhausting. This feeling of ",
         "You are standing in front of your open closet. An endless array of shirts, pants, and dresses stares back. You have an important meeting, or maybe just a casual coffee date. Yet, the simple act of choosing feels impossib",
         "The Chasm Between Knowing and Doing This post will show you how linking what you understand with what you actually do can unlock a surprising sense of clarity and purpose in your daily life. We often find ourselves in a ",
         "A notification pops up on Anya’s phone. It is a photo from a colleague’s perfectly staged weekend brunch. Anya sighs. She had spent her own Saturday in sweatpants, trying to fix a leaky faucet. Now, she feels the familia",
         "The sensation of being yanked in multiple directions, like a rope in a relentless tug-of-war, feels distinctly different from the quiet determination of a tree pushing its roots deeper into the earth. One leaves you brea",
-        "A recent study found that the average adult spends over two hours a day worrying about things they cannot directly change. Think about that. Two full hours. That is a significant chunk of your waking life. This worry oft"
+        "A recent study found that the average adult spends over two hours a day worrying about things they cannot directly change. Think about that. Two full hours. That is a significant chunk of your waking life. This worry oft",
+        "Maya found herself caught between two colleagues arguing over project responsibilities. She felt the pressure to pick a side, to declare who was \"right\" and who was \"wrong.\" The air in the office grew thick with tension,"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
+      "Passive Income Investing": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
       "World News Simplified": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
       "Wellness and Self-Care": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
-      "Travel & Hidden Gems": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence.",
-      "Philosophy for Modern Life": "Open with a specific, surprising fact, number, or research finding related to the topic, stated plainly without any lead-up sentence."
+      "Travel & Hidden Gems": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "Philosophy for Modern Life": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
+      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
       "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
-      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while still staying clear and easy to read.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences."
+      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
+    },
+    "last_structure": {
+      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
+      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
+      "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season."
+    },
+    "last_posted_at": {
+      "Passive Income Investing": "2026-09-23T15:24:05",
+      "Philosophy for Modern Life": "2026-09-23T15:25:10",
+      "Travel & Hidden Gems": "2026-09-23T15:25:35"
     }
   }
 }
