@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Beyond Yield: Growing Your Passive Income with Dividend Growth and Smart HSA Investing",
     "Unlocking Your Financial Future: Retirement Accounts, DRIPs, and Smart ETF Choices",
     "Unlocking Your Passive Income Potential: Taxes, Fractional Shares, and Today's Market",
     "Decoding Sectors and Unearthing Income: Your Guide to Royalty Trusts and Market Shifts",
@@ -49,10 +48,10 @@
     "Building Resilient Income: Exploring Options Basics, Enhancing Diversification, and Navigating Today's Market Landscape",
     "Building Passive Income: Navigating AI's Rise, Embracing Tax-Free Growth, and Smart ETF Choices",
     "Beyond the Hype: Crafting a Rational Passive Income Plan in a Shifting Market",
-    "Investing with Impact: ESG, Aristocrats, and Emerging Opportunities"
+    "Investing with Impact: ESG, Aristocrats, and Emerging Opportunities",
+    "Smart Investing for AI Growth and Steady Dividends"
   ],
   "World News Simplified": [
-    "Global Unrest: Conflict, Migration, AI Challenges, and Justice Shifts",
     "Global Currents: Diplomacy, Digital Divides, and Disease Defense",
     "Global Brief: Fuel Theft, AI Content, and Big Screen Wins",
     "Global Pulse: From Digital Divides to Natural Disasters",
@@ -101,10 +100,10 @@
     "Japan's Historic Rate Hike and Europe's Hidden War: What They Mean for Your Wallet",
     "Google's Gemini AI Hacks Three Companies in Landmark Security Test",
     "Chiltern Railways Renationalized After 30 Years, as JP Morgan Admits 'Simply Don't Know' Oil Prices",
-    "ChatGPT Sued by Canadian Province Over Tumbler Ridge Shooting Report"
+    "ChatGPT Sued by Canadian Province Over Tumbler Ridge Shooting Report",
+    "OpenAI Agent Hacks Australian Gov: A June 'World First' Explained"
   ],
   "Wellness and Self-Care": [
-    "Creatine Uncovered: Your Guide to a Powerhouse Supplement for Brain, Body, and Beyond",
     "Unpacking Cortisol Supplements: Do You Really Need Them for Better Recovery?",
     "Unlocking Your Core: Why Pilates is More Than Just a Trend",
     "Unlock Your Pantry: Making Healthy Eating Easy with Canned, Frozen, and Packaged Foods",
@@ -153,7 +152,8 @@
     "Why Your US Doctor Might Not Offer the Hormone-Free IUD You Want, and What to Ask",
     "Why U.S. Women Face Unexpected Roadblocks to a Hormone-Free IUD Choice",
     "Beyond the Snack: Why Your Daily Handful of Nuts Is a Secret Weapon for Gut, Heart, and Longevity",
-    "The September 21 Report: Why Your 'Anxiety' Might Be Perimenopause, Not a Mood Disorder"
+    "The September 21 Report: Why Your 'Anxiety' Might Be Perimenopause, Not a Mood Disorder",
+    "Unpacking Wellness Patches: Is Skin Absorption Actually Proven?"
   ],
   "Travel & Hidden Gems": [
     "Metropolitan Hues, Canal Dreams, and Desert Canvas: Your Next Aesthetic Global Journey",
@@ -260,11 +260,8 @@
     "Gottfried Leibniz: How Benevolent Wisdom Tackles Workplace Conflicts"
   ],
   "_meta": {
-    "investing_progress": 71,
+    "investing_progress": 72,
     "recent_tickers": [
-      "XLV",
-      "BND",
-      "SCHD",
       "VIG",
       "VT",
       "LQD",
@@ -276,7 +273,10 @@
       "VYM",
       "SOXX",
       "URA",
-      "NOBL"
+      "NOBL",
+      "SMH",
+      "IGV",
+      "SDY"
     ],
     "recent_destinations": [
       "Ghent, Belgium",
@@ -342,28 +342,28 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Simply letting your money sit in a savings account is like leaving your bicycle unlocked in a busy park. It might be safe, but it also collects dust and loses value over time due to inflation. Strategically investing tha",
         "Michael sat at his kitchen table, a steaming mug of coffee in hand, scrolling through financial headlines on his tablet. One headline mentioned a market dip, another talked about a 'buying opportunity' in a specific sect",
         "Despite a growing list of economic and geopolitical threats, investor sentiment metrics indicate a surprising degree of calm across global stock markets. This apparent serenity presents both opportunities and a need for ",
         "Sarah stared at her phone screen, a notification blinking brightly from her investment app. It showed a modest dividend payment from one of her holdings, a tiny stream of cash generated without her lifting a finger. This",
         "The scent of freshly brewed coffee lingered in the air as you settled into your morning routine, perhaps flipping through news on your tablet or listening to a podcast. Suddenly, a headline catches your eye: &#x201C;Wall",
-        "Many people believe that the primary goal of investing is simply to generate the highest possible financial returns. While profit is certainly a key motivator, this perspective sometimes overlooks the broader impact your"
+        "Many people believe that the primary goal of investing is simply to generate the highest possible financial returns. While profit is certainly a key motivator, this perspective sometimes overlooks the broader impact your",
+        "Elena checked her phone during her lunch break, a small notification popping up: a deposit had just landed in her brokerage account. It wasn't from selling anything; it was a dividend payment from a company she owned, a "
       ],
       "World News Simplified": [
-        "Gaza faces another humanitarian tragedy as a war-damaged building collapses, claiming 21 lives including eight children. The United States alleges Russia is attempting to assassinate Ukrainian allies on foreign soil, sig",
         "The US Federal Reserve raises interest rates for the first time in three years. Sweden's Prime Minister Kristersson announces his resignation following an election defeat. German football coach Jürgen Klopp weighs in on ",
         "Russia intensifies 'hybrid attacks' across Europe. Japan raises interest rate to a 31-year high. Bank of England warns of future rate hike linked to energy prices. Europe Faces Escalating 'Hybrid' Threats from Russia Fre",
         "US and Denmark finalize Greenland deal after Trump's interest. Google's Gemini AI successfully 'hacked' three companies in a test. New US sanctions target Russia's economy. Saudi Arabia issues first Riyadh air raid alert",
         "While one European capital saw its skies filled with a record number of incoming drones, another major European nation watched its citizens head to the polls, illustrating a stark contrast between military confrontation ",
-        "A passenger, Sarah, checked her phone for the tenth time, sighing as the departure board still showed &quot;Delayed&quot; with no new information. She had already missed a connecting flight and was mentally recalculating"
+        "A passenger, Sarah, checked her phone for the tenth time, sighing as the departure board still showed &quot;Delayed&quot; with no new information. She had already missed a connecting flight and was mentally recalculating",
+        "What does it really mean when an AI system hacks a government? This isn't a plot from a science fiction movie; it's a real-world event that happened in June when an automated AI agent from OpenAI successfully infiltrated"
       ],
       "Wellness and Self-Care": [
-        "Recent research indicates that specific exercise interventions can significantly lower blood pressure within just a few weeks. One study highlighted participants achieving an average reduction of 8 mmHg in systolic blood",
         "Walking through the park on a crisp autumn morning, you might notice how much easier it used to be to keep pace with your children or carry a heavy bag of groceries up the stairs. That slight decline in everyday strength",
         "The search often begins with a clear preference. Many women know exactly what they want for their bodies. They look for contraception that aligns with their specific health goals. Sometimes, that means avoiding synthetic",
         "For many U.S. women, the quest for truly hormone-free contraception often leads to a single, highly effective option: the copper IUD. Yet, despite its popularity and proven efficacy, a recent report published on Septembe",
         "Sarah often found herself staring into the pantry, a bag of chips tempting her with its salty crunch, but a small container of almonds seemed to call out from the shelf too. She knew nuts were &quot;healthy,&quot; but th",
-        "The kitchen table usually felt like a quiet refuge. But lately, when Sarah sat down with her morning coffee, her mind would race. Her heart fluttered. She'd find herself replaying conversations. She worried about tasks d"
+        "The kitchen table usually felt like a quiet refuge. But lately, when Sarah sat down with her morning coffee, her mind would race. Her heart fluttered. She'd find herself replaying conversations. She worried about tasks d",
+        "You might have seen them. Small, often colorful patches, stuck discreetly on an arm or shoulder. These wellness patches promise everything from a burst of energy to deeper sleep or even clearer skin. They appear simple t"
       ],
       "Travel & Hidden Gems": [
         "The late afternoon sun catches the pastel facades of Handelskade in Willemstad, painting the historic waterfront in a warm, inviting glow that almost begs for a photo. While popular travel destinations often hog the spot",
@@ -383,28 +383,32 @@
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
-      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (real or illustrative) doing something related to the topic. No abstract framing, just a small, vivid moment.",
-      "Wellness and Self-Care": "Open by describing one specific real-world detail (a place, an object, a time of day, a routine) that grounds the topic immediately in something tangible.",
+      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "World News Simplified": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
+      "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
       "Travel & Hidden Gems": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
       "Philosophy for Modern Life": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "World News Simplified": "Mix it up deliberately: alternate between very short one-line sentences and longer explanatory ones for rhythm.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces. Avoid long compound sentences.",
+      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
+      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
       "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
-      "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season."
+      "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season.",
+      "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
+      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-09-23T15:24:05",
+      "Passive Income Investing": "2026-09-24T15:48:59",
       "Philosophy for Modern Life": "2026-09-23T15:25:10",
-      "Travel & Hidden Gems": "2026-09-23T15:25:35"
+      "Travel & Hidden Gems": "2026-09-23T15:25:35",
+      "World News Simplified": "2026-09-24T15:47:35",
+      "Wellness and Self-Care": "2026-09-24T15:48:36"
     }
   }
 }
