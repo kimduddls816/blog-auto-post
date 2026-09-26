@@ -222,7 +222,7 @@ STRUCTURE_VARIANTS = {
     "Wellness and Self-Care": [
         """Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>.""",
         """Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently.""",
-        """Layout: a small practical experiment. Frame the post around trying one specific change for 7 days: why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps.""",
+        """Layout: a small practical experiment. Frame the post around trying one specific BEHAVIOR change for 7 days (a sleep, movement, eating-pattern, focus, or stress habit): why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps. If the topic is a supplement, medication, or medical treatment, do NOT use the self-experiment framing; instead explain what it is, what the evidence says, who should be cautious, and what to ask a doctor.""",
         """Layout: reader questions. Organize the post as 4-6 <h2> headings, each a real question people search about this topic, each answered directly in its first sentence and then explained.""",
     ],
     "Philosophy for Modern Life": [
@@ -432,6 +432,43 @@ def crawl_trends(feeds, feed_kw):
             seen.add(c["title"]); uniq.append(c)
     return uniq[:10]
 
+def fetch_article_details(url, max_chars=1500):
+    """기사 페이지에서 meta description + 본문 앞 문단을 추출.
+    RSS 제목/요약이 '이 보충제', '이 방법'처럼 핵심 단어를 숨기는 경우가 많아서 실제 본문을 조금 읽어옴."""
+    if not url or not url.startswith("http"):
+        return ""
+    try:
+        r = requests.get(url, headers={"User-Agent": UA, "Accept": "text/html"}, timeout=10)
+        if r.status_code != 200 or "html" not in r.headers.get("Content-Type", "html"):
+            return ""
+        page = r.text
+        parts = []
+        m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:description|description)["\'][^>]+content=["\']([^"\']+)["\']',
+                      page, re.IGNORECASE)
+        if m:
+            parts.append(htmllib.unescape(m.group(1)).strip())
+        page = re.sub(r"<(script|style|nav|header|footer|aside)\b.*?</\1>", " ", page, flags=re.DOTALL | re.IGNORECASE)
+        for p in re.findall(r"<p\b[^>]*>(.*?)</p>", page, re.DOTALL | re.IGNORECASE):
+            text = htmllib.unescape(re.sub(r"<[^>]+>", " ", p))
+            text = re.sub(r"\s{2,}", " ", text).strip()
+            if len(text) >= 60 and text not in parts:
+                parts.append(text)
+            if sum(len(x) for x in parts) >= max_chars:
+                break
+        details = " ".join(parts)
+        if len(details) > max_chars:
+            details = details[:max_chars].rsplit(" ", 1)[0] + "..."
+        return details
+    except Exception:
+        return ""
+
+def enrich_trends(trends, n=6):
+    """상위 n개 기사에 본문 앞부분(details)을 붙임. 실패해도 그냥 넘어감."""
+    for t in trends[:n]:
+        t["details"] = fetch_article_details(t.get("link", ""))
+        time.sleep(0.5)
+    return trends
+
 def get_blogger_service():
     res = requests.post("https://oauth2.googleapis.com/token", data={
         "client_id":     BLOGGER_CLIENT_ID,
@@ -575,7 +612,8 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
         for i, c in enumerate(trends):
             d = f" (published: {c['date']})" if c.get("date") else ""
             s = f"\n    Summary: {c['summary']}" if c.get("summary") else "\n    Summary: (not available)"
-            lines.append(f"[{i}] {c['title']}{d}{s}")
+            dt = f"\n    Details from the article: {c['details']}" if c.get("details") else ""
+            lines.append(f"[{i}] {c['title']}{d}{s}{dt}")
         trend_text = "\n".join(lines)
     else:
         trend_text = "None available today"
@@ -605,10 +643,15 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
 - Keep paragraphs short (2-4 sentences).
 
 [ACCURACY RULES — MANDATORY, THIS DECIDES WHETHER GOOGLE TRUSTS THE PAGE]
-- Only use specific numbers, statistics, study findings, quotes, and dates that appear in the trend article summaries provided below. If you need a figure that isn't there, describe it qualitatively instead of inventing one.
+- Story-specific facts (numbers, statistics, study results, quotes, and dates about THIS news item) must come from the Summary or Details provided below. If a figure isn't there, describe it qualitatively instead of inventing one.
+- Well-established general knowledge IS allowed and encouraged to add depth: what a well-known supplement or nutrient is and how it is commonly understood to work, how a financial concept works, a city's famous landmarks, a philosopher's known ideas. Only use general knowledge you are confident is accurate and widely accepted.
 - Never invent studies, researchers, experts, quotes, businesses, restaurants, hotels, or street addresses. Only name places and things you are confident actually exist.
 - Costs and prices must be given as approximate ranges and clearly described as approximate.
-- If a summary is thin, stay honest about what is known. Do not pad with made-up detail.
+
+[NAME THE SUBJECT — MANDATORY]
+- Always name the specific subject explicitly (the exact supplement or ingredient, company, product, place, person, policy, or technique) in the title or within the first two paragraphs, and keep using its real name throughout.
+- NEVER use vague stand-ins like "a popular supplement", "this particular method", "a certain country", or "this product" in place of the real name. Source headlines often hide the key word as clickbait; your post must not.
+- If the Summary and Details don't reveal what the subject actually is and you can't identify it with confidence, do NOT use that article. Pick a different trend article instead.
 
 [ORIGINAL VALUE — MANDATORY]
 - The post must add something the source articles don't: a practical implication for the reader, a common misconception corrected, a useful comparison, a trade-off, or a concrete "how to actually do this" step. A rewrite of the source is not enough.
@@ -624,6 +667,7 @@ def generate_post(category, posted_titles, covered_topics, trends, investing_pro
 {title_hook_block}
 [OPENING RULES — MANDATORY]
 - Use this opening approach: {opening_style}
+- If the STRUCTURE section below specifies how the post must open (for example, starting with a headline list), the STRUCTURE wins and this opening approach applies to the first paragraph after that.
 - Do NOT resemble any of these recent openings from this category: {openings_text}
 
 [SENTENCE RHYTHM — MANDATORY]
@@ -641,9 +685,10 @@ Select ONE philosopher or school of thought.
 - Choose from ALL of human history and ALL cultures (Western, Eastern, African, Islamic, Latin American, Indigenous, etc.)
 - DO NOT choose anyone already covered: {covered_text}
 - DO NOT repeat themes from these titles: {posted_text}
-- Prefer lesser-known thinkers when well-known ones are already covered.
+- Prefer lesser-known thinkers when well-known ones are already covered, but ONLY choose a thinker you know well enough to describe accurately (real dates, real works, real ideas). If unsure about details, choose someone else.
 - Only attribute ideas and quotes the thinker is genuinely known for. If unsure of an exact quote, paraphrase and say it is a paraphrase.
 Include the thinker's name in the title naturally.
+- Set source_index to -1 unless a trend article genuinely discusses this same thinker or idea. Never attach an unrelated article as the source.
 """
     elif is_investing:
         if investing_progress < len(INVESTING_CURRICULUM):
@@ -659,7 +704,7 @@ Intermediate to advanced concepts are welcome now."""
 - Market News: what's happening in markets today, based ONLY on the trend article summaries below.
 - Investing Concept: {concept_block}
 - New Asset/Method Spotlight: ONE legitimate asset, product, or method not covered before (e.g. gold, TIPS, municipal bonds, DRIP, covered call ETFs, international markets, tax-advantaged accounts). Must differ from: {covered_text}. Explain what it is and how someone could realistically start.
-- ETF Picks: exactly 3 ETF tickers that fit today's conditions from the summaries. Avoid these recent tickers unless there's a strong reason: {tickers_text}. 1-2 sentences each on why.
+- ETF Picks: exactly 3 ETF tickers that fit today's conditions from the summaries. Avoid these recent tickers unless there's a strong reason: {tickers_text}. 1-2 sentences each on why. Describe what each ETF holds and why it fits; do NOT state its current price, yield, expense ratio, or returns (these change and are easy to get wrong), unless the exact figure appears in the Summary or Details.
 A new angle on an already-covered concept still counts as a repeat.
 {INVESTING_SAFETY_RULES}
 """
@@ -671,6 +716,8 @@ Cover the most significant stories from the trend articles below (the layout say
 - Stories must be genuinely different from what's already covered: {covered_text}
 - Do NOT reuse stories from already published titles, even if still in the news: {posted_text}
 - Add context the headline leaves out (background, why now, who is affected), without inventing facts.
+- Prefer stories that have "Details from the article", since those give you real facts to explain.
+- Stay politically neutral: explain what happened and what each main side says, without taking sides, mocking anyone, or using loaded words. Attribute claims to whoever made them.
 """
     elif is_travel:
         topic_block = f"""
@@ -678,6 +725,7 @@ Cover the most significant stories from the trend articles below (the layout say
 Cover 3 SEPARATE destinations (different cities/towns/regions, not 3 spots in one city), ideally from different continents.
 - Use trend articles if they fit, otherwise choose fresh ones.
 - NO active conflict zones or places under official advisories against travel.
+- Safety notes should describe general, long-standing conditions only, and remind readers once, naturally, to check their government's current travel advisory before booking.
 - Must differ from everything already covered: {covered_text}
 
 [DESTINATION BAN LIST — CHECK ALL 3 PICKS]
@@ -691,10 +739,12 @@ If your first instinct is on this list, go more niche.
     else:
         topic_block = f"""
 [TOPIC SELECTION — MANDATORY FIRST STEP]
-Pick ONE trend article below (prefer one with a summary) and build the whole post around that specific topic, going deep rather than broad.
+Pick ONE trend article below (prefer one with Details) and build the whole post around that specific topic, going deep rather than broad.
+- The title MUST contain the real name of the subject (e.g. "Creatine", "Magnesium Glycinate", "Zone 2 Cardio"), never a stand-in like "One Supplement" or "This Habit".
 - If no trends are usable, pick one narrow, well-established wellness topic and explain it accurately without citing specific studies you can't see.
 - Never write a broad "5 tips for sleep, diet, and stress" overview.
 - Must differ from everything already covered: {covered_text}
+- When telling readers how to try something, describe the actual thing by name and form (e.g. "creatine monohydrate powder"), what is generally known about it, and who should be cautious. Never tell readers to shop for products based on marketing claims printed on the label.
 - This is general information, not medical advice. Where it genuinely matters (supplements, medications, symptoms, big diet changes), say once, naturally, that a doctor or qualified professional should be consulted. Never claim anything cures or treats a disease.
 """
 
@@ -708,7 +758,7 @@ Pick ONE trend article below (prefer one with a summary) and build the whole pos
 
     source_ref_block = """
 [Source Reference]
-- For Philosophy, Wellness, Travel, Investing: source_index = index of the ONE trend article used as main source, or -1 if none.
+- For Philosophy, Wellness, Travel, Investing: source_index = index of the ONE trend article actually used as main source, or -1 if none. Only cite an article whose content the post really draws on.
 - For World News Simplified ONLY: source_indices = ARRAY of indices of ALL trend articles referenced (one per story).
 - For Passive Income Investing ONLY: "tickers" = ARRAY of the 3 ETF tickers recommended.
 - For Travel & Hidden Gems ONLY: "destinations" = ARRAY of exactly the 3 destinations covered, as "City/Region, Country".
@@ -745,7 +795,7 @@ Respond with ONLY this JSON (no other text):
                     f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}",
                     headers={"Content-Type": "application/json"},
                     json={"contents": [{"parts": [{"text": prompt}]}],
-                          "generationConfig": {"temperature": 1.0}},
+                          "generationConfig": {"temperature": 1.0, "responseMimeType": "application/json"}},
                     timeout=90
                 )
                 if res.status_code == 200:
@@ -858,8 +908,10 @@ def main():
             name = cat["name"]
             print(f"\n  🔍 [{name}] Collecting trends...")
             trends = crawl_trends(cat["feeds"], cat["feed_kw"])
+            trends = enrich_trends(trends)
+            with_details = sum(1 for t in trends if t.get("details"))
             with_summary = sum(1 for t in trends if t.get("summary"))
-            print(f"     {len(trends)} trends collected ({with_summary} with summary)")
+            print(f"     {len(trends)} trends collected ({with_summary} with summary, {with_details} with article details)")
 
             posted_titles = posted.get(name, [])
             covered = extract_covered_topics(name, posted_titles)
