@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Unlocking Your Financial Future: Retirement Accounts, DRIPs, and Smart ETF Choices",
     "Unlocking Your Passive Income Potential: Taxes, Fractional Shares, and Today's Market",
     "Decoding Sectors and Unearthing Income: Your Guide to Royalty Trusts and Market Shifts",
     "Navigating Today's Markets: Understanding Company Size and Exploring New Income Streams",
@@ -49,7 +48,8 @@
     "Building Passive Income: Navigating AI's Rise, Embracing Tax-Free Growth, and Smart ETF Choices",
     "Beyond the Hype: Crafting a Rational Passive Income Plan in a Shifting Market",
     "Investing with Impact: ESG, Aristocrats, and Emerging Opportunities",
-    "Smart Investing for AI Growth and Steady Dividends"
+    "Smart Investing for AI Growth and Steady Dividends",
+    "Semiconductor Stocks: Powering Your Passive Income Journey"
   ],
   "World News Simplified": [
     "Global Brief: Fuel Theft, AI Content, and Big Screen Wins",
@@ -104,7 +104,6 @@
     "US Backs X's EU Fine Fight Amidst Canada's Annexation Fears"
   ],
   "Wellness and Self-Care": [
-    "Unpacking Cortisol Supplements: Do You Really Need Them for Better Recovery?",
     "Unlocking Your Core: Why Pilates is More Than Just a Trend",
     "Unlock Your Pantry: Making Healthy Eating Easy with Canned, Frozen, and Packaged Foods",
     "Blueberries for Your Brain: Unpacking the Latest Research on This Super Snack",
@@ -153,7 +152,8 @@
     "Why U.S. Women Face Unexpected Roadblocks to a Hormone-Free IUD Choice",
     "Beyond the Snack: Why Your Daily Handful of Nuts Is a Secret Weapon for Gut, Heart, and Longevity",
     "The September 21 Report: Why Your 'Anxiety' Might Be Perimenopause, Not a Mood Disorder",
-    "Unpacking Wellness Patches: Is Skin Absorption Actually Proven?"
+    "Unpacking Wellness Patches: Is Skin Absorption Actually Proven?",
+    "7 Days to Sharper Brain and Stronger Muscles with <em>One</em> Supplement"
   ],
   "Travel & Hidden Gems": [
     "Aesthetic Feasts, Urban Peaks, and Golden Sands: Uncover Global Charms",
@@ -208,7 +208,6 @@
     "Cobblestones, Monks, & Medieval Castles: Your Unhurried Travel Guide"
   ],
   "Philosophy for Modern Life": [
-    "Zhuangzi and the Freedom of Flow: Why Less Forcing Means More Living",
     "Sextus Empiricus and the Peace of Not Knowing: Navigating Today's Information Tsunami",
     "Karl Marx and the Modern Grind: Reclaiming Meaning in Your Work",
     "Socrates and the Art of Self-Examination: Finding Your True North in a Busy World",
@@ -257,14 +256,12 @@
     "The Daily Tug-of-War: How Baruch Spinoza Helps You Stop Being Pulled by Every External Demand",
     "Epictetus and the 120 Minutes: Reclaiming Your Day from Uncontrollable Worries",
     "Gottfried Leibniz: How Benevolent Wisdom Tackles Workplace Conflicts",
-    "Epicurus's Garden: Why Your Simple Lunch Brings More Peace"
+    "Epicurus's Garden: Why Your Simple Lunch Brings More Peace",
+    "Jean Baudrillard and the Truth Behind Faux Marble Counters"
   ],
   "_meta": {
-    "investing_progress": 72,
+    "investing_progress": 73,
     "recent_tickers": [
-      "VIG",
-      "VT",
-      "LQD",
       "XLK",
       "IVV",
       "XLC",
@@ -276,7 +273,10 @@
       "NOBL",
       "SMH",
       "IGV",
-      "SDY"
+      "SDY",
+      "FTEC",
+      "VUG",
+      "SCHD"
     ],
     "recent_destinations": [
       "Tokyo, Japan",
@@ -342,12 +342,12 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Michael sat at his kitchen table, a steaming mug of coffee in hand, scrolling through financial headlines on his tablet. One headline mentioned a market dip, another talked about a 'buying opportunity' in a specific sect",
         "Despite a growing list of economic and geopolitical threats, investor sentiment metrics indicate a surprising degree of calm across global stock markets. This apparent serenity presents both opportunities and a need for ",
         "Sarah stared at her phone screen, a notification blinking brightly from her investment app. It showed a modest dividend payment from one of her holdings, a tiny stream of cash generated without her lifting a finger. This",
         "The scent of freshly brewed coffee lingered in the air as you settled into your morning routine, perhaps flipping through news on your tablet or listening to a podcast. Suddenly, a headline catches your eye: &#x201C;Wall",
         "Many people believe that the primary goal of investing is simply to generate the highest possible financial returns. While profit is certainly a key motivator, this perspective sometimes overlooks the broader impact your",
-        "Elena checked her phone during her lunch break, a small notification popping up: a deposit had just landed in her brokerage account. It wasn't from selling anything; it was a dividend payment from a company she owned, a "
+        "Elena checked her phone during her lunch break, a small notification popping up: a deposit had just landed in her brokerage account. It wasn't from selling anything; it was a dividend payment from a company she owned, a ",
+        "Gen Z investors are stepping into the market at an unusually young age, often leveraging easier access to investment platforms than prior generations. This new wave of investors highlights a fundamental truth: building l"
       ],
       "World News Simplified": [
         "Russia intensifies 'hybrid attacks' across Europe. Japan raises interest rate to a 31-year high. Bank of England warns of future rate hike linked to energy prices. Europe Faces Escalating 'Hybrid' Threats from Russia Fre",
@@ -358,12 +358,12 @@
         "A papal warning about artificial intelligence versus a major nation considering conflict with its closest neighbor. These disparate events, from the ethical realm to geopolitical stability, highlight a core truth: establ"
       ],
       "Wellness and Self-Care": [
-        "Walking through the park on a crisp autumn morning, you might notice how much easier it used to be to keep pace with your children or carry a heavy bag of groceries up the stairs. That slight decline in everyday strength",
         "The search often begins with a clear preference. Many women know exactly what they want for their bodies. They look for contraception that aligns with their specific health goals. Sometimes, that means avoiding synthetic",
         "For many U.S. women, the quest for truly hormone-free contraception often leads to a single, highly effective option: the copper IUD. Yet, despite its popularity and proven efficacy, a recent report published on Septembe",
         "Sarah often found herself staring into the pantry, a bag of chips tempting her with its salty crunch, but a small container of almonds seemed to call out from the shelf too. She knew nuts were &quot;healthy,&quot; but th",
         "The kitchen table usually felt like a quiet refuge. But lately, when Sarah sat down with her morning coffee, her mind would race. Her heart fluttered. She'd find herself replaying conversations. She worried about tasks d",
-        "You might have seen them. Small, often colorful patches, stuck discreetly on an arm or shoulder. These wellness patches promise everything from a burst of energy to deeper sleep or even clearer skin. They appear simple t"
+        "You might have seen them. Small, often colorful patches, stuck discreetly on an arm or shoulder. These wellness patches promise everything from a burst of energy to deeper sleep or even clearer skin. They appear simple t",
+        "A popular supplement has been noted for its ability to improve muscle mass and boost brain power, with research suggesting that you might be able to reap these benefits even without a structured workout routine. This par"
       ],
       "Travel & Hidden Gems": [
         "Finding that perfect backdrop for your next grid post, a place that feels both genuinely discovered and undeniably picturesque, is the ultimate thrill for any traveler right now. You are looking beyond the usual suspects",
@@ -374,41 +374,41 @@
         "Seeking destinations that offer genuine character and a tranquil pace, far from the hurried tourist crowds? Many popular spots often trade their unique charm for sheer volume, but truly rewarding travel experiences can b"
       ],
       "Philosophy for Modern Life": [
-        "The Chasm Between Knowing and Doing This post will show you how linking what you understand with what you actually do can unlock a surprising sense of clarity and purpose in your daily life. We often find ourselves in a ",
         "A notification pops up on Anya’s phone. It is a photo from a colleague’s perfectly staged weekend brunch. Anya sighs. She had spent her own Saturday in sweatpants, trying to fix a leaky faucet. Now, she feels the familia",
         "The sensation of being yanked in multiple directions, like a rope in a relentless tug-of-war, feels distinctly different from the quiet determination of a tree pushing its roots deeper into the earth. One leaves you brea",
         "A recent study found that the average adult spends over two hours a day worrying about things they cannot directly change. Think about that. Two full hours. That is a significant chunk of your waking life. This worry oft",
         "Maya found herself caught between two colleagues arguing over project responsibilities. She felt the pressure to pick a side, to declare who was \"right\" and who was \"wrong.\" The air in the office grew thick with tension,",
-        "Many of us operate on the belief that acquiring more means living better. We chase the next big promotion, the latest gadget, or a wider circle of influence. Yet, after achieving these goals, a nagging feeling often rema"
+        "Many of us operate on the belief that acquiring more means living better. We chase the next big promotion, the latest gadget, or a wider circle of influence. Yet, after achieving these goals, a nagging feeling often rema",
+        "A thin roll of adhesive contact paper rests on your kitchen table at eight in the evening. It is printed with gray veins designed to look like Italian Carrara rock. You peel back the wax backing, press the sticky film on"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "Passive Income Investing": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
       "World News Simplified": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
-      "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
+      "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
       "Travel & Hidden Gems": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
-      "Philosophy for Modern Life": "Open with a common belief about the topic and, in the next sentence, show where it falls short."
+      "Philosophy for Modern Life": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Passive Income Investing": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Travel & Hidden Gems": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
+      "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
-      "Philosophy for Modern Life": "Layout: thinker first. Briefly who the thinker was and the one idea that matters here, then apply it to a concrete modern problem, then one small practice the reader can try this week. Use <h2> sections.",
+      "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
+      "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
       "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
       "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
-      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
+      "Wellness and Self-Care": "Layout: a small practical experiment. Frame the post around trying one specific change for 7 days: why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-09-24T15:48:59",
-      "Philosophy for Modern Life": "2026-09-25T15:47:33",
+      "Passive Income Investing": "2026-09-26T14:58:23",
+      "Philosophy for Modern Life": "2026-09-26T15:01:05",
       "Travel & Hidden Gems": "2026-09-25T15:48:05",
       "World News Simplified": "2026-09-25T15:49:05",
-      "Wellness and Self-Care": "2026-09-24T15:48:36"
+      "Wellness and Self-Care": "2026-09-26T14:57:03"
     }
   }
 }
