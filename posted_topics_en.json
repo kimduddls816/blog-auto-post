@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Navigating High Markets: Growth vs. Value, Annuities, and Smart ETF Choices for Income",
     "Navigating Market Cycles: Understanding Boom and Bust, Municipal Bonds, and Strategic ETF Picks",
     "Inflation and Your Portfolio: Understanding Its Bite and Exploring P2P Lending",
     "Passive Income Power Plays: Unpacking Interest Rates, Farmland, and Today's Top ETFs",
@@ -49,7 +48,8 @@
     "Semiconductor Stocks: Powering Your Passive Income Journey",
     "Steady Income: Investing in Renewable Energy and Dividend Growers",
     "Building Passive Income: Investing in Healthcare and Growing Dividends",
-    "Passive Income Pathways: Understanding Crypto and Reliable Dividends"
+    "Passive Income Pathways: Understanding Crypto and Reliable Dividends",
+    "Steady Wealth: Navigating Global Supply Chains for Passive Income"
   ],
   "World News Simplified": [
     "Global Currents: Tech Fines, Policy Shifts, and Strategic Alliances",
@@ -156,7 +156,6 @@
     "7-Day Pantry Challenge: Crafting Healthy Meals from Canned and Frozen Foods"
   ],
   "Travel & Hidden Gems": [
-    "Culinary Currents & Cultural Canvas: San Sebastián, San Antonio, and Fukuoka Await Your Lens",
     "Coastal Legends, Emerald Karsts, and Colonial Canvas: Unmissable Global Views for Your Feed",
     "Lens-Ready Landscapes: Maasai Mara's Safari Grandeur, Telluride's Mountain Magic, and Lugano's Mediterranean Flair",
     "Beyond the Usual: Puglia's Sun, Kigali's Pulse, El Chaltén's Peaks",
@@ -205,10 +204,10 @@
     "Washington's Alpine Wildflowers, Aruba's Coastal Caves, and Ecuador's Volcanic Peaks",
     "From Chilean Street Art to Japan's Bamboo Groves: Three Distinct Global Journeys",
     "Walk Ancient Paths: Ghent, Penang, and Quebec City's Timeless Narratives",
-    "Puebla's Artisan Rhythms, Tasmania's Untamed Shores, and Bologna's Culinary Heart"
+    "Puebla's Artisan Rhythms, Tasmania's Untamed Shores, and Bologna's Culinary Heart",
+    "From Salem's 400-Year History to Gabon's Spirit Rituals and Peru's Wild Research"
   ],
   "Philosophy for Modern Life": [
-    "Epicurus and the Art of Quiet Joy: Finding Contentment in a World Obsessed with More",
     "Diogenes's Radical Simplicity: Finding Freedom from Modern Consumerism",
     "Hannah Arendt's Radical Insight: The Unseen Life is Your Most Free",
     "The Unread Self-Help Book and Wang Yangming's Answer to Doing More",
@@ -257,14 +256,12 @@
     "Jean Baudrillard and the Truth Behind Faux Marble Counters",
     "Heraclitus and the River: Why Your Identity is Never Set in Stone",
     "The Unspoken Wisdom of Your Body: Massumi and Sedgwick on Overcoming Modern Overwhelm",
-    "Leibniz's Three Keys to Fairer Online Arguments: Wisdom, Justice, Charity"
+    "Leibniz's Three Keys to Fairer Online Arguments: Wisdom, Justice, Charity",
+    "Theodor Adorno: Unmasking Your 'Always-On' Hustle as False Freedom"
   ],
   "_meta": {
-    "investing_progress": 76,
+    "investing_progress": 77,
     "recent_tickers": [
-      "SOXX",
-      "URA",
-      "NOBL",
       "SMH",
       "IGV",
       "SDY",
@@ -276,12 +273,12 @@
       "SPYG",
       "EUFN",
       "VOO",
-      "XLP"
+      "XLP",
+      "VDC",
+      "XLV",
+      "PFF"
     ],
     "recent_destinations": [
-      "Ho Chi Minh City, Vietnam",
-      "Antalya, Turkey",
-      "Charleston, USA",
       "Lofoten Islands, Norway",
       "Ubud, Indonesia",
       "Cartagena, Colombia",
@@ -338,16 +335,19 @@
       "Quebec City, Canada",
       "Puebla, Mexico",
       "Tasmania, Australia",
-      "Bologna, Italy"
+      "Bologna, Italy",
+      "Salem, Massachusetts, USA",
+      "Gabon",
+      "Tambopata Reserve, Peru"
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Many people believe that the primary goal of investing is simply to generate the highest possible financial returns. While profit is certainly a key motivator, this perspective sometimes overlooks the broader impact your",
         "Elena checked her phone during her lunch break, a small notification popping up: a deposit had just landed in her brokerage account. It wasn't from selling anything; it was a dividend payment from a company she owned, a ",
         "Gen Z investors are stepping into the market at an unusually young age, often leveraging easier access to investment platforms than prior generations. This new wave of investors highlights a fundamental truth: building l",
         "Financial independence often feels like a distant dream, but building wealth steadily is more achievable than you might think. It begins with understanding how your money can work for you, creating streams of passive inc",
         "Imagine walking into a well-stocked pharmacy, seeing shelves filled with various medications, or passing a hospital humming with activity. These scenes are constant reminders of the vast and essential healthcare sector, ",
-        "Today's Market Pulse and Investing Foresight Comparing the rapid, often dizzying fluctuations of a cryptocurrency like Bitcoin to the steady, predictable climb of a diversified S&P 500 index fund reveals two fundamentall"
+        "Today's Market Pulse and Investing Foresight Comparing the rapid, often dizzying fluctuations of a cryptocurrency like Bitcoin to the steady, predictable climb of a diversified S&P 500 index fund reveals two fundamentall",
+        "Many people think building wealth quickly means finding the next big stock or chasing rapid market gains. However, this often overlooks the power of a steady, long-term approach, especially when you understand how global"
       ],
       "World News Simplified": [
         "What does it really mean when an AI system hacks a government? This isn't a plot from a science fiction movie; it's a real-world event that happened in June when an automated AI agent from OpenAI successfully infiltrated",
@@ -366,47 +366,47 @@
         "Many of us hold a strong belief that a truly healthy diet must be built around an endless supply of fresh, organic produce and ingredients painstakingly prepared from scratch. While the appeal of farm-to-table eating is "
       ],
       "Travel & Hidden Gems": [
-        "Navigating the grand, sprawling museums of a bustling European capital offers a certain kind of cultural immersion, but discovering the intimate, lived-in history of Halifax, Nova Scotia, provides an entirely different, ",
         "Seeking destinations that offer genuine character and a tranquil pace, far from the hurried tourist crowds? Many popular spots often trade their unique charm for sheer volume, but truly rewarding travel experiences can b",
         "Many travelers believe the most rewarding trips are to well-trodden cities, iconic landmarks whose images fill every guidebook and social media feed. However, a truly profound travel experience often lies just beyond the",
         "Instead of a sprawling, modern metropolis, picture a city that clings dramatically to steep hillsides, each adorned with a riot of colorful houses and incredible street art. Then imagine navigating bustling port life, a ",
         "Imagine cobblestone streets echoing with centuries of stories. Picture buildings that have stood for hundreds of years, each facade telling a tale of empires, trade, and cultural fusion. When planning a trip, many seek d",
-        "Puebla offers a vibrant blend of colonial history and culinary innovation that often gets overlooked by travelers rushing to Mexico City or coastal resorts. Its historic center, a UNESCO World Heritage site, is a kaleido"
+        "Puebla offers a vibrant blend of colonial history and culinary innovation that often gets overlooked by travelers rushing to Mexico City or coastal resorts. Its historic center, a UNESCO World Heritage site, is a kaleido",
+        "Traveling often comes with the expectation of familiar sights, curated experiences, and easy comfort. We envision perfect postcard scenes and bustling tourist hubs. Yet, some of the most memorable journeys emerge when we"
       ],
       "Philosophy for Modern Life": [
-        "Maya found herself caught between two colleagues arguing over project responsibilities. She felt the pressure to pick a side, to declare who was \"right\" and who was \"wrong.\" The air in the office grew thick with tension,",
         "Many of us operate on the belief that acquiring more means living better. We chase the next big promotion, the latest gadget, or a wider circle of influence. Yet, after achieving these goals, a nagging feeling often rema",
         "A thin roll of adhesive contact paper rests on your kitchen table at eight in the evening. It is printed with gray veins designed to look like Italian Carrara rock. You peel back the wax backing, press the sticky film on",
         "Maria stared at her reflection, a familiar unease bubbling up. Her job title felt stale, her social circle shifting, and even her favorite hobbies no longer sparked joy in the same way. It felt like she should be 'more' ",
         "That familiar tension tightens in your shoulders as another work email pings, or a vague unease settles in your stomach as you scroll through a news feed. In our busy, information-saturated lives, we often find ourselves",
-        "It happens all the time. You are scrolling online, and a disagreement flares up in your feed. Maybe it is a comment section under a news article. Perhaps it is a lively debate in a community group about a local issue. So"
+        "It happens all the time. You are scrolling online, and a disagreement flares up in your feed. Maybe it is a comment section under a news article. Perhaps it is a lively debate in a community group about a local issue. So",
+        "Does the pursuit of \"hustle culture\" truly offer freedom, or is it something else entirely? For many, the relentless push to be constantly productive, to optimize every moment for economic gain, feels like the direct pat"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "Passive Income Investing": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
       "World News Simplified": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
       "Wellness and Self-Care": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
-      "Travel & Hidden Gems": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
-      "Philosophy for Modern Life": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing."
+      "Travel & Hidden Gems": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
+      "Philosophy for Modern Life": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "Travel & Hidden Gems": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
+      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
-      "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
-      "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season.",
+      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
+      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
+      "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
       "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
       "Wellness and Self-Care": "Layout: a small practical experiment. Frame the post around trying one specific BEHAVIOR change for 7 days (a sleep, movement, eating-pattern, focus, or stress habit): why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps. If the topic is a supplement, medication, or medical treatment, do NOT use the self-experiment framing; instead explain what it is, what the evidence says, who should be cautious, and what to ask a doctor."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-10-01T17:21:01",
-      "Philosophy for Modern Life": "2026-10-01T17:22:24",
-      "Travel & Hidden Gems": "2026-10-02T16:36:15",
+      "Passive Income Investing": "2026-10-03T15:07:37",
+      "Philosophy for Modern Life": "2026-10-03T15:08:16",
+      "Travel & Hidden Gems": "2026-10-03T15:09:05",
       "World News Simplified": "2026-10-02T16:36:48",
       "Wellness and Self-Care": "2026-10-02T16:37:24"
     }
