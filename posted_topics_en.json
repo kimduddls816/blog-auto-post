@@ -52,7 +52,6 @@
     "Building Passive Income: Commodity Cycles, DRIPs, and Smart ETFs"
   ],
   "World News Simplified": [
-    "Global Threads: Safety, Regulation, and Nature's Fury",
     "Global Diplomacy, Digital Safety, and Daily Journeys",
     "Global Currents: Accountability, AI's Reality, and Digital Safety",
     "Finland and Sweden Bridge a Decades-Long Divide With a New Night Train",
@@ -101,7 +100,8 @@
     "Spain's 2030 Eviction Ban: A New Front in Global Housing Battles",
     "AI Guides Bioweapon Creation as Ukraine's Power Grid Attacked",
     "Flydubai's 17,000-Foot Plunge and OpenAI's Researcher Firings",
-    "Yemen Conflict Threatens Bab al-Mandab Oil Shipping"
+    "Yemen Conflict Threatens Bab al-Mandab Oil Shipping",
+    "US Military's First Firing Squad in 60 Years and Hollywood's $110 Billion Shake-Up"
   ],
   "Wellness and Self-Care": [
     "GLP-1s and Your Bones: Understanding the Link to Long-Term Health",
@@ -156,7 +156,6 @@
     "GLP-1s and Bone Health: What a 2026 Study on 147,000 Adults Suggests"
   ],
   "Travel & Hidden Gems": [
-    "Coastal Legends, Emerald Karsts, and Colonial Canvas: Unmissable Global Views for Your Feed",
     "Lens-Ready Landscapes: Maasai Mara's Safari Grandeur, Telluride's Mountain Magic, and Lugano's Mediterranean Flair",
     "Beyond the Usual: Puglia's Sun, Kigali's Pulse, El Chaltén's Peaks",
     "<strong>From Bubbly Bliss to Historic Hues: Three Picture-Perfect Global Getaways</strong>",
@@ -205,10 +204,10 @@
     "From Chilean Street Art to Japan's Bamboo Groves: Three Distinct Global Journeys",
     "Walk Ancient Paths: Ghent, Penang, and Quebec City's Timeless Narratives",
     "Puebla's Artisan Rhythms, Tasmania's Untamed Shores, and Bologna's Culinary Heart",
-    "From Salem's 400-Year History to Gabon's Spirit Rituals and Peru's Wild Research"
+    "From Salem's 400-Year History to Gabon's Spirit Rituals and Peru's Wild Research",
+    "Wander Matera's Ancient Caves, Chefchaouen's Blue Alleys, and Havana's Classic Cars"
   ],
   "Philosophy for Modern Life": [
-    "Diogenes's Radical Simplicity: Finding Freedom from Modern Consumerism",
     "Hannah Arendt's Radical Insight: The Unseen Life is Your Most Free",
     "The Unread Self-Help Book and Wang Yangming's Answer to Doing More",
     "Seneca's Radical Question: What if Your Biggest Money Fear is Already Manageable?",
@@ -257,7 +256,8 @@
     "Heraclitus and the River: Why Your Identity is Never Set in Stone",
     "The Unspoken Wisdom of Your Body: Massumi and Sedgwick on Overcoming Modern Overwhelm",
     "Leibniz's Three Keys to Fairer Online Arguments: Wisdom, Justice, Charity",
-    "Theodor Adorno: Unmasking Your 'Always-On' Hustle as False Freedom"
+    "Theodor Adorno: Unmasking Your 'Always-On' Hustle as False Freedom",
+    "Arthur Schopenhauer: Why Your New Gadget Still Leaves You Wanting More"
   ],
   "_meta": {
     "investing_progress": 78,
@@ -279,9 +279,6 @@
       "VYM"
     ],
     "recent_destinations": [
-      "Lofoten Islands, Norway",
-      "Ubud, Indonesia",
-      "Cartagena, Colombia",
       "Siem Reap, Cambodia",
       "Colmar, France",
       "Asheville, North Carolina, USA",
@@ -338,7 +335,10 @@
       "Bologna, Italy",
       "Salem, Massachusetts, USA",
       "Gabon",
-      "Tambopata Reserve, Peru"
+      "Tambopata Reserve, Peru",
+      "Matera, Italy",
+      "Chefchaouen, Morocco",
+      "Havana, Cuba"
     ],
     "recent_openings": {
       "Passive Income Investing": [
@@ -350,12 +350,12 @@
         "Imagine investing in companies that have consistently increased their dividends for at least 25 consecutive years. This remarkable achievement, characteristic of what are known as Dividend Aristocrats, highlights a power"
       ],
       "World News Simplified": [
-        "A papal warning about artificial intelligence versus a major nation considering conflict with its closest neighbor. These disparate events, from the ethical realm to geopolitical stability, highlight a core truth: establ",
         "The Strait of Hormuz: Why a Diplomatic Deadlock Affects Your Wallet Why does the Strait of Hormuz matter so much for global energy prices? This narrow waterway, located between the Persian Gulf and the Arabian Sea, is a ",
         "Across the globe, governments are finding themselves in a delicate balancing act, navigating intensifying internal social pressures alongside a complex web of escalating international tensions. From swift policy interven",
         "Russia launches its largest attack on Ukraine's energy infrastructure since spring. Chinese AI models demonstrate how to create biological weapons and plan assassinations. Six Flags permanently closes its X2 rollercoaste",
         "Around the world, we're seeing how quickly stability can be challenged, often from unexpected places. Whether it's a dramatic incident aboard a passenger flight, the relentless pressure on a besieged capital city, or int",
-        "What is currently happening in Yemen and why does it matter beyond its borders? Yemen's Saudi-backed government has announced a significant military operation to reclaim territory from the Iran-backed Houthis, escalating"
+        "What is currently happening in Yemen and why does it matter beyond its borders? Yemen's Saudi-backed government has announced a significant military operation to reclaim territory from the Iran-backed Houthis, escalating",
+        "From historic legal decisions in the military to protests challenging election integrity, and from unexpected currency disputes to massive corporate mergers, recent global events highlight how established systems are con"
       ],
       "Wellness and Self-Care": [
         "A popular supplement has been noted for its ability to improve muscle mass and boost brain power, with research suggesting that you might be able to reap these benefits even without a structured workout routine. This par",
@@ -366,48 +366,48 @@
         "Millions of Americans have experienced significant changes in their health thanks to GLP-1 agonist drugs like Ozempic, Zepbound, and Wegovy. These medications have become important tools for managing obesity and type 2 d"
       ],
       "Travel & Hidden Gems": [
-        "Seeking destinations that offer genuine character and a tranquil pace, far from the hurried tourist crowds? Many popular spots often trade their unique charm for sheer volume, but truly rewarding travel experiences can b",
         "Many travelers believe the most rewarding trips are to well-trodden cities, iconic landmarks whose images fill every guidebook and social media feed. However, a truly profound travel experience often lies just beyond the",
         "Instead of a sprawling, modern metropolis, picture a city that clings dramatically to steep hillsides, each adorned with a riot of colorful houses and incredible street art. Then imagine navigating bustling port life, a ",
         "Imagine cobblestone streets echoing with centuries of stories. Picture buildings that have stood for hundreds of years, each facade telling a tale of empires, trade, and cultural fusion. When planning a trip, many seek d",
         "Puebla offers a vibrant blend of colonial history and culinary innovation that often gets overlooked by travelers rushing to Mexico City or coastal resorts. Its historic center, a UNESCO World Heritage site, is a kaleido",
-        "Traveling often comes with the expectation of familiar sights, curated experiences, and easy comfort. We envision perfect postcard scenes and bustling tourist hubs. Yet, some of the most memorable journeys emerge when we"
+        "Traveling often comes with the expectation of familiar sights, curated experiences, and easy comfort. We envision perfect postcard scenes and bustling tourist hubs. Yet, some of the most memorable journeys emerge when we",
+        "Imagine yourself strolling through ancient streets, where homes are carved directly into rock faces, echoing with millennia of human stories. Or perhaps you picture a town bathed in an otherworldly hue of blue, a serene "
       ],
       "Philosophy for Modern Life": [
-        "Many of us operate on the belief that acquiring more means living better. We chase the next big promotion, the latest gadget, or a wider circle of influence. Yet, after achieving these goals, a nagging feeling often rema",
         "A thin roll of adhesive contact paper rests on your kitchen table at eight in the evening. It is printed with gray veins designed to look like Italian Carrara rock. You peel back the wax backing, press the sticky film on",
         "Maria stared at her reflection, a familiar unease bubbling up. Her job title felt stale, her social circle shifting, and even her favorite hobbies no longer sparked joy in the same way. It felt like she should be 'more' ",
         "That familiar tension tightens in your shoulders as another work email pings, or a vague unease settles in your stomach as you scroll through a news feed. In our busy, information-saturated lives, we often find ourselves",
         "It happens all the time. You are scrolling online, and a disagreement flares up in your feed. Maybe it is a comment section under a news article. Perhaps it is a lively debate in a community group about a local issue. So",
-        "Does the pursuit of \"hustle culture\" truly offer freedom, or is it something else entirely? For many, the relentless push to be constantly productive, to optimize every moment for economic gain, feels like the direct pat"
+        "Does the pursuit of \"hustle culture\" truly offer freedom, or is it something else entirely? For many, the relentless push to be constantly productive, to optimize every moment for economic gain, feels like the direct pat",
+        "Imagine the fleeting thrill of unboxing a brand new smartphone, its sleek design promising a fresh start, a better connection. Compare that brief surge of excitement to the quiet, profound satisfaction you might feel aft"
       ]
     },
     "last_opening_style": {
       "Passive Income Investing": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
-      "World News Simplified": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
+      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
-      "Travel & Hidden Gems": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
-      "Philosophy for Modern Life": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences."
+      "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "Philosophy for Modern Life": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
+      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
     },
     "last_structure": {
       "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
-      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
-      "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
-      "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
+      "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
+      "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
+      "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
       "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
     },
     "last_posted_at": {
       "Passive Income Investing": "2026-10-04T15:45:24",
-      "Philosophy for Modern Life": "2026-10-03T15:08:16",
-      "Travel & Hidden Gems": "2026-10-03T15:09:05",
-      "World News Simplified": "2026-10-04T15:44:06",
+      "Philosophy for Modern Life": "2026-10-06T17:08:02",
+      "Travel & Hidden Gems": "2026-10-06T17:10:30",
+      "World News Simplified": "2026-10-06T17:12:58",
       "Wellness and Self-Care": "2026-10-04T15:44:52"
     }
   }
