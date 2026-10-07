@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Inflation and Your Portfolio: Understanding Its Bite and Exploring P2P Lending",
     "Passive Income Power Plays: Unpacking Interest Rates, Farmland, and Today's Top ETFs",
     "Passive Income Pathways: Understanding Currency Effects and Exploring MLPs",
     "Your Guide to Commodities, Job Market Shifts, and Smart ETF Picks",
@@ -49,7 +48,8 @@
     "Building Passive Income: Investing in Healthcare and Growing Dividends",
     "Passive Income Pathways: Understanding Crypto and Reliable Dividends",
     "Steady Wealth: Navigating Global Supply Chains for Passive Income",
-    "Building Passive Income: Commodity Cycles, DRIPs, and Smart ETFs"
+    "Building Passive Income: Commodity Cycles, DRIPs, and Smart ETFs",
+    "Passive Income Foundations: From Startups to Smart ETF Investing"
   ],
   "World News Simplified": [
     "Global Diplomacy, Digital Safety, and Daily Journeys",
@@ -104,7 +104,6 @@
     "US Military's First Firing Squad in 60 Years and Hollywood's $110 Billion Shake-Up"
   ],
   "Wellness and Self-Care": [
-    "GLP-1s and Your Bones: Understanding the Link to Long-Term Health",
     "Beyond the Scale: When Your Wellness Journey Becomes a Secret",
     "Unpacking Maternal Mental Health: Beyond Postpartum Depression",
     "Unlock Your Balance, Boost Your Strength: The Power of Single-Leg Workouts",
@@ -153,7 +152,8 @@
     "Making Healthy Meals Easy: The Power of Canned and Frozen Foods",
     "AI Anxiety: How Therapists Are Addressing Your Tech Worries",
     "7-Day Pantry Challenge: Crafting Healthy Meals from Canned and Frozen Foods",
-    "GLP-1s and Bone Health: What a 2026 Study on 147,000 Adults Suggests"
+    "GLP-1s and Bone Health: What a 2026 Study on 147,000 Adults Suggests",
+    "Unlock Menopause Insights with Apple Watch, Oura, Whoop Features"
   ],
   "Travel & Hidden Gems": [
     "Lens-Ready Landscapes: Maasai Mara's Safari Grandeur, Telluride's Mountain Magic, and Lugano's Mediterranean Flair",
@@ -260,7 +260,7 @@
     "Arthur Schopenhauer: Why Your New Gadget Still Leaves You Wanting More"
   ],
   "_meta": {
-    "investing_progress": 78,
+    "investing_progress": 79,
     "recent_tickers": [
       "FTEC",
       "VUG",
@@ -342,12 +342,12 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Gen Z investors are stepping into the market at an unusually young age, often leveraging easier access to investment platforms than prior generations. This new wave of investors highlights a fundamental truth: building l",
         "Financial independence often feels like a distant dream, but building wealth steadily is more achievable than you might think. It begins with understanding how your money can work for you, creating streams of passive inc",
         "Imagine walking into a well-stocked pharmacy, seeing shelves filled with various medications, or passing a hospital humming with activity. These scenes are constant reminders of the vast and essential healthcare sector, ",
         "Today's Market Pulse and Investing Foresight Comparing the rapid, often dizzying fluctuations of a cryptocurrency like Bitcoin to the steady, predictable climb of a diversified S&P 500 index fund reveals two fundamentall",
         "Many people think building wealth quickly means finding the next big stock or chasing rapid market gains. However, this often overlooks the power of a steady, long-term approach, especially when you understand how global",
-        "Imagine investing in companies that have consistently increased their dividends for at least 25 consecutive years. This remarkable achievement, characteristic of what are known as Dividend Aristocrats, highlights a power"
+        "Imagine investing in companies that have consistently increased their dividends for at least 25 consecutive years. This remarkable achievement, characteristic of what are known as Dividend Aristocrats, highlights a power",
+        "Many people believe that building significant wealth requires either a stroke of luck or access to exclusive, high-risk opportunities. However, this often overlooks the more sustainable and accessible path involving cons"
       ],
       "World News Simplified": [
         "The Strait of Hormuz: Why a Diplomatic Deadlock Affects Your Wallet Why does the Strait of Hormuz matter so much for global energy prices? This narrow waterway, located between the Persian Gulf and the Arabian Sea, is a ",
@@ -358,12 +358,12 @@
         "From historic legal decisions in the military to protests challenging election integrity, and from unexpected currency disputes to massive corporate mergers, recent global events highlight how established systems are con"
       ],
       "Wellness and Self-Care": [
-        "A popular supplement has been noted for its ability to improve muscle mass and boost brain power, with research suggesting that you might be able to reap these benefits even without a structured workout routine. This par",
         "Many people have seen the impact of GLP-1 agonist drugs like Ozempic, Zepbound, and Wegovy. These medications have become important tools for managing obesity and type 2 diabetes. They offer significant benefits for mill",
         "Walking through the produce aisle, it is easy to feel a pang of guilt or sticker shock when eyeing the vibrant, but often expensive, fresh fruits and vegetables. Many of us have absorbed the idea that a truly healthy die",
         "Are you feeling uneasy about the rise of artificial intelligence? Many people are. This concern, often called A.I. anxiety, is now a topic frequently discussed in therapy sessions. Patients and providers alike are workin",
         "Many of us hold a strong belief that a truly healthy diet must be built around an endless supply of fresh, organic produce and ingredients painstakingly prepared from scratch. While the appeal of farm-to-table eating is ",
-        "Millions of Americans have experienced significant changes in their health thanks to GLP-1 agonist drugs like Ozempic, Zepbound, and Wegovy. These medications have become important tools for managing obesity and type 2 d"
+        "Millions of Americans have experienced significant changes in their health thanks to GLP-1 agonist drugs like Ozempic, Zepbound, and Wegovy. These medications have become important tools for managing obesity and type 2 d",
+        "Tracking changes in your body can offer powerful insights, especially during significant life stages. Many midlife women are now looking to familiar wearable technology to better understand their menopause journey. New f"
       ],
       "Travel & Hidden Gems": [
         "Many travelers believe the most rewarding trips are to well-trodden cities, iconic landmarks whose images fill every guidebook and social media feed. However, a truly profound travel experience often lies just beyond the",
@@ -383,32 +383,32 @@
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
+      "Passive Income Investing": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
       "World News Simplified": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
-      "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
+      "Wellness and Self-Care": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
       "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Philosophy for Modern Life": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
+      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
       "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
       "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
       "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
-      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
+      "Wellness and Self-Care": "Layout: reader questions. Organize the post as 4-6 <h2> headings, each a real question people search about this topic, each answered directly in its first sentence and then explained."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-10-04T15:45:24",
+      "Passive Income Investing": "2026-10-07T17:48:14",
       "Philosophy for Modern Life": "2026-10-06T17:08:02",
       "Travel & Hidden Gems": "2026-10-06T17:10:30",
       "World News Simplified": "2026-10-06T17:12:58",
-      "Wellness and Self-Care": "2026-10-04T15:44:52"
+      "Wellness and Self-Care": "2026-10-07T17:47:43"
     }
   }
 }
