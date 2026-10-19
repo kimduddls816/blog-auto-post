@@ -52,7 +52,6 @@
     "Build Steady Income: Understanding Debt, DRIPs, and Smart ETFs"
   ],
   "World News Simplified": [
-    "After 73 Years of Technical War, South Korea Proposes Peace Amidst Regional Friction",
     "Ryanair Engine Failure, Hawaii's Hurricane Lala, and Morocco's Migrant Crackdown",
     "AI Cameras Eject Shopper: Sainsbury's Halts Automated Security",
     "Trump's Oman Warning: Bombing an Ally Over Iran",
@@ -101,7 +100,8 @@
     "French Fridges Heated to 50C in Cyber Attack, Millions Lost",
     "Six Ukraine Energy Sites Struck After Trump's Ceasefire",
     "Trump Calls Zelensky 'More Difficult Than Putin' Amid Ukraine Tensions",
-    "Life Sentence in China Over Nursery's Lead-Tainted Meals"
+    "Life Sentence in China Over Nursery's Lead-Tainted Meals",
+    "OpenAI Engineer's Hidden Recorder, Saudi Ties Spark National Security Fears"
   ],
   "Wellness and Self-Care": [
     "Two to Three Weekly Sessions: The Resistance Training Habit Experts Call Key to Longevity",
@@ -156,7 +156,6 @@
     "Healthy Eating on a Budget: Canned and Frozen Foods for Your Plate"
   ],
   "Travel & Hidden Gems": [
-    "Chasing Golden Hour: Cartagena's Sunset Walls, Ubud's Morning Mist, and Porto's Riverside Glow",
     "Medellín's Comuna 13 Murals and Two Other Global Cities Redefining Urban Cool",
     "Costa Mesa's Avant-Garde Shops, Kyoto's Bamboo Whispers, and Budapest's Ruin Bar Rhythms: Aesthetic Journeys Beyond the Map",
     "Da Lat's Dreamlike Cafes, Mostar's Historic Dives, and Sayulita's Surfside Art Await Your Lens",
@@ -205,10 +204,10 @@
     "Explore Philadelphia's Mural City, Krakow's Wawel Castle, and Vancouver Island's HAVN",
     "Greece's Taverna Culture, California's Coastal Art, and Copenhagen's Design Bites",
     "Morocco's Ancient Migrations, Mammoth Caves, and Colmar's Colorful Streets",
-    "Hudson Valley Creekside Stays, Salento Coffee Culture, Marrakech Riads"
+    "Hudson Valley Creekside Stays, Salento Coffee Culture, Marrakech Riads",
+    "Newfoundland's Wild Coasts, Condesa's Art Deco, and Île Seguin's Art Scene"
   ],
   "Philosophy for Modern Life": [
-    "The 3 PM Email That Made You See Red: Baruch Spinoza on Understanding Your Reactions",
     "The Quarterly Report That Feels Pointless: Albert Camus and Your Work Meaning",
     "The Moment You Close Instagram and Feel More Alone: Thich Nhat Hanh on Interbeing",
     "The Warm Mug and Maurice Merleau-Ponty: Why Your Body is Not Just a Container",
@@ -257,7 +256,8 @@
     "Seneca's 'Short Madness': Taming Daily Irritations",
     "Immanuel Kant: Value Yourself as an End, Not Just a Work Deadline",
     "Viktor Frankl: Your Overstuffed Inbox May Be Asking for Deeper Meaning",
-    "Marcus Aurelius: Taming Your Day When Notifications Never Stop"
+    "Marcus Aurelius: Taming Your Day When Notifications Never Stop",
+    "Albert Camus: Why Your Endless To-Do List Still Matters"
   ],
   "_meta": {
     "investing_progress": 85,
@@ -279,9 +279,6 @@
       "XLP"
     ],
     "recent_destinations": [
-      "Da Nang, Vietnam",
-      "Ljubljana, Slovenia",
-      "Medellín, Colombia",
       "Setouchi Region, Japan",
       "Lyon, France",
       "Willemstad, Curacao",
@@ -338,7 +335,10 @@
       "Colmar, France",
       "High Falls/Hudson Valley, USA",
       "Salento, Colombia",
-      "Marrakech, Morocco"
+      "Marrakech, Morocco",
+      "Newfoundland, Canada",
+      "Mexico City, Mexico",
+      "Île Seguin, France"
     ],
     "recent_openings": {
       "Passive Income Investing": [
@@ -350,12 +350,12 @@
         "Sarah, a recent college graduate, often found herself scrolling through financial news during her lunch break, feeling a mix of excitement and apprehension. She was eager to start investing, imagining a future where her "
       ],
       "World News Simplified": [
-        "A Russian glide bomb attack killed at least 30 civilians on two buses in Ukraine's Kramatorsk. Christa Pike, a convicted murderer, survived two lethal injections in Tennessee, an unprecedented event in US legal history. ",
         "Many people believe that strict international sanctions mean countries like the United States have completely cut off all economic ties with Russia, especially concerning energy. However, global politics often involves c",
         "Russia continued its attacks on Ukrainian energy infrastructure just hours after a US-announced energy ceasefire, injuring dozens. Saudi Arabia vowed a serious response following Houthi missile strikes on its airports th",
         "Many people believe that when a major global power announces a ceasefire, particularly one focused on vital infrastructure, such agreements should immediately take effect. However, recent events in Ukraine highlight how ",
         "US President Donald Trump criticizes Ukrainian President Zelensky amidst escalating tensions over strikes on Russian oil refineries and Starlink restrictions. India's youth-led Cockroach Janta Party founder, Abhijeet Dip",
-        "In a world where news travels at light speed, it's easy to see global events as isolated incidents. But a closer look often reveals interconnected challenges and policies that ripple across borders and into daily lives. "
+        "In a world where news travels at light speed, it's easy to see global events as isolated incidents. But a closer look often reveals interconnected challenges and policies that ripple across borders and into daily lives. ",
+        "Picture a high-stakes meeting room at OpenAI, one of the world's leading artificial intelligence companies. Executives and government officials might discuss highly sensitive plans there. Suddenly, a small, unassuming au"
       ],
       "Wellness and Self-Care": [
         "Sarah had been thrilled with her progress. After years of struggling, the GLP-1 medication had helped her finally reach a healthy weight. She felt more energetic, and her blood sugar levels were stable. Then, she saw a h",
@@ -366,48 +366,48 @@
         "Many of us feel pressure to buy only fresh produce for truly healthy meals. Social media often showcases elaborate dishes made with farmers' market ingredients. This creates an unspoken belief that anything less is someh"
       ],
       "Travel & Hidden Gems": [
-        "Some places simply refuse to stand still. They constantly evolve, embracing new ideas while honoring their deep-rooted histories. These cities offer more than just sights; they provide a living narrative of tradition ble",
         "I am sitting neck deep in a hot tub, watching a float plane land. Moments earlier, I was in a cold plunge pool. Soon, I will be scrubbing my skin with magnesium-infused salt from a glittering pile. This invigorating sequ",
         "Philadelphia: Where Art Lives on Every Street Philly is widely recognized as the city in the US with the best public art. This vibrant urban landscape goes far beyond its iconic historical sites and famous sandwiches. Th",
         "Forget the whirlwind tours that cram every landmark into a single day. Instead, imagine a trip focused on lingering over a local dish, or stumbling upon a street art masterpiece. These are destinations where the true ric",
         "Some trips offer a chance to simply unwind, while others invite a deeper immersion. These are the journeys that redefine what travel can be, offering unique cultural connections, natural wonders, and unexpected beauty fa",
-        "On a recent October weekend, a group of six couples embarked on a journey to the quaint Hudson Valley hamlet of High Falls, nestled in Ulster County, New York. This trip highlights a growing desire for group getaways tha"
+        "On a recent October weekend, a group of six couples embarked on a journey to the quaint Hudson Valley hamlet of High Falls, nestled in Ulster County, New York. This trip highlights a growing desire for group getaways tha",
+        "Many travelers believe that the best journeys involve ticking off major landmarks or revisiting beloved, well-trodden destinations. While iconic sights certainly hold their appeal, some of the most profound travel experi"
       ],
       "Philosophy for Modern Life": [
-        "You open your email, and a message from your boss reads, \"Can you look into that project for me? It needs to be more robust.\" Your mind immediately spins with questions. What project? What does \"robust\" even mean in this",
         "It feels like we are constantly told to do more, achieve more, and accumulate more. Whether it is chasing the next promotion, endlessly scrolling through social media, or feeling the pressure to buy the latest gadgets, t",
         "The Sudden Surge of Frustration Your internet connection unexpectedly drops just as you are about to send an important email. Or perhaps you are stuck in gridlock traffic, minutes ticking away, making you late for an app",
         "Imagine you're staring at your overflowing inbox on a Tuesday morning. Another urgent request just landed from your manager, asking for something \"ASAP\" that wasn't even on your radar. You feel a familiar pang: that sens",
         "You stare at your cluttered desk, the computer screen glowing with an endless stream of emails, project requests, and meeting invites. The clock ticks relentlessly, yet you feel like you are perpetually behind, adrift in",
-        "You open your laptop, and the screen instantly lights up with three new urgent emails, a a Slack message blinking, and a dozen social media notifications demanding your attention. It is only 9 AM. That familiar knot tigh"
+        "You open your laptop, and the screen instantly lights up with three new urgent emails, a a Slack message blinking, and a dozen social media notifications demanding your attention. It is only 9 AM. That familiar knot tigh",
+        "Why do our daily tasks sometimes feel so utterly meaningless? Many of us wrestle with a persistent feeling that our efforts, from endless emails to household chores, lead nowhere profound. Albert Camus, the French philos"
       ]
     },
     "last_opening_style": {
       "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
-      "World News Simplified": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Wellness and Self-Care": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
-      "Travel & Hidden Gems": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
-      "Philosophy for Modern Life": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately."
+      "Travel & Hidden Gems": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
+      "Philosophy for Modern Life": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
+      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
     },
     "last_structure": {
       "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
-      "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
-      "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season.",
-      "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
+      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
+      "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
+      "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
       "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
     },
     "last_posted_at": {
       "Passive Income Investing": "2026-10-18T14:29:07",
-      "Philosophy for Modern Life": "2026-10-17T14:09:37",
-      "Travel & Hidden Gems": "2026-10-17T14:10:13",
-      "World News Simplified": "2026-10-18T14:27:45",
+      "Philosophy for Modern Life": "2026-10-19T17:24:59",
+      "Travel & Hidden Gems": "2026-10-19T17:25:31",
+      "World News Simplified": "2026-10-19T17:26:07",
       "Wellness and Self-Care": "2026-10-18T14:28:25"
     }
   }
