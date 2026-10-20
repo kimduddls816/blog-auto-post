@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Building Your Wealth Foundation: Portfolios, Convertibles, and Smart Market ETFs",
     "Aligning Your Portfolio: Rebalancing, Covered Call ETFs, and Today's Strategic Selections",
     "Safeguarding Your Wealth: Demystifying Investment Fees, Embracing Tax-Advantaged Growth, and Strategic ETF Picks",
     "Passive Wealth Defense: Spotting Scams, Understanding Gold, and Market Insights",
@@ -49,7 +48,8 @@
     "Mastering Income Statements for Steady Passive Income",
     "Finding Stability: Your Balance Sheet Guide to Passive Income",
     "Building Passive Income: Understanding Cash Flow and Smart ETFs",
-    "Build Steady Income: Understanding Debt, DRIPs, and Smart ETFs"
+    "Build Steady Income: Understanding Debt, DRIPs, and Smart ETFs",
+    "Building Steady Wealth: Understanding Economic Moats and Smart ETFs"
   ],
   "World News Simplified": [
     "Ryanair Engine Failure, Hawaii's Hurricane Lala, and Morocco's Migrant Crackdown",
@@ -104,7 +104,6 @@
     "OpenAI Engineer's Hidden Recorder, Saudi Ties Spark National Security Fears"
   ],
   "Wellness and Self-Care": [
-    "Two to Three Weekly Sessions: The Resistance Training Habit Experts Call Key to Longevity",
     "August 2026 Alzheimer's Blood Tests: Why 'Risk' Means Empowering Your Brain Now",
     "Four Everyday Exercises Physical Therapists Swear By for Effortless Movement",
     "The Unexpected Welcome: How Powerlifting's Culture Shift Makes a 400-Pound Deadlift About Growth, Not Ego",
@@ -153,7 +152,8 @@
     "Heart Health Beyond Cardio: Your 7-Day Weight Lifting Plan",
     "GLP-1 Medications and Your Bones: Understanding 2026 Research on Osteoporosis Risk",
     "Weighing GLP-1 Benefits: A 2026 Study Explores Bone Weakness and Gout",
-    "Healthy Eating on a Budget: Canned and Frozen Foods for Your Plate"
+    "Healthy Eating on a Budget: Canned and Frozen Foods for Your Plate",
+    "Caroline's Secret Wegovy: Why Hiding GLP-1 Use Takes a Toll"
   ],
   "Travel & Hidden Gems": [
     "Medellín's Comuna 13 Murals and Two Other Global Cities Redefining Urban Cool",
@@ -208,7 +208,6 @@
     "Newfoundland's Wild Coasts, Condesa's Art Deco, and Île Seguin's Art Scene"
   ],
   "Philosophy for Modern Life": [
-    "The Quarterly Report That Feels Pointless: Albert Camus and Your Work Meaning",
     "The Moment You Close Instagram and Feel More Alone: Thich Nhat Hanh on Interbeing",
     "The Warm Mug and Maurice Merleau-Ponty: Why Your Body is Not Just a Container",
     "The 'Side Hustle' Trap and Erich Fromm's Path to Authentic Freedom",
@@ -257,14 +256,12 @@
     "Immanuel Kant: Value Yourself as an End, Not Just a Work Deadline",
     "Viktor Frankl: Your Overstuffed Inbox May Be Asking for Deeper Meaning",
     "Marcus Aurelius: Taming Your Day When Notifications Never Stop",
-    "Albert Camus: Why Your Endless To-Do List Still Matters"
+    "Albert Camus: Why Your Endless To-Do List Still Matters",
+    "Find Flow, Not Force: Lao Tzu's Ancient Wisdom for Modern Work Stress"
   ],
   "_meta": {
-    "investing_progress": 85,
+    "investing_progress": 86,
     "recent_tickers": [
-      "NOBL",
-      "DGRO",
-      "VYM",
       "IVV",
       "SDY",
       "PGX",
@@ -276,7 +273,10 @@
       "XLU",
       "VIG",
       "ITOT",
-      "XLP"
+      "XLP",
+      "VOO",
+      "VNQ",
+      "FSTA"
     ],
     "recent_destinations": [
       "Setouchi Region, Japan",
@@ -342,12 +342,12 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "How can you start investing for passive income, especially if you're a beginner? Building wealth steadily is more achievable than many realize, by understanding how your money can work for you through long-term strategie",
         "Imagine Maya, a new investor, scrolling through financial news on her lunch break, feeling a pang of confusion as headlines buzz about “earnings season” and “market reactions.” She understands the basic idea of companies",
         "Imagine you are evaluating a company, hoping to see if it could be a solid addition to your long-term passive income portfolio. You need to understand its financial health. A key tool for this understanding is the income",
         "Imagine Alex, scanning news headlines about shifting markets, feeling a familiar twinge of concern. The high-flying tech stocks that dominated conversations just months ago now seem to be losing their shine, making him w",
         "Understanding a Company's Financial Health: The Cash Flow Statement When you invest for passive income, you are essentially buying a piece of a business that you hope will generate steady earnings for you. To truly under",
-        "Sarah, a recent college graduate, often found herself scrolling through financial news during her lunch break, feeling a mix of excitement and apprehension. She was eager to start investing, imagining a future where her "
+        "Sarah, a recent college graduate, often found herself scrolling through financial news during her lunch break, feeling a mix of excitement and apprehension. She was eager to start investing, imagining a future where her ",
+        "Imagine you are walking through your neighborhood. You see a popular coffee shop, always bustling with customers, and across the street, a small boutique struggling to attract visitors. Why does one thrive while the othe"
       ],
       "World News Simplified": [
         "Many people believe that strict international sanctions mean countries like the United States have completely cut off all economic ties with Russia, especially concerning energy. However, global politics often involves c",
@@ -358,12 +358,12 @@
         "Picture a high-stakes meeting room at OpenAI, one of the world's leading artificial intelligence companies. Executives and government officials might discuss highly sensitive plans there. Suddenly, a small, unassuming au"
       ],
       "Wellness and Self-Care": [
-        "Sarah had been thrilled with her progress. After years of struggling, the GLP-1 medication had helped her finally reach a healthy weight. She felt more energetic, and her blood sugar levels were stable. Then, she saw a h",
         "Why is REM sleep so important for your long-term health? New research suggests that increasing the amount of time you spend in the dreaming stage of sleep, known as REM sleep, could significantly lower your risk of devel",
         "Imagine standing in the gym, looking at the rows of dumbbells. For years, strength training was primarily celebrated for building visible muscles or making bones stronger. However, recent insights reveal that lifting wei",
         "Many individuals celebrate GLP-1 agonist drugs, such as Ozempic, Zepbound, and Wegovy, as groundbreaking advancements for managing type 2 diabetes and obesity. These medications have indeed offered significant benefits, ",
         "Maria had seen incredible results. After starting her GLP-1 medication, the numbers on the scale steadily dropped, and she felt a new sense of control over her health. For months, the benefits seemed endless, transformin",
-        "Many of us feel pressure to buy only fresh produce for truly healthy meals. Social media often showcases elaborate dishes made with farmers' market ingredients. This creates an unspoken belief that anything less is someh"
+        "Many of us feel pressure to buy only fresh produce for truly healthy meals. Social media often showcases elaborate dishes made with farmers' market ingredients. This creates an unspoken belief that anything less is someh",
+        "Caroline carefully tucked the small pen into a zippered pouch, making sure it was completely out of sight. Her boyfriend was still asleep, and she slipped out of the bedroom, a knot of anxiety tightening in her stomach. "
       ],
       "Travel & Hidden Gems": [
         "I am sitting neck deep in a hot tub, watching a float plane land. Moments earlier, I was in a cold plunge pool. Soon, I will be scrubbing my skin with magnesium-infused salt from a glittering pile. This invigorating sequ",
@@ -374,41 +374,41 @@
         "Many travelers believe that the best journeys involve ticking off major landmarks or revisiting beloved, well-trodden destinations. While iconic sights certainly hold their appeal, some of the most profound travel experi"
       ],
       "Philosophy for Modern Life": [
-        "It feels like we are constantly told to do more, achieve more, and accumulate more. Whether it is chasing the next promotion, endlessly scrolling through social media, or feeling the pressure to buy the latest gadgets, t",
         "The Sudden Surge of Frustration Your internet connection unexpectedly drops just as you are about to send an important email. Or perhaps you are stuck in gridlock traffic, minutes ticking away, making you late for an app",
         "Imagine you're staring at your overflowing inbox on a Tuesday morning. Another urgent request just landed from your manager, asking for something \"ASAP\" that wasn't even on your radar. You feel a familiar pang: that sens",
         "You stare at your cluttered desk, the computer screen glowing with an endless stream of emails, project requests, and meeting invites. The clock ticks relentlessly, yet you feel like you are perpetually behind, adrift in",
         "You open your laptop, and the screen instantly lights up with three new urgent emails, a a Slack message blinking, and a dozen social media notifications demanding your attention. It is only 9 AM. That familiar knot tigh",
-        "Why do our daily tasks sometimes feel so utterly meaningless? Many of us wrestle with a persistent feeling that our efforts, from endless emails to household chores, lead nowhere profound. Albert Camus, the French philos"
+        "Why do our daily tasks sometimes feel so utterly meaningless? Many of us wrestle with a persistent feeling that our efforts, from endless emails to household chores, lead nowhere profound. Albert Camus, the French philos",
+        "Many of us believe that to truly get ahead, to manage our overwhelming workloads, and to conquer the seemingly endless demands of modern life, we simply need to push harder. We have deeply internalized the idea that more"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "Passive Income Investing": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
       "World News Simplified": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
-      "Wellness and Self-Care": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
+      "Wellness and Self-Care": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Travel & Hidden Gems": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
-      "Philosophy for Modern Life": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences."
+      "Philosophy for Modern Life": "Open with a common belief about the topic and, in the next sentence, show where it falls short."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
+      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
-      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
+      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
+      "Philosophy for Modern Life": "Layout: thinker first. Briefly who the thinker was and the one idea that matters here, then apply it to a concrete modern problem, then one small practice the reader can try this week. Use <h2> sections.",
       "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
       "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
-      "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
+      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-10-18T14:29:07",
-      "Philosophy for Modern Life": "2026-10-19T17:24:59",
+      "Passive Income Investing": "2026-10-20T15:37:36",
+      "Philosophy for Modern Life": "2026-10-20T15:38:17",
       "Travel & Hidden Gems": "2026-10-19T17:25:31",
       "World News Simplified": "2026-10-19T17:26:07",
-      "Wellness and Self-Care": "2026-10-18T14:28:25"
+      "Wellness and Self-Care": "2026-10-20T15:37:04"
     }
   }
 }
