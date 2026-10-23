@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Safeguarding Your Wealth: Demystifying Investment Fees, Embracing Tax-Advantaged Growth, and Strategic ETF Picks",
     "Passive Wealth Defense: Spotting Scams, Understanding Gold, and Market Insights",
     "Crafting Your Investment Blueprint: Responding to Yield Shifts and Discovering Inflation Protection",
     "Beyond Your Portfolio: How Global Economics Shape Your Passive Income",
@@ -49,10 +48,10 @@
     "Building Passive Income: Understanding Cash Flow and Smart ETFs",
     "Build Steady Income: Understanding Debt, DRIPs, and Smart ETFs",
     "Building Steady Wealth: Understanding Economic Moats and Smart ETFs",
-    "Building Steady Income: Understanding Dividend Health and Smart ETF Picks"
+    "Building Steady Income: Understanding Dividend Health and Smart ETF Picks",
+    "Build Passive Income: Navigating Demographics and Smart ETFs"
   ],
   "World News Simplified": [
-    "AI Cameras Eject Shopper: Sainsbury's Halts Automated Security",
     "Trump's Oman Warning: Bombing an Ally Over Iran",
     "UK Families Face Rising Bills While Kyiv Lacks Air Defense",
     "From a Bali Jail Cell to America's Economic Crunch: Global Challenges Unfold",
@@ -101,10 +100,10 @@
     "Trump Calls Zelensky 'More Difficult Than Putin' Amid Ukraine Tensions",
     "Life Sentence in China Over Nursery's Lead-Tainted Meals",
     "OpenAI Engineer's Hidden Recorder, Saudi Ties Spark National Security Fears",
-    "Global Economy: Italy's Protests, UK's Debt, and US-Russia Diesel Deal"
+    "Global Economy: Italy's Protests, UK's Debt, and US-Russia Diesel Deal",
+    "Melania Trump's Oleshky Truce and AI's Filmed Future"
   ],
   "Wellness and Self-Care": [
-    "Four Everyday Exercises Physical Therapists Swear By for Effortless Movement",
     "The Unexpected Welcome: How Powerlifting's Culture Shift Makes a 400-Pound Deadlift About Growth, Not Ego",
     "Unlocking Your Full Core Strength with the Wood Chop Exercise, Not Just Static Planks",
     "Six Foundational Exercises Physical Therapists Say Are Key to Moving Well for Decades",
@@ -153,7 +152,8 @@
     "Weighing GLP-1 Benefits: A 2026 Study Explores Bone Weakness and Gout",
     "Healthy Eating on a Budget: Canned and Frozen Foods for Your Plate",
     "Caroline's Secret Wegovy: Why Hiding GLP-1 Use Takes a Toll",
-    "Decongestants and Steroids: Common Meds That Quietly Disrupt Your Sleep"
+    "Decongestants and Steroids: Common Meds That Quietly Disrupt Your Sleep",
+    "Beyond Cramps: How Magnesium Powers Over 300 Body Functions Daily"
   ],
   "Travel & Hidden Gems": [
     "Da Lat's Dreamlike Cafes, Mostar's Historic Dives, and Sayulita's Surfside Art Await Your Lens",
@@ -260,11 +260,8 @@
     "Simone de Beauvoir: Liberate Yourself from 'Bad Faith'"
   ],
   "_meta": {
-    "investing_progress": 87,
+    "investing_progress": 88,
     "recent_tickers": [
-      "SCHD",
-      "RSP",
-      "TLT",
       "VTV",
       "SPGP",
       "XLU",
@@ -276,7 +273,10 @@
       "FSTA",
       "SPHQ",
       "NOBL",
-      "SPLV"
+      "SPLV",
+      "DGRO",
+      "XLV",
+      "SDY"
     ],
     "recent_destinations": [
       "Saugatuck, USA",
@@ -342,28 +342,28 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Imagine you are evaluating a company, hoping to see if it could be a solid addition to your long-term passive income portfolio. You need to understand its financial health. A key tool for this understanding is the income",
         "Imagine Alex, scanning news headlines about shifting markets, feeling a familiar twinge of concern. The high-flying tech stocks that dominated conversations just months ago now seem to be losing their shine, making him w",
         "Understanding a Company's Financial Health: The Cash Flow Statement When you invest for passive income, you are essentially buying a piece of a business that you hope will generate steady earnings for you. To truly under",
         "Sarah, a recent college graduate, often found herself scrolling through financial news during her lunch break, feeling a mix of excitement and apprehension. She was eager to start investing, imagining a future where her ",
         "Imagine you are walking through your neighborhood. You see a popular coffee shop, always bustling with customers, and across the street, a small boutique struggling to attract visitors. Why does one thrive while the othe",
-        "Today's Market Pulse: Caution and Quality What is one crucial warning sign for dividend investors? Understanding how companies manage their dividend payments is essential for anyone building a passive income stream, as a"
+        "Today's Market Pulse: Caution and Quality What is one crucial warning sign for dividend investors? Understanding how companies manage their dividend payments is essential for anyone building a passive income stream, as a",
+        "Demographic Shifts and Your Investment Future Imagine Sarah, in her late twenties, planning for her first home. She’s also thinking about her distant retirement. Her parents, approaching their fifties, are already consid"
       ],
       "World News Simplified": [
-        "Russia continued its attacks on Ukrainian energy infrastructure just hours after a US-announced energy ceasefire, injuring dozens. Saudi Arabia vowed a serious response following Houthi missile strikes on its airports th",
         "Many people believe that when a major global power announces a ceasefire, particularly one focused on vital infrastructure, such agreements should immediately take effect. However, recent events in Ukraine highlight how ",
         "US President Donald Trump criticizes Ukrainian President Zelensky amidst escalating tensions over strikes on Russian oil refineries and Starlink restrictions. India's youth-led Cockroach Janta Party founder, Abhijeet Dip",
         "In a world where news travels at light speed, it's easy to see global events as isolated incidents. But a closer look often reveals interconnected challenges and policies that ripple across borders and into daily lives. ",
         "Picture a high-stakes meeting room at OpenAI, one of the world's leading artificial intelligence companies. Executives and government officials might discuss highly sensitive plans there. Suddenly, a small, unassuming au",
-        "Global headlines often focus on complex, abstract issues like inflation, international trade, or civil unrest. However, a closer look reveals how these forces directly shape government decisions, spark public reactions, "
+        "Global headlines often focus on complex, abstract issues like inflation, international trade, or civil unrest. However, a closer look reveals how these forces directly shape government decisions, spark public reactions, ",
+        "Melania Trump's surprising diplomatic move aims for a humanitarian truce in Ukraine's Oleshky. Ukraine still reports Starlink issues, affecting military drones despite US President Trump's statements. Cyprus police launc"
       ],
       "Wellness and Self-Care": [
-        "Imagine standing in the gym, looking at the rows of dumbbells. For years, strength training was primarily celebrated for building visible muscles or making bones stronger. However, recent insights reveal that lifting wei",
         "Many individuals celebrate GLP-1 agonist drugs, such as Ozempic, Zepbound, and Wegovy, as groundbreaking advancements for managing type 2 diabetes and obesity. These medications have indeed offered significant benefits, ",
         "Maria had seen incredible results. After starting her GLP-1 medication, the numbers on the scale steadily dropped, and she felt a new sense of control over her health. For months, the benefits seemed endless, transformin",
         "Many of us feel pressure to buy only fresh produce for truly healthy meals. Social media often showcases elaborate dishes made with farmers' market ingredients. This creates an unspoken belief that anything less is someh",
         "Caroline carefully tucked the small pen into a zippered pouch, making sure it was completely out of sight. Her boyfriend was still asleep, and she slipped out of the bedroom, a knot of anxiety tightening in her stomach. ",
-        "Could your daily medications be secretly sabotaging your sleep? Yes, many common prescription and over-the-counter drugs can interfere with your sleep patterns, making it harder to fall asleep or stay asleep. Understandi"
+        "Could your daily medications be secretly sabotaging your sleep? Yes, many common prescription and over-the-counter drugs can interfere with your sleep patterns, making it harder to fall asleep or stay asleep. Understandi",
+        "Sarah often found herself feeling inexplicably tired, despite getting what she thought was enough sleep. She experienced frequent muscle twitches after her afternoon jogs and noticed her digestion wasn’t always as smooth"
       ],
       "Travel & Hidden Gems": [
         "Forget the whirlwind tours that cram every landmark into a single day. Instead, imagine a trip focused on lingering over a local dish, or stumbling upon a street art masterpiece. These are destinations where the true ric",
@@ -383,32 +383,32 @@
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
-      "World News Simplified": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
-      "Wellness and Self-Care": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
+      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "World News Simplified": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "Wellness and Self-Care": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Travel & Hidden Gems": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
       "Philosophy for Modern Life": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
+      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
       "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
       "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
-      "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
-      "Wellness and Self-Care": "Layout: a small practical experiment. Frame the post around trying one specific BEHAVIOR change for 7 days (a sleep, movement, eating-pattern, focus, or stress habit): why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps. If the topic is a supplement, medication, or medical treatment, do NOT use the self-experiment framing; instead explain what it is, what the evidence says, who should be cautious, and what to ask a doctor."
+      "World News Simplified": "Layout: headline list first.\n1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.\n2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).\n3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.",
+      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-10-22T15:51:08",
+      "Passive Income Investing": "2026-10-23T15:43:13",
       "Philosophy for Modern Life": "2026-10-22T15:52:58",
       "Travel & Hidden Gems": "2026-10-22T15:54:04",
-      "World News Simplified": "2026-10-21T15:55:48",
-      "Wellness and Self-Care": "2026-10-21T15:56:22"
+      "World News Simplified": "2026-10-23T15:42:02",
+      "Wellness and Self-Care": "2026-10-23T15:42:43"
     }
   }
 }
