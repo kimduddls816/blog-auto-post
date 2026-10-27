@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Crafting Your Investment Blueprint: Responding to Yield Shifts and Discovering Inflation Protection",
     "Beyond Your Portfolio: How Global Economics Shape Your Passive Income",
     "Unveiling the Interest Rate Puzzle: How Bond Yields Influence Your Stock Investments",
     "Mastering the Central Bank's Influence for Your Passive Income Portfolio",
@@ -49,7 +48,8 @@
     "Building Steady Wealth: Understanding Economic Moats and Smart ETFs",
     "Building Steady Income: Understanding Dividend Health and Smart ETF Picks",
     "Build Passive Income: Navigating Demographics and Smart ETFs",
-    "Building Passive Income: Investing in Aging Populations and Global Markets"
+    "Building Passive Income: Investing in Aging Populations and Global Markets",
+    "Building Wealth: Tech Gains, I-Bonds, and Income Strategies"
   ],
   "World News Simplified": [
     "From a Bali Jail Cell to America's Economic Crunch: Global Challenges Unfold",
@@ -156,7 +156,6 @@
     "Understanding Circadian Depression: How Adjusting Your Body Clock Can Help"
   ],
   "Travel & Hidden Gems": [
-    "Manila's Neon Glow, Miami's Bold Murals, and Bratislava's Danube Delights",
     "Beyond the Postcard: Kanazawa's Samurai Streets, Lyon's Secret Passages, and Oaxaca's Mole Magic",
     "Capture Valparaíso's Bohemian Spirit, Then Discover Busan's Rainbow Village and Tbilisi's Ancient Futures",
     "Cobalt Gardens of Marrakech, New York's 19 Waterfalls, and Hanoi's Legendary Pho for $5",
@@ -205,10 +204,10 @@
     "Nashville's Boutique Stays, Madrid's Palace Renovation, Hong Kong's Districts",
     "Valletta's Golden Stone, Bergen's Fjord-Side Bryggen, Cartagena's Colonial Walls",
     "Beyond the Alps: Discover Ladin Culture, Wooden Chalets, and Patagonian Treks",
-    "Ljubljana's Pedestrian Charm, Fukuoka's Ramen Stalls, Salvador's Afro-Brazilian Beats"
+    "Ljubljana's Pedestrian Charm, Fukuoka's Ramen Stalls, Salvador's Afro-Brazilian Beats",
+    "Puglia's Conical Trulli, Utah's Mountain Vistas, and Norway's Alpine Chalets"
   ],
   "Philosophy for Modern Life": [
-    "bell hooks and the Curated Relationship: Love as Action, Not an Image",
     "The Pre-Made Life Plan and Simone de Beauvoir's Push to Rewrite It",
     "Your Morning Coffee, Not Your Follower Count: George Berkeley on What Makes Life Real",
     "The Unsent Selfie and Foucault: Why You're Already Your Own Biggest Critic Online",
@@ -257,10 +256,11 @@
     "Find Flow, Not Force: Lao Tzu's Ancient Wisdom for Modern Work Stress",
     "Simone de Beauvoir: Liberate Yourself from 'Bad Faith'",
     "Søren Kierkegaard and the Weight of Your Infinite Online Choices",
-    "Friedrich Nietzsche: Forge Your Own Meaning in a World of Noise"
+    "Friedrich Nietzsche: Forge Your Own Meaning in a World of Noise",
+    "Gottfried Leibniz: How 'The Ethical Pause' Can Guide Your Choices"
   ],
   "_meta": {
-    "investing_progress": 89,
+    "investing_progress": 90,
     "recent_tickers": [
       "VTV",
       "SPGP",
@@ -279,9 +279,6 @@
       "SDY"
     ],
     "recent_destinations": [
-      "Chattanooga, USA",
-      "Tbilisi, Georgia",
-      "Chiang Rai, Thailand",
       "Halifax, Nova Scotia, Canada",
       "Mostar, Bosnia and Herzegovina",
       "Popayán, Colombia",
@@ -338,16 +335,19 @@
       "Patagonia, Argentina",
       "Ljubljana, Slovenia",
       "Fukuoka, Japan",
-      "Salvador, Brazil"
+      "Salvador, Brazil",
+      "Martina Franca, Italy",
+      "Salt Lake City, USA",
+      "Hemsedal, Norway"
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Understanding a Company's Financial Health: The Cash Flow Statement When you invest for passive income, you are essentially buying a piece of a business that you hope will generate steady earnings for you. To truly under",
         "Sarah, a recent college graduate, often found herself scrolling through financial news during her lunch break, feeling a mix of excitement and apprehension. She was eager to start investing, imagining a future where her ",
         "Imagine you are walking through your neighborhood. You see a popular coffee shop, always bustling with customers, and across the street, a small boutique struggling to attract visitors. Why does one thrive while the othe",
         "Today's Market Pulse: Caution and Quality What is one crucial warning sign for dividend investors? Understanding how companies manage their dividend payments is essential for anyone building a passive income stream, as a",
         "Demographic Shifts and Your Investment Future Imagine Sarah, in her late twenties, planning for her first home. She’s also thinking about her distant retirement. Her parents, approaching their fifties, are already consid",
-        "Navigating Market Currents Amidst Earnings Season Just as a well-maintained family home can steadily appreciate in value over decades, providing a growing asset, thoughtfully chosen investments can build a passive income"
+        "Navigating Market Currents Amidst Earnings Season Just as a well-maintained family home can steadily appreciate in value over decades, providing a growing asset, thoughtfully chosen investments can build a passive income",
+        "Today, Oct. 27, 2026, technology shares are powering broad gains across the market. This surge highlights the dynamic nature of investing, even for those focused on steady passive income. Understanding market shifts and "
       ],
       "World News Simplified": [
         "In a world where news travels at light speed, it's easy to see global events as isolated incidents. But a closer look often reveals interconnected challenges and policies that ripple across borders and into daily lives. ",
@@ -366,47 +366,47 @@
         "Researchers are shedding new light on the intricate connection between our internal body clock and mental well-being. They suggest that disruptions in our natural sleep-wake cycles might be linked to a specific condition"
       ],
       "Travel & Hidden Gems": [
-        "On a recent October weekend, a group of six couples embarked on a journey to the quaint Hudson Valley hamlet of High Falls, nestled in Ulster County, New York. This trip highlights a growing desire for group getaways tha",
         "Many travelers believe that the best journeys involve ticking off major landmarks or revisiting beloved, well-trodden destinations. While iconic sights certainly hold their appeal, some of the most profound travel experi",
         "Imagine sipping a craft cocktail in a beautifully restored century-old boarding house, far from the neon glow of the main tourist drag, yet still deeply connected to a city's creative pulse. This kind of experience, wher",
         "Instead of a typical beach holiday, imagine navigating the ancient, sun-drenched streets of Valletta, Malta. This experience stands in stark contrast to exploring the dramatic, fjord-carved landscapes surrounding Bergen,",
         "Many travelers believe that truly epic mountain experiences require battling crowds in well-known ranges like the French or Swiss Alps. But the world holds vast, breathtaking mountain regions that offer profound adventur",
-        "Instead of just ticking off the most famous landmarks, some of the most memorable journeys are found in places that offer a deeper, more singular experience. These are destinations that captivate with their distinct char"
+        "Instead of just ticking off the most famous landmarks, some of the most memorable journeys are found in places that offer a deeper, more singular experience. These are destinations that captivate with their distinct char",
+        "How can travelers discover destinations that truly embody their unique regional spirit? Many journeys focus on ticking off iconic landmarks, but some of the most profound experiences come from places that offer a deep di"
       ],
       "Philosophy for Modern Life": [
-        "You open your laptop, and the screen instantly lights up with three new urgent emails, a a Slack message blinking, and a dozen social media notifications demanding your attention. It is only 9 AM. That familiar knot tigh",
         "Why do our daily tasks sometimes feel so utterly meaningless? Many of us wrestle with a persistent feeling that our efforts, from endless emails to household chores, lead nowhere profound. Albert Camus, the French philos",
         "Many of us believe that to truly get ahead, to manage our overwhelming workloads, and to conquer the seemingly endless demands of modern life, we simply need to push harder. We have deeply internalized the idea that more",
         "You stand at a crossroads, perhaps in your career, your relationships, or even just your daily habits. A voice inside says, \"I have to do this. There's no other choice.\" Yet, a subtle unease whispers that you're not trul",
         "Why does having so many options often feel more like a burden than a blessing? In our modern world, where endless choices greet us from streaming services to career paths, this abundance frequently leads to a quiet sense",
-        "You believe that to find success and happiness, we often look to external sources: what our culture celebrates, what our peers are doing, or what popular trends dictate. But what happens when these external ideals don't "
+        "You believe that to find success and happiness, we often look to external sources: what our culture celebrates, what our peers are doing, or what popular trends dictate. But what happens when these external ideals don't ",
+        "Imagine a moment when a decision feels morally murky, not explicitly illegal, but certainly not quite right. It could be a small white lie for convenience at work, a corporate policy that feels unfair, or even simply cho"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "Passive Income Investing": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
       "World News Simplified": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
-      "Travel & Hidden Gems": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
-      "Philosophy for Modern Life": "Open with a common belief about the topic and, in the next sentence, show where it falls short."
+      "Travel & Hidden Gems": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
+      "Philosophy for Modern Life": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
+      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
-      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
-      "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
+      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
+      "Philosophy for Modern Life": "Layout: thinker first. Briefly who the thinker was and the one idea that matters here, then apply it to a concrete modern problem, then one small practice the reader can try this week. Use <h2> sections.",
+      "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
       "World News Simplified": "Layout: headline list first.\n1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.\n2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).\n3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.",
       "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-10-25T14:56:41",
-      "Philosophy for Modern Life": "2026-10-25T14:57:12",
-      "Travel & Hidden Gems": "2026-10-26T17:15:45",
+      "Passive Income Investing": "2026-10-27T16:23:32",
+      "Philosophy for Modern Life": "2026-10-27T16:23:57",
+      "Travel & Hidden Gems": "2026-10-27T16:24:26",
       "World News Simplified": "2026-10-26T17:16:41",
       "Wellness and Self-Care": "2026-10-26T17:17:10"
     }
