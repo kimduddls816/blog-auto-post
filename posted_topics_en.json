@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Mastering the Central Bank's Influence for Your Passive Income Portfolio",
     "Economic Barometers and Your Portfolio: Decoding GDP and Finding New Income Streams",
     "Building Consistent Wealth: Understanding Economic Signals and Mastering Dividend Reinvestment",
     "Proactive Investing: Using Leading Indicators for Passive Income Stability",
@@ -49,7 +48,8 @@
     "Building Passive Income: Investing in Aging Populations and Global Markets",
     "Building Wealth: Tech Gains, I-Bonds, and Income Strategies",
     "Grow Your Income: CBDCs, Tax Advantages, and Smart ETF Choices",
-    "Passive Income: Steady Investing Through Market Volatility"
+    "Passive Income: Steady Investing Through Market Volatility",
+    "Building Wealth Steadily: Infrastructure, DRIPs, and ETFs"
   ],
   "World News Simplified": [
     "$27 Billion Shein IPO: Fast Fashion's Ethical Reckoning Hits Markets",
@@ -104,7 +104,6 @@
     "Spain's 69 Train Deaths & AI's $500 Billion Tech Market Shake-Up"
   ],
   "Wellness and Self-Care": [
-    "From 2.5 Microns to Your Mind: How to Shield Yourself from Distant Wildfire Smoke",
     "The 'Exercise Pill' is Years Away, But Here's Your Action Plan Today",
     "From Resignation to Resilience: Why Starting Strength Training at 50+ is Your Longevity Game Changer",
     "Flash-Frozen Berries and Rinsed Beans: Building a Truly Healthy Diet From Your Pantry and Freezer",
@@ -153,7 +152,8 @@
     "Circadian Depression: How Adjusting Your Body Clock Can Help",
     "Understanding Circadian Depression: How Adjusting Your Body Clock Can Help",
     "Navigating GLP-1 Use: Bone Health and Gout Risks from a 2026 Study",
-    "A Routine Mental Health Checkup: Key Questions for Your Well-being"
+    "A Routine Mental Health Checkup: Key Questions for Your Well-being",
+    "Bone Health and GLP-1s: Insights from a 147,000-Adult Study"
   ],
   "Travel & Hidden Gems": [
     "Cobalt Gardens of Marrakech, New York's 19 Waterfalls, and Hanoi's Legendary Pho for $5",
@@ -208,7 +208,6 @@
     "Breckenridge Peaks, Dalmatian Coast, and London's Historic Depths"
   ],
   "Philosophy for Modern Life": [
-    "The Unsent Selfie and Foucault: Why You're Already Your Own Biggest Critic Online",
     "The 'Useless' Tree and Zhuangzi's Secret to Unfiltered Self-Worth",
     "The Instagram Highlight Reel and Søren Kierkegaard's Path to Real Identity",
     "Your Unfinished 'New Year, New Me' List and Montaigne's Radical Acceptance",
@@ -257,14 +256,12 @@
     "Friedrich Nietzsche: Forge Your Own Meaning in a World of Noise",
     "Gottfried Leibniz: How 'The Ethical Pause' Can Guide Your Choices",
     "Epictetus: Why Your Reactions, Not Events, Define Your Day",
-    "Michel de Montaigne: How to Stop Faking Confidence in Tough Meetings"
+    "Michel de Montaigne: How to Stop Faking Confidence in Tough Meetings",
+    "Plato's Cave: Escaping the Shadows of Your Digital Feed"
   ],
   "_meta": {
-    "investing_progress": 92,
+    "investing_progress": 93,
     "recent_tickers": [
-      "VOO",
-      "VNQ",
-      "FSTA",
       "SPHQ",
       "NOBL",
       "SPLV",
@@ -276,7 +273,10 @@
       "SCHD",
       "SPY",
       "VYM",
-      "VEA"
+      "VEA",
+      "PAVE",
+      "VIG",
+      "XLU"
     ],
     "recent_destinations": [
       "Cesky Krumlov, Czech Republic",
@@ -342,12 +342,12 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Today's Market Pulse: Caution and Quality What is one crucial warning sign for dividend investors? Understanding how companies manage their dividend payments is essential for anyone building a passive income stream, as a",
         "Demographic Shifts and Your Investment Future Imagine Sarah, in her late twenties, planning for her first home. She’s also thinking about her distant retirement. Her parents, approaching their fifties, are already consid",
         "Navigating Market Currents Amidst Earnings Season Just as a well-maintained family home can steadily appreciate in value over decades, providing a growing asset, thoughtfully chosen investments can build a passive income",
         "Today, Oct. 27, 2026, technology shares are powering broad gains across the market. This surge highlights the dynamic nature of investing, even for those focused on steady passive income. Understanding market shifts and ",
         "Imagine checking your bank account or making a purchase with a tap of your phone, a routine action reflecting how seamlessly digital money has integrated into our daily lives. While our current digital payments rely on p",
-        "Navigating Recent Market Currents In a wild October for markets, many Big Tech stocks were hit hard, yet the S&P 500 showed underlying strength, with a majority of stocks actually posting gains for the month. This demons"
+        "Navigating Recent Market Currents In a wild October for markets, many Big Tech stocks were hit hard, yet the S&P 500 showed underlying strength, with a majority of stocks actually posting gains for the month. This demons",
+        "Many people believe that building a passive income stream through investing is an exclusive club, reserved only for financial experts or those with vast sums of money to start. However, this common perception often overl"
       ],
       "World News Simplified": [
         "Melania Trump's surprising diplomatic move aims for a humanitarian truce in Ukraine's Oleshky. Ukraine still reports Starlink issues, affecting military drones despite US President Trump's statements. Cyprus police launc",
@@ -358,12 +358,12 @@
         "Ukrainian families reunite in Chernihiv after rare Melania Trump-brokered Oleshky ceasefire. Spain's new high-speed rail disaster near Toledo kills 69, shaking government stability. US tech stocks fall sharply, with Inte"
       ],
       "Wellness and Self-Care": [
-        "Could your daily medications be secretly sabotaging your sleep? Yes, many common prescription and over-the-counter drugs can interfere with your sleep patterns, making it harder to fall asleep or stay asleep. Understandi",
         "Sarah often found herself feeling inexplicably tired, despite getting what she thought was enough sleep. She experienced frequent muscle twitches after her afternoon jogs and noticed her digestion wasn’t always as smooth",
         "When your sleep patterns feel out of sync, it can affect more than just your energy levels. Researchers are now highlighting a specific connection between disrupted sleep habits and a form of mental health challenge know",
         "Researchers are shedding new light on the intricate connection between our internal body clock and mental well-being. They suggest that disruptions in our natural sleep-wake cycles might be linked to a specific condition",
         "Sarah felt a surge of pride every time she looked in the mirror, watching the numbers on the scale steadily drop thanks to her GLP-1 medication. The changes had been significant, helping her achieve a health goal she had",
-        "Just as you schedule a yearly physical to check your blood pressure and cholesterol levels, thinking about a regular mental health checkup is equally important for your overall well-being. Both physical and mental health"
+        "Just as you schedule a yearly physical to check your blood pressure and cholesterol levels, thinking about a regular mental health checkup is equally important for your overall well-being. Both physical and mental health",
+        "A recent study, presented at the 2026 American Academy of Orthopaedic Surgeons annual meeting, has brought new attention to the potential impact of GLP-1 agonist drugs on bone health. This research, though not yet peer-r"
       ],
       "Travel & Hidden Gems": [
         "Instead of a typical beach holiday, imagine navigating the ancient, sun-drenched streets of Valletta, Malta. This experience stands in stark contrast to exploring the dramatic, fjord-carved landscapes surrounding Bergen,",
@@ -374,41 +374,41 @@
         "How can you plan a trip that truly offers distinct experiences beyond the usual tourist circuits? Many travelers seek journeys that promise both exhilaration and a deep connection to culture and history. These trips ofte"
       ],
       "Philosophy for Modern Life": [
-        "You stand at a crossroads, perhaps in your career, your relationships, or even just your daily habits. A voice inside says, \"I have to do this. There's no other choice.\" Yet, a subtle unease whispers that you're not trul",
         "Why does having so many options often feel more like a burden than a blessing? In our modern world, where endless choices greet us from streaming services to career paths, this abundance frequently leads to a quiet sense",
         "You believe that to find success and happiness, we often look to external sources: what our culture celebrates, what our peers are doing, or what popular trends dictate. But what happens when these external ideals don't ",
         "Imagine a moment when a decision feels morally murky, not explicitly illegal, but certainly not quite right. It could be a small white lie for convenience at work, a corporate policy that feels unfair, or even simply cho",
         "Imagine scrolling through your social media feed, feeling a familiar pang of anxiety. A friend announces a promotion, another posts about a lavish vacation, and suddenly your own achievements feel diminished. Or perhaps ",
-        "How do I stop faking confidence at work? You do it by admitting your natural limits instead of putting on an act. Real authority begins the moment you stop pretending you possess every answer. In 1571, French nobleman Mi"
+        "How do I stop faking confidence at work? You do it by admitting your natural limits instead of putting on an act. Real authority begins the moment you stop pretending you possess every answer. In 1571, French nobleman Mi",
+        "We often find ourselves scrolling through endless feeds, witnessing what appears to be a perfectly curated world: friends on exotic vacations, colleagues landing dream promotions, or influencers living seemingly flawless"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
+      "Passive Income Investing": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
       "World News Simplified": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
-      "Wellness and Self-Care": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
       "Travel & Hidden Gems": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
-      "Philosophy for Modern Life": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences."
+      "Philosophy for Modern Life": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Travel & Hidden Gems": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
+      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
-      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
+      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
+      "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
       "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
       "World News Simplified": "Layout: headline list first.\n1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.\n2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).\n3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.",
-      "Wellness and Self-Care": "Layout: reader questions. Organize the post as 4-6 <h2> headings, each a real question people search about this topic, each answered directly in its first sentence and then explained."
+      "Wellness and Self-Care": "Layout: a small practical experiment. Frame the post around trying one specific BEHAVIOR change for 7 days (a sleep, movement, eating-pattern, focus, or stress habit): why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps. If the topic is a supplement, medication, or medical treatment, do NOT use the self-experiment framing; instead explain what it is, what the evidence says, who should be cautious, and what to ask a doctor."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-10-30T16:59:39",
-      "Philosophy for Modern Life": "2026-10-31T16:03:03",
+      "Passive Income Investing": "2026-11-01T17:05:16",
+      "Philosophy for Modern Life": "2026-11-01T17:07:21",
       "Travel & Hidden Gems": "2026-10-31T16:03:42",
       "World News Simplified": "2026-10-31T16:04:18",
-      "Wellness and Self-Care": "2026-10-30T16:59:05"
+      "Wellness and Self-Care": "2026-11-01T17:04:46"
     }
   }
 }
