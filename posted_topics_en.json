@@ -52,7 +52,6 @@
     "Steady Wealth: Robo-Advisors, DRIPs, and Smart ETF Choices"
   ],
   "World News Simplified": [
-    "AI's Economic Boom Meets Meta's $18 Billion Accountability Moment",
     "Actors Matt Lucas and Hugh Bonneville Push for AI Voice Theft Laws",
     "A Burst Water Main Halts London Travel as 65 Billion Barrels of Oil Change Hands",
     "Judge Rules Trump Administration Illegally Targeted AI Firm Anthropic",
@@ -101,10 +100,10 @@
     "Spain's 69 Train Deaths & AI's $500 Billion Tech Market Shake-Up",
     "US to End Duty-Free Trade for Rwanda, South Africa Under AGOA",
     "From Ukraine's Kamyshuvakha to Delhi's AQI 377: Global Pressures",
-    "Global Conflict Pushes UK Interest Rates to 4%: What It Means For You"
+    "Global Conflict Pushes UK Interest Rates to 4%: What It Means For You",
+    "Spain's Rail Disaster: 115 Deaths Prompt EU Fraud Probe"
   ],
   "Wellness and Self-Care": [
-    "Four Weeks to Foundational Fitness: A Strength and Cardio Blueprint for Women Starting Out",
     "The 20-Minute Hip Routine That Powers Effortless Movement for Decades",
     "How Just Three Minutes of Eccentric Exercise Can Outperform a 90-Minute Workout",
     "New Studies: How Timely Menopause Hormone Therapy Could Guard Against Alzheimer's",
@@ -153,10 +152,10 @@
     "Bone Health and GLP-1s: Insights from a 147,000-Adult Study",
     "GLP-1 Drugs and Bone Health: Proactive Steps After 2026 Findings",
     "Decoding Creatine Combos: When Paired Supplements Offer Real Value",
-    "A 7-Day Hug Experiment: Connecting Attachment Style to Deeper Embraces"
+    "A 7-Day Hug Experiment: Connecting Attachment Style to Deeper Embraces",
+    "Wellness Podcasts and Kratom: The Hidden Addiction Risk"
   ],
   "Travel & Hidden Gems": [
-    "Volcanic Cathedrals, Tequila's Soul, and Pier-Side Art: Unearthing Three Unexpected Global Haunts",
     "Walk Through a Glowing Gorge, Then Explore Mexico's Car-Free Island and a Philippine Volcano View",
     "Capture the Red-Walled Secrets of Arequipa's Monastery, Then Explore Granada's Cave Flamenco and Ipoh's Street Art",
     "Capture the Miroir d'eau's Reflection in Bordeaux, Then Explore Chiang Mai's Golden Temples and San Juan's Cobalt Streets",
@@ -205,7 +204,8 @@
     "Breckenridge Peaks, Dalmatian Coast, and London's Historic Depths",
     "Escape the Grind: Wiltshire Glamping, New Hampshire's Peak Views, and Adriatic Catamarans",
     "Bosnia's Stari Most, Essaouira's Coastal Vibe, Holbox's Whale Sharks",
-    "Iceland's Remote Highland Base: A 3.5-Hour Drive to Geothermal Bliss"
+    "Iceland's Remote Highland Base: A 3.5-Hour Drive to Geothermal Bliss",
+    "Dubai's Fitness Movement, Vermont's Electric Hotel, and Connecticut's Mayflower Inn"
   ],
   "Philosophy for Modern Life": [
     "Mary Wollstonecraft: Why Your Own Reason Trumps the Perfect Highlight Reel",
@@ -350,28 +350,28 @@
         "Imagine setting up your financial future with just a few clicks, then watching your investments grow steadily over time. This dream of passive income is achievable through smart strategies. Understanding different tools "
       ],
       "World News Simplified": [
-        "Like a country's voting booth versus its pantry shelves, global events often show us two sides of the same coin: deep-seated challenges and surprising responses. From nations grappling with political deadlocks to citizen",
         "Many people believe that modern train travel is almost foolproof, with sophisticated technology designed to prevent collisions. However, a recent tragedy in Spain reminds us that even with advanced systems, a critical la",
         "Ukrainian families reunite in Chernihiv after rare Melania Trump-brokered Oleshky ceasefire. Spain's new high-speed rail disaster near Toledo kills 69, shaking government stability. US tech stocks fall sharply, with Inte",
         "Many assume that established international trade agreements, once put in place, represent a stable foundation for economic growth, especially for developing nations. However, these agreements often come with conditions a",
         "Uncertainty and direct human impacts are at the forefront of global news this week. From escalating conflicts and political stalemates to environmental health crises and economic struggles, people worldwide are feeling t",
-        "Many people believe that central banks primarily react to internal economic factors when setting interest rates, ensuring a stable financial environment. However, recent decisions show that global geopolitical events can"
+        "Many people believe that central banks primarily react to internal economic factors when setting interest rates, ensuring a stable financial environment. However, recent decisions show that global geopolitical events can",
+        "New Zealand's general election results are in, but no party has secured a clear majority, leading to anticipated weeks of coalition negotiations. Overnight Russian strikes severely damaged Ukraine's power grid and injure"
       ],
       "Wellness and Self-Care": [
-        "Sarah felt a surge of pride every time she looked in the mirror, watching the numbers on the scale steadily drop thanks to her GLP-1 medication. The changes had been significant, helping her achieve a health goal she had",
         "Just as you schedule a yearly physical to check your blood pressure and cholesterol levels, thinking about a regular mental health checkup is equally important for your overall well-being. Both physical and mental health",
         "A recent study, presented at the 2026 American Academy of Orthopaedic Surgeons annual meeting, has brought new attention to the potential impact of GLP-1 agonist drugs on bone health. This research, though not yet peer-r",
         "Many people are seeing real health benefits from a class of medications known as GLP-1 agonist drugs. These include popular names like Ozempic, Zepbound, and Wegovy. These drugs have become important tools for managing c",
         "Creatine has earned well-deserved hype as one of the safest, best-researched supplements for improving exercise performance, according to the International Society of Sports Nutrition (ISSN). For years, athletes and fitn",
-        "A simple embrace can feel like a fleeting moment, yet its impact often lingers. We all know the comfort a good hug can bring. But have you ever considered why some hugs feel deeply nourishing, while others leave you feel"
+        "A simple embrace can feel like a fleeting moment, yet its impact often lingers. We all know the comfort a good hug can bring. But have you ever considered why some hugs feel deeply nourishing, while others leave you feel",
+        "You might have seen it at a local smoke shop, a health food store, or even heard about it on a wellness podcast. Often marketed as a natural boost for energy, pain relief, or mood enhancement, kratom has gained attention"
       ],
       "Travel & Hidden Gems": [
-        "How can travelers discover destinations that truly embody their unique regional spirit? Many journeys focus on ticking off iconic landmarks, but some of the most profound experiences come from places that offer a deep di",
         "Venturing beyond the well-trodden paths often reveals the most profound travel experiences. It's about finding destinations that resonate deeply, offering unique cultural immersion, breathtaking natural beauty, or an alt",
         "How can you plan a trip that truly offers distinct experiences beyond the usual tourist circuits? Many travelers seek journeys that promise both exhilaration and a deep connection to culture and history. These trips ofte",
         "Sarah packed her worn hiking boots and a good book, her phone safely tucked away in a drawer, ready to trade urban bustle for the quiet embrace of a 16th-century cottage. She wasn't just taking a vacation; she was active",
         "Imagine standing at the edge of Mostar's iconic Stari Most, the Ottoman-era bridge curving gracefully over the Neretva River, its ancient stone warmed by the morning sun. Or perhaps you picture the vibrant blue fishing b",
-        "Instead of the well-trodden paths around Iceland's Golden Circle, imagine a journey deep into its central highlands. This remote adventure offers a very different kind of Icelandic experience. It replaces popular bus tou"
+        "Instead of the well-trodden paths around Iceland's Golden Circle, imagine a journey deep into its central highlands. This remote adventure offers a very different kind of Icelandic experience. It replaces popular bus tou",
+        "Are you searching for travel experiences that offer more than just ticking off famous landmarks? Many travelers now seek journeys aligned with personal growth and meaningful engagement. This approach to travel focuses on"
       ],
       "Philosophy for Modern Life": [
         "Imagine scrolling through your social media feed, feeling a familiar pang of anxiety. A friend announces a promotion, another posts about a lavish vacation, and suddenly your own achievements feel diminished. Or perhaps ",
@@ -384,31 +384,31 @@
     },
     "last_opening_style": {
       "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
-      "World News Simplified": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
-      "Wellness and Self-Care": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
-      "Travel & Hidden Gems": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "World News Simplified": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
+      "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
+      "Travel & Hidden Gems": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
       "Philosophy for Modern Life": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Travel & Hidden Gems": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
     },
     "last_structure": {
       "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
       "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
-      "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season.",
-      "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
-      "Wellness and Self-Care": "Layout: a small practical experiment. Frame the post around trying one specific BEHAVIOR change for 7 days (a sleep, movement, eating-pattern, focus, or stress habit): why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps. If the topic is a supplement, medication, or medical treatment, do NOT use the self-experiment framing; instead explain what it is, what the evidence says, who should be cautious, and what to ask a doctor."
+      "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
+      "World News Simplified": "Layout: headline list first.\n1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.\n2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).\n3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.",
+      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
     },
     "last_posted_at": {
       "Passive Income Investing": "2026-11-06T17:54:16",
       "Philosophy for Modern Life": "2026-11-06T17:55:32",
-      "Travel & Hidden Gems": "2026-11-05T18:41:41",
-      "World News Simplified": "2026-11-05T18:43:30",
-      "Wellness and Self-Care": "2026-11-06T17:53:46"
+      "Travel & Hidden Gems": "2026-11-07T16:48:03",
+      "World News Simplified": "2026-11-07T16:48:48",
+      "Wellness and Self-Care": "2026-11-07T16:49:49"
     }
   }
 }
