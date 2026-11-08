@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Strategic Passive Income: Navigating Value Shifts and Market Volatility",
     "Building Long-Term Wealth: Decoding Value Investing and Strategic Income Streams",
     "Cultivating Wealth: Understanding Growth Investing and Exploring Municipal Bonds for Passive Income",
     "Cultivating Consistent Cash Flow: How Dividend Growth and Automated Reinvestment Build Your Future",
@@ -49,7 +48,8 @@
     "Building Wealth Steadily: Infrastructure, DRIPs, and ETFs",
     "Building Income: ETFs, Dividends, and Carbon Credit Opportunities",
     "Building Passive Income: Investing in Space, Dividends, and Sector ETFs",
-    "Steady Wealth: Robo-Advisors, DRIPs, and Smart ETF Choices"
+    "Steady Wealth: Robo-Advisors, DRIPs, and Smart ETF Choices",
+    "Simulating Your Retirement for Steady Passive Income"
   ],
   "World News Simplified": [
     "Actors Matt Lucas and Hugh Bonneville Push for AI Voice Theft Laws",
@@ -156,7 +156,6 @@
     "Wellness Podcasts and Kratom: The Hidden Addiction Risk"
   ],
   "Travel & Hidden Gems": [
-    "Walk Through a Glowing Gorge, Then Explore Mexico's Car-Free Island and a Philippine Volcano View",
     "Capture the Red-Walled Secrets of Arequipa's Monastery, Then Explore Granada's Cave Flamenco and Ipoh's Street Art",
     "Capture the Miroir d'eau's Reflection in Bordeaux, Then Explore Chiang Mai's Golden Temples and San Juan's Cobalt Streets",
     "Unearthing Europe's Ancient Capital, Laos' Golden City, and RVA's Mural Movement",
@@ -205,10 +204,10 @@
     "Escape the Grind: Wiltshire Glamping, New Hampshire's Peak Views, and Adriatic Catamarans",
     "Bosnia's Stari Most, Essaouira's Coastal Vibe, Holbox's Whale Sharks",
     "Iceland's Remote Highland Base: A 3.5-Hour Drive to Geothermal Bliss",
-    "Dubai's Fitness Movement, Vermont's Electric Hotel, and Connecticut's Mayflower Inn"
+    "Dubai's Fitness Movement, Vermont's Electric Hotel, and Connecticut's Mayflower Inn",
+    "Antigua's 365 Beaches, Iceland's Geothermal Retreat, and Vermont's Electric Hotel"
   ],
   "Philosophy for Modern Life": [
-    "Mary Wollstonecraft: Why Your Own Reason Trumps the Perfect Highlight Reel",
     "The Endless Chase and Epicurus's Garden of True Contentment",
     "The Perfect Post and Epictetus: Your Power Over Social Media Comparison",
     "The Spreadsheet and the Stone: Hannah Arendt on Why Your Digital Work Feels Empty",
@@ -257,14 +256,12 @@
     "Plato's Cave: Escaping the Shadows of Your Digital Feed",
     "Baruch Spinoza: Why Your Social Media Feed Distorts Reality",
     "Epicurus: Finding Calm When 'More' Always Feels Like Not Enough",
-    "John Stuart Mill: Weighing Your Online Posts for the Greater Good"
+    "John Stuart Mill: Weighing Your Online Posts for the Greater Good",
+    "Zeno of Elea: Escaping the Infinite Steps of Procrastination"
   ],
   "_meta": {
-    "investing_progress": 96,
+    "investing_progress": 97,
     "recent_tickers": [
-      "IYH",
-      "BOTZ",
-      "SCHD",
       "SPY",
       "VYM",
       "VEA",
@@ -276,12 +273,12 @@
       "VNQ",
       "NOBL",
       "QQQ",
-      "VTI"
+      "VTI",
+      "DGRO",
+      "HDV",
+      "VDC"
     ],
     "recent_destinations": [
-      "Valparaíso, Chile",
-      "Kyoto, Japan",
-      "Rothenburg ob der Tauber, Germany",
       "Ghent, Belgium",
       "George Town, Penang, Malaysia",
       "Quebec City, Canada",
@@ -338,16 +335,19 @@
       "Dalmatian Coast, Croatia",
       "Kerlingarfjöll, Iceland",
       "Yorkshire, United Kingdom",
-      "Charleston, United States"
+      "Charleston, United States",
+      "Antigua, Caribbean",
+      "Highland Base Kerlingarfjöll, Iceland",
+      "Winooski, Vermont, USA"
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Imagine checking your bank account or making a purchase with a tap of your phone, a routine action reflecting how seamlessly digital money has integrated into our daily lives. While our current digital payments rely on p",
         "Navigating Recent Market Currents In a wild October for markets, many Big Tech stocks were hit hard, yet the S&P 500 showed underlying strength, with a majority of stocks actually posting gains for the month. This demons",
         "Many people believe that building a passive income stream through investing is an exclusive club, reserved only for financial experts or those with vast sums of money to start. However, this common perception often overl",
         "Understanding Today's Market Signals Building a stable financial future often feels like a puzzle, especially when market headlines flash with mixed signals about job growth and company earnings. You might read that U.S.",
         "Understanding Space Industry Investing Trends How can you build a steady stream of passive income through investing? It involves understanding market trends, choosing robust assets, and employing smart strategies to grow",
-        "Imagine setting up your financial future with just a few clicks, then watching your investments grow steadily over time. This dream of passive income is achievable through smart strategies. Understanding different tools "
+        "Imagine setting up your financial future with just a few clicks, then watching your investments grow steadily over time. This dream of passive income is achievable through smart strategies. Understanding different tools ",
+        "Many people assume that planning for retirement is simply about saving as much money as possible, stashing it away, and hoping for the best when the time comes. However, this approach often overlooks the crucial step of "
       ],
       "World News Simplified": [
         "Many people believe that modern train travel is almost foolproof, with sophisticated technology designed to prevent collisions. However, a recent tragedy in Spain reminds us that even with advanced systems, a critical la",
@@ -366,47 +366,47 @@
         "You might have seen it at a local smoke shop, a health food store, or even heard about it on a wellness podcast. Often marketed as a natural boost for energy, pain relief, or mood enhancement, kratom has gained attention"
       ],
       "Travel & Hidden Gems": [
-        "Venturing beyond the well-trodden paths often reveals the most profound travel experiences. It's about finding destinations that resonate deeply, offering unique cultural immersion, breathtaking natural beauty, or an alt",
         "How can you plan a trip that truly offers distinct experiences beyond the usual tourist circuits? Many travelers seek journeys that promise both exhilaration and a deep connection to culture and history. These trips ofte",
         "Sarah packed her worn hiking boots and a good book, her phone safely tucked away in a drawer, ready to trade urban bustle for the quiet embrace of a 16th-century cottage. She wasn't just taking a vacation; she was active",
         "Imagine standing at the edge of Mostar's iconic Stari Most, the Ottoman-era bridge curving gracefully over the Neretva River, its ancient stone warmed by the morning sun. Or perhaps you picture the vibrant blue fishing b",
         "Instead of the well-trodden paths around Iceland's Golden Circle, imagine a journey deep into its central highlands. This remote adventure offers a very different kind of Icelandic experience. It replaces popular bus tou",
-        "Are you searching for travel experiences that offer more than just ticking off famous landmarks? Many travelers now seek journeys aligned with personal growth and meaningful engagement. This approach to travel focuses on"
+        "Are you searching for travel experiences that offer more than just ticking off famous landmarks? Many travelers now seek journeys aligned with personal growth and meaningful engagement. This approach to travel focuses on",
+        "A white-sand beach where every day promises a new vista contrasts sharply with a geothermal valley revealing steam vents and ancient glaciers. Then there is the quiet innovation of a hotel designed entirely around sustai"
       ],
       "Philosophy for Modern Life": [
-        "Imagine scrolling through your social media feed, feeling a familiar pang of anxiety. A friend announces a promotion, another posts about a lavish vacation, and suddenly your own achievements feel diminished. Or perhaps ",
         "How do I stop faking confidence at work? You do it by admitting your natural limits instead of putting on an act. Real authority begins the moment you stop pretending you possess every answer. In 1571, French nobleman Mi",
         "We often find ourselves scrolling through endless feeds, witnessing what appears to be a perfectly curated world: friends on exotic vacations, colleagues landing dream promotions, or influencers living seemingly flawless",
         "Imagine scrolling through your social media feed, feeling that familiar pang of inadequacy or envy. It’s like looking into a funhouse mirror, where everyone else appears perfectly proportioned and perpetually happy, whil",
         "Sarah scrolled through her perfectly curated social media feed. One friend just bought a new designer handbag. Another posted about a luxurious getaway. A third celebrated a huge career milestone. Sarah had a decent job,",
-        "It often feels like our personal choices are just that: personal. We decide what to buy, what to post, and how to spend our precious time, frequently with our own immediate happiness, convenience, or even fleeting pleasu"
+        "It often feels like our personal choices are just that: personal. We decide what to buy, what to post, and how to spend our precious time, frequently with our own immediate happiness, convenience, or even fleeting pleasu",
+        "We often tell ourselves that the secret to getting things done is simple: just start. This advice, while well-intentioned, frequently falls short when we are faced with truly daunting tasks. You might know exactly what n"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "Passive Income Investing": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
       "World News Simplified": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
       "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
-      "Travel & Hidden Gems": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
-      "Philosophy for Modern Life": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing."
+      "Travel & Hidden Gems": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "Philosophy for Modern Life": "Open with a common belief about the topic and, in the next sentence, show where it falls short."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Travel & Hidden Gems": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
+      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
-      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
-      "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
+      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
+      "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
+      "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
       "World News Simplified": "Layout: headline list first.\n1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.\n2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).\n3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.",
       "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-11-06T17:54:16",
-      "Philosophy for Modern Life": "2026-11-06T17:55:32",
-      "Travel & Hidden Gems": "2026-11-07T16:48:03",
+      "Passive Income Investing": "2026-11-08T16:59:17",
+      "Philosophy for Modern Life": "2026-11-08T16:59:53",
+      "Travel & Hidden Gems": "2026-11-08T17:00:50",
       "World News Simplified": "2026-11-07T16:48:48",
       "Wellness and Self-Care": "2026-11-07T16:49:49"
     }
