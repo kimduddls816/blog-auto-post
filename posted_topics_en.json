@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Building Long-Term Wealth: Decoding Value Investing and Strategic Income Streams",
     "Cultivating Wealth: Understanding Growth Investing and Exploring Municipal Bonds for Passive Income",
     "Cultivating Consistent Cash Flow: How Dividend Growth and Automated Reinvestment Build Your Future",
     "Your Journey to Financial Freedom: Index Investing, Dividends, and Real Estate Income",
@@ -49,10 +48,10 @@
     "Building Income: ETFs, Dividends, and Carbon Credit Opportunities",
     "Building Passive Income: Investing in Space, Dividends, and Sector ETFs",
     "Steady Wealth: Robo-Advisors, DRIPs, and Smart ETF Choices",
-    "Simulating Your Retirement for Steady Passive Income"
+    "Simulating Your Retirement for Steady Passive Income",
+    "Build Passive Income: Outsmarting the Herd for Steady Returns"
   ],
   "World News Simplified": [
-    "Actors Matt Lucas and Hugh Bonneville Push for AI Voice Theft Laws",
     "A Burst Water Main Halts London Travel as 65 Billion Barrels of Oil Change Hands",
     "Judge Rules Trump Administration Illegally Targeted AI Firm Anthropic",
     "Bank of England Chief Warns G20: AI Could Trigger Global Downturn",
@@ -101,10 +100,10 @@
     "US to End Duty-Free Trade for Rwanda, South Africa Under AGOA",
     "From Ukraine's Kamyshuvakha to Delhi's AQI 377: Global Pressures",
     "Global Conflict Pushes UK Interest Rates to 4%: What It Means For You",
-    "Spain's Rail Disaster: 115 Deaths Prompt EU Fraud Probe"
+    "Spain's Rail Disaster: 115 Deaths Prompt EU Fraud Probe",
+    "French Fridge Hacks and Nvidia's Billions-Dollar Spy Scandal"
   ],
   "Wellness and Self-Care": [
-    "The 20-Minute Hip Routine That Powers Effortless Movement for Decades",
     "How Just Three Minutes of Eccentric Exercise Can Outperform a 90-Minute Workout",
     "New Studies: How Timely Menopause Hormone Therapy Could Guard Against Alzheimer's",
     "Unpacking 'Intrinsic Capacity': Why Your Future Self Depends on This Unseen Asset",
@@ -153,7 +152,8 @@
     "GLP-1 Drugs and Bone Health: Proactive Steps After 2026 Findings",
     "Decoding Creatine Combos: When Paired Supplements Offer Real Value",
     "A 7-Day Hug Experiment: Connecting Attachment Style to Deeper Embraces",
-    "Wellness Podcasts and Kratom: The Hidden Addiction Risk"
+    "Wellness Podcasts and Kratom: The Hidden Addiction Risk",
+    "Wegovy Secrets: How Hiding Weight Loss Drugs Affects Partners"
   ],
   "Travel & Hidden Gems": [
     "Capture the Red-Walled Secrets of Arequipa's Monastery, Then Explore Granada's Cave Flamenco and Ipoh's Street Art",
@@ -260,11 +260,8 @@
     "Zeno of Elea: Escaping the Infinite Steps of Procrastination"
   ],
   "_meta": {
-    "investing_progress": 97,
+    "investing_progress": 98,
     "recent_tickers": [
-      "SPY",
-      "VYM",
-      "VEA",
       "PAVE",
       "VIG",
       "XLU",
@@ -276,7 +273,10 @@
       "VTI",
       "DGRO",
       "HDV",
-      "VDC"
+      "VDC",
+      "SPLV",
+      "VBR",
+      "VYMI"
     ],
     "recent_destinations": [
       "Ghent, Belgium",
@@ -342,28 +342,28 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Navigating Recent Market Currents In a wild October for markets, many Big Tech stocks were hit hard, yet the S&P 500 showed underlying strength, with a majority of stocks actually posting gains for the month. This demons",
         "Many people believe that building a passive income stream through investing is an exclusive club, reserved only for financial experts or those with vast sums of money to start. However, this common perception often overl",
         "Understanding Today's Market Signals Building a stable financial future often feels like a puzzle, especially when market headlines flash with mixed signals about job growth and company earnings. You might read that U.S.",
         "Understanding Space Industry Investing Trends How can you build a steady stream of passive income through investing? It involves understanding market trends, choosing robust assets, and employing smart strategies to grow",
         "Imagine setting up your financial future with just a few clicks, then watching your investments grow steadily over time. This dream of passive income is achievable through smart strategies. Understanding different tools ",
-        "Many people assume that planning for retirement is simply about saving as much money as possible, stashing it away, and hoping for the best when the time comes. However, this approach often overlooks the crucial step of "
+        "Many people assume that planning for retirement is simply about saving as much money as possible, stashing it away, and hoping for the best when the time comes. However, this approach often overlooks the crucial step of ",
+        "Imagine you are scrolling through financial news, seeing headlines about certain stocks soaring while others tumble. It is easy to feel a pull to jump into the 'hot' new investment everyone is talking about, or to panic "
       ],
       "World News Simplified": [
-        "Many people believe that modern train travel is almost foolproof, with sophisticated technology designed to prevent collisions. However, a recent tragedy in Spain reminds us that even with advanced systems, a critical la",
         "Ukrainian families reunite in Chernihiv after rare Melania Trump-brokered Oleshky ceasefire. Spain's new high-speed rail disaster near Toledo kills 69, shaking government stability. US tech stocks fall sharply, with Inte",
         "Many assume that established international trade agreements, once put in place, represent a stable foundation for economic growth, especially for developing nations. However, these agreements often come with conditions a",
         "Uncertainty and direct human impacts are at the forefront of global news this week. From escalating conflicts and political stalemates to environmental health crises and economic struggles, people worldwide are feeling t",
         "Many people believe that central banks primarily react to internal economic factors when setting interest rates, ensuring a stable financial environment. However, recent decisions show that global geopolitical events can",
-        "New Zealand's general election results are in, but no party has secured a clear majority, leading to anticipated weeks of coalition negotiations. Overnight Russian strikes severely damaged Ukraine's power grid and injure"
+        "New Zealand's general election results are in, but no party has secured a clear majority, leading to anticipated weeks of coalition negotiations. Overnight Russian strikes severely damaged Ukraine's power grid and injure",
+        "Today's headlines might seem disconnected, but a closer look reveals a world grappling with hidden tensions and unexpected disruptions. From cyberattacks that target basic infrastructure to corporate espionage touching t"
       ],
       "Wellness and Self-Care": [
-        "Just as you schedule a yearly physical to check your blood pressure and cholesterol levels, thinking about a regular mental health checkup is equally important for your overall well-being. Both physical and mental health",
         "A recent study, presented at the 2026 American Academy of Orthopaedic Surgeons annual meeting, has brought new attention to the potential impact of GLP-1 agonist drugs on bone health. This research, though not yet peer-r",
         "Many people are seeing real health benefits from a class of medications known as GLP-1 agonist drugs. These include popular names like Ozempic, Zepbound, and Wegovy. These drugs have become important tools for managing c",
         "Creatine has earned well-deserved hype as one of the safest, best-researched supplements for improving exercise performance, according to the International Society of Sports Nutrition (ISSN). For years, athletes and fitn",
         "A simple embrace can feel like a fleeting moment, yet its impact often lingers. We all know the comfort a good hug can bring. But have you ever considered why some hugs feel deeply nourishing, while others leave you feel",
-        "You might have seen it at a local smoke shop, a health food store, or even heard about it on a wellness podcast. Often marketed as a natural boost for energy, pain relief, or mood enhancement, kratom has gained attention"
+        "You might have seen it at a local smoke shop, a health food store, or even heard about it on a wellness podcast. Often marketed as a natural boost for energy, pain relief, or mood enhancement, kratom has gained attention",
+        "Caroline, a 34-year-old living in Montreal, found herself navigating a significant secret. She was taking Wegovy, a popular GLP-1 weight loss medication, but this time her boyfriend had no idea. This hidden aspect of her"
       ],
       "Travel & Hidden Gems": [
         "How can you plan a trip that truly offers distinct experiences beyond the usual tourist circuits? Many travelers seek journeys that promise both exhilaration and a deep connection to culture and history. These trips ofte",
@@ -383,32 +383,32 @@
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
-      "World News Simplified": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
-      "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
+      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "World News Simplified": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
+      "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
       "Travel & Hidden Gems": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
       "Philosophy for Modern Life": "Open with a common belief about the topic and, in the next sentence, show where it falls short."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
+      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
       "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
       "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
-      "World News Simplified": "Layout: headline list first.\n1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.\n2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).\n3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.",
-      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
+      "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
+      "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-11-08T16:59:17",
+      "Passive Income Investing": "2026-11-09T21:24:45",
       "Philosophy for Modern Life": "2026-11-08T16:59:53",
       "Travel & Hidden Gems": "2026-11-08T17:00:50",
-      "World News Simplified": "2026-11-07T16:48:48",
-      "Wellness and Self-Care": "2026-11-07T16:49:49"
+      "World News Simplified": "2026-11-09T21:23:27",
+      "Wellness and Self-Care": "2026-11-09T21:24:03"
     }
   }
 }
