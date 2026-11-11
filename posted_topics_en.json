@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Cultivating Wealth: Understanding Growth Investing and Exploring Municipal Bonds for Passive Income",
     "Cultivating Consistent Cash Flow: How Dividend Growth and Automated Reinvestment Build Your Future",
     "Your Journey to Financial Freedom: Index Investing, Dividends, and Real Estate Income",
     "Setting Up Your Financial Autopilot: From FIRE to Smart Beta ETFs",
@@ -49,7 +48,8 @@
     "Building Passive Income: Investing in Space, Dividends, and Sector ETFs",
     "Steady Wealth: Robo-Advisors, DRIPs, and Smart ETF Choices",
     "Simulating Your Retirement for Steady Passive Income",
-    "Build Passive Income: Outsmarting the Herd for Steady Returns"
+    "Build Passive Income: Outsmarting the Herd for Steady Returns",
+    "Steady Passive Income: Steering Clear of 10 Common Investing Pitfalls"
   ],
   "World News Simplified": [
     "Judge Rules Trump Administration Illegally Targeted AI Firm Anthropic",
@@ -104,7 +104,6 @@
     "Ukraine Peace Talks Show 'Flexibility' on Eastern Regions"
   ],
   "Wellness and Self-Care": [
-    "How Just Three Minutes of Eccentric Exercise Can Outperform a 90-Minute Workout",
     "New Studies: How Timely Menopause Hormone Therapy Could Guard Against Alzheimer's",
     "Unpacking 'Intrinsic Capacity': Why Your Future Self Depends on This Unseen Asset",
     "Decoding the 6-6-6 Walking Challenge: Why Varying Intensity Fuels Your Metabolism",
@@ -153,7 +152,8 @@
     "Decoding Creatine Combos: When Paired Supplements Offer Real Value",
     "A 7-Day Hug Experiment: Connecting Attachment Style to Deeper Embraces",
     "Wellness Podcasts and Kratom: The Hidden Addiction Risk",
-    "Wegovy Secrets: How Hiding Weight Loss Drugs Affects Partners"
+    "Wegovy Secrets: How Hiding Weight Loss Drugs Affects Partners",
+    "Smart Eating: How Canned & Frozen Foods Beat High Grocery Costs"
   ],
   "Travel & Hidden Gems": [
     "Capture the Miroir d'eau's Reflection in Bordeaux, Then Explore Chiang Mai's Golden Temples and San Juan's Cobalt Streets",
@@ -208,7 +208,6 @@
     "Catch Waves in Puerto Rico, Explore Shanghai Visa-Free, & Embrace Banff's Snow"
   ],
   "Philosophy for Modern Life": [
-    "The Perfect Post and Epictetus: Your Power Over Social Media Comparison",
     "The Spreadsheet and the Stone: Hannah Arendt on Why Your Digital Work Feels Empty",
     "Arthur Schopenhauer and the Fleeting Three-Week Spark of Your New Purchase",
     "John Dewey and the Unedited Photo: Why Your Messy Reality Builds True Identity",
@@ -257,14 +256,12 @@
     "Epicurus: Finding Calm When 'More' Always Feels Like Not Enough",
     "John Stuart Mill: Weighing Your Online Posts for the Greater Good",
     "Zeno of Elea: Escaping the Infinite Steps of Procrastination",
-    "Michel Foucault: How Invisible Scrutiny Shapes Your Daily Choices"
+    "Michel Foucault: How Invisible Scrutiny Shapes Your Daily Choices",
+    "Confucius's Ren: Building Real Bonds in a Digital World"
   ],
   "_meta": {
-    "investing_progress": 98,
+    "investing_progress": 99,
     "recent_tickers": [
-      "PAVE",
-      "VIG",
-      "XLU",
       "RDVY",
       "VOO",
       "VNQ",
@@ -276,7 +273,10 @@
       "VDC",
       "SPLV",
       "VBR",
-      "VYMI"
+      "VYMI",
+      "USMV",
+      "SCHD",
+      "IVE"
     ],
     "recent_destinations": [
       "Puebla, Mexico",
@@ -342,12 +342,12 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Many people believe that building a passive income stream through investing is an exclusive club, reserved only for financial experts or those with vast sums of money to start. However, this common perception often overl",
         "Understanding Today's Market Signals Building a stable financial future often feels like a puzzle, especially when market headlines flash with mixed signals about job growth and company earnings. You might read that U.S.",
         "Understanding Space Industry Investing Trends How can you build a steady stream of passive income through investing? It involves understanding market trends, choosing robust assets, and employing smart strategies to grow",
         "Imagine setting up your financial future with just a few clicks, then watching your investments grow steadily over time. This dream of passive income is achievable through smart strategies. Understanding different tools ",
         "Many people assume that planning for retirement is simply about saving as much money as possible, stashing it away, and hoping for the best when the time comes. However, this approach often overlooks the crucial step of ",
-        "Imagine you are scrolling through financial news, seeing headlines about certain stocks soaring while others tumble. It is easy to feel a pull to jump into the 'hot' new investment everyone is talking about, or to panic "
+        "Imagine you are scrolling through financial news, seeing headlines about certain stocks soaring while others tumble. It is easy to feel a pull to jump into the 'hot' new investment everyone is talking about, or to panic ",
+        "How can you build a steady stream of passive income through investing? It involves understanding market trends, choosing robust assets, and employing smart strategies to grow your wealth steadily. This approach helps you"
       ],
       "World News Simplified": [
         "Many assume that established international trade agreements, once put in place, represent a stable foundation for economic growth, especially for developing nations. However, these agreements often come with conditions a",
@@ -358,12 +358,12 @@
         "Ukraine Peace Talks Hint at Concessions on Eastern Regions The United Arab Emirates recently hosted the first trilateral talks involving delegations from Kyiv, Washington, and Moscow since February, signaling a cautious "
       ],
       "Wellness and Self-Care": [
-        "A recent study, presented at the 2026 American Academy of Orthopaedic Surgeons annual meeting, has brought new attention to the potential impact of GLP-1 agonist drugs on bone health. This research, though not yet peer-r",
         "Many people are seeing real health benefits from a class of medications known as GLP-1 agonist drugs. These include popular names like Ozempic, Zepbound, and Wegovy. These drugs have become important tools for managing c",
         "Creatine has earned well-deserved hype as one of the safest, best-researched supplements for improving exercise performance, according to the International Society of Sports Nutrition (ISSN). For years, athletes and fitn",
         "A simple embrace can feel like a fleeting moment, yet its impact often lingers. We all know the comfort a good hug can bring. But have you ever considered why some hugs feel deeply nourishing, while others leave you feel",
         "You might have seen it at a local smoke shop, a health food store, or even heard about it on a wellness podcast. Often marketed as a natural boost for energy, pain relief, or mood enhancement, kratom has gained attention",
-        "Caroline, a 34-year-old living in Montreal, found herself navigating a significant secret. She was taking Wegovy, a popular GLP-1 weight loss medication, but this time her boyfriend had no idea. This hidden aspect of her"
+        "Caroline, a 34-year-old living in Montreal, found herself navigating a significant secret. She was taking Wegovy, a popular GLP-1 weight loss medication, but this time her boyfriend had no idea. This hidden aspect of her",
+        "Can you really eat healthy without spending a fortune on fresh produce? Yes, you absolutely can build a nutritious diet using canned, frozen, and even some packaged foods. These options offer both convenience and signifi"
       ],
       "Travel & Hidden Gems": [
         "Sarah packed her worn hiking boots and a good book, her phone safely tucked away in a drawer, ready to trade urban bustle for the quiet embrace of a 16th-century cottage. She wasn't just taking a vacation; she was active",
@@ -374,41 +374,41 @@
         "The aroma of fresh seafood mingled with the salty air as Alex watched surfers carve lines on the waves near Jobos Beach in Puerto Rico. Weeks later, across a vast ocean, Lena peered from a high-speed train window, the fu"
       ],
       "Philosophy for Modern Life": [
-        "We often find ourselves scrolling through endless feeds, witnessing what appears to be a perfectly curated world: friends on exotic vacations, colleagues landing dream promotions, or influencers living seemingly flawless",
         "Imagine scrolling through your social media feed, feeling that familiar pang of inadequacy or envy. It’s like looking into a funhouse mirror, where everyone else appears perfectly proportioned and perpetually happy, whil",
         "Sarah scrolled through her perfectly curated social media feed. One friend just bought a new designer handbag. Another posted about a luxurious getaway. A third celebrated a huge career milestone. Sarah had a decent job,",
         "It often feels like our personal choices are just that: personal. We decide what to buy, what to post, and how to spend our precious time, frequently with our own immediate happiness, convenience, or even fleeting pleasu",
         "We often tell ourselves that the secret to getting things done is simple: just start. This advice, while well-intentioned, frequently falls short when we are faced with truly daunting tasks. You might know exactly what n",
-        "Many of us have felt it: that subtle, unspoken pressure to present a certain image, to act a certain way, or to hold specific opinions, especially when we know others might be watching or judging. This isn't just a fleet"
+        "Many of us have felt it: that subtle, unspoken pressure to present a certain image, to act a certain way, or to hold specific opinions, especially when we know others might be watching or judging. This isn't just a fleet",
+        "Do you sometimes feel that your social interactions, especially online, lack genuine depth? It is easy to scroll through feeds, offer quick likes, and exchange brief comments. Yet, many of us still yearn for more meaning"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "Passive Income Investing": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
       "World News Simplified": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
-      "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
+      "Wellness and Self-Care": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
       "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
-      "Philosophy for Modern Life": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead."
+      "Philosophy for Modern Life": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Passive Income Investing": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
+      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
-      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
+      "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
+      "Philosophy for Modern Life": "Layout: thinker first. Briefly who the thinker was and the one idea that matters here, then apply it to a concrete modern problem, then one small practice the reader can try this week. Use <h2> sections.",
       "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
       "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
-      "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
+      "Wellness and Self-Care": "Layout: reader questions. Organize the post as 4-6 <h2> headings, each a real question people search about this topic, each answered directly in its first sentence and then explained."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-11-09T21:24:45",
-      "Philosophy for Modern Life": "2026-11-10T18:34:27",
+      "Passive Income Investing": "2026-11-11T18:35:59",
+      "Philosophy for Modern Life": "2026-11-11T18:36:22",
       "Travel & Hidden Gems": "2026-11-10T18:35:38",
       "World News Simplified": "2026-11-10T18:36:15",
-      "Wellness and Self-Care": "2026-11-09T21:24:03"
+      "Wellness and Self-Care": "2026-11-11T18:33:35"
     }
   }
 }
