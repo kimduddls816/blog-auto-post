@@ -52,7 +52,6 @@
     "Build Steady Income: Smart ETFs and Dividend Investing for Beginners"
   ],
   "World News Simplified": [
-    "Kyiv Rail Workers Targeted as SCO Summit Challenges Western Iran Policy",
     "As US Sailors Dock After 250 Days, World Leaders Fear a Bond Market Wildfire",
     "B&Q, Five Guys Caught Underpaying as Graduates Buy Businesses for Instant CEO Roles",
     "Europe Investigates Suspected Sabotage as Yemen's Push for a Key Strait Rocks Global Trade",
@@ -101,7 +100,8 @@
     "French Fridge Hacks and Nvidia's Billions-Dollar Spy Scandal",
     "Ukraine Peace Talks Show 'Flexibility' on Eastern Regions",
     "Ebola Fund Scandal, UK Growth & Ukraine's 20-Hour Blackouts",
-    "US Proposes Donbas for Nato Deal; Ethiopia Airport Health Warning"
+    "US Proposes Donbas for Nato Deal; Ethiopia Airport Health Warning",
+    "Ukraine's Donbas Deal, Bahrain Attacks, and AI Property Tricks"
   ],
   "Wellness and Self-Care": [
     "Decoding the 6-6-6 Walking Challenge: Why Varying Intensity Fuels Your Metabolism",
@@ -156,7 +156,6 @@
     "New Research Ranks 21 Antidepressants for Long-Term Effectiveness"
   ],
   "Travel & Hidden Gems": [
-    "Capture Valencia's Futuristic Forms, Fukuoka's Yatai Flavors, and Boise's Alley Art",
     "Ghent's Canals, Rotorua's Steam, San Miguel's Sunsets: Three Global Aesthetics You Need to Capture",
     "Walk Montreux's Freddie Mercury Promenade, Then Immerse in Tokyo's Digital Art Rivers and Costa Rica's Longevity Secret",
     "The Blue Grotto Caves of Polignano a Mare, Plus Penang's Mural Magic and Maine's Lobster Rolls",
@@ -205,7 +204,8 @@
     "Antigua's 365 Beaches, Iceland's Geothermal Retreat, and Vermont's Electric Hotel",
     "Catch Waves in Puerto Rico, Explore Shanghai Visa-Free, & Embrace Banff's Snow",
     "San Sebastián's Pintxos, Luang Prabang's Monks, Colonia's Cobblestones",
-    "Find Your Travel Beat: Mysuru's Tuk-Tuks, Bangkok's Boat Noodles, and Banff's Glacial Views"
+    "Find Your Travel Beat: Mysuru's Tuk-Tuks, Bangkok's Boat Noodles, and Banff's Glacial Views",
+    "Álava's Rural Flavors, Perledo's Lake Como Vistas, Montenegro's Adriatic"
   ],
   "Philosophy for Modern Life": [
     "Arthur Schopenhauer and the Fleeting Three-Week Spark of Your New Purchase",
@@ -279,9 +279,6 @@
       "VOOV"
     ],
     "recent_destinations": [
-      "Matera, Italy",
-      "Chefchaouen, Morocco",
-      "Havana, Cuba",
       "Medellín, Colombia",
       "Glasgow, Scotland",
       "Hanoi, Vietnam",
@@ -338,7 +335,10 @@
       "Colonia del Sacramento, Uruguay",
       "Mysuru, India",
       "Bangkok, Thailand",
-      "Banff National Park, Canada"
+      "Banff National Park, Canada",
+      "Álava, Spain",
+      "Perledo, Italy",
+      "Montenegro"
     ],
     "recent_openings": {
       "Passive Income Investing": [
@@ -350,12 +350,12 @@
         "How can you start building a reliable stream of passive income through investing? It involves understanding specific investment vehicles and choosing assets that align with your long-term financial goals. Focusing on qua"
       ],
       "World News Simplified": [
-        "Many people believe that central banks primarily react to internal economic factors when setting interest rates, ensuring a stable financial environment. However, recent decisions show that global geopolitical events can",
         "New Zealand's general election results are in, but no party has secured a clear majority, leading to anticipated weeks of coalition negotiations. Overnight Russian strikes severely damaged Ukraine's power grid and injure",
         "Today's headlines might seem disconnected, but a closer look reveals a world grappling with hidden tensions and unexpected disruptions. From cyberattacks that target basic infrastructure to corporate espionage touching t",
         "Ukraine Peace Talks Hint at Concessions on Eastern Regions The United Arab Emirates recently hosted the first trilateral talks involving delegations from Kyiv, Washington, and Moscow since February, signaling a cautious ",
         "Ukraine faces widespread power outages and devastated infrastructure. Pentagon awards soldier for reprimanding group at Arlington memorial. Millions in Ebola relief funds are reported missing in DR Congo. Spain experienc",
-        "Many people believe that a country's path to joining a major military alliance like Nato involves meeting specific criteria and negotiating directly with existing members. However, recent developments show that the conve"
+        "Many people believe that a country's path to joining a major military alliance like Nato involves meeting specific criteria and negotiating directly with existing members. However, recent developments show that the conve",
+        "Imagine checking out a potential new home online, captivated by vibrant photos, only to visit in person and find the reality far less polished. Or consider a diplomatic offer that could reshape a country's future, weighi"
       ],
       "Wellness and Self-Care": [
         "A simple embrace can feel like a fleeting moment, yet its impact often lingers. We all know the comfort a good hug can bring. But have you ever considered why some hugs feel deeply nourishing, while others leave you feel",
@@ -366,12 +366,12 @@
         "When navigating mental health, finding the right support is a deeply personal journey. For many, this includes considering antidepressant medications. A recent meta-analysis has offered valuable new insights, comparing t"
       ],
       "Travel & Hidden Gems": [
-        "Instead of the well-trodden paths around Iceland's Golden Circle, imagine a journey deep into its central highlands. This remote adventure offers a very different kind of Icelandic experience. It replaces popular bus tou",
         "Are you searching for travel experiences that offer more than just ticking off famous landmarks? Many travelers now seek journeys aligned with personal growth and meaningful engagement. This approach to travel focuses on",
         "A white-sand beach where every day promises a new vista contrasts sharply with a geothermal valley revealing steam vents and ancient glaciers. Then there is the quiet innovation of a hotel designed entirely around sustai",
         "The aroma of fresh seafood mingled with the salty air as Alex watched surfers carve lines on the waves near Jobos Beach in Puerto Rico. Weeks later, across a vast ocean, Lena peered from a high-speed train window, the fu",
         "Instead of the crowded queues for major landmarks, imagine an afternoon spent savoring small, intricate dishes. Or perhaps, rather than sprawling urban jungles, picture the serene quiet of ancient temples and cobblestone",
-        "The scent of jasmine and spices might guide you through a bustling market in Mysuru. Or perhaps it is the quiet creak of a long-tail boat gliding along a Bangkok canal at dawn. Maybe it is the crisp mountain air filling "
+        "The scent of jasmine and spices might guide you through a bustling market in Mysuru. Or perhaps it is the quiet creak of a long-tail boat gliding along a Bangkok canal at dawn. Maybe it is the crisp mountain air filling ",
+        "Are you searching for a European adventure that veers off the well-trodden tourist path while still delivering incredible culture and cuisine? Many travelers are now seeking out destinations that offer authentic local ex"
       ],
       "Philosophy for Modern Life": [
         "Sarah scrolled through her perfectly curated social media feed. One friend just bought a new designer handbag. Another posted about a luxurious getaway. A third celebrated a huge career milestone. Sarah had a decent job,",
@@ -384,30 +384,30 @@
     },
     "last_opening_style": {
       "Passive Income Investing": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
-      "World News Simplified": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
+      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
-      "Travel & Hidden Gems": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
+      "Travel & Hidden Gems": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
       "Philosophy for Modern Life": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
     },
     "last_structure": {
       "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
       "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
-      "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
-      "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
+      "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season.",
+      "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
       "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
     },
     "last_posted_at": {
       "Passive Income Investing": "2026-11-14T16:59:00",
       "Philosophy for Modern Life": "2026-11-13T18:29:31",
-      "Travel & Hidden Gems": "2026-11-13T18:30:44",
-      "World News Simplified": "2026-11-14T16:57:10",
+      "Travel & Hidden Gems": "2026-11-15T17:41:36",
+      "World News Simplified": "2026-11-15T17:42:07",
       "Wellness and Self-Care": "2026-11-14T16:58:29"
     }
   }
