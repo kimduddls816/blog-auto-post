@@ -104,7 +104,6 @@
     "Ukraine's Donbas Deal, Bahrain Attacks, and AI Property Tricks"
   ],
   "Wellness and Self-Care": [
-    "Decoding the 6-6-6 Walking Challenge: Why Varying Intensity Fuels Your Metabolism",
     "Is Your Rapid GLP-1 Weight Loss Undermining Your Bone Strength? An April 2026 Study Explains",
     "Food Poisoning's Hidden Cost: Why a Single Meal Could Trigger Years of Gut Issues",
     "Beyond Championship Point: How Coco Gauff's Five Mental Habits Reset Your Daily Pressures",
@@ -153,7 +152,8 @@
     "Wegovy Secrets: How Hiding Weight Loss Drugs Affects Partners",
     "Smart Eating: How Canned & Frozen Foods Beat High Grocery Costs",
     "Your 7-Day Smart Pantry Challenge: Eating Healthy for Less",
-    "New Research Ranks 21 Antidepressants for Long-Term Effectiveness"
+    "New Research Ranks 21 Antidepressants for Long-Term Effectiveness",
+    "The 7-Day Cold Shower Challenge to Ease an Anxious Mind"
   ],
   "Travel & Hidden Gems": [
     "Ghent's Canals, Rotorua's Steam, San Miguel's Sunsets: Three Global Aesthetics You Need to Capture",
@@ -358,12 +358,12 @@
         "Imagine checking out a potential new home online, captivated by vibrant photos, only to visit in person and find the reality far less polished. Or consider a diplomatic offer that could reshape a country's future, weighi"
       ],
       "Wellness and Self-Care": [
-        "A simple embrace can feel like a fleeting moment, yet its impact often lingers. We all know the comfort a good hug can bring. But have you ever considered why some hugs feel deeply nourishing, while others leave you feel",
         "You might have seen it at a local smoke shop, a health food store, or even heard about it on a wellness podcast. Often marketed as a natural boost for energy, pain relief, or mood enhancement, kratom has gained attention",
         "Caroline, a 34-year-old living in Montreal, found herself navigating a significant secret. She was taking Wegovy, a popular GLP-1 weight loss medication, but this time her boyfriend had no idea. This hidden aspect of her",
         "Can you really eat healthy without spending a fortune on fresh produce? Yes, you absolutely can build a nutritious diet using canned, frozen, and even some packaged foods. These options offer both convenience and signifi",
         "Standing in the produce aisle, you might eye those vibrant organic berries or crisp salad greens, only to remember the price tag and their short shelf life. Many people experience this familiar grocery dilemma. The idea ",
-        "When navigating mental health, finding the right support is a deeply personal journey. For many, this includes considering antidepressant medications. A recent meta-analysis has offered valuable new insights, comparing t"
+        "When navigating mental health, finding the right support is a deeply personal journey. For many, this includes considering antidepressant medications. A recent meta-analysis has offered valuable new insights, comparing t",
+        "The steam still clung to the bathroom mirror as you finished your warm morning shower. Just before stepping out, you took a deep breath. Then, with a deliberate twist of the faucet, the water turned icy cold. This brief,"
       ],
       "Travel & Hidden Gems": [
         "Are you searching for travel experiences that offer more than just ticking off famous landmarks? Many travelers now seek journeys aligned with personal growth and meaningful engagement. This approach to travel focuses on",
@@ -385,14 +385,14 @@
     "last_opening_style": {
       "Passive Income Investing": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
       "World News Simplified": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
-      "Wellness and Self-Care": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
+      "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
       "Travel & Hidden Gems": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
       "Philosophy for Modern Life": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
       "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
     },
@@ -401,14 +401,14 @@
       "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
       "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season.",
       "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
-      "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
+      "Wellness and Self-Care": "Layout: a small practical experiment. Frame the post around trying one specific BEHAVIOR change for 7 days (a sleep, movement, eating-pattern, focus, or stress habit): why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps. If the topic is a supplement, medication, or medical treatment, do NOT use the self-experiment framing; instead explain what it is, what the evidence says, who should be cautious, and what to ask a doctor."
     },
     "last_posted_at": {
       "Passive Income Investing": "2026-11-14T16:59:00",
       "Philosophy for Modern Life": "2026-11-13T18:29:31",
       "Travel & Hidden Gems": "2026-11-15T17:41:36",
       "World News Simplified": "2026-11-15T17:42:07",
-      "Wellness and Self-Care": "2026-11-14T16:58:29"
+      "Wellness and Self-Care": "2026-11-16T20:59:51"
     }
   }
 }
