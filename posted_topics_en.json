@@ -52,7 +52,6 @@
     "Building Income: Bonds, Dividend Aristocrats, and REITs Explained"
   ],
   "World News Simplified": [
-    "As US Sailors Dock After 250 Days, World Leaders Fear a Bond Market Wildfire",
     "B&Q, Five Guys Caught Underpaying as Graduates Buy Businesses for Instant CEO Roles",
     "Europe Investigates Suspected Sabotage as Yemen's Push for a Key Strait Rocks Global Trade",
     "US Envoys Meet in Moscow as Russian Bombs Hit Ukraine Security HQ",
@@ -101,10 +100,10 @@
     "Ukraine Peace Talks Show 'Flexibility' on Eastern Regions",
     "Ebola Fund Scandal, UK Growth & Ukraine's 20-Hour Blackouts",
     "US Proposes Donbas for Nato Deal; Ethiopia Airport Health Warning",
-    "Ukraine's Donbas Deal, Bahrain Attacks, and AI Property Tricks"
+    "Ukraine's Donbas Deal, Bahrain Attacks, and AI Property Tricks",
+    "Ukraine's Underground War: Fighting in a 1-Meter Wide Gas Pipeline"
   ],
   "Wellness and Self-Care": [
-    "Is Your Rapid GLP-1 Weight Loss Undermining Your Bone Strength? An April 2026 Study Explains",
     "Food Poisoning's Hidden Cost: Why a Single Meal Could Trigger Years of Gut Issues",
     "Beyond Championship Point: How Coco Gauff's Five Mental Habits Reset Your Daily Pressures",
     "The September 3, 2026 Sleep Report: Is Magnesium for Calm or Melatonin for Timing Your Rest?",
@@ -153,7 +152,8 @@
     "Smart Eating: How Canned & Frozen Foods Beat High Grocery Costs",
     "Your 7-Day Smart Pantry Challenge: Eating Healthy for Less",
     "New Research Ranks 21 Antidepressants for Long-Term Effectiveness",
-    "The 7-Day Cold Shower Challenge to Ease an Anxious Mind"
+    "The 7-Day Cold Shower Challenge to Ease an Anxious Mind",
+    "Are GLP-1 Drugs Linked to Bone Weakness & Gout? The Latest Findings"
   ],
   "Travel & Hidden Gems": [
     "Walk Montreux's Freddie Mercury Promenade, Then Immerse in Tokyo's Digital Art Rivers and Costa Rica's Longevity Secret",
@@ -208,7 +208,6 @@
     "Explore Caves in Vietnam, Tulum's Cenotes, and Sicily's Ancient Vistas"
   ],
   "Philosophy for Modern Life": [
-    "John Dewey and the Unedited Photo: Why Your Messy Reality Builds True Identity",
     "A Full Calendar Is Not a Full Life: Seneca on Reclaiming Your Time",
     "Sextus Empiricus's Simple Hack for Online Overload: The Quiet Power of Suspending Judgment",
     "Iris Murdoch and the Silent Joy of a Sunset You Don't Instagram",
@@ -257,7 +256,8 @@
     "Michel Foucault: How Invisible Scrutiny Shapes Your Daily Choices",
     "Confucius's Ren: Building Real Bonds in a Digital World",
     "Henry David Thoreau: Reclaiming Focus from Your Digital Demands",
-    "How Aristotle's Golden Mean Ends Your Endless Pursuit of 'More'"
+    "How Aristotle's Golden Mean Ends Your Endless Pursuit of 'More'",
+    "Hannah Arendt: Find Meaning When Your Job Feels Like Just 'Labor'"
   ],
   "_meta": {
     "investing_progress": 102,
@@ -350,20 +350,20 @@
         "For the first time since March, bonds are actually helping to offset some of the losses investors have been feeling in their stock portfolios lately. This shift highlights the dynamic nature of financial markets and the "
       ],
       "World News Simplified": [
-        "New Zealand's general election results are in, but no party has secured a clear majority, leading to anticipated weeks of coalition negotiations. Overnight Russian strikes severely damaged Ukraine's power grid and injure",
         "Today's headlines might seem disconnected, but a closer look reveals a world grappling with hidden tensions and unexpected disruptions. From cyberattacks that target basic infrastructure to corporate espionage touching t",
         "Ukraine Peace Talks Hint at Concessions on Eastern Regions The United Arab Emirates recently hosted the first trilateral talks involving delegations from Kyiv, Washington, and Moscow since February, signaling a cautious ",
         "Ukraine faces widespread power outages and devastated infrastructure. Pentagon awards soldier for reprimanding group at Arlington memorial. Millions in Ebola relief funds are reported missing in DR Congo. Spain experienc",
         "Many people believe that a country's path to joining a major military alliance like Nato involves meeting specific criteria and negotiating directly with existing members. However, recent developments show that the conve",
-        "Imagine checking out a potential new home online, captivated by vibrant photos, only to visit in person and find the reality far less polished. Or consider a diplomatic offer that could reshape a country's future, weighi"
+        "Imagine checking out a potential new home online, captivated by vibrant photos, only to visit in person and find the reality far less polished. Or consider a diplomatic offer that could reshape a country's future, weighi",
+        "Many imagine modern warfare is fought primarily above ground, with tanks, artillery, and drones dominating vast landscapes. However, in some key areas, the conflict in Ukraine has literally gone underground, forcing sold"
       ],
       "Wellness and Self-Care": [
-        "You might have seen it at a local smoke shop, a health food store, or even heard about it on a wellness podcast. Often marketed as a natural boost for energy, pain relief, or mood enhancement, kratom has gained attention",
         "Caroline, a 34-year-old living in Montreal, found herself navigating a significant secret. She was taking Wegovy, a popular GLP-1 weight loss medication, but this time her boyfriend had no idea. This hidden aspect of her",
         "Can you really eat healthy without spending a fortune on fresh produce? Yes, you absolutely can build a nutritious diet using canned, frozen, and even some packaged foods. These options offer both convenience and signifi",
         "Standing in the produce aisle, you might eye those vibrant organic berries or crisp salad greens, only to remember the price tag and their short shelf life. Many people experience this familiar grocery dilemma. The idea ",
         "When navigating mental health, finding the right support is a deeply personal journey. For many, this includes considering antidepressant medications. A recent meta-analysis has offered valuable new insights, comparing t",
-        "The steam still clung to the bathroom mirror as you finished your warm morning shower. Just before stepping out, you took a deep breath. Then, with a deliberate twist of the faucet, the water turned icy cold. This brief,"
+        "The steam still clung to the bathroom mirror as you finished your warm morning shower. Just before stepping out, you took a deep breath. Then, with a deliberate twist of the faucet, the water turned icy cold. This brief,",
+        "Many individuals have found life-changing benefits in medications like Ozempic, Zepbound, and Wegovy, commonly known as GLP-1 agonists, for managing conditions like obesity and type 2 diabetes. These powerful drugs have "
       ],
       "Travel & Hidden Gems": [
         "A white-sand beach where every day promises a new vista contrasts sharply with a geothermal valley revealing steam vents and ancient glaciers. Then there is the quiet innovation of a hotel designed entirely around sustai",
@@ -374,41 +374,41 @@
         "Are you looking for a trip that blends natural wonders with rich cultural experiences? Moving beyond typical tourist trails can reveal truly unforgettable adventures. We've found three destinations that offer incredible "
       ],
       "Philosophy for Modern Life": [
-        "It often feels like our personal choices are just that: personal. We decide what to buy, what to post, and how to spend our precious time, frequently with our own immediate happiness, convenience, or even fleeting pleasu",
         "We often tell ourselves that the secret to getting things done is simple: just start. This advice, while well-intentioned, frequently falls short when we are faced with truly daunting tasks. You might know exactly what n",
         "Many of us have felt it: that subtle, unspoken pressure to present a certain image, to act a certain way, or to hold specific opinions, especially when we know others might be watching or judging. This isn't just a fleet",
         "Do you sometimes feel that your social interactions, especially online, lack genuine depth? It is easy to scroll through feeds, offer quick likes, and exchange brief comments. Yet, many of us still yearn for more meaning",
         "Imagine the still surface of a quiet pond at dawn, reflecting the sky without interruption. Now, consider the relentless blinking light of a smartphone, each flicker demanding your attention, pulling you away from the pr",
-        "Do you constantly feel like you should be doing more? Many of us wrestle with the feeling that we are not productive enough, not achieving enough, or not acquiring enough. This endless pressure often leaves us feeling ov"
+        "Do you constantly feel like you should be doing more? Many of us wrestle with the feeling that we are not productive enough, not achieving enough, or not acquiring enough. This endless pressure often leaves us feeling ov",
+        "It often feels like we are caught on a treadmill, day in and day out, performing tasks that seem necessary but somehow lack genuine meaning. We move from one obligation to the next, often feeling like we are simply maint"
       ]
     },
     "last_opening_style": {
       "Passive Income Investing": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
-      "World News Simplified": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
-      "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
+      "World News Simplified": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
+      "Wellness and Self-Care": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
       "Travel & Hidden Gems": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
-      "Philosophy for Modern Life": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences."
+      "Philosophy for Modern Life": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
+      "Philosophy for Modern Life": "Favor longer, flowing sentences that connect ideas together, while staying clear."
     },
     "last_structure": {
       "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
-      "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
+      "Philosophy for Modern Life": "Layout: thinker first. Briefly who the thinker was and the one idea that matters here, then apply it to a concrete modern problem, then one small practice the reader can try this week. Use <h2> sections.",
       "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
-      "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
-      "Wellness and Self-Care": "Layout: a small practical experiment. Frame the post around trying one specific BEHAVIOR change for 7 days (a sleep, movement, eating-pattern, focus, or stress habit): why it might help, exactly how to do it, what to notice, and when to stop or ask a professional. Use <h2> sections and one <ol> for the steps. If the topic is a supplement, medication, or medical treatment, do NOT use the self-experiment framing; instead explain what it is, what the evidence says, who should be cautious, and what to ask a doctor."
+      "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
+      "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
     },
     "last_posted_at": {
       "Passive Income Investing": "2026-11-17T19:46:53",
-      "Philosophy for Modern Life": "2026-11-17T19:44:24",
+      "Philosophy for Modern Life": "2026-11-18T19:22:05",
       "Travel & Hidden Gems": "2026-11-17T19:47:25",
-      "World News Simplified": "2026-11-15T17:42:07",
-      "Wellness and Self-Care": "2026-11-16T20:59:51"
+      "World News Simplified": "2026-11-18T19:20:57",
+      "Wellness and Self-Care": "2026-11-18T19:21:35"
     }
   }
 }
