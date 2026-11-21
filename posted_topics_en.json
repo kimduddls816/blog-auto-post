@@ -52,7 +52,6 @@
     "Passive Income: Understanding Dividends and Fixed Annuities"
   ],
   "World News Simplified": [
-    "Europe Investigates Suspected Sabotage as Yemen's Push for a Key Strait Rocks Global Trade",
     "US Envoys Meet in Moscow as Russian Bombs Hit Ukraine Security HQ",
     "UK Petrol Highest Since Iran War Began, as Tanker Standoff Escalates",
     "China's $54 Billion Boost Meets Germany's AfD 'Democracy Demands'",
@@ -101,10 +100,10 @@
     "US Proposes Donbas for Nato Deal; Ethiopia Airport Health Warning",
     "Ukraine's Donbas Deal, Bahrain Attacks, and AI Property Tricks",
     "Ukraine's Underground War: Fighting in a 1-Meter Wide Gas Pipeline",
-    "AI Company Anthropic Set for Top 10 US Valuation After IPO"
+    "AI Company Anthropic Set for Top 10 US Valuation After IPO",
+    "AI's Riemann Hypothesis Proof Amid Tech Market Correction"
   ],
   "Wellness and Self-Care": [
-    "Beyond Championship Point: How Coco Gauff's Five Mental Habits Reset Your Daily Pressures",
     "The September 3, 2026 Sleep Report: Is Magnesium for Calm or Melatonin for Timing Your Rest?",
     "The Unseen Side: How GLP-1 Medications Connect to a Rare Retinopathy, According to a New September 2026 Report",
     "How Eating 30 Different Plants a Week Could Reshape Your Gut and Mood",
@@ -153,10 +152,10 @@
     "New Research Ranks 21 Antidepressants for Long-Term Effectiveness",
     "The 7-Day Cold Shower Challenge to Ease an Anxious Mind",
     "Are GLP-1 Drugs Linked to Bone Weakness & Gout? The Latest Findings",
-    "Ozempic and Bone Health: New 2026 Study Links GLP-1s to Osteoporosis"
+    "Ozempic and Bone Health: New 2026 Study Links GLP-1s to Osteoporosis",
+    "Boosting Mood and Immunity: Why Your Vitamin D Levels Matter"
   ],
   "Travel & Hidden Gems": [
-    "The Blue Grotto Caves of Polignano a Mare, Plus Penang's Mural Magic and Maine's Lobster Rolls",
     "Capture Toronto's Underground Art, Taste Bologna's Ancient Flavors, and Find Kuching's Playful Soul",
     "Matera's Cave Hotels and Two Other Global Aesthetic Journeys You Haven't Booked Yet",
     "Ho Chi Minh City's Nine-Story Cafe Building and Two Other Cities Where Ancient Charm Meets Modern Vibrancy",
@@ -205,7 +204,8 @@
     "Find Your Travel Beat: Mysuru's Tuk-Tuks, Bangkok's Boat Noodles, and Banff's Glacial Views",
     "Álava's Rural Flavors, Perledo's Lake Como Vistas, Montenegro's Adriatic",
     "Explore Caves in Vietnam, Tulum's Cenotes, and Sicily's Ancient Vistas",
-    "Stockholm's Island Charm, Block Island's Literary Retreat, and The Bahamas' Local Rhythms"
+    "Stockholm's Island Charm, Block Island's Literary Retreat, and The Bahamas' Local Rhythms",
+    "Évora's Roman Columns, Penang's Street Food, Salta's Andean Vistas"
   ],
   "Philosophy for Modern Life": [
     "Sextus Empiricus's Simple Hack for Online Overload: The Quiet Power of Suspending Judgment",
@@ -279,9 +279,6 @@
       "SPY"
     ],
     "recent_destinations": [
-      "Philadelphia, USA",
-      "Krakow, Poland",
-      "Vancouver Island, Canada",
       "Crete, Greece",
       "Laguna Beach, USA",
       "Copenhagen, Denmark",
@@ -338,7 +335,10 @@
       "Sicily, Italy",
       "Stockholm, Sweden",
       "Block Island, Rhode Island, USA",
-      "The Bahamas"
+      "The Bahamas",
+      "Évora, Portugal",
+      "George Town, Penang, Malaysia",
+      "Salta, Argentina"
     ],
     "recent_openings": {
       "Passive Income Investing": [
@@ -350,28 +350,28 @@
         "Imagine you receive a notification on your phone: a small deposit has landed in your brokerage account. It is a dividend payment from one of your investments, a welcome surprise that arrives without you needing to sell a"
       ],
       "World News Simplified": [
-        "Ukraine Peace Talks Hint at Concessions on Eastern Regions The United Arab Emirates recently hosted the first trilateral talks involving delegations from Kyiv, Washington, and Moscow since February, signaling a cautious ",
         "Ukraine faces widespread power outages and devastated infrastructure. Pentagon awards soldier for reprimanding group at Arlington memorial. Millions in Ebola relief funds are reported missing in DR Congo. Spain experienc",
         "Many people believe that a country's path to joining a major military alliance like Nato involves meeting specific criteria and negotiating directly with existing members. However, recent developments show that the conve",
         "Imagine checking out a potential new home online, captivated by vibrant photos, only to visit in person and find the reality far less polished. Or consider a diplomatic offer that could reshape a country's future, weighi",
         "Many imagine modern warfare is fought primarily above ground, with tanks, artillery, and drones dominating vast landscapes. However, in some key areas, the conflict in Ukraine has literally gone underground, forcing sold",
-        "The UN's top court ruled Myanmar committed genocide against the Rohingya minority in 2017. European leaders signal readiness for peace talks with Russia regarding the war in Ukraine. Venezuela and the US sign a military "
+        "The UN's top court ruled Myanmar committed genocide against the Rohingya minority in 2017. European leaders signal readiness for peace talks with Russia regarding the war in Ukraine. Venezuela and the US sign a military ",
+        "What's happening with tech stocks and the economy right now? Major US stock indexes, like the S&P 500 and the Dow Jones Industrial Average, have recently entered what analysts call 'correction territory.' This means thes"
       ],
       "Wellness and Self-Care": [
-        "Can you really eat healthy without spending a fortune on fresh produce? Yes, you absolutely can build a nutritious diet using canned, frozen, and even some packaged foods. These options offer both convenience and signifi",
         "Standing in the produce aisle, you might eye those vibrant organic berries or crisp salad greens, only to remember the price tag and their short shelf life. Many people experience this familiar grocery dilemma. The idea ",
         "When navigating mental health, finding the right support is a deeply personal journey. For many, this includes considering antidepressant medications. A recent meta-analysis has offered valuable new insights, comparing t",
         "The steam still clung to the bathroom mirror as you finished your warm morning shower. Just before stepping out, you took a deep breath. Then, with a deliberate twist of the faucet, the water turned icy cold. This brief,",
         "Many individuals have found life-changing benefits in medications like Ozempic, Zepbound, and Wegovy, commonly known as GLP-1 agonists, for managing conditions like obesity and type 2 diabetes. These powerful drugs have ",
-        "Many individuals have found life-changing benefits in medications like Ozempic, Zepbound, and Wegovy for managing conditions such as obesity and type 2 diabetes. These powerful drugs, known as GLP-1 agonists, have been c"
+        "Many individuals have found life-changing benefits in medications like Ozempic, Zepbound, and Wegovy for managing conditions such as obesity and type 2 diabetes. These powerful drugs, known as GLP-1 agonists, have been c",
+        "Imagine a bright, sunny afternoon. You step outside, feel the warmth on your skin, and take a deep breath. This simple act of basking in sunlight does more than just lift your spirits. It initiates a crucial process in y"
       ],
       "Travel & Hidden Gems": [
-        "The aroma of fresh seafood mingled with the salty air as Alex watched surfers carve lines on the waves near Jobos Beach in Puerto Rico. Weeks later, across a vast ocean, Lena peered from a high-speed train window, the fu",
         "Instead of the crowded queues for major landmarks, imagine an afternoon spent savoring small, intricate dishes. Or perhaps, rather than sprawling urban jungles, picture the serene quiet of ancient temples and cobblestone",
         "The scent of jasmine and spices might guide you through a bustling market in Mysuru. Or perhaps it is the quiet creak of a long-tail boat gliding along a Bangkok canal at dawn. Maybe it is the crisp mountain air filling ",
         "Are you searching for a European adventure that veers off the well-trodden tourist path while still delivering incredible culture and cuisine? Many travelers are now seeking out destinations that offer authentic local ex",
         "Are you looking for a trip that blends natural wonders with rich cultural experiences? Moving beyond typical tourist trails can reveal truly unforgettable adventures. We've found three destinations that offer incredible ",
-        "Many travelers believe that to truly experience a city's essence, especially one as dynamic and sprawling as Stockholm, a grand hotel in the bustling center is the only way to go. However, this approach often overlooks t"
+        "Many travelers believe that to truly experience a city's essence, especially one as dynamic and sprawling as Stockholm, a grand hotel in the bustling center is the only way to go. However, this approach often overlooks t",
+        "Imagine Clara, standing in a quiet square as the golden light of late afternoon washes over ancient Roman columns. The scent of olive groves hangs in the air, a stark contrast to the bustling city she left behind just ho"
       ],
       "Philosophy for Modern Life": [
         "Many of us have felt it: that subtle, unspoken pressure to present a certain image, to act a certain way, or to hold specific opinions, especially when we know others might be watching or judging. This isn't just a fleet",
@@ -384,31 +384,31 @@
     },
     "last_opening_style": {
       "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
-      "World News Simplified": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic.",
-      "Wellness and Self-Care": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
-      "Travel & Hidden Gems": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
+      "World News Simplified": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
+      "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
+      "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Philosophy for Modern Life": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences."
     },
     "last_sentence_rhythm": {
       "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
+      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Travel & Hidden Gems": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
     },
     "last_structure": {
       "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
       "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
-      "Travel & Hidden Gems": "Layout: one featured destination plus two alternatives.\n- The first destination gets about 60% of the post under its own <h2>, with 2-3 <h3> subsections (e.g. where to stay, what to do on day one, what locals do differently).\n- Then an <h2> presenting the other 2 destinations as alternatives with a similar feel, each under its own <h3>, shorter.\n- End with a compact <ul> comparing all 3 on safety, rough daily budget range, and best season.",
-      "World News Simplified": "Layout: headline list first.\n1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.\n2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).\n3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.",
-      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
+      "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
+      "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
+      "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
     },
     "last_posted_at": {
       "Passive Income Investing": "2026-11-20T19:04:09",
       "Philosophy for Modern Life": "2026-11-20T19:03:10",
-      "Travel & Hidden Gems": "2026-11-19T19:27:23",
-      "World News Simplified": "2026-11-19T19:28:02",
-      "Wellness and Self-Care": "2026-11-20T19:02:30"
+      "Travel & Hidden Gems": "2026-11-21T17:56:18",
+      "World News Simplified": "2026-11-21T17:56:51",
+      "Wellness and Self-Care": "2026-11-21T17:57:50"
     }
   }
 }
