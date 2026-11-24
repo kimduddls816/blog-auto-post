@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Policy Power: Understanding Monetary and Fiscal Decisions for Passive Income Growth",
     "Strengthening Your Passive Income: Understanding Global Trade, Preserving Value with TIPS, and Targeted ETF Choices",
     "Understanding Geopolitical Risk: How Global Events Shape Your Passive Income Journey",
     "Unlocking Income Potential: Understanding Volatility, AI Trends, and Covered Call ETFs",
@@ -49,10 +48,10 @@
     "Building Income: Bonds, Dividend Aristocrats, and REITs Explained",
     "Build Passive Income: Steady Dividends, Annuities, and Smart ETFs",
     "Passive Income: Understanding Dividends and Fixed Annuities",
-    "Passive Income: Smart Dividends and Steady Investing Amid Volatility"
+    "Passive Income: Smart Dividends and Steady Investing Amid Volatility",
+    "Build Passive Income: Steady Growth with Preferred Shares"
   ],
   "World News Simplified": [
-    "UK Petrol Highest Since Iran War Began, as Tanker Standoff Escalates",
     "China's $54 Billion Boost Meets Germany's AfD 'Democracy Demands'",
     "Argentina's Oil Standoff and One Leader's $1 Million Raise",
     "The 10 Percent Extinction Risk and AI's 90-Year Math Solution",
@@ -101,7 +100,8 @@
     "Ukraine's Underground War: Fighting in a 1-Meter Wide Gas Pipeline",
     "AI Company Anthropic Set for Top 10 US Valuation After IPO",
     "AI's Riemann Hypothesis Proof Amid Tech Market Correction",
-    "AI Chip Blacklist, Libya Warship Attack: Global Tensions Spike"
+    "AI Chip Blacklist, Libya Warship Attack: Global Tensions Spike",
+    "Huawei's Court Win, Syria's Child Casualties & NATO's Space Warning"
   ],
   "Wellness and Self-Care": [
     "The Unseen Side: How GLP-1 Medications Connect to a Rare Retinopathy, According to a New September 2026 Report",
@@ -156,7 +156,6 @@
     "GLP-1s and Bones: What a 2026 Study of 147,000 Adults Found"
   ],
   "Travel & Hidden Gems": [
-    "Matera's Cave Hotels and Two Other Global Aesthetic Journeys You Haven't Booked Yet",
     "Ho Chi Minh City's Nine-Story Cafe Building and Two Other Cities Where Ancient Charm Meets Modern Vibrancy",
     "Uncover Lofoten's Dramatic Coast, Ubud's Serene Swings, and Cartagena's Vibrant Walls",
     "Colmar's Fairytale Canals and Two Other Global Gems for Your Authentic Scroll",
@@ -205,7 +204,8 @@
     "Explore Caves in Vietnam, Tulum's Cenotes, and Sicily's Ancient Vistas",
     "Stockholm's Island Charm, Block Island's Literary Retreat, and The Bahamas' Local Rhythms",
     "Évora's Roman Columns, Penang's Street Food, Salta's Andean Vistas",
-    "Milford Sound's 12-Hour Tour, Belize's Reefs, Little Italy's Authentic Bites"
+    "Milford Sound's 12-Hour Tour, Belize's Reefs, Little Italy's Authentic Bites",
+    "Krakow's Royal History, Udaipur's Lake Palaces, San Miguel's Art Scene"
   ],
   "Philosophy for Modern Life": [
     "The 300 Choices on Netflix That All Feel the Same: Theodor Adorno and the Culture Industry",
@@ -260,11 +260,8 @@
     "Gottfried Leibniz: Finding Optimal Paths in Life's Unexpected Turns"
   ],
   "_meta": {
-    "investing_progress": 105,
+    "investing_progress": 106,
     "recent_tickers": [
-      "USMV",
-      "SCHD",
-      "IVE",
       "VIG",
       "VTV",
       "IDV",
@@ -276,12 +273,12 @@
       "SPY",
       "DGRO",
       "VYM",
-      "VNQ"
+      "VNQ",
+      "SPLV",
+      "FVD",
+      "PFF"
     ],
     "recent_destinations": [
-      "Crete, Greece",
-      "Laguna Beach, USA",
-      "Copenhagen, Denmark",
       "High Atlas Mountains, Morocco",
       "Mammoth Cave National Park, Kentucky, USA",
       "Colmar, France",
@@ -338,24 +335,27 @@
       "The Bahamas",
       "Évora, Portugal",
       "George Town, Penang, Malaysia",
-      "Salta, Argentina"
+      "Salta, Argentina",
+      "Krakow, Poland",
+      "Udaipur, India",
+      "San Miguel de Allende, Mexico"
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "Creating Your Personal Investing Roadmap Developing a clear investing roadmap is perhaps the most crucial step for anyone starting their financial journey, especially when the markets show signs of volatility, like the r",
         "How can you start building a reliable stream of passive income through investing? It involves understanding specific investment vehicles and choosing assets that align with your long-term financial goals. Focusing on qua",
         "For the first time since March, bonds are actually helping to offset some of the losses investors have been feeling in their stock portfolios lately. This shift highlights the dynamic nature of financial markets and the ",
         "Understanding Dividend Growth Investing Creating a reliable stream of passive income through investing doesn't always require complex strategies. One powerful approach focuses on dividend growth investing . This strategy",
         "Imagine you receive a notification on your phone: a small deposit has landed in your brokerage account. It is a dividend payment from one of your investments, a welcome surprise that arrives without you needing to sell a",
-        "Sitting down with your morning coffee, you might glance at the financial headlines and see reports of a 'market correction'. This news can make even seasoned investors feel uneasy. When the market is volatile, it is natu"
+        "Sitting down with your morning coffee, you might glance at the financial headlines and see reports of a 'market correction'. This news can make even seasoned investors feel uneasy. When the market is volatile, it is natu",
+        "Understanding how to generate a reliable stream of passive income can transform your financial future. It is not about getting rich overnight. Instead, it involves making smart, long-term choices that build wealth consis"
       ],
       "World News Simplified": [
-        "Many people believe that a country's path to joining a major military alliance like Nato involves meeting specific criteria and negotiating directly with existing members. However, recent developments show that the conve",
         "Imagine checking out a potential new home online, captivated by vibrant photos, only to visit in person and find the reality far less polished. Or consider a diplomatic offer that could reshape a country's future, weighi",
         "Many imagine modern warfare is fought primarily above ground, with tanks, artillery, and drones dominating vast landscapes. However, in some key areas, the conflict in Ukraine has literally gone underground, forcing sold",
         "The UN's top court ruled Myanmar committed genocide against the Rohingya minority in 2017. European leaders signal readiness for peace talks with Russia regarding the war in Ukraine. Venezuela and the US sign a military ",
         "What's happening with tech stocks and the economy right now? Major US stock indexes, like the S&P 500 and the Dow Jones Industrial Average, have recently entered what analysts call 'correction territory.' This means thes",
-        "The US moves to blacklist Singaporean AI company Megaspeed over allegations of funneling Nvidia chips to China. Ukrainian drones sink a Russian warship in a Libyan port, escalating the conflict far from Ukraine. COP31 cl"
+        "The US moves to blacklist Singaporean AI company Megaspeed over allegations of funneling Nvidia chips to China. Ukrainian drones sink a Russian warship in a Libyan port, escalating the conflict far from Ukraine. COP31 cl",
+        "Many recent global headlines might seem disparate, but they often reveal underlying tensions and evolving norms across legal, social, and security spheres. From major tech companies facing justice to the quiet human cost"
       ],
       "Wellness and Self-Care": [
         "When navigating mental health, finding the right support is a deeply personal journey. For many, this includes considering antidepressant medications. A recent meta-analysis has offered valuable new insights, comparing t",
@@ -366,12 +366,12 @@
         "Are GLP-1 agonist drugs like Ozempic and Wegovy linked to bone health issues? Recent research has raised this possibility, linking these popular medications to conditions such as osteoporosis and gout. This information i"
       ],
       "Travel & Hidden Gems": [
-        "The scent of jasmine and spices might guide you through a bustling market in Mysuru. Or perhaps it is the quiet creak of a long-tail boat gliding along a Bangkok canal at dawn. Maybe it is the crisp mountain air filling ",
         "Are you searching for a European adventure that veers off the well-trodden tourist path while still delivering incredible culture and cuisine? Many travelers are now seeking out destinations that offer authentic local ex",
         "Are you looking for a trip that blends natural wonders with rich cultural experiences? Moving beyond typical tourist trails can reveal truly unforgettable adventures. We've found three destinations that offer incredible ",
         "Many travelers believe that to truly experience a city's essence, especially one as dynamic and sprawling as Stockholm, a grand hotel in the bustling center is the only way to go. However, this approach often overlooks t",
         "Imagine Clara, standing in a quiet square as the golden light of late afternoon washes over ancient Roman columns. The scent of olive groves hangs in the air, a stark contrast to the bustling city she left behind just ho",
-        "Many travelers believe that a truly memorable trip is measured by how many famous landmarks they can check off a list. This approach, however, often overlooks the profound joy of truly immersing yourself in a destination"
+        "Many travelers believe that a truly memorable trip is measured by how many famous landmarks they can check off a list. This approach, however, often overlooks the profound joy of truly immersing yourself in a destination",
+        "Elena zipped up her jacket, the crisp morning air of Krakow's Main Market Square nipping at her cheeks. She watched a horse-drawn carriage clatter past St. Mary's Basilica, its twin towers reaching into a sky just beginn"
       ],
       "Philosophy for Modern Life": [
         "Imagine the still surface of a quiet pond at dawn, reflecting the sky without interruption. Now, consider the relentless blinking light of a smartphone, each flicker demanding your attention, pulling you away from the pr",
@@ -383,31 +383,31 @@
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
-      "World News Simplified": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
+      "Passive Income Investing": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
+      "World News Simplified": "Open with a specific fact or number, but ONLY if that fact appears in the trend article summaries provided. If none is available there, open with a concrete scene instead.",
       "Wellness and Self-Care": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
-      "Travel & Hidden Gems": "Open with a common belief about the topic and, in the next sentence, show where it falls short.",
+      "Travel & Hidden Gems": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
       "Philosophy for Modern Life": "Open with a direct, concrete comparison between two specific things (not abstract concepts) that sets up the topic."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "World News Simplified": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Passive Income Investing": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "World News Simplified": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Wellness and Self-Care": "Deliberately alternate between very short sentences and longer explanatory ones.",
-      "Travel & Hidden Gems": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Travel & Hidden Gems": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Investing Concept first (connect it to today's market in one line) → Market News → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a fresh heading.",
+      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
       "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
-      "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
-      "World News Simplified": "Layout: headline list first.\n1. Start directly with an <ol> of the 3-5 stories, one short line each. No sentence before the list.\n2. Each story gets its own <h2> in the same order: what happened, why it matters, and, where genuinely relevant, how it could touch an ordinary reader's life (prices, travel, jobs, savings).\n3. A short closing <h2> section (2-4 plain sentences) naming the one thread that connects today's stories and a concrete thing to watch next.",
+      "Travel & Hidden Gems": "Layout: three equal destinations.\n- One short connecting idea, then each of the 3 destinations under its own <h2> (destination name in the heading).\n- For each: what makes it special, one or two specific named neighborhoods or landmarks, how to get there, one practical tip, plus a short practical block covering safety level for travelers and approximate cost level (a meal and a night's stay as ranges). Title that block differently for each destination, or fold it into the paragraph.",
+      "World News Simplified": "Layout: theme-first.\n1. Open with 2-3 sentences stating the single theme that links today's 3-4 stories.\n2. Each story gets an <h2> written as the question a reader would actually ask about it (e.g. \"Why are rice prices jumping in Japan?\"), answered directly in the first sentence under it.\n3. Close with a <ul> of 2-3 concrete \"what this could mean next\" points. No separate closing heading needed.",
       "Wellness and Self-Care": "Layout: reader questions. Organize the post as 4-6 <h2> headings, each a real question people search about this topic, each answered directly in its first sentence and then explained."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-11-22T18:24:21",
+      "Passive Income Investing": "2026-11-24T21:04:37",
       "Philosophy for Modern Life": "2026-11-23T22:33:14",
-      "Travel & Hidden Gems": "2026-11-22T18:24:53",
-      "World News Simplified": "2026-11-23T22:31:52",
+      "Travel & Hidden Gems": "2026-11-24T21:05:15",
+      "World News Simplified": "2026-11-24T21:05:44",
       "Wellness and Self-Care": "2026-11-23T22:32:43"
     }
   }
