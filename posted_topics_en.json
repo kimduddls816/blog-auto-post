@@ -1,6 +1,5 @@
 {
   "Passive Income Investing": [
-    "Understanding Geopolitical Risk: How Global Events Shape Your Passive Income Journey",
     "Unlocking Income Potential: Understanding Volatility, AI Trends, and Covered Call ETFs",
     "Smart Money Moves: Safeguarding Passive Income Amid Rising Rates",
     "Chart Your Path to Financial Independence: Setting Realistic Returns and Automating Your Income",
@@ -49,7 +48,8 @@
     "Passive Income: Understanding Dividends and Fixed Annuities",
     "Passive Income: Smart Dividends and Steady Investing Amid Volatility",
     "Build Passive Income: Steady Growth with Preferred Shares",
-    "Building Passive Income: Navigating Market Swings with Smart ETFs"
+    "Building Passive Income: Navigating Market Swings with Smart ETFs",
+    "Building Steady Passive Income: Dividends, DRIPs, and Smart ETFs"
   ],
   "World News Simplified": [
     "Argentina's Oil Standoff and One Leader's $1 Million Raise",
@@ -104,7 +104,6 @@
     "Car Finance: £829 Payouts Delayed Until 2027"
   ],
   "Wellness and Self-Care": [
-    "How Eating 30 Different Plants a Week Could Reshape Your Gut and Mood",
     "The Simple Twist: How Focused Rotational Drills Keep Your Body Agile and Pain-Free for Years",
     "Beyond the Daily Pill: Your Gut's Microbes Thrive on This Specific Diversity, Not Just One Fix",
     "The Simple Nightly Brain Dump That Cuts Sleep Onset Time for Anxious Thinkers",
@@ -153,7 +152,8 @@
     "Ozempic and Bone Health: New 2026 Study Links GLP-1s to Osteoporosis",
     "Boosting Mood and Immunity: Why Your Vitamin D Levels Matter",
     "GLP-1s and Bones: What a 2026 Study of 147,000 Adults Found",
-    "Is 10 Hours of Sleep Too Much? Understanding Long Sleep"
+    "Is 10 Hours of Sleep Too Much? Understanding Long Sleep",
+    "Protecting Bones on GLP-1s: New Study on Osteoporosis, Gout Risks"
   ],
   "Travel & Hidden Gems": [
     "Uncover Lofoten's Dramatic Coast, Ubud's Serene Swings, and Cartagena's Vibrant Walls",
@@ -208,7 +208,6 @@
     "From Dead Goat Polo to Pink Sands: Authentic Travel in Kyrgyzstan, Barbuda, and Colorado"
   ],
   "Philosophy for Modern Life": [
-    "The 23% Disengaged Workforce: Albert Camus and the Radical Idea of Sisyphus's Workplace Joy",
     "Confucius's Simple Act: Why a Thoughtful Online Comment Outweighs Ten 'Likes'",
     "Simone Weil's Radical Attention: Why Your Phone Demands More Than Just a Glance",
     "The Polished LinkedIn Profile and Martha Nussbaum's Wider Path to a Full Life",
@@ -257,14 +256,12 @@
     "Leibniz: How Justice, Wisdom, and Love Solve Daily Dilemmas",
     "Gottfried Leibniz: When Your Job's Rules Don't Feel Right",
     "Gottfried Leibniz: Finding Optimal Paths in Life's Unexpected Turns",
-    "Gottfried Leibniz: Beyond Rules, How Wisdom and Love Define Justice"
+    "Gottfried Leibniz: Beyond Rules, How Wisdom and Love Define Justice",
+    "Gottfried Leibniz: When Company Policy Isn't Enough for True Justice"
   ],
   "_meta": {
-    "investing_progress": 107,
+    "investing_progress": 108,
     "recent_tickers": [
-      "SDY",
-      "SPHD",
-      "VOOV",
       "NOBL",
       "AIQ",
       "SPY",
@@ -276,7 +273,10 @@
       "PFF",
       "SCHD",
       "USMV",
-      "VOO"
+      "VOO",
+      "VTI",
+      "VXUS",
+      "XLU"
     ],
     "recent_destinations": [
       "High Falls/Hudson Valley, USA",
@@ -342,12 +342,12 @@
     ],
     "recent_openings": {
       "Passive Income Investing": [
-        "For the first time since March, bonds are actually helping to offset some of the losses investors have been feeling in their stock portfolios lately. This shift highlights the dynamic nature of financial markets and the ",
         "Understanding Dividend Growth Investing Creating a reliable stream of passive income through investing doesn't always require complex strategies. One powerful approach focuses on dividend growth investing . This strategy",
         "Imagine you receive a notification on your phone: a small deposit has landed in your brokerage account. It is a dividend payment from one of your investments, a welcome surprise that arrives without you needing to sell a",
         "Sitting down with your morning coffee, you might glance at the financial headlines and see reports of a 'market correction'. This news can make even seasoned investors feel uneasy. When the market is volatile, it is natu",
         "Understanding how to generate a reliable stream of passive income can transform your financial future. It is not about getting rich overnight. Instead, it involves making smart, long-term choices that build wealth consis",
-        "After years of diligent saving, Mark finally decided to take the leap into investing, driven by the dream of a future where his money worked for him. He remembered the first time he saw a small dividend payment appear in"
+        "After years of diligent saving, Mark finally decided to take the leap into investing, driven by the dream of a future where his money worked for him. He remembered the first time he saw a small dividend payment appear in",
+        "How can you make your money work harder for you, even if you are just starting out? Passive income investing is a powerful way to build wealth over time, allowing your investments to generate earnings with minimal ongoin"
       ],
       "World News Simplified": [
         "Many imagine modern warfare is fought primarily above ground, with tanks, artillery, and drones dominating vast landscapes. However, in some key areas, the conflict in Ukraine has literally gone underground, forcing sold",
@@ -358,12 +358,12 @@
         "Millions of drivers in the UK who took out car finance agreements between April 2007 and November 2024 might be entitled to compensation. The Financial Conduct Authority (FCA), the UK's financial regulator, has been inve"
       ],
       "Wellness and Self-Care": [
-        "The steam still clung to the bathroom mirror as you finished your warm morning shower. Just before stepping out, you took a deep breath. Then, with a deliberate twist of the faucet, the water turned icy cold. This brief,",
         "Many individuals have found life-changing benefits in medications like Ozempic, Zepbound, and Wegovy, commonly known as GLP-1 agonists, for managing conditions like obesity and type 2 diabetes. These powerful drugs have ",
         "Many individuals have found life-changing benefits in medications like Ozempic, Zepbound, and Wegovy for managing conditions such as obesity and type 2 diabetes. These powerful drugs, known as GLP-1 agonists, have been c",
         "Imagine a bright, sunny afternoon. You step outside, feel the warmth on your skin, and take a deep breath. This simple act of basking in sunlight does more than just lift your spirits. It initiates a crucial process in y",
         "Are GLP-1 agonist drugs like Ozempic and Wegovy linked to bone health issues? Recent research has raised this possibility, linking these popular medications to conditions such as osteoporosis and gout. This information i",
-        "Sarah loved her weekends. After a demanding week at work, her absolute favorite thing was to sleep in, often until noon. She'd crawl out of bed feeling sluggish, telling herself she just hadn't gotten enough sleep during"
+        "Sarah loved her weekends. After a demanding week at work, her absolute favorite thing was to sleep in, often until noon. She'd crawl out of bed feeling sluggish, telling herself she just hadn't gotten enough sleep during",
+        "Imagine you have started a new medication, one that promises significant changes for your health, perhaps managing type 2 diabetes or aiding in weight loss. You are beginning to feel the benefits, noticing positive shift"
       ],
       "Travel & Hidden Gems": [
         "Are you looking for a trip that blends natural wonders with rich cultural experiences? Moving beyond typical tourist trails can reveal truly unforgettable adventures. We've found three destinations that offer incredible ",
@@ -374,41 +374,41 @@
         "Travel, at its best, isn't about ticking off landmarks from a list or lounging in generic resorts; it's about finding the pulse of a place, discovering its unique character through specific, often unexpected, encounters."
       ],
       "Philosophy for Modern Life": [
-        "Do you constantly feel like you should be doing more? Many of us wrestle with the feeling that we are not productive enough, not achieving enough, or not acquiring enough. This endless pressure often leaves us feeling ov",
         "It often feels like we are caught on a treadmill, day in and day out, performing tasks that seem necessary but somehow lack genuine meaning. We move from one obligation to the next, often feeling like we are simply maint",
         "Does it sometimes feel impossible to act \"rightly\" in a world full of complex choices and conflicts? Whether it is navigating a tricky work decision or a heated online discussion, finding the best path can be challenging",
         "Imagine a common scenario: you are in a team meeting, and your manager outlines a new policy for project allocation. On paper, it is efficient, designed to maximize profits. However, as the details unfold, you realize th",
         "Imagine carefully tending a garden, expecting vibrant roses, but instead, you get resilient, wild daisies. Or think about planning a meticulous career path, only to find yourself on an unexpected detour. Life rarely unfo",
-        "Many of us believe that justice is primarily about following the law. We trust that if rules are clear and consistently applied, fairness will prevail. Yet, how often do we encounter situations where something is perfect"
+        "Many of us believe that justice is primarily about following the law. We trust that if rules are clear and consistently applied, fairness will prevail. Yet, how often do we encounter situations where something is perfect",
+        "When faced with a difficult decision, especially one where the official rules feel inadequate or even wrong, many of us wrestle with what to do. Perhaps a company policy seems to prioritize profit over people, or an unwr"
       ]
     },
     "last_opening_style": {
-      "Passive Income Investing": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "Passive Income Investing": "Open with a plain question a real reader would type into a search engine about this topic, then answer it directly in the next two sentences.",
       "World News Simplified": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
-      "Wellness and Self-Care": "Open with one specific, concrete scene or moment involving a person (clearly illustrative, not a fake real person) doing something related to the topic. No abstract framing.",
+      "Wellness and Self-Care": "Open by describing one specific tangible detail (a place, an object, a time of day, a routine) that grounds the topic immediately.",
       "Travel & Hidden Gems": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing.",
-      "Philosophy for Modern Life": "Open with a common belief about the topic and, in the next sentence, show where it falls short."
+      "Philosophy for Modern Life": "Open mid-thought, dropping the reader straight into the core idea with no throat-clearing."
     },
     "last_sentence_rhythm": {
-      "Passive Income Investing": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
+      "Passive Income Investing": "Deliberately alternate between very short sentences and longer explanatory ones.",
       "World News Simplified": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
-      "Wellness and Self-Care": "Favor short, punchy sentences throughout. Break ideas into small pieces.",
+      "Wellness and Self-Care": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
       "Travel & Hidden Gems": "Favor longer, flowing sentences that connect ideas together, while staying clear.",
-      "Philosophy for Modern Life": "Favor short, punchy sentences throughout. Break ideas into small pieces."
+      "Philosophy for Modern Life": "Deliberately alternate between very short sentences and longer explanatory ones."
     },
     "last_structure": {
-      "Passive Income Investing": "Order: Market News → Investing Concept → New Asset Spotlight → ETF Picks. Each part under its own <h2> with a heading written fresh for this post (not the generic part names).",
-      "Philosophy for Modern Life": "Layout: problem first. Open with a specific, relatable modern situation, then bring in the thinker as an unexpected answer to it, then show where the idea is limited or where critics push back. Use <h2> sections.",
+      "Passive Income Investing": "Order: Investing Concept → New Asset Spotlight → Market News → ETF Picks, where the ETF picks explicitly follow from the market news just discussed. Each part under its own <h2> with a fresh heading. Present the 3 ETF picks as short paragraphs, not a bullet list.",
+      "Philosophy for Modern Life": "Layout: one idea, three situations. Explain the thinker's core idea briefly, then apply it to three different concrete modern situations, each under its own <h2>.",
       "Travel & Hidden Gems": "Layout: theme-led comparison.\n- Pick one concrete theme that genuinely links the 3 destinations (e.g. a type of food, a slow-travel style, a season, a transport experience) and state it in the first two sentences.\n- Each destination gets an <h2> framed around how it delivers that theme, with specific named places and a practical tip.\n- End with an <h2> that helps the reader choose between them (\"pick X if..., pick Y if...\"), including safety and approximate costs for each.",
       "World News Simplified": "Layout: one lead story, then briefs.\n1. Open straight into the single most important story and give it roughly half the post under its own <h2>, with real context and background.\n2. Then an <h2> for shorter briefs: 2-4 other stories, each as its own <h3> with 1 short paragraph.\n3. End with one short paragraph (no heading) on what to watch in the coming days. No numbered headline list in this layout.",
-      "Wellness and Self-Care": "Layout: belief vs evidence. Open with what most people assume about this topic, then use <h2> sections to walk through what the evidence actually suggests and what a sensible person could do differently."
+      "Wellness and Self-Care": "Layout: deep dive. Explain what the new research or trend actually found (only as described in the source summary), what it does NOT show, and how to apply it, each under its own <h2>."
     },
     "last_posted_at": {
-      "Passive Income Investing": "2026-11-25T20:27:26",
-      "Philosophy for Modern Life": "2026-11-25T20:26:41",
+      "Passive Income Investing": "2026-11-27T19:53:41",
+      "Philosophy for Modern Life": "2026-11-27T19:53:09",
       "Travel & Hidden Gems": "2026-11-26T20:04:28",
       "World News Simplified": "2026-11-26T20:04:55",
-      "Wellness and Self-Care": "2026-11-25T20:26:08"
+      "Wellness and Self-Care": "2026-11-27T19:52:38"
     }
   }
 }
